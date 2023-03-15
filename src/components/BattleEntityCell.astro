@@ -1,0 +1,14 @@
+---
+const { title, job, origin, link } = Astro.props;
+---
+
+<div class="battleEntityCell">
+  <div class="battleEntityVisual">
+    <img />
+  </div>
+  <div class="battleEntityBar">
+    <a class="battleEntityTitle" href={link}>{title}</a>
+    <span class="battleEntityClassBar">{job}</span>
+    <a class="battleEntityOriginBar">{origin}</a>
+  </div>
+</div>

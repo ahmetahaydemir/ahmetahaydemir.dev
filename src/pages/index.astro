@@ -1,0 +1,29 @@
+---
+import HoverCard from "../components/HoverCard.astro";
+import VisualBackground from "../layouts/VisualBackground.astro";
+---
+
+<VisualBackground backgroundClass="cover_bg_1">
+  <div class="profile_banner_container">
+    <img
+      class="profile_banner_background"
+      src="./aurora@3x.png"
+      draggable="false"
+      inputmode="none"
+    />
+    <img
+      class="profile_banner"
+      src="./LogoSmall.png"
+      draggable="false"
+      inputmode="none"
+    />
+    <img draggable="false" inputmode="none" />
+  </div>
+  <div class="container">
+    <HoverCard title="Wild Chess Simulator" link="/wild-chess-simulator" />
+    <HoverCard title="Itch.io" link="https://ahmetahaydemir.itch.io/" />
+    <HoverCard title="Devlog" link="https://www.youtube.com/@ahmetahaydemir" />
+    <HoverCard title="Favourites" link="/fav-list" />
+    <HoverCard title="Resume" link="/resume" />
+  </div>
+</VisualBackground>
