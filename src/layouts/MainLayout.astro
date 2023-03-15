@@ -31,21 +31,27 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
     </title>
 
     <style>
-      body {
-        width: 100%;
-        display: grid;
-        grid-template-rows: var(--theme-navbar-height) 1fr;
-        --gutter: 0.5rem;
-        --doc-padding: 2rem;
+
+      header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: var(--theme-navbar-height);
+        z-index: 11;
+        padding: 2rem 0;
+        background-color: var(--theme-navbar-bg);
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        overflow: hidden;
       }
 
-      .layout {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns:
-          minmax(var(--gutter), 1fr) minmax(0, var(--max-width))
-          minmax(var(--gutter), 1fr);
-        overflow-x: hidden;
+      #main-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-width: 0;
       }
 
       .grid-sidebar {
@@ -94,10 +100,14 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
       }
 
       @media (min-width: 50em) {
-        .layout {
+        /* .layout {
           overflow: initial;
           grid-template-columns: 20rem minmax(0, var(--max-width));
           gap: 1em;
+        } */
+
+        .main-column {
+          margin-inline-start: var(--theme-left-sidebar-width);
         }
 
         #grid-left {
@@ -119,11 +129,14 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
       }
 
       @media (min-width: 72em) {
-        .layout {
+        /* .layout {
           grid-template-columns: 20rem minmax(0, var(--max-width)) 18rem;
           padding-left: 0;
           padding-right: 0;
           margin: 0 auto;
+        } */
+        .main-column {
+          margin-inline-end: var(--theme-right-sidebar-width);
         }
 
         #grid-right {
@@ -138,10 +151,10 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
     </style>
 
     <style is:global>
-      .layout > * {
+      /* .layout > * {
         width: 100%;
         height: 100%;
-      }
+      } */
 
       .mobile-sidebar-toggle {
         overflow: hidden;
@@ -160,7 +173,10 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
       <aside id="left-sidebar" class="sidebar" title="Site Navigation">
         <LeftSidebar currentPage={currentPage} />
       </aside>
-      <div id="grid-main" class="main-column">
+      <aside id="right-sidebar" class="sidebar" title="Table of Contents">
+        <RightSidebar headings={headings} githubEditUrl={githubEditUrl} />
+      </aside>
+      <div id="main-content" class="main-column">
         <PageContent
           title={data.title}
           headings={headings}
@@ -169,9 +185,6 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
           <slot />
         </PageContent>
       </div>
-      <aside id="right-sidebar" class="sidebar" title="Table of Contents">
-        <RightSidebar headings={headings} githubEditUrl={githubEditUrl} />
-      </aside>
     </main>
   </body>
 </html>

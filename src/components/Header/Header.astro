@@ -1,14 +1,13 @@
 ---
-import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from '../../languages';
-import { SITE } from '../../consts';
-import AstroLogo from './AstroLogo.astro';
-// import SkipToContent from './SkipToContent.astro';
+import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from "../../languages";
+import { SITE } from "../../consts";
+import AstroLogo from "./AstroLogo.astro";
 // import SidebarToggle from './SidebarToggle';
 // import LanguageSelect from './LanguageSelect';
 // import Search from './Search';
 
 type Props = {
-	currentPage: string;
+  currentPage: string;
 };
 
 const { currentPage } = Astro.props;
@@ -16,134 +15,155 @@ const lang = getLanguageFromURL(currentPage);
 ---
 
 <header>
-	<!-- <SkipToContent /> -->
-	<nav class="nav-wrapper" title="Top Navigation">
-		<div class="menu-toggle">
-			<!-- <SidebarToggle client:idle /> -->
-		</div>
-		<div class="logo flex">
-			<a href="/">
-				<AstroLogo size={40} />
-				<h1>{SITE.title ?? 'Documentation'}</h1>
-			</a>
-		</div>
-		<div style="flex-grow: 1;"></div>
-		<!-- {KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />} -->
-		<div class="search-item">
-			<!-- <Search client:idle /> -->
-		</div>
-	</nav>
+  <nav class="nav-wrapper" title="Top Navigation" aria-label="Top">
+    <div class="menu-toggle">
+      <!-- <SidebarToggle client:idle /> -->
+    </div>
+    <div class="logo flex">
+      <a href="/">
+        <AstroLogo size={40} />
+        <h1>{SITE.title ?? "Documentation"}</h1>
+      </a>
+    </div>
+    <div style="flex-grow: 1;"></div>
+    <!-- {KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />} -->
+    <div class="search-item">
+      <!-- <Search client:idle /> -->
+    </div>
+  </nav>
 </header>
 
 <style>
-	header {
-		z-index: 11;
-		height: var(--theme-navbar-height);
-		width: 100%;
-		background-color: var(--theme-navbar-bg);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		overflow: hidden;
-		position: sticky;
-		top: 0;
-	}
 
-	.logo {
-		flex: 1;
-		display: flex;
-		overflow: hidden;
-		width: 30px;
-		font-size: 2rem;
-		flex-shrink: 0;
-		font-weight: 600;
-		line-height: 1;
-		color: hsla(var(--color-base-white), 100%, 1);
-		gap: 0.25em;
-		z-index: -1;
-	}
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: var(--theme-navbar-height);
+    z-index: 11;
+    padding: 2rem 0;
+    background-color: var(--theme-navbar-bg);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+  }
 
-	.logo a {
-		display: flex;
-		padding: 0.5em 0.25em;
-		margin: -0.5em -0.25em;
-		text-decoration: none;
-		font-weight: bold;
-	}
+  .logo {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    width: 30px;
+    font-size: 2rem;
+    flex-shrink: 0;
+    font-weight: 600;
+    line-height: 1;
+    color: hsla(var(--color-base-white), 100%, 1);
+    gap: 0.25em;
+    z-index: -1;
+  }
 
-	.logo a {
-		transition: color 100ms ease-out;
-		color: var(--theme-text);
-	}
+  .logo a {
+    display: flex;
+    padding: 0.5em 0.25em;
+    margin: -0.5em -0.25em;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-	.logo a:hover,
-	.logo a:focus {
-		color: var(--theme-text-accent);
-	}
+  .logo a {
+    transition: color 100ms ease-out;
+    color: var(--theme-text);
+  }
 
-	.logo h1 {
-		display: none;
-		font: inherit;
-		color: inherit;
-		margin: 0;
-	}
+  .logo a:hover,
+  .logo a:focus {
+    color: var(--theme-text-accent);
+  }
 
-	.nav-wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		gap: 1em;
-		width: 100%;
-		max-width: 82em;
-		padding: 0 1rem;
-	}
+  .logo h1 {
+    display: none;
+    font: inherit;
+    color: inherit;
+    margin: 0;
+  }
 
-	@media (min-width: 50em) {
-		header {
-			position: static;
-			padding: 2rem 0rem;
-		}
+  /* .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+    width: 100%;
+    max-width: 82em;
+    padding: 0 1rem;
+  } */
 
-		.logo {
-			width: auto;
-			margin: 0;
-			z-index: 0;
-		}
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding-inline: var(--min-spacing-inline);
+  }
 
-		.logo h1 {
-			display: initial;
-		}
+  @media (hover: hover) {
+    .nav-wrapper {
+      max-width: calc(100vw - 1.1rem);
+    }
+  }
+  @media (min-width: 23.5em) {
+    .nav-wrapper {
+      gap: 1rem;
+    }
+  }
 
-		.menu-toggle {
-			display: none;
-		}
-	}
+  @media (min-width: 50em) {
+    header {
+      padding: 2.5rem 0 1.5rem;
+    }
 
-	/** Style Algolia */
-	:root {
-		--docsearch-primary-color: var(--theme-accent);
-		--docsearch-logo-color: var(--theme-text);
-	}
+    .logo {
+      width: auto;
+      margin: 0;
+      z-index: 0;
+    }
 
-	.search-item {
-		display: none;
-		position: relative;
-		z-index: 10;
-		flex-grow: 1;
-		padding-right: 0.7rem;
-		display: flex;
-		max-width: 200px;
-	}
+    .logo h1 {
+      display: initial;
+    }
 
-	@media (min-width: 50em) {
-		.search-item {
-			max-width: 400px;
-		}
-	}
+    .menu-toggle {
+      display: none;
+    }
+  }
+
+  /** Style Algolia */
+  :root {
+    --docsearch-primary-color: var(--theme-accent);
+    --docsearch-logo-color: var(--theme-text);
+  }
+
+  .search-item {
+    display: none;
+    position: relative;
+    z-index: 10;
+    flex-grow: 1;
+    padding-right: 0.7rem;
+    display: flex;
+    max-width: 200px;
+  }
+
+  @media (min-width: 50em) {
+    .search-item {
+      max-width: 400px;
+    }
+  }
 </style>
 
 <style is:global>
-	.search-item > * {
-		flex-grow: 1;
-	}
+  .search-item > * {
+    flex-grow: 1;
+  }
 </style>
