@@ -55,6 +55,25 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
         padding: 0;
       }
 
+      #left-sidebar {
+        display: none;
+        background: var(--theme-bg-gradient);
+        z-index: 10;
+        inset-inline-start: 0;
+      }
+      #right-sidebar {
+        display: none;
+        top: var(--theme-navbar-height);
+        inset-inline-end: 0;
+        width: var(--theme-right-sidebar-width);
+      }
+      .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        padding: 0;
+      }
+
       #grid-left {
         position: fixed;
         background-color: var(--theme-bg);
@@ -87,6 +106,16 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
           position: sticky;
           grid-column: 1;
         }
+
+        #left-sidebar {
+          display: flex;
+          padding-inline-start: var(--min-spacing-inline);
+          padding-inline-end: 1rem;
+          padding-left: 2rem;
+          top: var(--theme-navbar-height);
+          width: var(--theme-left-sidebar-width);
+          background: transparent;
+        }
       }
 
       @media (min-width: 72em) {
@@ -99,6 +128,10 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
 
         #grid-right {
           grid-column: 3;
+          display: flex;
+        }
+
+        #right-sidebar {
           display: flex;
         }
       }
@@ -124,7 +157,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
   <body>
     <Header currentPage={currentPage} />
     <main class="layout">
-      <aside id="grid-left" class="sidebar" title="Site Navigation">
+      <aside id="left-sidebar" class="sidebar" title="Site Navigation">
         <LeftSidebar currentPage={currentPage} />
       </aside>
       <div id="grid-main" class="main-column">
@@ -136,7 +169,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
           <slot />
         </PageContent>
       </div>
-      <aside id="grid-right" class="sidebar" title="Table of Contents">
+      <aside id="right-sidebar" class="sidebar" title="Table of Contents">
         <RightSidebar headings={headings} githubEditUrl={githubEditUrl} />
       </aside>
     </main>
