@@ -1,121 +1,190 @@
 ---
-import { getLanguageFromURL } from '../../languages';
-import { SIDEBAR } from '../../consts';
+import { getLanguageFromURL } from "../../languages";
+import { SIDEBAR } from "../../consts";
 
 type Props = {
-	currentPage: string;
+  currentPage: string;
 };
 
 const { currentPage } = Astro.props;
-const currentPageMatch = currentPage.endsWith('/')
-	? currentPage.slice(1, -1)
-	: currentPage.slice(1);
-const baseFolderURL = currentPage.split('/').slice(1,2).join('/');
+const baseFolderURL = currentPage.split("/").slice(1, 2).join("/");
 const langCode = getLanguageFromURL(currentPage);
 const sidebar = SIDEBAR[langCode];
 ---
 
 <nav aria-labelledby="grid-left">
-	<ul class="nav-groups">
-		{
-			Object.entries(sidebar).map(([header, children]) => (
-				<li>
-					<div class="nav-group">
-						<h2>{header}</h2>
-						<ul>
-							{children.map((child) => {
-								const url = '/' +baseFolderURL + '/' +  langCode + '/' + header.toLowerCase().split(' ').join('-') + '/' + child.link;
-								return (
-									<li class="nav-link">
-										<a href={url} aria-current={currentPageMatch === child.link ? 'page' : false}>
-											{child.text}
-										</a>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-				</li>
-			))
-		}
-	</ul>
+  <div class="TabGroup"><button class="active">Documentation</button></div>
+  <ul class="nav-groups">
+    {
+      Object.entries(sidebar).map(([header, children]) => (
+        <li class="nav-group learn active">
+          <details open>
+            <summary class="nav-group-title">
+              <h2>
+                {header}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 1 16 16"
+                  width="16"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"
+                  />
+                </svg>
+              </h2>
+            </summary>
+            <ul>
+              {children.map((child) => {
+                const activeSelectionHighlight = Astro.url
+                  .toString()
+                  .includes(child.link);
+                const url =
+                  "/" +
+                  baseFolderURL +
+                  "/" +
+                  langCode +
+                  "/" +
+                  header.toLowerCase().split(" ").join("-") +
+                  "/" +
+                  child.link;
+                return (
+                  <li class="nav-link">
+                    <a
+                      href={url}
+                      data-current-parent={
+                        activeSelectionHighlight ? "true" : "false"
+                      }
+                      aria-current={activeSelectionHighlight ? "page" : "false"}
+                    >
+                      {child.text}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </details>
+        </li>
+      ))
+    }
+  </ul>
 </nav>
 
 <script is:inline>
-	window.addEventListener('DOMContentLoaded', () => {
-		var target = document.querySelector('[aria-current="page"]');
-		if (target && target.offsetTop > window.innerHeight - 100) {
-			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
-		}
-	});
+  window.addEventListener("DOMContentLoaded", () => {
+    var target = document.querySelector('[aria-current="page"]');
+    if (target && target.offsetTop > window.innerHeight - 100) {
+      document.querySelector(".nav-groups").scrollTop = target.offsetTop;
+    }
+  });
 </script>
 
 <style>
-	
-	nav {
-		width: 100%;
-		margin-right: 1rem;
-	}
+  nav {
+    width: 100%;
+    margin-right: 1rem;
+  }
 
-	.nav-groups {
-		height: 100%;
-		padding: 2rem 0;
-		overflow-x: visible;
-		overflow-y: auto;
-		max-height: 100vh;
-	}
+  .nav-groups {
+    height: 100%;
+    padding: 2rem 0;
+    overflow-x: visible;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
 
-	.nav-groups > li + li {
-		margin-top: 2rem;
-	}
+  .nav-groups > li + li {
+    margin-top: 2rem;
+  }
 
-	.nav-groups > :first-child {
-		padding-top: var(--doc-padding);
-	}
+  .nav-groups > :first-child {
+    padding-top: var(--doc-padding);
+  }
 
-	.nav-groups > :last-child {
-		padding-bottom: 2rem;
-		margin-bottom: var(--theme-navbar-height);
-	}
+  .nav-groups > :last-child {
+    padding-bottom: 2rem;
+    margin-bottom: var(--theme-navbar-height);
+  }
 
-	.nav-group-title {
-		font-size: 1rem;
-		font-weight: 700;
-		padding: 0.1rem 1rem;
-		text-transform: uppercase;
-		margin-bottom: 0.5rem;
-	}
+  .TabGroup {
+    display: flex;
+    border-bottom: 4px solid var(--theme-divider);
+  }
+  .TabGroup .active,
+  .TabGroup [aria-selected="true"] {
+    color: var(--theme-text);
+    border-bottom-color: var(--theme-accent);
+	font-weight: bold;
+	font-size: 24px;
+  }
+  .TabGroup button,
+  .TabGroup a {
+    flex: 1;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 0.6rem 1rem;
+    color: var(--theme-text-light);
+    border-bottom: 4px solid transparent;
+    margin-bottom: -4px;
+    background-color: transparent;
+    text-decoration: none;
+  }
 
-	.nav-link a {
-		font-size: 1rem;
-		margin: 1px;
-		padding: 0.3rem 1rem;
-		font: inherit;
-		color: inherit;
-		text-decoration: none;
-		display: block;
-	}
+  details > summary {
+    list-style: none;
+  }
 
-	.nav-link a:hover,
-	.nav-link a:focus {
-		background-color: var(--theme-bg-hover);
-	}
+  details[open] > summary svg {
+    transform: rotate(90deg);
+  }
 
-	.nav-link a[aria-current='page'] {
-		color: var(--theme-text-accent);
-		background-color: var(--theme-bg-accent);
-		font-weight: 600;
-	}
+  svg {
+    transform: rotate(0);
+    transition: 0.2s transform ease;
+    vertical-align: middle;
+  }
 
-	@media (min-width: 50em) {
-		.nav-groups {
-			padding: 0;
-		}
-	}
+  .nav-group-title {
+    font-size: 1rem;
+    font-weight: 600;
+    /* padding: 0.1rem 1rem; */
+    /* text-transform: uppercase; */
+    /* margin-bottom: 0.5rem; */
+  }
+
+  .nav-link a {
+    font-size: 1rem;
+    margin: 1px;
+    padding: 0.3rem 1rem;
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+
+  .nav-link a:hover,
+  .nav-link a:focus {
+    background-color: var(--theme-bg-hover);
+  }
+
+  .nav-link a[aria-current="page"] {
+    color: var(--theme-text-accent);
+    background-color: var(--theme-bg-accent);
+    font-weight: 600;
+  }
+
+  @media (min-width: 50em) {
+    .nav-groups {
+      padding: 0;
+    }
+  }
 </style>
 
 <style is:global>
-	:root.theme-dark .nav-link a[aria-current='page'] {
-		color: hsla(var(--color-base-white), 100%, 1);
-	}
+  :root.theme-dark .nav-link a[aria-current="page"] {
+    color: hsla(var(--color-base-white), 100%, 1);
+  }
 </style>

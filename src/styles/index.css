@@ -612,21 +612,3 @@ html {
 		transition: none !important;
 	}
 }
-
-
-
-
-
-
-#left-sidebar:where(.astro-37FXCHFA) {
-    display: none;
-    background: var(--theme-bg-gradient);
-    z-index: 10;
-    inset-inline-start: 0;
-}
-.sidebar:where(.astro-37FXCHFA) {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    padding: 0;
-}
