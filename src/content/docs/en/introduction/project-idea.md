@@ -1,5 +1,5 @@
 ---
-title: "Page 4"
+title: "Project Idea"
 description: "Lorem ipsum dolor sit amet - 4"
 ---
 
