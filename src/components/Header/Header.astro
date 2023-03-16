@@ -16,25 +16,24 @@ const lang = getLanguageFromURL(currentPage);
 
 <header>
   <nav class="nav-wrapper" title="Top Navigation" aria-label="Top">
-    <div class="menu-toggle">
-      <!-- <SidebarToggle client:idle /> -->
-    </div>
+    <!-- <div class="menu-toggle">
+      <SidebarToggle client:idle />
+    </div> -->
     <div class="logo flex">
-      <a href="/">
+      <a href="/wild-chess-simulator">
         <AstroLogo size={40} />
         <h1>{SITE.title ?? "Documentation"}</h1>
       </a>
     </div>
-    <div style="flex-grow: 1;"></div>
+    <!-- <div style="flex-grow: 1;"></div> -->
     <!-- {KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />} -->
-    <div class="search-item">
-      <!-- <Search client:idle /> -->
-    </div>
+    <!-- <div class="search-item">
+      <Search client:idle />
+    </div> -->
   </nav>
 </header>
 
 <style>
-
   header {
     position: fixed;
     left: 0;
@@ -88,16 +87,6 @@ const lang = getLanguageFromURL(currentPage);
     color: inherit;
     margin: 0;
   }
-
-  /* .nav-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 1em;
-    width: 100%;
-    max-width: 82em;
-    padding: 0 1rem;
-  } */
 
   .nav-wrapper {
     display: flex;
