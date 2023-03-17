@@ -1,5 +1,10 @@
 {
-    "files.associations": {
-        "*.mdx": "markdown"
-    }
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

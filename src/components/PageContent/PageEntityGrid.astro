@@ -1,0 +1,82 @@
+---
+import PageEntityItem from "./PageEntityItem.astro";
+import EntityDataJsonFile from "../../../public/EntityDataJsonFile.json";
+
+const entityDataArray = EntityDataJsonFile.entityDataJsonArray;
+
+for (
+	let index = 0;
+	index < EntityDataJsonFile.entityDataJsonArray.length;
+	index++
+) {
+	const entityElement = EntityDataJsonFile.entityDataJsonArray[index];
+	console.log(entityElement.Name);
+}
+---
+
+<section class="cms-nav">
+	<section class="cards-nav">
+		<ul class="fluid-grid fluid-grid--minimal">
+			{
+				EntityDataJsonFile.entityDataJsonArray.map((entityData) => (
+					<PageEntityItem
+						cardTitle={entityData.Name}
+						cardLink="/wild-chess-simulator"
+						cardLogo="/icon/btn_icon_crown.png"
+					/>
+				))
+			}
+		</ul>
+	</section>
+</section>
+
+<style>
+	:is(h1, h2, h3, h4, h5, h6) + *,
+	.content > section > .heading-wrapper + * {
+		margin-top: 0;
+	}
+	.content > section > * + *,
+	.content > section > blockquote > * + *,
+	.content > section > :is(ul, ol) > li > * + *,
+	.content details > * + *,
+	.content * > astro-slot > * + * {
+		margin-top: 1.25rem;
+	}
+	.cards-nav {
+		padding: 2rem 0;
+		accent-color: var(--theme-accent-secondary);
+	}
+	.cms-nav > * {
+		margin-top: -2rem;
+	}
+	p,
+	.content ul {
+		color: var(--theme-text-light);
+	}
+	p,
+	.content ul,
+	.content ol {
+		line-height: 1.75;
+	}
+	.fluid-grid--minimal {
+		--column-min-width: 6rem;
+		gap: 1.5rem 0.75rem;
+	}
+	.fluid-grid {
+		--column-min-width: 13rem;
+		text-align: start;
+		padding: 2rem 0;
+		display: grid;
+		grid-template-columns: repeat(
+			auto-fill,
+			minmax(var(--column-min-width), 1fr)
+		);
+		grid-template-columns: repeat(
+			auto-fill,
+			minmax(min(var(--column-min-width), 100%), 1fr)
+		);
+		gap: 2rem;
+		list-style: none;
+		align-items: start;
+	}
+</style>

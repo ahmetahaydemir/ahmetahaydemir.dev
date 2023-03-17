@@ -39,6 +39,7 @@ export const SIDEBAR: Sidebar = {
 		'Introduction': [
 			{ text: 'Welcome', link: `welcome` },
 			{ text: 'Project Idea', link: `project-idea` },
+			{ text: 'Entity List', link: `entity-list` },
 		],
         'Devlog': [
 			{ text: 'Color Theme - 1', link: 'color-theme' },			

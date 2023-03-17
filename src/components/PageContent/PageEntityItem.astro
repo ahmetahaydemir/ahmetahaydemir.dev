@@ -1,0 +1,83 @@
+---
+const { cardTitle, cardLink, cardLogo } = Astro.props;
+---
+
+<script>
+	// Find all buttons with the `alert` class on the page.
+	const cards = document.querySelectorAll("div.home-page-card");
+	const links = document.querySelectorAll("div.home-page-card-link a");
+	// Handle clicks on each button.
+	for (let index = 0; index < cards.length; index++) {
+		const element = cards[index];
+		element.addEventListener("click", () => {
+			window.location.href = links[index].toString();
+		});
+	}
+</script>
+
+<div class="card card--minimal">
+	<div class="logo circle">
+		<img
+			src={cardLogo}
+			alt={cardTitle}
+			loading="lazy"
+			decoding="async"
+			width="100"
+			height="100"
+		/>
+	</div>
+	<div class="stack">
+		<a href={cardLink}>
+			{cardTitle}
+		</a>
+	</div>
+</div>
+
+<style>
+	.card--minimal {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+		gap: 0.5rem;
+	}
+	.card {
+		position: relative;
+		margin: -0.5rem;
+		padding: 0.5rem;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 0.75rem;
+		align-items: center;
+		border-radius: 1rem;
+	}
+
+	.circle {
+		border-radius: 50%;
+	}
+	.logo {
+		--logo-size: 4rem;
+		--logo-padding: 0.2em;
+		display: flex;
+		place-content: center;
+		font-size: var(--logo-size);
+		width: 1em;
+		height: 1em;
+		background-color: var(--theme-code-bg);
+		box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse);
+		outline: 1px solid transparent;
+		overflow: hidden;
+	}
+	.logo img {
+		padding: var(--logo-padding);
+		width: 100%;
+		height: 100%;
+	}
+	img,
+	video {
+		max-width: 100%;
+	}
+	* {
+		box-sizing: border-box;
+		margin: 0;
+	}
+</style>
