@@ -1,14 +1,26 @@
 ---
-title: "Entities"
-description: "Docs intro"
+title: "Entity List"
+description: "All of the battle entities with their origins and classes"
 ---
 
 import PageEntityGrid from "../../../../components/PageContent/PageEntityGrid.astro";
 
+export const filterText = "Scout";
+
 I can link internally to [my conclusion](#conclusion) on the same page when writing Markdown.
 
-## Battle Entity
+## Healer Entities
 
-I live on **Mars** but feel free to
+<PageEntityGrid gridClassFilter="Healer" />
 
-<PageEntityGrid/>
+## Pet Entities
+
+<PageEntityGrid gridOriginFilter="Pet" />
+
+## Arctic Hunter Entities
+
+<PageEntityGrid gridOriginFilter="Arctic" gridClassFilter="Hunter" />
+
+## All Entities
+
+<PageEntityGrid />

@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import EntityDataJsonFile from "../../../public/EntityDataJsonFile.json";
+//
+export let entryMark = await getCollection("docs", (data) => {
+	return data.id.includes("entity-detail");
+});
+export let entryMarkFirst = entryMark[0];
+export const entityMarkBaseURL = entryMarkFirst.slug.split("/").splice(0, 2).join("/");
+const { Content, headings } = await entryMarkFirst?.render();
+//
+export async function getStaticPaths() {
+	return EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
+		params: {
+			battleEntityName:
+				entityMarkBaseURL + "/" + entry.Name.toLowerCase().split(" ").join("-"),
+		},
+		props: { battleEntity: entry },
+	}));
+}
+//
+const { battleEntityName } = Astro.params;
+const { battleEntity } = Astro.props;
+//
+entryMarkFirst.data.title = battleEntity.Name;
+---
+
+<MainLayout headings={headings} {...entryMarkFirst.data}>
+	<Content />
+	<a>
+		{battleEntityName}
+	</a>
+	<a>
+		{battleEntity.Class}
+		{battleEntity.Origin}
+	</a>
+</MainLayout>

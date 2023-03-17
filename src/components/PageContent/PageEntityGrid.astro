@@ -2,15 +2,33 @@
 import PageEntityItem from "./PageEntityItem.astro";
 import EntityDataJsonFile from "../../../public/EntityDataJsonFile.json";
 
-const entityDataArray = EntityDataJsonFile.entityDataJsonArray;
+const { gridOriginFilter, gridClassFilter } = Astro.props;
+const entityBasePath = "../battle-entities/";
+const filteredGridArray = EntityDataJsonFile.entityDataJsonArray
+	.reduce(filterOriginName, [])
+	.reduce(filterClassName, []);
 
-for (
-	let index = 0;
-	index < EntityDataJsonFile.entityDataJsonArray.length;
-	index++
-) {
-	const entityElement = EntityDataJsonFile.entityDataJsonArray[index];
-	console.log(entityElement.Name);
+function filterClassName(totalArray, currentValue) {
+	if (gridClassFilter) {
+		if (currentValue["Class"] === gridClassFilter) {
+			totalArray.push(currentValue);
+		}
+	} else {
+		totalArray.push(currentValue);
+	}
+	//
+	return totalArray;
+}
+function filterOriginName(totalArray, currentValue) {
+	if (gridOriginFilter) {
+		if (currentValue["Origin"] === gridOriginFilter) {
+			totalArray.push(currentValue);
+		}
+	} else {
+		totalArray.push(currentValue);
+	}
+	//
+	return totalArray;
 }
 ---
 
@@ -18,12 +36,11 @@ for (
 	<section class="cards-nav">
 		<ul class="fluid-grid fluid-grid--minimal">
 			{
-				EntityDataJsonFile.entityDataJsonArray.map((entityData) => (
-					<PageEntityItem
-						cardTitle={entityData.Name}
-						cardLink="/wild-chess-simulator"
-						cardLogo="/icon/btn_icon_crown.png"
-					/>
+				filteredGridArray.map((entityData) => (
+					<PageEntityItem 
+					cardTitle={entityData.Name}
+					cardLink= {entityBasePath + entityData.Name.toString().toLowerCase().split(' ').join('-')})
+					cardLogo="/preact.svg" />
 				))
 			}
 		</ul>
@@ -31,37 +48,6 @@ for (
 </section>
 
 <style>
-	:is(h1, h2, h3, h4, h5, h6) + *,
-	.content > section > .heading-wrapper + * {
-		margin-top: 0;
-	}
-	.content > section > * + *,
-	.content > section > blockquote > * + *,
-	.content > section > :is(ul, ol) > li > * + *,
-	.content details > * + *,
-	.content * > astro-slot > * + * {
-		margin-top: 1.25rem;
-	}
-	.cards-nav {
-		padding: 2rem 0;
-		accent-color: var(--theme-accent-secondary);
-	}
-	.cms-nav > * {
-		margin-top: -2rem;
-	}
-	p,
-	.content ul {
-		color: var(--theme-text-light);
-	}
-	p,
-	.content ul,
-	.content ol {
-		line-height: 1.75;
-	}
-	.fluid-grid--minimal {
-		--column-min-width: 6rem;
-		gap: 1.5rem 0.75rem;
-	}
 	.fluid-grid {
 		--column-min-width: 13rem;
 		text-align: start;
@@ -78,5 +64,10 @@ for (
 		gap: 2rem;
 		list-style: none;
 		align-items: start;
+	}
+
+	.fluid-grid--minimal {
+		--column-min-width: 6rem;
+		gap: 1.5rem 0.75rem;
 	}
 </style>

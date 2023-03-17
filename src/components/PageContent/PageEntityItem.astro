@@ -4,8 +4,8 @@ const { cardTitle, cardLink, cardLogo } = Astro.props;
 
 <script>
 	// Find all buttons with the `alert` class on the page.
-	const cards = document.querySelectorAll("div.home-page-card");
-	const links = document.querySelectorAll("div.home-page-card-link a");
+	const cards = document.querySelectorAll("div.card--minimal");
+	const links = document.querySelectorAll("div.cardText a");
 	// Handle clicks on each button.
 	for (let index = 0; index < cards.length; index++) {
 		const element = cards[index];
@@ -26,7 +26,7 @@ const { cardTitle, cardLink, cardLogo } = Astro.props;
 			height="100"
 		/>
 	</div>
-	<div class="stack">
+	<div class="cardText">
 		<a href={cardLink}>
 			{cardTitle}
 		</a>
@@ -34,12 +34,6 @@ const { cardTitle, cardLink, cardLogo } = Astro.props;
 </div>
 
 <style>
-	.card--minimal {
-		grid-template-columns: 1fr;
-		justify-items: center;
-		text-align: center;
-		gap: 0.5rem;
-	}
 	.card {
 		position: relative;
 		margin: -0.5rem;
@@ -49,8 +43,18 @@ const { cardTitle, cardLink, cardLogo } = Astro.props;
 		gap: 0.75rem;
 		align-items: center;
 		border-radius: 1rem;
+		transition: ease-in-out 0.1s;
 	}
-
+	.card--minimal {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+		gap: 0.5rem;
+	}
+	.cardText a{
+		font-weight: 500;
+		text-decoration: none;
+	}
 	.circle {
 		border-radius: 50%;
 	}
@@ -60,12 +64,17 @@ const { cardTitle, cardLink, cardLogo } = Astro.props;
 		display: flex;
 		place-content: center;
 		font-size: var(--logo-size);
-		width: 1em;
-		height: 1em;
+		width: 1.25em;
+		height: 1.25em;
 		background-color: var(--theme-code-bg);
 		box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse);
 		outline: 1px solid transparent;
 		overflow: hidden;
+	}
+	.card:hover {
+		background-color: rgba(0, 0, 0, 0.25);
+		transition: ease-in-out 0.2s;
+		cursor: pointer;
 	}
 	.logo img {
 		padding: var(--logo-padding);
@@ -75,9 +84,5 @@ const { cardTitle, cardLink, cardLogo } = Astro.props;
 	img,
 	video {
 		max-width: 100%;
-	}
-	* {
-		box-sizing: border-box;
-		margin: 0;
 	}
 </style>

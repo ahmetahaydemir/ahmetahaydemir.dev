@@ -30,10 +30,17 @@ export const ALGOLIA = {
 	apiKey: 'XXXXXXXXXX',
 };
 
+import EntityDataJsonFile from '../public/EntityDataJsonFile.json'
+// export let someName = EntityDataJsonFile.entityDataJsonArray[2].Name.toString();
+export let entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
+	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+}));
+
 export type Sidebar = Record<
 	(typeof KNOWN_LANGUAGE_CODES)[number],
 	Record<string, { text: string; link: string }[]>
 >;
+
 export const SIDEBAR: Sidebar = {
 	en: {
 		'Introduction': [
@@ -41,13 +48,9 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Project Idea', link: `project-idea` },
 			{ text: 'Entity List', link: `entity-list` },
 		],
-        'Devlog': [
-			{ text: 'Color Theme - 1', link: 'color-theme' },			
+		'Devlog': [
+			{ text: 'Color Theme - 1', link: 'color-theme' },
 		],
-        'Battle Entities': [
-			{ text: 'Llama', link: 'llama' },
-			{ text: 'Dog', link: 'dog' },
-			{ text: 'Bear', link: 'bear' },
-		]
+		'Battle Entities': entitySidebarList,
 	},
 };
