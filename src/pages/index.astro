@@ -1,5 +1,5 @@
 ---
-import HoverCard from "../components/HoverCard.astro";
+import PageButtonCard from "../components/PageContent/PageButtonCard.astro";
 import VisualBackground from "../layouts/VisualBackground.astro";
 ---
 
@@ -19,11 +19,33 @@ import VisualBackground from "../layouts/VisualBackground.astro";
     />
     <img draggable="false" inputmode="none" />
   </div>
-  <div class="container">
-    <HoverCard title="Wild Chess Simulator" link="/wild-chess-simulator" />
-    <HoverCard title="Itch.io" link="https://ahmetahaydemir.itch.io/" />
-    <HoverCard title="Devlog" link="https://www.youtube.com/@ahmetahaydemir" />
-    <HoverCard title="Favourites" link="/fav-list" />
-    <HoverCard title="Resume" link="/resume" />
+  <div class="home-page-container">
+    <div class="home-page-grid">
+      <PageButtonCard
+        cardTitle="Wild Chess Simulator"
+        cardLink="/wild-chess-simulator"
+        cardLogo="/icon/btn_icon_crown.png"
+      />
+      <PageButtonCard
+        cardTitle="Devlog"
+        cardLink="https://www.youtube.com/@ahmetahaydemir"
+        cardLogo="/icon/btn_icon_youtube.png"
+      />
+      <PageButtonCard
+        cardTitle="Itch.io"
+        cardLink="https://ahmetahaydemir.itch.io/"
+        cardLogo="/icon/btn_icon_gift.png"
+      />
+      <PageButtonCard
+        cardTitle="Favourites"
+        cardLink="/fav-list"
+        cardLogo="/icon/btn_icon_ranking.png"
+      />
+      <PageButtonCard
+        cardTitle="Resume"
+        cardLink="/resume"
+        cardLogo="/icon/btn_icon_book.png"
+      />
+    </div>
   </div>
 </VisualBackground>
