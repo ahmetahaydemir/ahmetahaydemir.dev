@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import ClassDataJsonFile from "../../../public/ClassDataJsonFile.json";
+//
+export let entryMark = await getCollection("docs", (data) => {
+	return data.id.includes("class-base-document");
+});
+export let entryMarkFirst = entryMark[0];
+export const markBaseURL = entryMarkFirst.slug.split("/").splice(0, 2).join("/");
+const { Content, headings } = await entryMarkFirst?.render();
+//
+export async function getStaticPaths() {
+	return ClassDataJsonFile.classDataJsonArray.map((entry) => ({
+		params: {
+			className:
+            markBaseURL + "/" + entry.Class.toLowerCase().split(" ").join("-"),
+		},
+		props: { classObject: entry },
+	}));
+}
+//
+const { className } = Astro.params;
+const { classObject } = Astro.props;
+//
+entryMarkFirst.data.title = classObject.Class;
+---
+
+<MainLayout headings={headings} {...entryMarkFirst.data}>
+	<Content />
+	<a>
+		{classObject.Class}
+	</a>
+</MainLayout>

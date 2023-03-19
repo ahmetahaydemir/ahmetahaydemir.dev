@@ -31,9 +31,17 @@ export const ALGOLIA = {
 };
 
 import EntityDataJsonFile from '../public/EntityDataJsonFile.json'
+import OriginDataJsonFile from '../public/OriginDataJsonFile.json'
+import ClassDataJsonFile from '../public/ClassDataJsonFile.json'
 // export let someName = EntityDataJsonFile.entityDataJsonArray[2].Name.toString();
-export let entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
+export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+}));
+export const originSidebarList = OriginDataJsonFile.originDataJsonArray.map((entry) => ({
+	text: entry.Origin, link: entry.Origin.toLowerCase().split(' ').join('-')
+}));
+export const classSidebarList =  ClassDataJsonFile.classDataJsonArray.map((entry) => ({
+	text: entry.Class, link: entry.Class.toLowerCase().split(' ').join('-')
 }));
 
 export type Sidebar = Record<
@@ -52,5 +60,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Color Theme - 1', link: 'color-theme' },
 		],
 		'Battle Entities': entitySidebarList,
+		'Origins': originSidebarList,
+		'Classes': classSidebarList,
 	},
 };
