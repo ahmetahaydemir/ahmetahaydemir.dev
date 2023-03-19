@@ -1,5 +1,5 @@
 ---
-const { cardTitle, cardLink, cardLogo } = Astro.props;
+const { cardTitle, cardDesc, cardLink, cardLogo } = Astro.props;
 ---
 
 <script>
@@ -30,6 +30,9 @@ const { cardTitle, cardLink, cardLogo } = Astro.props;
 		<a href={cardLink}>
 			{cardTitle}
 		</a>
+		<p style="display: none;">
+			{cardDesc}
+		</p>
 	</div>
 </div>
 
@@ -51,7 +54,7 @@ const { cardTitle, cardLink, cardLogo } = Astro.props;
 		text-align: center;
 		gap: 0.5rem;
 	}
-	.cardText a{
+	.cardText a {
 		font-weight: 500;
 		text-decoration: none;
 	}

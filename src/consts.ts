@@ -59,8 +59,8 @@ export const SIDEBAR: Sidebar = {
 		'Devlog': [
 			{ text: 'Color Theme - 1', link: 'color-theme' },
 		],
-		'Battle Entities': entitySidebarList,
 		'Origins': originSidebarList,
 		'Classes': classSidebarList,
+		'Battle Entities': entitySidebarList,
 	},
 };

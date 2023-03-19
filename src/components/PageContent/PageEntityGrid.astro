@@ -2,26 +2,19 @@
 import PageEntityItem from "./PageEntityItem.astro";
 import EntityDataJsonFile from "../../../public/EntityDataJsonFile.json";
 
-const { gridOriginFilter, gridClassFilter } = Astro.props;
+let { gridFilter } = Astro.props;
+
 const entityBasePath = "../battle-entities/";
 const filteredGridArray = EntityDataJsonFile.entityDataJsonArray
-	.reduce(filterOriginName, [])
-	.reduce(filterClassName, []);
+	.reduce(filterGrid, []);
 
-function filterClassName(totalArray, currentValue) {
-	if (gridClassFilter) {
-		if (currentValue["Class"] === gridClassFilter) {
+function filterGrid(totalArray, currentValue) {
+	if (gridFilter) {
+		if (currentValue["Class"].toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
-		}
-	} else {
-		totalArray.push(currentValue);
-	}
-	//
-	return totalArray;
-}
-function filterOriginName(totalArray, currentValue) {
-	if (gridOriginFilter) {
-		if (currentValue["Origin"] === gridOriginFilter) {
+		}else if (currentValue["Origin"].toLowerCase().includes(gridFilter)) {
+			totalArray.push(currentValue);
+		}else if (currentValue["Name"].toLowerCase().includes(gridFilter) ) {
 			totalArray.push(currentValue);
 		}
 	} else {
@@ -31,14 +24,41 @@ function filterOriginName(totalArray, currentValue) {
 	return totalArray;
 }
 ---
+<script client:load>
+	function searchFilterText(){
+		window.inputBar = document.getElementById("entity-grid-search");
+		window.gridContainer = document.getElementById("entity-grid-container").children;
+		//
+		console.log(window.inputBar.value);
+		//
+		for (let index = 0; index < gridContainer.length; index++) {			
+			if(gridContainer[index].lastElementChild.textContent.toLowerCase().indexOf(inputBar.value.toLowerCase()) > -1){
+				gridContainer[index].style.display = "";
+			}else{
+				gridContainer[index].style.display = "none";
+			}
+		}
+	}
+	//
+	setTimeout(searchFilterText, 100);
+</script>
 
+<input
+type="search"
+id="entity-grid-search"
+class="entity-grid-search"
+oninput="searchFilterText()"
+placeholder="Search for entities/classes/origins..."
+size="40"
+>
 <section class="cms-nav">
 	<section class="cards-nav">
-		<ul class="fluid-grid fluid-grid--minimal">
+		<ul class="fluid-grid fluid-grid--minimal" id="entity-grid-container">
 			{
 				filteredGridArray.map((entityData) => (
 					<PageEntityItem 
 					cardTitle={entityData.Name}
+					cardDesc= {entityData.Origin +"|"+ entityData.Class}
 					cardLink= {entityBasePath + entityData.Name.toString().toLowerCase().split(' ').join('-')})
 					cardLogo="/preact.svg" />
 				))
@@ -69,5 +89,37 @@ function filterOriginName(totalArray, currentValue) {
 	.fluid-grid--minimal {
 		--column-min-width: 6rem;
 		gap: 1.5rem 0.75rem;
+	}
+
+	.entity-grid-search {
+		width: 100%;
+		height: 4rem;
+		background-color: var(--theme-navbar-bg);
+		border-color: var(--theme-selection-bg);
+		text-align: center;
+		border-style: dashed;
+		transition: ease-in-out 0.25s;
+		color: var(--theme-text-accent);
+		font-weight: bolder;
+		font-size: 1rem;
+	}
+	.entity-grid-search::placeholder {
+		color: var(--theme-text-light);
+	}
+	.entity-grid-search:hover {
+		border-radius: 1rem;
+		border-color: var(--theme-text-accent);
+		transition: ease-in-out 0.25s;
+	}
+	.entity-grid-search:focus {
+		border-radius: 2rem;
+		border-style: dashed;
+		background-color: var(--theme-bg-accent);
+		border-color: var(--theme-text-accent);
+		transition: ease-in-out 0.25s;
+		outline: none;
+	}
+	.entity-grid-search::-webkit-search-cancel-button {
+		display: none;
 	}
 </style>
