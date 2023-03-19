@@ -382,6 +382,7 @@ table {
 	margin: 0;
 	border-collapse: collapse;
 	line-height: 1.8;
+	text-align: center;
 }
 
 /* Zebra striping */
@@ -393,8 +394,7 @@ th {
 }
 td,
 th {
-	padding: 6px;
-	text-align: start;
+	padding: 16px;
 }
 
 blockquote code {

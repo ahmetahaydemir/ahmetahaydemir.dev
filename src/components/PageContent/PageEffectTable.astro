@@ -1,0 +1,48 @@
+---
+const { effectArray } = Astro.props;
+---
+
+<table class="effect-table">
+	<tr>
+		<th>Size</th>
+		<th>Effect Description</th>
+	</tr>
+	<tr>
+		<td>{effectArray.EffectL1}</td>
+		<td>{effectArray.EffectD1}</td>
+	</tr>
+	<tr>
+		<td>{effectArray.EffectL2}</td>
+		<td>{effectArray.EffectD2}</td>
+	</tr>
+	<tr>
+		<td>{effectArray.EffectL3}</td>
+		<td>{effectArray.EffectD3}</td>
+	</tr>
+	<tr>
+		<td>{effectArray.EffectL4}</td>
+		<td>{effectArray.EffectD4}</td>
+	</tr>
+</table>
+
+<style>
+	.effect-table {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+		border: 1px solid #ddd;
+	}
+	.effect-table tr:hover {
+		background-color: var(--theme-bg-hover);
+	}
+	.effect-table th {
+		background-color: var(--theme-selection-bg);
+		font-weight: bolder;
+		border-bottom: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+	}
+	.effect-table td {
+		font-weight: bold;
+		border-bottom: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+	}
+</style>

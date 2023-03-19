@@ -29,8 +29,6 @@ function filterGrid(totalArray, currentValue) {
 		window.inputBar = document.getElementById("entity-grid-search");
 		window.gridContainer = document.getElementById("entity-grid-container").children;
 		//
-		console.log(window.inputBar.value);
-		//
 		for (let index = 0; index < gridContainer.length; index++) {			
 			if(gridContainer[index].lastElementChild.textContent.toLowerCase().indexOf(inputBar.value.toLowerCase()) > -1){
 				gridContainer[index].style.display = "";

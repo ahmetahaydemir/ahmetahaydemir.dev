@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
 import EntityDataJsonFile from "../../../public/EntityDataJsonFile.json";
+import PageButtonClassOrigin from "../../components/PageContent/PageButtonClassOrigin.astro";
 //
 export let entryMark = await getCollection("docs", (data) => {
 	return data.id.includes("entity-detail");
@@ -28,11 +29,5 @@ entryMarkFirst.data.title = battleEntity.Name;
 
 <MainLayout headings={headings} {...entryMarkFirst.data}>
 	<Content />
-	<a>
-		{battleEntity.Name}
-	</a>
-	<a>
-		{battleEntity.Class}
-		{battleEntity.Origin}
-	</a>
+	<PageButtonClassOrigin originName={battleEntity.Origin} className={battleEntity.Class} />
 </MainLayout>

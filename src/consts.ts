@@ -33,7 +33,6 @@ export const ALGOLIA = {
 import EntityDataJsonFile from '../public/EntityDataJsonFile.json'
 import OriginDataJsonFile from '../public/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/ClassDataJsonFile.json'
-// export let someName = EntityDataJsonFile.entityDataJsonArray[2].Name.toString();
 export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));

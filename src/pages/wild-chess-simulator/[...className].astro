@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
 import ClassDataJsonFile from "../../../public/ClassDataJsonFile.json";
+import PageEntityGrid from "../../components/PageContent/PageEntityGrid.astro";
+import PageEffectTable from "../../components/PageContent/PageEffectTable.astro";
 //
 export let entryMark = await getCollection("docs", (data) => {
 	return data.id.includes("class-base-document");
@@ -14,18 +16,20 @@ export async function getStaticPaths() {
 	return ClassDataJsonFile.classDataJsonArray.map((entry) => ({
 		params: {
 			className:
-            markBaseURL + "/" + entry.Class.toLowerCase().split(" ").join("-"),
+				markBaseURL + "/" + entry.Class.toLowerCase().split(" ").join("-"),
 		},
-		props: { classObject: entry },
+		props: { classObject: entry, classString: entry.Class.toLowerCase() },
 	}));
 }
 //
 const { className } = Astro.params;
-const { classObject } = Astro.props;
+const { classObject, classString } = Astro.props;
 //
 entryMarkFirst.data.title = classObject.Class;
 ---
 
 <MainLayout headings={headings} {...entryMarkFirst.data}>
 	<Content />
+	<PageEffectTable effectArray={classObject} />
+	<PageEntityGrid gridFilter={classString} />
 </MainLayout>

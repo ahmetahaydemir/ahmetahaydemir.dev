@@ -23,3 +23,14 @@ To get started with this theme, check out the `README.md` in your new project di
 Found a missing feature that you can't live without? Please suggest it [on our Discord](https://astro.build/chat) and even consider adding it yourself on GitHub! Astro is an open source project and contributions from developers like you are how we grow!
 
 Good luck out there, Astronaut. 🧑‍🚀
+
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley

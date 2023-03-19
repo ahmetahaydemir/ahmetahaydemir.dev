@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
 import OriginDataJsonFile from "../../../public/OriginDataJsonFile.json";
+import PageEntityGrid from "../../components/PageContent/PageEntityGrid.astro";
+import PageEffectTable from "../../components/PageContent/PageEffectTable.astro";
 //
 export let entryMark = await getCollection("docs", (data) => {
 	return data.id.includes("origin-base-document");
@@ -14,18 +16,20 @@ export async function getStaticPaths() {
 	return OriginDataJsonFile.originDataJsonArray.map((entry) => ({
 		params: {
 			originName:
-            markBaseURL + "/" + entry.Origin.toLowerCase().split(" ").join("-"),
+				markBaseURL + "/" + entry.Origin.toLowerCase().split(" ").join("-"),
 		},
-		props: { origin: entry },
+		props: { origin: entry, originString: entry.Origin.toLowerCase() },
 	}));
 }
 //
 const { originName } = Astro.params;
-const { origin } = Astro.props;
+const { origin, originString } = Astro.props;
 //
 entryMarkFirst.data.title = origin.Origin;
 ---
 
 <MainLayout headings={headings} {...entryMarkFirst.data}>
 	<Content />
+	<PageEffectTable effectArray={origin} />
+	<PageEntityGrid gridFilter={originString} />
 </MainLayout>
