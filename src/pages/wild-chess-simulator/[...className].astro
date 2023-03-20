@@ -26,6 +26,7 @@ const { className } = Astro.params;
 const { classObject, classString } = Astro.props;
 //
 entryMarkFirst.data.title = "Class - " + classObject.Name;
+entryMarkFirst.data.description = entryMarkFirst.data.description + " - " + classObject.Name;
 ---
 
 <MainLayout headings={headings} {...entryMarkFirst.data}>

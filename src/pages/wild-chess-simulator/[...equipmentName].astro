@@ -24,6 +24,7 @@ const { equipmentName } = Astro.params;
 const { equipment, equipmentString } = Astro.props;
 //
 entryMarkFirst.data.title = "Equipment - " + equipment.Name;
+entryMarkFirst.data.description = entryMarkFirst.data.description + " - " + equipment.Name;
 ---
 
 <MainLayout headings={headings} {...entryMarkFirst.data}>

@@ -1,43 +1,24 @@
 ---
-title: "Website Launch - Devlog"
+title: "Website Launch"
 description: "Devlog Documentation"
 ---
+**`⠀⠀Date : 20.03.2023⠀⠀`**
 
 I have tried a couple of documentation tools for planning; but every choice I tried felt like a **hassle** more than a helpful guide for my game development process.
 
 So I started thinking about what I actually want from this **documentation process**. I want :
 
-- [ ] Terminology Dictionary
 - [ ] Data Distribution & Analytics
 - [ ] Progress Tracking
-- [ ] Game Wiki
 - [ ] Scope Awareness
+- [ ] Terminology Dictionary
+- [ ] Game Wiki
 - [ ] Public Feedback
 - [ ] Future Roadmap
 
-I am not going to bore you with what these goals mean for me; but after having a good look at these goals, I realized that a personal website would suit me the best.
+I am not going to bore you with what these goals mean for me; you can look at the reasonings below if you are interested in the thought process. 
 
-## Terminology Dictionary
-
-What **things** are called **what** in the game? And do they **make sense** in the **overall picture**?
-
-What is an equipment, what is a battle entity and so on?
-
-Now that I have to write an explanation in this documentation, I will validate my code structure and decisions.
-
-If it doesn't make sense in this documentation, it doesn't make sense for the game as well.
-
-And that calls for a revision.
-
-## Data Distribution & Analytics
-
-I work as a digital analytics lead in real life, so I would like to do a couple of cool things on how I track my players. And those cool things I mention would require having my own site.
-
-This website will also allow me to create custom endpoints for my own API Routes. I will be able to use it as distributor for my database files. Update it once on the site and use
-
-Since the data is also parsed by the site to generate the documentation, this will be a testing/validation step for the files as well.
-
-## Web Framework
+But after having a good look at these goals, I realized that a personal website would suit me the best.
 
 None of the goals I described above required a lot of page interactivity. I needed a framework that is focused on documenting stuff which consists of statically generated pages.
 
@@ -46,3 +27,67 @@ I reviewed a couple of documentation focused **JavaScript frameworks** and event
 I have no experience as a web developer, but looks like this [framework's documentation](https://docs.astro.build/en/getting-started/) is quite informative which is one of the reasons I will go with it. 
 
 If you are reading this, it looks like I managed to do so : )
+
+## Data Distribution & Analytics
+
+I work as a digital analytics lead in real life, so I would like to do a couple of cool things on how I track the players. And those cool things I mention would require me having my own site.
+
+This website will also allow me to create custom endpoints for my own API Routes. I will be able to use it as a distributor for my database files. Update it once on the site and use it everywhere.
+
+Since the data is also parsed by the site to generate the documentations, this will also be a testing/validation step for the data files as well.
+
+## Progress Tracking
+
+Devlog posts like these will be enough for me to track my progress.
+
+I love watching devlog series on Youtube. It is harder to create video based content, but it is easier to consume by other people. So it would be nice to add video form devlogs at some point as well. 
+
+But I would like to start that part once I am aware that the game will be finished. So many incomplete projects, it hurts... : )
+
+## Scope Awareness
+
+Creating a website is easier than developing a game. Not sure if that's a hot take : )
+
+So if I struggle with the development of the website, it will just be multiplied by 10x once I translate it into the game engine.
+
+It is harder to refactor on there so if I will realize a manual aspect of my framework, I would like to realize it in here rather than there.
+
+## Terminology Dictionary
+
+What **things** are called **what** in the game? And do they **make sense** in the **overall picture**?
+
+What is an equipment, what is a battle entity and so on?
+
+Now that I have to write an explanation in this documentation for everything, I will validate my code structure and decisions.
+
+If it doesn't make sense in this documentation, it doesn't make sense for the game as well.
+
+And that calls for a revision.
+
+## Game Wiki
+
+This game is aimed to be a rogue-like with a lot of entities, skills, equipments and so on. 
+
+By nature of the genre, people will be in search of the total size and functionality of those factors. Strategize synergies and work towards trying them out.
+
+An interface where this process is easier to do is a must and that's what a wiki provide for players.
+
+The ideal way to do this is with an in-game library that tracks your discovery percentage, how much you have seen/obtained/discovered throughout your gameplay. And I am planning to do that.
+
+But even with games that have wonderful in-game interfaces, I find myself looking stuff up on Google a lot. When an idea pops up in your head, a quick search on web is faster to do so. 
+
+Rather than waiting for a community built wiki, I would like to fill that void beforehand to guide players to data that is validated by myself.
+
+## Public Feedback
+
+Since all my documentations are on a public site, I can just link it to a friend or a first time visitor to get their feedback, watch their reactions and so on.
+
+It would be nice to integrate a survey or discussion panel at one point. 
+
+Until the game gets played by a certain amount of people, manual feedback process will be enough.
+
+## Future Roadmap
+
+Progress tracking with the devlogs would be about what I did. This section would be about what the future devlogs would be about.
+
+This is not a necessity, but I want to find an easy way to dump my backlog into a section in here.

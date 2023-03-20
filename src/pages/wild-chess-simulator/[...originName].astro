@@ -26,6 +26,7 @@ const { originName } = Astro.params;
 const { origin, originString } = Astro.props;
 //
 entryMarkFirst.data.title = "Origin - " + origin.Name;
+entryMarkFirst.data.description = entryMarkFirst.data.description + " - " + origin.Name;
 ---
 
 <MainLayout headings={headings} {...entryMarkFirst.data}>

@@ -25,6 +25,7 @@ const { battleEntityName } = Astro.params;
 const { battleEntity } = Astro.props;
 //
 entryMarkFirst.data.title = battleEntity.Name;
+entryMarkFirst.data.description = entryMarkFirst.data.description + " - " + battleEntity.Name;
 ---
 
 <MainLayout headings={headings} {...entryMarkFirst.data}>

@@ -30,6 +30,7 @@ export const ALGOLIA = {
 	apiKey: 'XXXXXXXXXX',
 };
 
+import { getCollection } from 'astro:content';
 import EntityDataJsonFile from '../public/EntityDataJsonFile.json'
 import OriginDataJsonFile from '../public/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/ClassDataJsonFile.json'
@@ -40,11 +41,25 @@ export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((ent
 export const originSidebarList = OriginDataJsonFile.originDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
-export const classSidebarList =  ClassDataJsonFile.classDataJsonArray.map((entry) => ({
+export const classSidebarList = ClassDataJsonFile.classDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
-export const equipmentSidebarList =  EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
+export const equipmentSidebarList = EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+}));
+//
+export const devlogDocCollection = await getCollection("docs", (data) => {
+	return data.id.includes("devlog");
+});
+export const devlogSidebarList = devlogDocCollection.map((entry) => ({
+	text: entry.data.title, link: entry.data.title.toLowerCase().split(' ').join('-')
+}));
+//
+export const libraryDocCollection = await getCollection("docs", (data) => {
+	return data.id.includes("library");
+});
+export const librarySidebarList = libraryDocCollection.map((entry) => ({
+	text: entry.data.title, link: entry.data.title.toLowerCase().split(' ').join('-')
 }));
 
 export type Sidebar = Record<
@@ -57,11 +72,10 @@ export const SIDEBAR: Sidebar = {
 		'Introduction': [
 			{ text: 'Welcome', link: `welcome` },
 			{ text: 'Project Idea', link: `project-idea` },
-			{ text: 'Entity List', link: `entity-list` },
+			{ text: 'Roadmap', link: `roadmap` },
 		],
-		'Devlog': [
-			{ text: 'Website Launch - 1', link: 'website-launch' },
-		],
+		'Devlog': devlogSidebarList,
+		'Library': librarySidebarList,
 		'Equipments': equipmentSidebarList,
 		'Origins': originSidebarList,
 		'Classes': classSidebarList,
