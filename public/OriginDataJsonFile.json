@@ -1,114 +1,254 @@
 ﻿{
     "originDataJsonArray": [
         {
-            "Origin": "Arctic",
-            "EffectD1": "Arctic entities gain +1 Armor on skill trigger",
-            "EffectL1": "2",
-            "EffectD2": "Party entities will inflict -1 speed for 4 turns to the target with their first attack in combat",
-            "EffectL2": "4",
-            "EffectD3": "Arctic entities restore 1 health for every idle turn",
-            "EffectL3": "6",
-            "EffectD4": "Arctic entities will freeze the ground with their first attack which causes -2 speed to the enemy standing on it",
-            "EffectL4": "8"
+            "Name": "Arctic",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Arctic entities gain +1 Armor on skill trigger",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Party entities will inflict -1 speed for 4 turns to the target with their first attack in combat",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Arctic entities restore 1 health for every idle turn",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Arctic entities will freeze the ground with their first attack which causes -2 speed to the enemy standing on it",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Origin": "Desert",
-            "EffectD1": "Enemy team loses 1 Armor for every desert entity on combat start",
-            "EffectL1": "2",
-            "EffectD2": "Party entities will inflict -1 armor to the target with their first attack in combat",
-            "EffectL2": "4",
-            "EffectD3": "Enemy team loses 1 Power for every desert entity on combat start",
-            "EffectL3": "6",
-            "EffectD4": "Enemy entities loses 2 max health for every idle turn",
-            "EffectL4": "8"
+            "Name": "Desert",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Enemy team loses 1 Armor for every desert entity on combat start",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Party entities will inflict -1 armor to the target with their first attack in combat",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Enemy team loses 1 Power for every desert entity on combat start",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Enemy entities loses 2 max health for every idle turn",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Origin": "Farm",
-            "EffectD1": "Gain extra +2 gold per farm entities on every combat end",
-            "EffectL1": "2",
-            "EffectD2": "Party entities gain 1 extra experience point on node advance",
-            "EffectL2": "4",
-            "EffectD3": "Surviving farm entities gain +2 max health and +1 power on combat end",
-            "EffectL3": "6",
-            "EffectD4": "For every 10 gold you have, party entities gain +10 health, +2 Power and +2 Armor",
-            "EffectL4": "8"
+            "Name": "Farm",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Gain extra +2 gold per farm entities on every combat end",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Party entities gain 1 extra experience point on node advance",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Surviving farm entities gain +2 max health and +1 power on combat end",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "For every 10 gold you have, party entities gain +10 health, +2 Power and +2 Armor",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Origin": "Forest",
-            "EffectD1": "Forest entities gain +3 health, +1 power and +1 armor if they have an equipment",
-            "EffectL1": "2",
-            "EffectD2": "Party entities restore 4 health on skill trigger",
-            "EffectL2": "4",
-            "EffectD3": "Forest entities gain 10% power for every idle turn until they attack or trigger their skills",
-            "EffectL3": "6",
-            "EffectD4": "Front row entities gain 25% Health, back row entities gain %25 Power, middle row entities start the combat with action points ready",
-            "EffectL4": "8"
+            "Name": "Forest",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Forest entities gain +3 health, +1 power and +1 armor if they have an equipment",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Party entities restore 4 health on skill trigger",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Forest entities gain 10% power for every idle turn until they attack or trigger their skills",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Front row entities gain 25% Health, back row entities gain %25 Power, middle row entities start the combat with action points ready",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Origin": "Island",
-            "EffectD1": "Island entities gain +1 speed when there is no ally in contact",
-            "EffectL1": "2",
-            "EffectD2": "Island entities will remove an action point from the target with every attack in 10 turns ",
-            "EffectL2": "4",
-            "EffectD3": "Party entities gain infinite range",
-            "EffectL3": "6",
-            "EffectD4": "Island entities turn invisible until the next non-idle action every 3rd attack",
-            "EffectL4": "8"
+            "Name": "Island",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Island entities gain +1 speed when there is no ally in contact",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Island entities will remove an action point from the target with every attack in 10 turns ",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Party entities gain infinite range",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Island entities turn invisible until the next non-idle action every 3rd attack",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Origin": "Jungle",
-            "EffectD1": "Jungle entities gain +1 power & range",
-            "EffectL1": "2",
-            "EffectD2": "Attacks inflicted on enemies will have +4 power if enemy has no adjacent ally",
-            "EffectL2": "4",
-            "EffectD3": "Jungle entities can move up to 3 cells at a time",
-            "EffectL3": "6",
-            "EffectD4": "Jungle entities attack twice in every 3 attacks",
-            "EffectL4": "8"
+            "Name": "Jungle",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Jungle entities gain +1 power & range",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Attacks inflicted on enemies will have +4 power if enemy has no adjacent ally",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Jungle entities can move up to 3 cells at a time",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Jungle entities attack twice in every 3 attacks",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Origin": "Pet",
-            "EffectD1": "Party entities gain +2 max health for every pet entity",
-            "EffectL1": "2",
-            "EffectD2": "Party entities gain +1 armor and +1 power for every pet entity",
-            "EffectL2": "4",
-            "EffectD3": "Pet entities gain +1 speed for every alive pet in team",
-            "EffectL3": "6",
-            "EffectD4": "Action point requirements for skills are halved partywide",
-            "EffectL4": "8"
+            "Name": "Pet",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Party entities gain +2 max health for every pet entity",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Party entities gain +1 armor and +1 power for every pet entity",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Pet entities gain +1 speed for every alive pet in team",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Action point requirements for skills are halved partywide",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Origin": "River",
-            "EffectD1": "River entities gain +1 power if there is no ally in contact",
-            "EffectL1": "2",
-            "EffectD2": "Partywide +1 speed on entities",
-            "EffectL2": "4",
-            "EffectD3": "River entities gain +1 power after triggering their skills",
-            "EffectL3": "6",
-            "EffectD4": "When a river entity triggers its skill, other party entities gain an action point",
-            "EffectL4": "8"
+            "Name": "River",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "River entities gain +1 power if there is no ally in contact",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Partywide +1 speed on entities",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "River entities gain +1 power after triggering their skills",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "When a river entity triggers its skill, other party entities gain an action point",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Origin": "Safari",
-            "EffectD1": "Safari entities gain +1 power and action point when an entity dies",
-            "EffectL1": "2",
-            "EffectD2": "Party entities gain +1 power and restore 5 health for every confirmed kill",
-            "EffectL2": "4",
-            "EffectD3": "Safari entities restore %25 percent of their missing health on kill",
-            "EffectL3": "6",
-            "EffectD4": "Safari entities gain %20 more health and power for every empty active slot on combat start",
-            "EffectL4": "8"
+            "Name": "Safari",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Safari entities gain +1 power and action point when an entity dies",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Party entities gain +1 power and restore 5 health for every confirmed kill",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Safari entities restore %25 percent of their missing health on kill",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Safari entities gain %20 more health and power for every empty active slot on combat start",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Origin": "Sea",
-            "EffectD1": "Sea entities gain +4 max health for every sea entity in contact",
-            "EffectL1": "2",
-            "EffectD2": "Partywide +2 max health and +1 armor for every empty bench slot",
-            "EffectL2": "4",
-            "EffectD3": "Sea entities gain 10% of their health as power and armor",
-            "EffectL3": "6",
-            "EffectD4": "Sea entities will negate the attacks of enemies with less power than them",
-            "EffectL4": "8"
+            "Name": "Sea",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Sea entities gain +4 max health for every sea entity in contact",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Partywide +2 max health and +1 armor for every empty bench slot",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Sea entities gain 10% of their health as power and armor",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Sea entities will negate the attacks of enemies with less power than them",
+                    "Skill": ""
+                }
+            ]
         }
     ]
 }

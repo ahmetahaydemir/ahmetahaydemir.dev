@@ -7,22 +7,18 @@ const { effectArray } = Astro.props;
 		<th>Size</th>
 		<th>Effect Description</th>
 	</tr>
-	<tr>
-		<td>{effectArray.EffectL1}</td>
-		<td>{effectArray.EffectD1}</td>
-	</tr>
-	<tr>
-		<td>{effectArray.EffectL2}</td>
-		<td>{effectArray.EffectD2}</td>
-	</tr>
-	<tr>
-		<td>{effectArray.EffectL3}</td>
-		<td>{effectArray.EffectD3}</td>
-	</tr>
-	<tr>
-		<td>{effectArray.EffectL4}</td>
-		<td>{effectArray.EffectD4}</td>
-	</tr>
+	{
+		effectArray.EffectArray.map(
+			(child: { SizeLimit: string; Description: string }) => {
+				return (
+					<tr>
+						<td>{child.SizeLimit}</td>
+						<td>{child.Description}</td>
+					</tr>
+				);
+			}
+		)
+	}
 </table>
 
 <style>

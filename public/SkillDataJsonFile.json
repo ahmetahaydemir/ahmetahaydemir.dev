@@ -1,0 +1,11 @@
+{
+    "skillDataJsonArray": [
+        {
+            "Name": "Emergency Saliva",
+            "ActionType": "EntityCastEffect"
+        },
+        {
+            "Name": "Reforestation"
+        }
+    ]
+}

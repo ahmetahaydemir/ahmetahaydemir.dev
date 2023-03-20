@@ -1,114 +1,254 @@
 ﻿{
     "classDataJsonArray": [
         {
-            "Class": "Fighter",
-            "EffectD1": "Fighters gain %10 more power for every unit that is targeting them",
-            "EffectL1": "2",
-            "EffectD2": "Fighters restore %5 max health for every alive fighter ally at the end of combat",
-            "EffectL2": "4",
-            "EffectD3": "Fighters stun the enemy for 1 turn with their every 4th attack",
-            "EffectL3": "6",
-            "EffectD4": "Fighters will continue fighting for 5 turns after dying",
-            "EffectL4": "8"
+            "Name": "Fighter",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Fighters gain %10 more power for every unit that is targeting them",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Fighters restore %5 max health for every alive fighter ally at the end of combat",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Fighters stun the enemy for 1 turn with their every 4th attack",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Fighters will continue fighting for 5 turns after dying",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Class": "Hunter",
-            "EffectD1": "Hunters will prioritize the lowest health enemy on arena",
-            "EffectL1": "2",
-            "EffectD2": "Hunters will gain %10 more power for their every move action until they attack the prey",
-            "EffectL2": "4",
-            "EffectD3": "Hunters will restore %25 of their missing health when their target dies",
-            "EffectL3": "6",
-            "EffectD4": "Hunter power gains from move actions will stay until the target is dead",
-            "EffectL4": "8"
+            "Name": "Hunter",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Hunters will prioritize the lowest health enemy on arena",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Hunters will gain %10 more power for their every move action until they attack the prey",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Hunters will restore %25 of their missing health when their target dies",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Hunter power gains from move actions will stay until the target is dead",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Class": "Healer",
-            "EffectD1": "Healers entities prioritize lowest health party member on arena",
-            "EffectL1": "2",
-            "EffectD2": "Healers consume all action points to restore per %10 max health first time they drop less than %25 health",
-            "EffectL2": "4",
-            "EffectD3": "First heal on a party member will chain to an ally with %50 less power",
-            "EffectL3": "6",
-            "EffectD4": "Healer skills will be duplicated to another party member on trigger if possible",
-            "EffectL4": "8"
+            "Name": "Healer",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Healers entities prioritize lowest health party member on arena",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Healers consume all action points to restore per %10 max health first time they drop less than %25 health",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "First heal on a party member will chain to an ally with %50 less power",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Healer skills will be duplicated to another party member on trigger if possible",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Class": "Scout",
-            "EffectD1": "Scouts will evade the first attack that hit them ",
-            "EffectL1": "2",
-            "EffectD2": "Scout evasion will refresh in 10 turns",
-            "EffectL2": "4",
-            "EffectD3": "Scout evasion can negate skills as well",
-            "EffectL3": "6",
-            "EffectD4": "Scouts in contact with an enemy will replace their position to a random cell after 6 turns",
-            "EffectL4": "8"
+            "Name": "Scout",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Scouts will evade the first attack that hit them ",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Scout evasion will refresh in 10 turns",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Scout evasion can negate skills as well",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Scouts in contact with an enemy will replace their position to a random cell after 6 turns",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Class": "Evoker",
-            "EffectD1": "Evokers grant 1 action point to a random ally on skill trigger",
-            "EffectL1": "2",
-            "EffectD2": "Evokers start combat with half of their action points ready",
-            "EffectL2": "4",
-            "EffectD3": "All team members start combat with half of their action points ready",
-            "EffectL3": "6",
-            "EffectD4": "All team members grant 1 action point to a random ally on skill trigger",
-            "EffectL4": "8"
+            "Name": "Evoker",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Evokers grant 1 action point to a random ally on skill trigger",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Evokers start combat with half of their action points ready",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "All team members start combat with half of their action points ready",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "All team members grant 1 action point to a random ally on skill trigger",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Class": "Assassin",
-            "EffectD1": "Assassins power increases by %50 if the target is hit from behind",
-            "EffectL1": "2",
-            "EffectD2": "Assassins turn invisible and jump to the enemy backrow in their first two turns",
-            "EffectL2": "4",
-            "EffectD3": "Assassins teleport behind a random enemy when they get attacked for the first time",
-            "EffectL3": "6",
-            "EffectD4": "Assassins hit calculations ignore enemy armor when attacking from behind",
-            "EffectL4": "8"
+            "Name": "Assassin",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Assassins power increases by %50 if the target is hit from behind",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Assassins turn invisible and jump to the enemy backrow in their first two turns",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Assassins teleport behind a random enemy when they get attacked for the first time",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Assassins hit calculations ignore enemy armor when attacking from behind",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Class": "Supporter",
-            "EffectD1": "Supporters share %25 of their health, power and armor with the one in front of it",
-            "EffectL1": "2",
-            "EffectD2": "Supported allies start combat with half of their action points ready",
-            "EffectL2": "4",
-            "EffectD3": "Supporters share equipment effects with the supported ally as well",
-            "EffectL3": "6",
-            "EffectD4": "Supporter effects will carry on in a chain as long as the supporting chain goes",
-            "EffectL4": "8"
+            "Name": "Supporter",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Supporters share %25 of their health, power and armor with the one in front of it",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Supported allies start combat with half of their action points ready",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Supporters share equipment effects with the supported ally as well",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Supporter effects will carry on in a chain as long as the supporting chain goes",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Class": "Caster",
-            "EffectD1": "Casters include %50 more base power in their skills",
-            "EffectL1": "2",
-            "EffectD2": "Casters will gain an action point from staying idle in a turn as well",
-            "EffectL2": "4",
-            "EffectD3": "Casters include %100 more base power in their skills",
-            "EffectL3": "6",
-            "EffectD4": "Casters renew their action points after the first cast in combat",
-            "EffectL4": "8"
+            "Name": "Caster",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Casters include %50 more base power in their skills",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Casters will gain an action point from staying idle in a turn as well",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Casters include %100 more base power in their skills",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Casters renew their action points after the first cast in combat",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Class": "Brute",
-            "EffectD1": "Brutes will multiply their power up to %50 according to their missing health",
-            "EffectL1": "2",
-            "EffectD2": "Brute basic attacks will crush %10 of target's armor",
-            "EffectL2": "4",
-            "EffectD3": "Brutes will multiply their power up to %50 according to target's missing health",
-            "EffectL3": "6",
-            "EffectD4": "Brute basic attacks will cleave in the direction of hit with %25 power",
-            "EffectL4": "8"
+            "Name": "Brute",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Brutes will multiply their power up to %50 according to their missing health",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Brute basic attacks will crush %10 of target's armor",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Brutes will multiply their power up to %50 according to target's missing health",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Brute basic attacks will cleave in the direction of hit with %25 power",
+                    "Skill": ""
+                }
+            ]
         },
         {
-            "Class": "Tank",
-            "EffectD1": "Tanks taunt enemies in front of them at the start of combat",
-            "EffectL1": "2",
-            "EffectD2": "Tanks gain %10 more armor for every unit that is targeting them",
-            "EffectL2": "4",
-            "EffectD3": "Tanks have %25 more base health and armor ",
-            "EffectL3": "6",
-            "EffectD4": "Tanks gain %100 more armor for 5 turns the first time they drop below %25 health",
-            "EffectL4": "8"
+            "Name": "Tank",
+            "EffectArray": [
+                {
+                    "SizeLimit": "2",
+                    "Description": "Tanks taunt enemies in front of them at the start of combat",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "4",
+                    "Description": "Tanks gain %10 more armor for every unit that is targeting them",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "6",
+                    "Description": "Tanks have %25 more base health and armor ",
+                    "Skill": ""
+                },
+                {
+                    "SizeLimit": "8",
+                    "Description": "Tanks gain %100 more armor for 5 turns the first time they drop below %25 health",
+                    "Skill": ""
+                }
+            ]
         }
     ]
 }

@@ -33,14 +33,18 @@ export const ALGOLIA = {
 import EntityDataJsonFile from '../public/EntityDataJsonFile.json'
 import OriginDataJsonFile from '../public/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/ClassDataJsonFile.json'
+import EquipmentDataJsonFile from '../public/EquipmentDataJsonFile.json'
 export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
 export const originSidebarList = OriginDataJsonFile.originDataJsonArray.map((entry) => ({
-	text: entry.Origin, link: entry.Origin.toLowerCase().split(' ').join('-')
+	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
 export const classSidebarList =  ClassDataJsonFile.classDataJsonArray.map((entry) => ({
-	text: entry.Class, link: entry.Class.toLowerCase().split(' ').join('-')
+	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+}));
+export const equipmentSidebarList =  EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
+	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
 
 export type Sidebar = Record<
@@ -56,8 +60,9 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Entity List', link: `entity-list` },
 		],
 		'Devlog': [
-			{ text: 'Color Theme - 1', link: 'color-theme' },
+			{ text: 'Website Launch - 1', link: 'website-launch' },
 		],
+		'Equipments': equipmentSidebarList,
 		'Origins': originSidebarList,
 		'Classes': classSidebarList,
 		'Battle Entities': entitySidebarList,

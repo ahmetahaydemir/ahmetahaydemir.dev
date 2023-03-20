@@ -16,16 +16,16 @@ export async function getStaticPaths() {
 	return ClassDataJsonFile.classDataJsonArray.map((entry) => ({
 		params: {
 			className:
-				markBaseURL + "/" + entry.Class.toLowerCase().split(" ").join("-"),
+				markBaseURL + "/" + entry.Name.toLowerCase().split(" ").join("-"),
 		},
-		props: { classObject: entry, classString: entry.Class.toLowerCase() },
+		props: { classObject: entry, classString: entry.Name.toLowerCase() },
 	}));
 }
 //
 const { className } = Astro.params;
 const { classObject, classString } = Astro.props;
 //
-entryMarkFirst.data.title = classObject.Class;
+entryMarkFirst.data.title = "Class - " + classObject.Name;
 ---
 
 <MainLayout headings={headings} {...entryMarkFirst.data}>

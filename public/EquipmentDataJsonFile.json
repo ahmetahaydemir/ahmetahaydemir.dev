@@ -1,0 +1,142 @@
+{
+    "equipmentDataJsonArray": [
+        {
+            "Name": "Artichoke"
+        },
+        {
+            "Name": "Aubergine"
+        },
+        {
+            "Name": "Avocado"
+        },
+        {
+            "Name": "Banana"
+        },
+        {
+            "Name": "Banana2"
+        },
+        {
+            "Name": "Banana3"
+        },
+        {
+            "Name": "Blueberry"
+        },
+        {
+            "Name": "Broccoli"
+        },
+        {
+            "Name": "Carrot"
+        },
+        {
+            "Name": "Cauliflower"
+        },
+        {
+            "Name": "Cherry1"
+        },
+        {
+            "Name": "Cherry2"
+        },
+        {
+            "Name": "Cherry3"
+        },
+        {
+            "Name": "Chilli"
+        },
+        {
+            "Name": "Coconut"
+        },
+        {
+            "Name": "Corn"
+        },
+        {
+            "Name": "Cucumber"
+        },
+        {
+            "Name": "Garlicclove"
+        },
+        {
+            "Name": "Grape"
+        },
+        {
+            "Name": "Green Apple"
+        },
+        {
+            "Name": "Green Pepper"
+        },
+        {
+            "Name": "Guava"
+        },
+        {
+            "Name": "Kiwicut"
+        },
+        {
+            "Name": "Leek"
+        },
+        {
+            "Name": "Lemoncut"
+        },
+        {
+            "Name": "Limecut"
+        },
+        {
+            "Name": "Mango"
+        },
+        {
+            "Name": "Mangosteen"
+        },
+        {
+            "Name": "Onion"
+        },
+        {
+            "Name": "Orange"
+        },
+        {
+            "Name": "Pear"
+        },
+        {
+            "Name": "Peas"
+        },
+        {
+            "Name": "Pineapple"
+        },
+        {
+            "Name": "Plum"
+        },
+        {
+            "Name": "Pomegranate"
+        },
+        {
+            "Name": "Potato"
+        },
+        {
+            "Name": "Pumpkin"
+        },
+        {
+            "Name": "Red Apple"
+        },
+        {
+            "Name": "Red Pepper"
+        },
+        {
+            "Name": "Starfruit"
+        },
+        {
+            "Name": "Strawberry"
+        },
+        {
+            "Name": "Tomato"
+        },
+        {
+            "Name": "Turnip"
+        },
+        {
+            "Name": "Watermelon"
+        },
+        {
+            "Name": "Yellow Apple"
+        },
+        {
+            "Name": "Yellow Pepper"
+        }
+    ]
+}

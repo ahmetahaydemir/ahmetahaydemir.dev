@@ -16,16 +16,16 @@ export async function getStaticPaths() {
 	return OriginDataJsonFile.originDataJsonArray.map((entry) => ({
 		params: {
 			originName:
-				markBaseURL + "/" + entry.Origin.toLowerCase().split(" ").join("-"),
+				markBaseURL + "/" + entry.Name.toLowerCase().split(" ").join("-"),
 		},
-		props: { origin: entry, originString: entry.Origin.toLowerCase() },
+		props: { origin: entry, originString: entry.Name.toLowerCase() },
 	}));
 }
 //
 const { originName } = Astro.params;
 const { origin, originString } = Astro.props;
 //
-entryMarkFirst.data.title = origin.Origin;
+entryMarkFirst.data.title = "Origin - " + origin.Name;
 ---
 
 <MainLayout headings={headings} {...entryMarkFirst.data}>
