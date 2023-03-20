@@ -14,4 +14,3 @@ This is the `docs` starter template. It contains all of the features that you ne
 - ✅ **Multi-language i18n**
 - ✅ **Automatic table of contents**
 - ✅ **Automatic list of contributors**
-- ✅ (and, best of all) **dark mode**

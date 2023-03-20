@@ -2,7 +2,8 @@
 title: "Website Launch"
 description: "Devlog Documentation"
 ---
-**`⠀⠀Date : 20.03.2023⠀⠀`**
+
+**`⠀⠀Date: 20.03.2023⠀⠀`**
 
 I have tried a couple of documentation tools for planning; but every choice I tried felt like a **hassle** more than a helpful guide for my game development process.
 
@@ -16,7 +17,7 @@ So I started thinking about what I actually want from this **documentation proce
 - [ ] Public Feedback
 - [ ] Future Roadmap
 
-I am not going to bore you with what these goals mean for me; you can look at the reasonings below if you are interested in the thought process. 
+I am not going to bore you with what these goals mean for me; you can look at the reasonings below if you are interested in the thought process.
 
 But after having a good look at these goals, I realized that a personal website would suit me the best.
 
@@ -24,7 +25,7 @@ None of the goals I described above required a lot of page interactivity. I need
 
 I reviewed a couple of documentation focused **JavaScript frameworks** and eventually decided on [Astro](https://astro.build/). Looks promising and fun to use.
 
-I have no experience as a web developer, but looks like this [framework's documentation](https://docs.astro.build/en/getting-started/) is quite informative which is one of the reasons I will go with it. 
+I have no experience as a web developer, but looks like this [framework's documentation](https://docs.astro.build/en/getting-started/) is quite informative which is one of the reasons I will go with it.
 
 If you are reading this, it looks like I managed to do so : )
 
@@ -40,7 +41,7 @@ Since the data is also parsed by the site to generate the documentations, this w
 
 Devlog posts like these will be enough for me to track my progress.
 
-I love watching devlog series on Youtube. It is harder to create video based content, but it is easier to consume by other people. So it would be nice to add video form devlogs at some point as well. 
+I love watching devlog series on Youtube. It is harder to create video based content, but it is easier to consume by other people. So it would be nice to add video form devlogs at some point as well.
 
 But I would like to start that part once I am aware that the game will be finished. So many incomplete projects, it hurts... : )
 
@@ -66,7 +67,7 @@ And that calls for a revision.
 
 ## Game Wiki
 
-This game is aimed to be a rogue-like with a lot of entities, skills, equipments and so on. 
+This game is aimed to be a rogue-like with a lot of entities, skills, equipments and so on.
 
 By nature of the genre, people will be in search of the total size and functionality of those factors. Strategize synergies and work towards trying them out.
 
@@ -74,7 +75,7 @@ An interface where this process is easier to do is a must and that's what a wiki
 
 The ideal way to do this is with an in-game library that tracks your discovery percentage, how much you have seen/obtained/discovered throughout your gameplay. And I am planning to do that.
 
-But even with games that have wonderful in-game interfaces, I find myself looking stuff up on Google a lot. When an idea pops up in your head, a quick search on web is faster to do so. 
+But even with games that have wonderful in-game interfaces, I find myself looking stuff up on Google a lot. When an idea pops up in your head, a quick search on web is faster to do so.
 
 Rather than waiting for a community built wiki, I would like to fill that void beforehand to guide players to data that is validated by myself.
 
@@ -82,7 +83,7 @@ Rather than waiting for a community built wiki, I would like to fill that void b
 
 Since all my documentations are on a public site, I can just link it to a friend or a first time visitor to get their feedback, watch their reactions and so on.
 
-It would be nice to integrate a survey or discussion panel at one point. 
+It would be nice to integrate a survey or discussion panel at one point.
 
 Until the game gets played by a certain amount of people, manual feedback process will be enough.
 
