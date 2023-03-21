@@ -39,6 +39,7 @@ import EntityDataJsonFile from '../public/data/EntityDataJsonFile.json'
 import OriginDataJsonFile from '../public/data/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/data/ClassDataJsonFile.json'
 import EquipmentDataJsonFile from '../public/data/EquipmentDataJsonFile.json'
+import SkillDataJsonFile from '../public/data/SkillDataJsonFile.json'
 export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
@@ -49,6 +50,9 @@ export const classSidebarList = ClassDataJsonFile.classDataJsonArray.map((entry)
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
 export const equipmentSidebarList = EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
+	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+}));
+export const skillSidebarList = SkillDataJsonFile.skillDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
 //
@@ -66,9 +70,10 @@ export const SIDEBAR: Sidebar = {
 		'Library': [
 			{ text: 'Battle Entity List', link: `battle-entity-list` }
 		],
-		'Equipments': equipmentSidebarList,
-		'Origins': originSidebarList,
+		'Skills': skillSidebarList,
 		'Classes': classSidebarList,
+		'Origins': originSidebarList,
 		'Battle Entities': entitySidebarList,
+		'Equipments': equipmentSidebarList,
 	},
 };

@@ -1,0 +1,81 @@
+---
+const { skillObject } = Astro.props;
+
+function GetHeaderRight(skill: {
+	CastData: { Type: any };
+	TriggerData: { Type: any };
+}) {
+	if (skill.CastData) {
+		return skill.CastData.Type;
+	}
+	//
+	if (skill.TriggerData) {
+		return skill.TriggerData.Type;
+	}
+	//
+	return "unset";
+}
+function GetHeaderLeft(skill: { Type: any }) {
+	if (skill.Type) {
+		return skill.Type;
+	}
+	//
+	return "unset";
+}
+---
+
+<div class="skill-panel-header">
+	<a>{GetHeaderLeft(skillObject)}</a>
+	<a>{GetHeaderRight(skillObject)}</a>
+</div>
+<div class="skill-panel">
+	<div class="skill-panel-occurence">
+		{
+			skillObject.OccurenceData.map((occurence) => {
+				return <p>{occurence.TargetingInput}</p>;
+			})
+		}
+	</div>
+</div>
+
+<style>
+	.skill-panel {
+		background-color: var(--theme-code-bg);
+		border-radius: 25px;
+		width: 100%;
+		height: 500px;
+	}
+	.skill-panel-header {
+		width: 100%;
+		height: 5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	.skill-panel-header a {
+		background-color: var(--theme-code-bg);
+		border-color: var(--theme-code-tabs);
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		border-style: dashed;
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: bold;
+		transition: ease-in-out 0.25s;
+	}
+	.skill-panel-header a:first-child {
+		border-radius: 25px 5px 5px 25px;
+	}
+	.skill-panel-header a:last-child {
+		border-radius: 5px 25px 25px 5px;
+	}
+	.skill-panel-header a:hover {
+		transition: ease-in-out 0.25s;
+		background-color: rgba(0, 0, 0, 0.25);
+		border-color: unset;
+		border-radius: 25px;
+	}
+</style>

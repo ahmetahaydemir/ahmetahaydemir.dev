@@ -2,10 +2,287 @@
     "skillDataJsonArray": [
         {
             "Name": "Emergency Saliva",
-            "ActionType": "EntityCastEffect"
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "6",
+                "Type": "CastOnTargetInRange",
+                "TargetingInput": "Arena_Ally_Alive_LowestHealth",
+                "TargetingRange": 2
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Direction_Ally_Alive_LowestHealth",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": 3,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 100,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
         },
         {
-            "Name": "Reforestation"
+            "Name": "Ancient Shell",
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "6",
+                "Type": "InstantCast"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Self",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Defence",
+                            "FlatChange": 1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
+        },
+        {
+            "Name": "Nibble On",
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "4",
+                "Type": "InstantCast"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Arena_Ally_Alive_LowestHealth",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": -2,
+                            "PercentageStat": "Power",
+                            "PercentageChange": -50,
+                            "PercentageBasedOnCaster": true
+                        },
+                        {
+                            "TargetStat": "Defence",
+                            "FlatChange": -1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
+        },
+        {
+            "Name": "Tentacle Smash",
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "4",
+                "Type": "InstantCast"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Direction_Enemy_Alive_LowestHealth",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": -3,
+                            "PercentageStat": "Power",
+                            "PercentageChange": -50,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
+        },
+        {
+            "Name": "Constant Forage",
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "2",
+                "Type": "InstantCast"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Arena_Ally_Alive_Random",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "ActionPoint",
+                            "FlatChange": 1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
+        },
+        {
+            "Name": "Concussive Touch",
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "6",
+                "Type": "InstantCast"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": -3,
+                            "PercentageStat": "Power",
+                            "PercentageChange": -50,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
+        },
+        {
+            "Name": "Prey On",
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "5",
+                "Type": "CastOnTargetInRange",
+                "TargetingInput": "Arena_Enemy_Alive_LowestHealth",
+                "TargetingRange": 1
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Arena_Enemy_Alive_LowestHealth",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": -3,
+                            "PercentageStat": "Power",
+                            "PercentageChange": -75,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
+        },
+        {
+            "Name": "Go Nuts",
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "5",
+                "Type": "InstantCast"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Self",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Speed",
+                            "FlatChange": 1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
+        },
+        {
+            "Name": "Honey Bunny",
+            "Type": "EntityPassiveEffect",
+            "TriggerData": {
+                "Type": "OnUpdateEntityList"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Arena_Ally_Alive_Adjacent",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Speed",
+                            "FlatChange": 1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
+        },
+        {
+            "Name": "Foolish Act",
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "5",
+                "Type": "CastOnTargetInRange",
+                "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                "TargetingRange": 1
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": -4,
+                            "PercentageStat": "Power",
+                            "PercentageChange": -100,
+                            "PercentageBasedOnCaster": true
+                        },
+                        {
+                            "TargetStat": "Power",
+                            "FlatChange": 1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": false
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                },
+                {
+                    "TargetingInput": "Self",
+                    "Multiplier": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Power",
+                            "FlatChange": 1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": false
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
         }
     ]
 }
