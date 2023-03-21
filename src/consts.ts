@@ -30,7 +30,7 @@ export const ALGOLIA = {
 	apiKey: 'XXXXXXXXXX',
 };
 
-import { getCollection } from 'astro:content';
+
 import EntityDataJsonFile from '../public/EntityDataJsonFile.json'
 import OriginDataJsonFile from '../public/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/ClassDataJsonFile.json'
@@ -47,20 +47,6 @@ export const classSidebarList = ClassDataJsonFile.classDataJsonArray.map((entry)
 export const equipmentSidebarList = EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
-//
-export const devlogDocCollection = await getCollection("docs", (data) => {
-	return data.id.includes("devlog");
-});
-export const devlogSidebarList = devlogDocCollection.map((entry) => ({
-	text: entry.data.title, link: entry.data.title.toLowerCase().split(' ').join('-')
-}));
-//
-export const libraryDocCollection = await getCollection("docs", (data) => {
-	return data.id.includes("library");
-});
-export const librarySidebarList = libraryDocCollection.map((entry) => ({
-	text: entry.data.title, link: entry.data.title.toLowerCase().split(' ').join('-')
-}));
 
 export type Sidebar = Record<
 	(typeof KNOWN_LANGUAGE_CODES)[number],
@@ -74,8 +60,12 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Project Idea', link: `project-idea` },
 			{ text: 'Roadmap', link: `roadmap` },
 		],
-		'Devlog': devlogSidebarList,
-		'Library': librarySidebarList,
+		'Library': [
+			{ text: 'Battle Entity List', link: `battle-entity-list` }
+		],
+		'Devlog': [
+			{ text: 'Website Launch', link: `website-launch` }
+		],
 		'Equipments': equipmentSidebarList,
 		'Origins': originSidebarList,
 		'Classes': classSidebarList,

@@ -1,5 +1,4 @@
 ---
-import { getLanguageFromURL } from "../../languages";
 import { SIDEBAR } from "../../consts";
 
 type Props = {
@@ -8,8 +7,7 @@ type Props = {
 
 const { currentPage } = Astro.props;
 const baseFolderURL = currentPage.split("/").slice(1, 2).join("/");
-const langCode = getLanguageFromURL(currentPage);
-const sidebar = SIDEBAR[langCode];
+const sidebar = SIDEBAR["en"];
 ---
 
 <nav aria-label="Primary">
@@ -43,8 +41,6 @@ const sidebar = SIDEBAR[langCode];
 								const url =
 									"/" +
 									baseFolderURL +
-									"/" +
-									langCode +
 									"/" +
 									header.toLowerCase().split(" ").join("-") +
 									"/" +

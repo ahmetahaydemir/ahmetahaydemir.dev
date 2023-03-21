@@ -1,0 +1,24 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+import EntityDataJsonFile from "../../../../public/EntityDataJsonFile.json";
+import PageButtonClassOrigin from "../../../components/PageContent/PageButtonClassOrigin.astro";
+//
+export async function getStaticPaths() {
+	return EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
+		params: {
+			battleEntityName: entry.Name.toLowerCase().split(" ").join("-"),
+		},
+		props: { battleEntity: entry },
+	}));
+}
+//
+const { battleEntityName } = Astro.params;
+const { battleEntity } = Astro.props;
+---
+
+<MainLayout topTitle={battleEntity.Name}>
+	<PageButtonClassOrigin
+		originName={battleEntity.Origin}
+		className={battleEntity.Class}
+	/>
+</MainLayout>

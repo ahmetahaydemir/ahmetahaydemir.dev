@@ -13,7 +13,7 @@ type Props = CollectionEntry<"docs">["data"] & {
   headings: MarkdownHeading[];
 };
 
-const { headings, ...data } = Astro.props;
+const { headings, topTitle, ...data } = Astro.props;
 // const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const currentPage = Astro.url.pathname;
 const baseDomain = "https://ahmetahaydemir.dev";
@@ -161,7 +161,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
       </aside>
       <div id="main-content" class="main-column">
         <PageContent
-          title={data.title}
+          title={topTitle}
           headings={headings}
           githubEditUrl={githubEditUrl}
         >

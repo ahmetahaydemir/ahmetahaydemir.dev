@@ -1,9 +1,7 @@
 ---
-title: "Roadmap"
-description: "Past activities and future roadmap for the project"
----
-
-import PageTimelineRoadmap from "../../../../components/PageContent/PageTimelineRoadmap.astro";
+import MainLayout from "../../../layouts/MainLayout.astro";
+import { Content as RoadmapPost } from "../../post/introduction/roadmap.mdx";
+import PageTimelineRoadmap from "../../../components/PageContent/PageTimelineRoadmap.astro";
 
 export let futureRoadmapElements = [
 	{
@@ -16,16 +14,20 @@ export let futureRoadmapElements = [
 		descText: "How the static game data is stored and retrieved by the game",
 		dateText: "10.04.2023",
 	},
-    {
+	{
 		titleText: "Data Structure",
 		descText: "How the static game data is stored and retrieved by the game",
 		dateText: "10.04.2023",
 	},
-    {
+	{
 		titleText: "Data Structure",
 		descText: "How the static game data is stored and retrieved by the game",
 		dateText: "10.04.2023",
-	}
+	},
 ];
+---
 
-<PageTimelineRoadmap futureTimelineElements={futureRoadmapElements} />
+<MainLayout topTitle={"Roadmap"}>
+	<RoadmapPost />
+	<PageTimelineRoadmap futureTimelineElements={futureRoadmapElements} />
+</MainLayout>

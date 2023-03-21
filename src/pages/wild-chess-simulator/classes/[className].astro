@@ -1,0 +1,23 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+import ClassDataJsonFile from "../../../../public/ClassDataJsonFile.json";
+import PageEntityGrid from "../../../components/PageContent/PageEntityGrid.astro";
+import PageEffectTable from "../../../components/PageContent/PageEffectTable.astro";
+//
+export async function getStaticPaths() {
+	return ClassDataJsonFile.classDataJsonArray.map((entry) => ({
+		params: {
+			className: entry.Name.toLowerCase().split(" ").join("-"),
+		},
+		props: { classObject: entry, classString: entry.Name.toLowerCase() },
+	}));
+}
+//
+const { className } = Astro.params;
+const { classObject, classString } = Astro.props;
+---
+
+<MainLayout topTitle={classObject.Name}>
+	<PageEffectTable effectArray={classObject} />
+	<PageEntityGrid gridFilter={classString} />
+</MainLayout>

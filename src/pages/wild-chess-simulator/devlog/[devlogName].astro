@@ -1,0 +1,23 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+//
+export async function getStaticPaths() {
+	const posts = await Astro.glob("../../post/devlog/*.{md,mdx}");
+
+	return posts.map((post) => ({
+		params: {
+			devlogName: post.frontmatter.title.toLowerCase().split(" ").join("-"),
+		},
+		props: {
+			devlogContent: post,
+			devlogTitle: post.frontmatter.title,
+		},
+	}));
+}
+
+const { devlogContent, devlogTitle } = Astro.props;
+---
+
+<MainLayout topTitle={devlogTitle}>
+	<devlogContent.Content />
+</MainLayout>

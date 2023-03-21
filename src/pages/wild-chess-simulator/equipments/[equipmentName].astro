@@ -1,0 +1,18 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+import EquipmentDataJsonFile from "../../../../public/EquipmentDataJsonFile.json";
+//
+export async function getStaticPaths() {
+	return EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
+		params: {
+			equipmentName: entry.Name.toLowerCase().split(" ").join("-"),
+		},
+		props: { equipment: entry, equipmentString: entry.Name.toLowerCase() },
+	}));
+}
+//
+const { equipmentName } = Astro.params;
+const { equipment, equipmentString } = Astro.props;
+---
+
+<MainLayout topTitle={equipment.Name} />

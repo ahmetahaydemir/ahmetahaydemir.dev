@@ -3,7 +3,7 @@ title: "Website Launch"
 description: "Devlog Documentation"
 ---
 
-**`⠀⠀Date: 20.03.2023⠀⠀`**
+**`⠀⠀Log Date: 20.03.2023⠀⠀`**
 
 I have tried a couple of documentation tools for planning; but every choice I tried felt like a **hassle** more than a helpful guide for my game development process.
 
