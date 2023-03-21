@@ -60,11 +60,11 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Project Idea', link: `project-idea` },
 			{ text: 'Roadmap', link: `roadmap` },
 		],
-		'Library': [
-			{ text: 'Battle Entity List', link: `battle-entity-list` }
-		],
 		'Devlog': [
 			{ text: 'Website Launch', link: `website-launch` }
+		],
+		'Library': [
+			{ text: 'Battle Entity List', link: `battle-entity-list` }
 		],
 		'Equipments': equipmentSidebarList,
 		'Origins': originSidebarList,
