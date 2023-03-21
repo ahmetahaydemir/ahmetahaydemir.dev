@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../../../layouts/MainLayout.astro";
-import EquipmentDataJsonFile from "../../../../public/EquipmentDataJsonFile.json";
+import EquipmentDataJsonFile from "../../../../public/data/EquipmentDataJsonFile.json";
 //
 export async function getStaticPaths() {
 	return EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({

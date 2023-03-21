@@ -35,10 +35,10 @@ let devlogPosts = await getCollection("devlog");
 devlogPosts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
 
 // Data Visualizations
-import EntityDataJsonFile from '../public/EntityDataJsonFile.json'
-import OriginDataJsonFile from '../public/OriginDataJsonFile.json'
-import ClassDataJsonFile from '../public/ClassDataJsonFile.json'
-import EquipmentDataJsonFile from '../public/EquipmentDataJsonFile.json'
+import EntityDataJsonFile from '../public/data/EntityDataJsonFile.json'
+import OriginDataJsonFile from '../public/data/OriginDataJsonFile.json'
+import ClassDataJsonFile from '../public/data/ClassDataJsonFile.json'
+import EquipmentDataJsonFile from '../public/data/EquipmentDataJsonFile.json'
 export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
@@ -60,8 +60,7 @@ export const SIDEBAR: Sidebar = {
 	en: {
 		'Introduction': [
 			{ text: 'Welcome', link: `welcome` },
-			{ text: 'Project Idea', link: `project-idea` },
-			{ text: 'Roadmap', link: `roadmap` },
+			{ text: 'Roadmap', link: `roadmap` }
 		],
 		'Devlog': devlogPosts.map(post => ({ text: post.data.title, link: post.data.title.toLowerCase().split(' ').join('-') })),
 		'Library': [

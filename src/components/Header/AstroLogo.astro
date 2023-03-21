@@ -5,33 +5,12 @@ type Props = {
 const { size } = Astro.props;
 ---
 
-<svg class="logo" width={size} height={size} viewBox="0 0 256 256" fill="none">
-	<style>
-		#flame {
-			fill: var(--theme-text-accent);
-		}
-
-		#a {
-			fill: var(--theme-text-accent);
-		}
-
-		.logo svg {
-			height: 40px;
-			width: auto;
-			display: block;
-			color: var(--theme-accent);
-		}
-	</style>
-	<img
-		src="/icon/btn_icon_fire.png"
-		alt=""
-		loading="lazy"
-		decoding="async"
-		width={size}
-		height={size}
-		fill-rule="evenodd"
-		clip-rule="evenodd"
-		id="flame"
-	/>
-	<title>Logo</title>
-</svg>
+<img
+	class="logo"
+	src="/icon/btn_icon_fire.png"
+	alt=""
+	loading="lazy"
+	decoding="async"
+	width={size}
+	height={size}
+/>

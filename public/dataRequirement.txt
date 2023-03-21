@@ -1,0 +1,10 @@
+- Query - How many entities are targeting me? all/ally/enemy
+- Query - How many entities exist at the end? all/ally/enemy
+- Track - Internal attack cycle amount | total/sinceLast
+- Track - Internal skill cycle amount | total/sinceLast
+- Track - Internal movement cycle amount | total/sinceLast
+- Track - Internal idle/no-move cycle amount | total/sinceLast
+- Track - the turns passed since entity died
+- Query - Sorted Entity list by their current health ratio all/ally/enemy
+- Event - EntityDeath and their current combatants
+- Special - Don't reset sinceLast movement cycle amount for Max Hunter Effect
