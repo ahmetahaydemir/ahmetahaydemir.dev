@@ -9,15 +9,14 @@ export async function getStaticPaths() {
 		params: {
 			className: entry.Name.toLowerCase().split(" ").join("-"),
 		},
-		props: { classObject: entry, classString: entry.Name.toLowerCase() },
+		props: { classObject: entry },
 	}));
 }
 //
-const { className } = Astro.params;
-const { classObject, classString } = Astro.props;
+const { classObject } = Astro.props;
 ---
 
 <MainLayout topTitle={classObject.Name}>
 	<PageEffectTable effectArray={classObject} />
-	<PageEntityGrid gridFilter={classString} />
+	<PageEntityGrid gridFilter={classObject.Name.toLowerCase()} />
 </MainLayout>

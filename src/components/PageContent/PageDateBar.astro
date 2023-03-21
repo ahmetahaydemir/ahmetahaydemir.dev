@@ -1,0 +1,24 @@
+---
+const { dateString } = Astro.props;
+---
+
+<p class="date-bar-string">
+	⠀⠀Log Date : {new Date(dateString).toLocaleDateString()}
+</p>
+
+<style>
+	.date-bar-string {
+		font-weight: bold;
+		--border-radius: 3px;
+		--padding-block: 0.2rem;
+		--padding-inline: 0.3rem;
+		font-family: var(--font-mono);
+		font-size: 0.9em;
+		color: var(--theme-code-inline-text);
+		background-color: var(--theme-code-inline-bg);
+		padding: var(--padding-block) var(--padding-inline);
+		margin: calc(var(--padding-block) * -1) 0;
+		border-radius: var(--border-radius);
+		word-break: break-word;
+	}
+</style>

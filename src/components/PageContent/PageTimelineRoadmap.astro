@@ -1,12 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-export const devlogDocCollection = await getCollection("docs", (data) => {
-	return data.id.includes("devlog");
-});
+export const devlogDocCollection = await getCollection("devlog");
 export const devlogSidebarList = devlogDocCollection.map((entry) => ({
-	titleText: entry.data.title,
-	descText: entry.data.title.toLowerCase().split(" ").join("-"),
-	dateText: entry.data.title,
+	titleText: entry.data.title as string,
+	descText: entry.data.description as string,
+	dateText: entry.data.date.toLocaleDateString() as string,
 }));
 export let classCounter = 0;
 
@@ -15,18 +13,15 @@ let { futureTimelineElements } = Astro.props;
 
 <div class="timeline-roadmap-container">
 	<div class="center-line">
-		<a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
 	</div>
 	{
 		futureTimelineElements.map(
 			(child: { titleText: string; descText: string; dateText: string }) => {
-				{
-					classCounter++;
-				}
+				classCounter++;
 				return (
 					<div class={classCounter % 2 === 0 ? "row row-2" : "row row-1"}>
 						<section>
-							<i class="icon fas fa-globe" />
+							<i class="icon fas fa-globe-dark" />
 							<div class="details">
 								<a class="title">{child.titleText}</a>
 								<span>{child.dateText} </span>
@@ -41,9 +36,7 @@ let { futureTimelineElements } = Astro.props;
 	{
 		devlogSidebarList.map(
 			(child: { titleText: string; descText: string; dateText: string }) => {
-				{
-					classCounter++;
-				}
+				classCounter++;
 				return (
 					<div class={classCounter % 2 === 0 ? "row row-2" : "row row-1"}>
 						<section>
@@ -67,18 +60,15 @@ let { futureTimelineElements } = Astro.props;
 		margin: 50px auto;
 		padding: 20px 20px;
 		position: relative;
-
-
 	}
 	.timeline-roadmap-container .center-line {
 		position: absolute;
-		height: 100%;
+		height: 75%;
 		width: 4px;
-		background: #fff;
+		background: var(--theme-text-accent);
 		left: 50%;
-		top: 20px;
+		top: 10%;
 		transform: translateX(-50%);
-
 	}
 	.timeline-roadmap-container .row {
 		display: flex;
@@ -95,16 +85,15 @@ let { futureTimelineElements } = Astro.props;
 		width: calc(50% - 40px);
 		padding: 20px;
 		position: relative;
-        box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse);
+		box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse);
 	}
 	.timeline-roadmap-container .row section::before {
 		position: absolute;
 		content: "";
 		height: 15px;
 		width: 15px;
-		background: #fff;
+		background: var(--theme-navbar-bg);
 		top: 28px;
-		z-index: -1;
 		transform: rotate(45deg);
 	}
 	.row-1 section::before {
@@ -116,18 +105,19 @@ let { futureTimelineElements } = Astro.props;
 	.row section .icon,
 	.center-line .scroll-icon {
 		position: absolute;
-		background: #f2f2f2;
+		background: var(--theme-code-bg);
 		height: 40px;
 		width: 40px;
+		z-index: 5;
 		text-align: center;
 		line-height: 40px;
 		border-radius: 50%;
 		color: #3ea0e2;
 		font-size: 17px;
-		box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+		box-shadow: 0 0 0 4px var(--theme-text-accent); inset 0 2px 0 rgba(0, 0, 0, 0.08),
 			0 3px 0 4px rgba(0, 0, 0, 0.05);
 
-        /* background-color: var(--theme-code-bg) !important;
+		/* background-color: var(--theme-code-bg) !important;
 		box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse); */
 	}
 	.center-line .scroll-icon {
@@ -148,13 +138,16 @@ let { futureTimelineElements } = Astro.props;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-direction: column;
 	}
 	.row section .details .title {
 		font-size: 22px;
 		font-weight: 600;
+		font-weight: bold;
 	}
 	.row section p {
 		margin: 10px 0 17px 0;
+		text-align: center;
 	}
 	@media (max-width: 790px) {
 		.timeline-roadmap-container .center-line {

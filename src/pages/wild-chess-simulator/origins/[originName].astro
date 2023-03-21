@@ -9,15 +9,14 @@ export async function getStaticPaths() {
 		params: {
 			originName: entry.Name.toLowerCase().split(" ").join("-"),
 		},
-		props: { origin: entry, originString: entry.Name.toLowerCase() },
+		props: { origin: entry },
 	}));
 }
 //
-const { originName } = Astro.params;
-const { origin, originString } = Astro.props;
+const { origin } = Astro.props;
 ---
 
 <MainLayout topTitle={origin.Name}>
 	<PageEffectTable effectArray={origin} />
-	<PageEntityGrid gridFilter={originString} />
+	<PageEntityGrid gridFilter={origin.Name.toLowerCase()} />
 </MainLayout>

@@ -1,173 +1,160 @@
 ---
 import type { MarkdownHeading } from "astro";
-import type { CollectionEntry } from "astro:content";
 import HeadCommon from "../components/HeadCommon.astro";
 import HeadSEO from "../components/HeadSEO.astro";
 import Header from "../components/Header/Header.astro";
 import PageContent from "../components/PageContent/PageContent.astro";
 import LeftSidebar from "../components/LeftSidebar/LeftSidebar.astro";
 import RightSidebar from "../components/RightSidebar/RightSidebar.astro";
-import { GITHUB_EDIT_URL, SITE } from "../consts";
-
-type Props = CollectionEntry<"docs">["data"] & {
-  headings: MarkdownHeading[];
-};
+import { SITE } from "../consts";
 
 const { headings, topTitle, ...data } = Astro.props;
-// const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const currentPage = Astro.url.pathname;
 const baseDomain = "https://ahmetahaydemir.dev";
-const canonicalURL = baseDomain + currentPage;
-const currentFile = `src/content/docs${currentPage.replace(/\/$/, "")}.md`;
-const githubEditUrl = `${GITHUB_EDIT_URL}/${currentFile}`;
+const canonicalURL = new URL(currentPage, baseDomain);
 ---
 
 <html dir={data.dir} lang={data.lang} class="initial">
-  <head>
-    <HeadCommon />
-    <HeadSEO {...data} canonicalUrl={canonicalURL} />
-    <title>
-      {`${topTitle} 🚀 ${SITE.title}`}
-    </title>
+	<head>
+		<HeadCommon />
+		<HeadSEO {...data} canonicalUrl={canonicalURL} />
+		<title>
+			{`${topTitle} 🚀 ${SITE.title}`}
+		</title>
 
-    <style>
+		<style>
+			header {
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				height: var(--theme-navbar-height);
+				z-index: 11;
+				padding: 2rem 0;
+				background-color: var(--theme-navbar-bg);
+				display: flex;
+				align-items: center;
+				justify-content: left;
+				overflow: hidden;
+			}
 
-      header {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        height: var(--theme-navbar-height);
-        z-index: 11;
-        padding: 2rem 0;
-        background-color: var(--theme-navbar-bg);
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        overflow: hidden;
-      }
+			#main-content {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				min-width: 0;
+			}
 
-      #main-content {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        min-width: 0;
-      }
+			.grid-sidebar {
+				height: 100vh;
+				position: sticky;
+				top: 0;
+				padding: 0;
+			}
 
-      .grid-sidebar {
-        height: 100vh;
-        position: sticky;
-        top: 0;
-        padding: 0;
-      }
+			#left-sidebar {
+				display: none;
+				background: var(--theme-bg-gradient);
+				z-index: 10;
+				inset-inline-start: 0;
+			}
+			#right-sidebar {
+				display: none;
+				top: var(--theme-navbar-height);
+				inset-inline-end: 0;
+				width: var(--theme-right-sidebar-width);
+			}
+			.sidebar {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				padding: 0;
+			}
 
-      #left-sidebar {
-        display: none;
-        background: var(--theme-bg-gradient);
-        z-index: 10;
-        inset-inline-start: 0;
-      }
-      #right-sidebar {
-        display: none;
-        top: var(--theme-navbar-height);
-        inset-inline-end: 0;
-        width: var(--theme-right-sidebar-width);
-      }
-      .sidebar {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        padding: 0;
-      }
+			#grid-left {
+				position: fixed;
+				background-color: var(--theme-bg);
+				z-index: 10;
+				display: none;
+			}
 
-      #grid-left {
-        position: fixed;
-        background-color: var(--theme-bg);
-        z-index: 10;
-        display: none;
-      }
+			#grid-main {
+				padding: var(--doc-padding) var(--gutter);
+				grid-column: 2;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+			}
 
-      #grid-main {
-        padding: var(--doc-padding) var(--gutter);
-        grid-column: 2;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-      }
+			#grid-right {
+				display: none;
+			}
 
-      #grid-right {
-        display: none;
-      }
+			@media (min-width: 50em) {
+				.main-column {
+					margin-inline-start: var(--theme-left-sidebar-width);
+				}
 
-      @media (min-width: 50em) {
-        .main-column {
-          margin-inline-start: var(--theme-left-sidebar-width);
-        }
+				#grid-left {
+					display: flex;
+					padding-left: 2rem;
+					position: sticky;
+					grid-column: 1;
+				}
 
-        #grid-left {
-          display: flex;
-          padding-left: 2rem;
-          position: sticky;
-          grid-column: 1;
-        }
+				#left-sidebar {
+					display: flex;
+					padding-inline-start: var(--min-spacing-inline);
+					padding-inline-end: 1rem;
+					padding-left: 2rem;
+					top: var(--theme-navbar-height);
+					width: var(--theme-left-sidebar-width);
+					background: transparent;
+				}
+			}
 
-        #left-sidebar {
-          display: flex;
-          padding-inline-start: var(--min-spacing-inline);
-          padding-inline-end: 1rem;
-          padding-left: 2rem;
-          top: var(--theme-navbar-height);
-          width: var(--theme-left-sidebar-width);
-          background: transparent;
-        }
-      }
+			@media (min-width: 72em) {
+				.main-column {
+					margin-inline-end: var(--theme-right-sidebar-width);
+				}
 
-      @media (min-width: 72em) {
-        .main-column {
-          margin-inline-end: var(--theme-right-sidebar-width);
-        }
+				#grid-right {
+					grid-column: 3;
+					display: flex;
+				}
 
-        #grid-right {
-          grid-column: 3;
-          display: flex;
-        }
+				#right-sidebar {
+					display: flex;
+				}
+			}
+		</style>
 
-        #right-sidebar {
-          display: flex;
-        }
-      }
-    </style>
+		<style is:global>
+			.mobile-sidebar-toggle {
+				overflow: hidden;
+			}
 
-    <style is:global>
-      .mobile-sidebar-toggle {
-        overflow: hidden;
-      }
+			.mobile-sidebar-toggle #grid-left {
+				display: block;
+				top: 2rem;
+			}
+		</style>
+	</head>
 
-      .mobile-sidebar-toggle #grid-left {
-        display: block;
-        top: 2rem;
-      }
-    </style>
-  </head>
-
-  <body>
-    <Header currentPage={currentPage} />
-    <main class="layout">
-      <aside id="left-sidebar" class="sidebar" title="Site Navigation">
-        <LeftSidebar currentPage={currentPage} />
-      </aside>
-      <aside id="right-sidebar" class="sidebar" title="Table of Contents">
-        <RightSidebar headings={headings} githubEditUrl={githubEditUrl} />
-      </aside>
-      <div id="main-content" class="main-column">
-        <PageContent
-          title={topTitle}
-          headings={headings}
-          githubEditUrl={githubEditUrl}
-        >
-          <slot />
-        </PageContent>
-      </div>
-    </main>
-  </body>
+	<body>
+		<Header currentPage={currentPage} />
+		<main class="layout">
+			<aside id="left-sidebar" class="sidebar" title="Site Navigation">
+				<LeftSidebar currentPage={currentPage} />
+			</aside>
+			<aside id="right-sidebar" class="sidebar" title="Table of Contents">
+				<RightSidebar headings={headings} />
+			</aside>
+			<div id="main-content" class="main-column">
+				<PageContent title={topTitle} headings={headings} githubEditUrl="">
+					<slot />
+				</PageContent>
+			</div>
+		</main>
+	</body>
 </html>

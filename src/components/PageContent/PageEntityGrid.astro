@@ -4,17 +4,32 @@ import EntityDataJsonFile from "../../../public/EntityDataJsonFile.json";
 
 let { gridFilter } = Astro.props;
 
-const entityBasePath = "../battle-entities/";
-const filteredGridArray = EntityDataJsonFile.entityDataJsonArray
-	.reduce(filterGrid, []);
+interface EntityJson {
+	Zone: string;
+	Name: string;
+	Rarity: string;
+	Origin: string;
+	Class: string;
+	Health: string;
+	Power: string;
+	Defence: string;
+	Speed: string;
+	ActiveSkill: string;
+}
 
-function filterGrid(totalArray, currentValue) {
+const entityBasePath = "../battle-entities/";
+const filteredGridArray = EntityDataJsonFile.entityDataJsonArray.reduce(
+	filterGrid,
+	[]
+);
+
+function filterGrid(totalArray: EntityJson[], currentValue: EntityJson) {
 	if (gridFilter) {
 		if (currentValue["Class"].toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
-		}else if (currentValue["Origin"].toLowerCase().includes(gridFilter)) {
+		} else if (currentValue["Origin"].toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
-		}else if (currentValue["Name"].toLowerCase().includes(gridFilter) ) {
+		} else if (currentValue["Name"].toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
 		}
 	} else {
@@ -24,15 +39,22 @@ function filterGrid(totalArray, currentValue) {
 	return totalArray;
 }
 ---
+
 <script client:load>
-	function searchFilterText(){
+	function searchFilterText() {
 		window.inputBar = document.getElementById("entity-grid-search");
-		window.gridContainer = document.getElementById("entity-grid-container").children;
+		window.gridContainer = document.getElementById(
+			"entity-grid-container"
+		).children;
 		//
-		for (let index = 0; index < gridContainer.length; index++) {			
-			if(gridContainer[index].lastElementChild.textContent.toLowerCase().indexOf(inputBar.value.toLowerCase()) > -1){
+		for (let index = 0; index < gridContainer.length; index++) {
+			if (
+				gridContainer[index].lastElementChild.textContent
+					.toLowerCase()
+					.indexOf(inputBar.value.toLowerCase()) > -1
+			) {
 				gridContainer[index].style.display = "";
-			}else{
+			} else {
 				gridContainer[index].style.display = "none";
 			}
 		}
@@ -42,23 +64,27 @@ function filterGrid(totalArray, currentValue) {
 </script>
 
 <input
-type="search"
-id="entity-grid-search"
-class="entity-grid-search"
-oninput="searchFilterText()"
-placeholder="Search for entities/classes/origins..."
-size="40"
->
+	type="search"
+	id="entity-grid-search"
+	class="entity-grid-search"
+	oninput="searchFilterText()"
+	placeholder="Search for entities/classes/origins..."
+	size="40"
+/>
 <section class="cms-nav">
 	<section class="cards-nav">
 		<ul class="fluid-grid fluid-grid--minimal" id="entity-grid-container">
 			{
 				filteredGridArray.map((entityData) => (
-					<PageEntityItem 
-					cardTitle={entityData.Name}
-					cardDesc= {entityData.Origin +"|"+ entityData.Class}
-					cardLink= {entityBasePath + entityData.Name.toString().toLowerCase().split(' ').join('-')})
-					cardLogo="/preact.svg" />
+					<PageEntityItem
+						cardTitle={entityData.Name}
+						cardDesc={entityData.Origin + "|" + entityData.Class}
+						cardLink={
+							entityBasePath +
+							entityData.Name.toString().toLowerCase().split(" ").join("-")
+						}
+						cardLogo="/preact.svg"
+					/>
 				))
 			}
 		</ul>

@@ -29,8 +29,12 @@ export const ALGOLIA = {
 	appId: 'XXXXXXXXXX',
 	apiKey: 'XXXXXXXXXX',
 };
+// Collections
+import { getCollection } from 'astro:content';
+let devlogPosts = await getCollection("devlog");
+devlogPosts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
 
-
+// Data Visualizations
 import EntityDataJsonFile from '../public/EntityDataJsonFile.json'
 import OriginDataJsonFile from '../public/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/ClassDataJsonFile.json'
@@ -47,12 +51,11 @@ export const classSidebarList = ClassDataJsonFile.classDataJsonArray.map((entry)
 export const equipmentSidebarList = EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
-
+//
 export type Sidebar = Record<
 	(typeof KNOWN_LANGUAGE_CODES)[number],
 	Record<string, { text: string; link: string }[]>
 >;
-
 export const SIDEBAR: Sidebar = {
 	en: {
 		'Introduction': [
@@ -60,9 +63,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Project Idea', link: `project-idea` },
 			{ text: 'Roadmap', link: `roadmap` },
 		],
-		'Devlog': [
-			{ text: 'Website Launch', link: `website-launch` }
-		],
+		'Devlog': devlogPosts.map(post => ({ text: post.data.title, link: post.data.title.toLowerCase().split(' ').join('-') })),
 		'Library': [
 			{ text: 'Battle Entity List', link: `battle-entity-list` }
 		],

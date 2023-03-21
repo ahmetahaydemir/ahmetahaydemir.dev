@@ -1,0 +1,74 @@
+---
+title: "Data Structure"
+description: "Devlog Documentation"
+date: 2023-03-21
+---
+
+import PageDateBar from "../../components/PageContent/PageDateBar.astro";
+
+<PageDateBar dateString={frontmatter.date} />
+
+This week I planned on how will I input my data, how and in what format I will store it, and how will the data be retrieved.
+
+File Seperation
+
+JSON
+
+API Fetch
+
+```json
+{
+	"classDataJsonArray": [
+		{
+			"Name": "Fighter",
+			"EffectArray": [
+				{
+					"SizeLimit": "2",
+					"Description": "Fighters gain %10 more power for every unit that is targeting them",
+					"Skill": ""
+				},
+				{
+					"SizeLimit": "4",
+					"Description": "Fighters restore %5 max health for every alive fighter ally at the end of combat",
+					"Skill": ""
+				},
+				{
+					"SizeLimit": "6",
+					"Description": "Fighters stun the enemy for 1 turn with their every 4th attack",
+					"Skill": ""
+				},
+				{
+					"SizeLimit": "8",
+					"Description": "Fighters will continue fighting for 5 turns after dying",
+					"Skill": ""
+				}
+			]
+		},
+		{
+			"Name": "Hunter",
+			"EffectArray": [
+				{
+					"SizeLimit": "2",
+					"Description": "Hunters will prioritize the lowest health enemy on arena",
+					"Skill": ""
+				},
+				{
+					"SizeLimit": "4",
+					"Description": "Hunters will gain %10 more power for their every move action until they attack the prey",
+					"Skill": ""
+				},
+				{
+					"SizeLimit": "6",
+					"Description": "Hunters will restore %25 of their missing health when their target dies",
+					"Skill": ""
+				},
+				{
+					"SizeLimit": "8",
+					"Description": "Hunter power gains from move actions will stay until the target is dead",
+					"Skill": ""
+				}
+			]
+		}
+	]
+}
+```

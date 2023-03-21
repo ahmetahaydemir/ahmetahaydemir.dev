@@ -7,12 +7,11 @@ export async function getStaticPaths() {
 		params: {
 			equipmentName: entry.Name.toLowerCase().split(" ").join("-"),
 		},
-		props: { equipment: entry, equipmentString: entry.Name.toLowerCase() },
+		props: { equipment: entry },
 	}));
 }
 //
-const { equipmentName } = Astro.params;
-const { equipment, equipmentString } = Astro.props;
+const { equipment } = Astro.props;
 ---
 
 <MainLayout topTitle={equipment.Name} />

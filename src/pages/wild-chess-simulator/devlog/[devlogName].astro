@@ -1,23 +1,30 @@
 ---
 import MainLayout from "../../../layouts/MainLayout.astro";
+import { CollectionEntry, getCollection } from "astro:content";
 //
 export async function getStaticPaths() {
-	const posts = await Astro.glob("../../post/devlog/*.{md,mdx}");
-
-	return posts.map((post) => ({
+	const devlogPosts = await getCollection("devlog");
+	//
+	return devlogPosts.map((post) => ({
 		params: {
-			devlogName: post.frontmatter.title.toLowerCase().split(" ").join("-"),
+			devlogName: post.data.title.toLowerCase().split(" ").join("-"),
 		},
 		props: {
 			devlogContent: post,
-			devlogTitle: post.frontmatter.title,
+			devlogTitle: post.data.title,
 		},
 	}));
 }
 
+interface Props {
+	devlogContent: CollectionEntry<"devlog">;
+	devlogTitle: string;
+}
+
 const { devlogContent, devlogTitle } = Astro.props;
+const { Content } = await devlogContent.render();
 ---
 
 <MainLayout topTitle={devlogTitle}>
-	<devlogContent.Content />
+	<Content />
 </MainLayout>
