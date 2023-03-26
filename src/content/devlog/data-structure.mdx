@@ -39,6 +39,24 @@ I will also need a set of dynamic data that I will read and write constantly. Th
 - Progression Tracker
 - Configuration Preferences
 
+## Data Fetching
+
+One of my main goals was to build a prototype environment with my data set to see the shortcomings of project structure. In order to do that I will be replicating the game data in this website with several visual components.
+
+Since the data will have an exact replica in here, I will just create a couple static file endpoints that I can use as an API routes. 
+
+Then I can use these endpoints to stay in sync and try out different data sets while using Unity.
+
+- http://localhost:3000/wild-chess-simulator/api/getEntityData.json
+- http://localhost:3000/wild-chess-simulator/api/getClassData.json
+- http://localhost:3000/wild-chess-simulator/api/getOriginData.json
+- http://localhost:3000/wild-chess-simulator/api/getSkillData.json
+- http://localhost:3000/wild-chess-simulator/api/getEquipmentData.json
+
+This will allow me to update the data once in that static endpoint and see the results in the website and the game simultaneously.
+
+In the future, let's say that this game has more than 10 players, maybe a community member would like to tinker around with game data. These public endpoints will also provide them with the data they need.
+
 ## Data Structure - Entity
 
 ```typescript

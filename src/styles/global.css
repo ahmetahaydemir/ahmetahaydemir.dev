@@ -11,27 +11,27 @@ body {
 }
 
 .cover_bg_1 {
-    background: url("../SeamlessPurple.jpg");
+    background: url("../image/SeamlessPurple.jpg");
     background-repeat: repeat;
 }
 
 .cover_bg_2 {
-    background: url("../SeamlessGreen.png");
+    background: url("../image/SeamlessGreen.png");
     background-repeat: repeat;
 }
 
 .cover_bg_3 {
-    background: url("../SeamlessDarkBlue.png");
+    background: url("../image/SeamlessDarkBlue.png");
     background-repeat: repeat;
 }
 
 .cover_bg_4 {
-    background: url("../SeamlessOrange.png");
+    background: url("../image/SeamlessOrange.png");
     background-repeat: repeat;
 }
 
 .cover_bg_5 {
-    background: url("../SeamlessDarkGreen.png");
+    background: url("../image/SeamlessDarkGreen.png");
     background-repeat: repeat;
 }
 
