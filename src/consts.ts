@@ -44,10 +44,10 @@ export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((ent
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
 }));
 export const originSidebarList = OriginDataJsonFile.originDataJsonArray.map((entry) => ({
-	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 export const classSidebarList = ClassDataJsonFile.classDataJsonArray.map((entry) => ({
-	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 export const equipmentSidebarList = EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
 	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')

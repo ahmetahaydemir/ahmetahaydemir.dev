@@ -7,7 +7,7 @@ import PageEffectTable from "../../../components/PageContent/PageEffectTable.ast
 export async function getStaticPaths() {
 	return OriginDataJsonFile.originDataJsonArray.map((entry) => ({
 		params: {
-			originName: entry.Name.toLowerCase().split(" ").join("-"),
+			originName: entry.Identifier.toLowerCase().split(" ").join("-"),
 		},
 		props: { origin: entry },
 	}));
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 const { origin } = Astro.props;
 ---
 
-<MainLayout topTitle={origin.Name}>
-	<PageEffectTable effectArray={origin} />
-	<PageEntityGrid gridFilter={origin.Name.toLowerCase()} />
+<MainLayout topTitle={origin.Identifier}>
+	<PageEffectTable effectObject={origin} />
+	<PageEntityGrid gridFilter={origin.Identifier.toLowerCase()} />
 </MainLayout>

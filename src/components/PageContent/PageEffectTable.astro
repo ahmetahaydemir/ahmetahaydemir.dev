@@ -1,5 +1,11 @@
 ---
-const { effectArray } = Astro.props;
+import type { TeamEffectData } from '../../../public/data/TeamEffectDataStructure';
+
+const { effectObject } = Astro.props;
+
+interface Props {
+	effectObject: TeamEffectData;
+}
 ---
 
 <table class="effect-table">
@@ -8,11 +14,11 @@ const { effectArray } = Astro.props;
 		<th>Effect Description</th>
 	</tr>
 	{
-		effectArray.EffectArray.map(
-			(child: { SizeLimit: string; Description: string }) => {
+		effectObject.EffectArray.map(
+			(child) => {
 				return (
 					<tr>
-						<td>{child.SizeLimit}</td>
+						<td>{child.Size}</td>
 						<td>{child.Description}</td>
 					</tr>
 				);

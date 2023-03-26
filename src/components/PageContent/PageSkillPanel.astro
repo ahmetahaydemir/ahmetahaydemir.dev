@@ -1,10 +1,13 @@
 ---
+import type { SkillData } from "../../../public/data/SkillDataStructure";
+
+interface Props {
+	skillObject: SkillData;
+}
+
 const { skillObject } = Astro.props;
 
-function GetHeaderRight(skill: {
-	CastData: { Type: any };
-	TriggerData: { Type: any };
-}) {
+function GetHeaderRight(skill: SkillData) {
 	if (skill.CastData) {
 		return skill.CastData.Type;
 	}
@@ -15,7 +18,7 @@ function GetHeaderRight(skill: {
 	//
 	return "unset";
 }
-function GetHeaderLeft(skill: { Type: any }) {
+function GetHeaderLeft(skill: SkillData) {
 	if (skill.Type) {
 		return skill.Type;
 	}

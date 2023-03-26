@@ -1,74 +1,156 @@
 ---
 title: "Data Structure"
 description: "Devlog Documentation"
-date: 2023-03-21
+date: 2023-03-25
 ---
 
 import PageDateBar from "../../components/PageContent/PageDateBar.astro";
 
 <PageDateBar dateString={frontmatter.date} />
 
-This week I planned on how will I input my data, how and in what format I will store it, and how will the data be retrieved.
+This week I spent some time on how will I input my data, in what format I will store it and how will the data be retrieved.
 
-File Seperation
+I don't think this step is a one and done process. it will change and get refactored as I continue developing the project.
 
-JSON
+But I still think it would be beneficial to take some time to ponder about the overall picture.
 
-API Fetch
+## Data Format
 
-```json
-{
-	"classDataJsonArray": [
-		{
-			"Name": "Fighter",
-			"EffectArray": [
-				{
-					"SizeLimit": "2",
-					"Description": "Fighters gain %10 more power for every unit that is targeting them",
-					"Skill": ""
-				},
-				{
-					"SizeLimit": "4",
-					"Description": "Fighters restore %5 max health for every alive fighter ally at the end of combat",
-					"Skill": ""
-				},
-				{
-					"SizeLimit": "6",
-					"Description": "Fighters stun the enemy for 1 turn with their every 4th attack",
-					"Skill": ""
-				},
-				{
-					"SizeLimit": "8",
-					"Description": "Fighters will continue fighting for 5 turns after dying",
-					"Skill": ""
-				}
-			]
-		},
-		{
-			"Name": "Hunter",
-			"EffectArray": [
-				{
-					"SizeLimit": "2",
-					"Description": "Hunters will prioritize the lowest health enemy on arena",
-					"Skill": ""
-				},
-				{
-					"SizeLimit": "4",
-					"Description": "Hunters will gain %10 more power for their every move action until they attack the prey",
-					"Skill": ""
-				},
-				{
-					"SizeLimit": "6",
-					"Description": "Hunters will restore %25 of their missing health when their target dies",
-					"Skill": ""
-				},
-				{
-					"SizeLimit": "8",
-					"Description": "Hunter power gains from move actions will stay until the target is dead",
-					"Skill": ""
-				}
-			]
-		}
-	]
+I need the data format to be easily readable and modifiable by hand since I will be dealing with it constantly.
+
+My plans involve web related network interactions as well, no need to reinvent the wheel, so I will format everything as [JSON](https://www.json.org/json-en.html).
+
+## Data Seperation
+
+In terms of usage, I will be having a set of static data that I will only read and never write. These will be : 
+
+- Entity Base Data
+- Class Base Data
+- Origin Base Data
+- Skill Base Data
+- Equipment Base Data
+- Configuration Data
+
+I will also need a set of dynamic data that I will read and write constantly. These will be : 
+
+- Node Simulation Data
+- Node Map Data
+- Team Data
+- Progression Tracker
+- Configuration Preferences
+
+## Data Structure - Entity
+
+```typescript
+import type { SkillData } from "./SkillDataStructure";
+import type { TeamEffectData } from "./TeamEffectDataStructure";
+
+export interface EntityData {
+    Identifier: string;
+    Origin: TeamEffectData;
+    Class: TeamEffectData;
+    Rarity: number;
+    Health: number;
+    Power: number;
+    Defence: number;
+    Speed: number;
+    Range: number;
+    Skill: SkillData
+}
+```
+
+## Data Structure - Team Effect
+
+```typescript
+import type { SkillData } from "./SkillDataStructure";
+
+export interface TeamEffectData {
+    Identifier: string;
+    EffectArray: EffectData[];
+}
+export interface EffectData {
+    Size: number;
+    Description: string;
+    Skill: SkillData;
+}
+```
+
+## Data Structure - Skill
+
+```typescript
+export interface SkillData {
+    Identifier: string;
+    Type: SkillType;
+    CastData: CastData;
+    TriggerData: TriggerData;
+    OccurenceData: OccurenceData[];
+}
+export interface CastData {
+    Point: number;
+    Type: CastType;
+    TargetingInput: TargetingInput;
+    TargetingRange: number;
+}
+export interface TriggerData {
+    Type: TriggerType;
+}
+export interface OccurenceData {
+    TargetingInput: TargetingInput;
+    MultiplierData: MultiplierData;
+    StatisticChanges: StatisticChange[];
+    StatusChanges: StatusChange[];
+    SpawnChanges: SpawnChange[];
+}
+export interface MultiplierData {
+    Type: MultiplierType;
+}
+export interface StatisticChange {
+    TargetStat: StatisticType;
+    FlatChange: number;
+    PercentageStat: StatisticType;
+    PercentageChange: number;
+    PercentageBasedOnCaster: boolean;
+}
+export interface StatusChange {
+    Status: SkillData;
+}
+export interface SpawnChange {
+    Spawn: string;
+}
+//-----------------------
+enum SkillType {
+    Cast,
+    Passive,
+    Origin,
+    Class,
+    Status,
+}
+enum CastType {
+    InstantCast,
+    CastOnTargetInRange,
+}
+enum TriggerType {
+    OnNodeStart,
+    OnNodeEnd,
+}
+enum TargetingInput {
+    Arena_Ally_Alive_LowestHealth,
+    Arena_Ally_Alive_Nearest,
+    Arena_Ally_Alive_Random,
+    Arena_Enemy_Alive_LowestHealth,
+    Arena_Enemy_Alive_Nearest,
+    Arena_Enemy_Alive_Random,
+    Self,
+}
+enum MultiplierType {
+    Once,
+    EntityCount,
+}
+enum StatisticType {
+    Health,
+    MaxHealth,
+    Power,
+    Defence,
+    Speed,
 }
 ```
