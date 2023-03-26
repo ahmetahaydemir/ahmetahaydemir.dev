@@ -1,7 +1,7 @@
 ﻿{
     "entityDataJsonArray": [
         {
-            "Zone": "Arctic",
+            "Zone": "Arctic",   
             "Name": "Arctic Fox",
             "Rarity": "0",
             "Origin": "Arctic",

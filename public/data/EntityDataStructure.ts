@@ -1,10 +1,11 @@
 import type { SkillData } from "./SkillDataStructure";
-import type { TeamEffectData } from "./TeamEffectDataStructure";
+import type { ClassData } from "./ClassDataStructure";
+import type { OriginData } from "./OriginDataStructure";
 
 export interface EntityData {
     Identifier: string;
-    Origin: TeamEffectData;
-    Class: TeamEffectData;
+    Origin: OriginData;
+    Class: ClassData;
     Rarity: number;
     Health: number;
     Power: number;

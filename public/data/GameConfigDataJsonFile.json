@@ -1,0 +1,18 @@
+{
+    "configDataJson": {
+        "settingsConfiguration": {
+            "initialMusicVolume": 0.5,
+            "initialSFXVolume": 0.5
+        },
+        "homepageConfiguration": {
+            "initialNotification": "Yoooooo, who is this handsome fella ?"
+        },
+        "nodeMapConfiguration": {
+            "maxMapWidth": 4,
+            "maxMapHeight": 10
+        },
+        "simulationConfiguration": {
+            "initialTickTime": 1
+        }
+    }
+}

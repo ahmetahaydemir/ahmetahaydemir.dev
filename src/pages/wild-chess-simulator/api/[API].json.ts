@@ -4,6 +4,7 @@ import { classDataJsonArray } from '../../../../public/data/ClassDataJsonFile.js
 import { originDataJsonArray } from '../../../../public/data/OriginDataJsonFile.json';
 import { entityDataJsonArray } from '../../../../public/data/EntityDataJsonFile.json';
 import { equipmentDataJsonArray } from '../../../../public/data/EquipmentDataJsonFile.json';
+import { configDataJson } from '../../../../public/data/GameConfigDataJsonFile.json';
 
 export const get: APIRoute = ({ params, request }) => {
     const API = params.API;
@@ -25,6 +26,9 @@ export const get: APIRoute = ({ params, request }) => {
         case "getEquipmentData":
             jsonData = { equipmentDataJsonArray };
             break;
+        case "getConfigData":
+            jsonData = { configDataJson };
+            break;
     }
     //
     return {
@@ -38,6 +42,7 @@ export function getStaticPaths() {
         { params: { API: "getClassData" } },
         { params: { API: "getOriginData" } },
         { params: { API: "getSkillData" } },
-        { params: { API: "getEquipmentData" } }
+        { params: { API: "getEquipmentData" } },
+        { params: { API: "getConfigData" } }
     ]
 }

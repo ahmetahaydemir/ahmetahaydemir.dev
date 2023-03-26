@@ -1,6 +1,6 @@
 import type { SkillData } from "./SkillDataStructure";
 
-export interface TeamEffectData {
+export interface ClassData {
     Identifier: string;
     EffectArray: EffectData[];
 }
