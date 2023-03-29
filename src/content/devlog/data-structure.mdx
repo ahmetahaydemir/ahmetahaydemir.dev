@@ -18,7 +18,7 @@ But I still think it would be beneficial to take some time to ponder about the o
 
 I need the data format to be easily readable and modifiable by hand since I will be dealing with it constantly.
 
-My plans involve web related network interactions as well, no need to reinvent the wheel, so I will format everything as [JSON](https://www.json.org/json-en.html).
+My plans involve web related network interactions as well, no need to reinvent the wheel and I don't think the file size will be an issue, so I will format everything as [JSON](https://www.json.org/json-en.html).
 
 ## Data Seperation
 
@@ -35,15 +35,15 @@ I will also need a set of dynamic data that I will read and write constantly. Th
 
 - Node Simulation Data
 - Node Map Data
-- Team Data
-- Progression Tracker
-- Configuration Preferences
+- Player Team Data
+- Player Progression Tracker
+- Player Configuration Preferences
 
 ## Data Fetching
 
-One of my main goals was to build a prototype environment with my data set to see the shortcomings of project structure. In order to do that I will be replicating the game data in this website with several visual components.
+One of my main goals was to build a prototype environment with my data set to see the shortcomings of my project structure. In order to do that I will be replicating the game data in this website with several visual components.
 
-Since the data will have an exact replica in here, I will just create a couple static file endpoints that I can use as an API routes. 
+Since the data will have an exact replica in here, I will just create a couple static file endpoints that I can use as an API route.
 
 Then I can use these endpoints to stay in sync and try out different data sets while using Unity.
 
@@ -55,6 +55,8 @@ Then I can use these endpoints to stay in sync and try out different data sets w
 - http://localhost:3000/wild-chess-simulator/api/getConfigData.json
 
 This will allow me to update the data once in that static endpoint and see the results in the website and the game simultaneously.
+
+Building a website is much easier than developing a game, so it will be faster to prototype and visualize the data in here.
 
 In the future, let's say that this game has more than 10 players, maybe a community member would like to tinker around with game data. These public endpoints will also provide them with the data they need.
 
@@ -78,12 +80,28 @@ export interface EntityData {
 }
 ```
 
-## Data Structure - Team Effect
+## Data Structure - Class
 
 ```typescript
 import type { SkillData } from "./SkillDataStructure";
 
-export interface TeamEffectData {
+export interface ClassData {
+    Identifier: string;
+    EffectArray: EffectData[];
+}
+export interface EffectData {
+    Size: number;
+    Description: string;
+    Skill: SkillData;
+}
+```
+
+## Data Structure - Origin
+
+```typescript
+import type { SkillData } from "./SkillDataStructure";
+
+export interface OriginData {
     Identifier: string;
     EffectArray: EffectData[];
 }
