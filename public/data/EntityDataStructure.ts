@@ -1,16 +1,16 @@
-import type { SkillData } from "./SkillDataStructure";
-import type { ClassData } from "./ClassDataStructure";
-import type { OriginData } from "./OriginDataStructure";
+// import type { SkillData } from "./SkillDataStructure";
+// import type { ClassData } from "./ClassDataStructure";
+// import type { OriginData } from "./OriginDataStructure";
 
 export interface EntityData {
     Identifier: string;
-    Origin: OriginData;
-    Class: ClassData;
+    OriginID: string;
+    ClassID: string;
     Rarity: number;
     Health: number;
     Power: number;
     Defence: number;
     Speed: number;
     Range: number;
-    Skill: SkillData
+    SkillID: string
 }

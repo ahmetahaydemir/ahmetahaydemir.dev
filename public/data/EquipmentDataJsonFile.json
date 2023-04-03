@@ -1,142 +1,142 @@
 {
     "equipmentDataJsonArray": [
         {
-            "Name": "Artichoke"
+            "Identifier": "Artichoke"
         },
         {
-            "Name": "Aubergine"
+            "Identifier": "Aubergine"
         },
         {
-            "Name": "Avocado"
+            "Identifier": "Avocado"
         },
         {
-            "Name": "Banana"
+            "Identifier": "Banana"
         },
         {
-            "Name": "Banana2"
+            "Identifier": "Banana2"
         },
         {
-            "Name": "Banana3"
+            "Identifier": "Banana3"
         },
         {
-            "Name": "Blueberry"
+            "Identifier": "Blueberry"
         },
         {
-            "Name": "Broccoli"
+            "Identifier": "Broccoli"
         },
         {
-            "Name": "Carrot"
+            "Identifier": "Carrot"
         },
         {
-            "Name": "Cauliflower"
+            "Identifier": "Cauliflower"
         },
         {
-            "Name": "Cherry1"
+            "Identifier": "Cherry1"
         },
         {
-            "Name": "Cherry2"
+            "Identifier": "Cherry2"
         },
         {
-            "Name": "Cherry3"
+            "Identifier": "Cherry3"
         },
         {
-            "Name": "Chilli"
+            "Identifier": "Chilli"
         },
         {
-            "Name": "Coconut"
+            "Identifier": "Coconut"
         },
         {
-            "Name": "Corn"
+            "Identifier": "Corn"
         },
         {
-            "Name": "Cucumber"
+            "Identifier": "Cucumber"
         },
         {
-            "Name": "Garlicclove"
+            "Identifier": "Garlicclove"
         },
         {
-            "Name": "Grape"
+            "Identifier": "Grape"
         },
         {
-            "Name": "Green Apple"
+            "Identifier": "Green Apple"
         },
         {
-            "Name": "Green Pepper"
+            "Identifier": "Green Pepper"
         },
         {
-            "Name": "Guava"
+            "Identifier": "Guava"
         },
         {
-            "Name": "Kiwicut"
+            "Identifier": "Kiwicut"
         },
         {
-            "Name": "Leek"
+            "Identifier": "Leek"
         },
         {
-            "Name": "Lemoncut"
+            "Identifier": "Lemoncut"
         },
         {
-            "Name": "Limecut"
+            "Identifier": "Limecut"
         },
         {
-            "Name": "Mango"
+            "Identifier": "Mango"
         },
         {
-            "Name": "Mangosteen"
+            "Identifier": "Mangosteen"
         },
         {
-            "Name": "Onion"
+            "Identifier": "Onion"
         },
         {
-            "Name": "Orange"
+            "Identifier": "Orange"
         },
         {
-            "Name": "Pear"
+            "Identifier": "Pear"
         },
         {
-            "Name": "Peas"
+            "Identifier": "Peas"
         },
         {
-            "Name": "Pineapple"
+            "Identifier": "Pineapple"
         },
         {
-            "Name": "Plum"
+            "Identifier": "Plum"
         },
         {
-            "Name": "Pomegranate"
+            "Identifier": "Pomegranate"
         },
         {
-            "Name": "Potato"
+            "Identifier": "Potato"
         },
         {
-            "Name": "Pumpkin"
+            "Identifier": "Pumpkin"
         },
         {
-            "Name": "Red Apple"
+            "Identifier": "Red Apple"
         },
         {
-            "Name": "Red Pepper"
+            "Identifier": "Red Pepper"
         },
         {
-            "Name": "Starfruit"
+            "Identifier": "Starfruit"
         },
         {
-            "Name": "Strawberry"
+            "Identifier": "Strawberry"
         },
         {
-            "Name": "Tomato"
+            "Identifier": "Tomato"
         },
         {
-            "Name": "Turnip"
+            "Identifier": "Turnip"
         },
         {
-            "Name": "Watermelon"
+            "Identifier": "Watermelon"
         },
         {
-            "Name": "Yellow Apple"
+            "Identifier": "Yellow Apple"
         },
         {
-            "Name": "Yellow Pepper"
+            "Identifier": "Yellow Pepper"
         }
     ]
 }

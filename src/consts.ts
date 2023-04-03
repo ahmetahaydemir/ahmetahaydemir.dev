@@ -41,7 +41,7 @@ import ClassDataJsonFile from '../public/data/ClassDataJsonFile.json'
 import EquipmentDataJsonFile from '../public/data/EquipmentDataJsonFile.json'
 import SkillDataJsonFile from '../public/data/SkillDataJsonFile.json'
 export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
-	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 export const originSidebarList = OriginDataJsonFile.originDataJsonArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
@@ -50,10 +50,10 @@ export const classSidebarList = ClassDataJsonFile.classDataJsonArray.map((entry)
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 export const equipmentSidebarList = EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
-	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 export const skillSidebarList = SkillDataJsonFile.skillDataJsonArray.map((entry) => ({
-	text: entry.Name, link: entry.Name.toLowerCase().split(' ').join('-')
+	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 //
 export type Sidebar = Record<

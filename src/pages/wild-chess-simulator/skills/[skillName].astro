@@ -2,19 +2,24 @@
 import MainLayout from "../../../layouts/MainLayout.astro";
 import SkillDataJsonFile from "../../../../public/data/SkillDataJsonFile.json";
 import PageSkillPanel from "../../../components/PageContent/PageSkillPanel.astro";
+import type { SkillData } from "../../../../public/data/SkillDataStructure";
 //
 export async function getStaticPaths() {
 	return SkillDataJsonFile.skillDataJsonArray.map((entry) => ({
 		params: {
-			skillName: entry.Name.toLowerCase().split(" ").join("-"),
+			skillName: entry.Identifier.toLowerCase().split(" ").join("-"),
 		},
 		props: { skillObject: entry },
 	}));
 }
 //
+interface Props {
+	skillObject: SkillData;
+}
+//
 const { skillObject } = Astro.props;
 ---
 
-<MainLayout topTitle={skillObject.Name}>
+<MainLayout topTitle={skillObject.Identifier}>
 	<PageSkillPanel skillObject={skillObject} />
 </MainLayout>

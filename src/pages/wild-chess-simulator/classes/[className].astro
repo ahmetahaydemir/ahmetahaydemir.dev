@@ -3,6 +3,7 @@ import MainLayout from "../../../layouts/MainLayout.astro";
 import ClassDataJsonFile from "../../../../public/data/ClassDataJsonFile.json";
 import PageEntityGrid from "../../../components/PageContent/PageEntityGrid.astro";
 import PageEffectTable from "../../../components/PageContent/PageEffectTable.astro";
+import type { ClassData } from "../../../../public/data/ClassDataStructure";
 //
 export async function getStaticPaths() {
 	return ClassDataJsonFile.classDataJsonArray.map((entry) => ({
@@ -11,6 +12,10 @@ export async function getStaticPaths() {
 		},
 		props: { classObject: entry },
 	}));
+}
+//
+interface Props {
+	classObject: ClassData;
 }
 //
 const { classObject } = Astro.props;

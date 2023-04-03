@@ -1,21 +1,9 @@
 ---
 import PageEntityItem from "./PageEntityItem.astro";
 import EntityDataJsonFile from "../../../public/data/EntityDataJsonFile.json";
+import type { EntityData } from "../../../public/data/EntityDataStructure";
 
 let { gridFilter } = Astro.props;
-
-interface EntityJson {
-	Zone: string;
-	Name: string;
-	Rarity: string;
-	Origin: string;
-	Class: string;
-	Health: string;
-	Power: string;
-	Defence: string;
-	Speed: string;
-	ActiveSkill: string;
-}
 
 const entityBasePath = "../battle-entities/";
 const filteredGridArray = EntityDataJsonFile.entityDataJsonArray.reduce(
@@ -23,13 +11,13 @@ const filteredGridArray = EntityDataJsonFile.entityDataJsonArray.reduce(
 	[]
 );
 
-function filterGrid(totalArray: EntityJson[], currentValue: EntityJson) {
+function filterGrid(totalArray: EntityData[], currentValue: EntityData) {
 	if (gridFilter) {
-		if (currentValue["Class"].toLowerCase().includes(gridFilter)) {
+		if (currentValue.ClassID.toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
-		} else if (currentValue["Origin"].toLowerCase().includes(gridFilter)) {
+		} else if (currentValue.OriginID.toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
-		} else if (currentValue["Name"].toLowerCase().includes(gridFilter)) {
+		} else if (currentValue.Identifier.toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
 		}
 	} else {
@@ -75,13 +63,16 @@ function filterGrid(totalArray: EntityJson[], currentValue: EntityJson) {
 	<section class="cards-nav">
 		<ul class="fluid-grid fluid-grid--minimal" id="entity-grid-container">
 			{
-				filteredGridArray.map((entityData) => (
+				filteredGridArray.map((entityData: EntityData) => (
 					<PageEntityItem
-						cardTitle={entityData.Name}
-						cardDesc={entityData.Origin + "|" + entityData.Class}
+						cardTitle={entityData.Identifier}
+						cardDesc={entityData.OriginID + "|" + entityData.ClassID}
 						cardLink={
 							entityBasePath +
-							entityData.Name.toString().toLowerCase().split(" ").join("-")
+							entityData.Identifier.toString()
+								.toLowerCase()
+								.split(" ")
+								.join("-")
 						}
 						cardLogo="/preact.svg"
 					/>

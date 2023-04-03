@@ -1,7 +1,7 @@
 {
     "skillDataJsonArray": [
         {
-            "Name": "Emergency Saliva",
+            "Identifier": "Emergency Saliva",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "6",
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "Name": "Ancient Shell",
+            "Identifier": "Ancient Shell",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "6",
@@ -53,7 +53,7 @@
             ]
         },
         {
-            "Name": "Nibble On",
+            "Identifier": "Nibble On",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "4",
@@ -85,7 +85,7 @@
             ]
         },
         {
-            "Name": "Tentacle Smash",
+            "Identifier": "Tentacle Smash",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "4",
@@ -110,7 +110,7 @@
             ]
         },
         {
-            "Name": "Constant Forage",
+            "Identifier": "Constant Forage",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "2",
@@ -135,7 +135,7 @@
             ]
         },
         {
-            "Name": "Concussive Touch",
+            "Identifier": "Concussive Touch",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "6",
@@ -160,7 +160,7 @@
             ]
         },
         {
-            "Name": "Prey On",
+            "Identifier": "Prey On",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "5",
@@ -187,7 +187,7 @@
             ]
         },
         {
-            "Name": "Go Nuts",
+            "Identifier": "Go Nuts",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "5",
@@ -212,7 +212,7 @@
             ]
         },
         {
-            "Name": "Honey Bunny",
+            "Identifier": "Honey Bunny",
             "Type": "EntityPassiveEffect",
             "TriggerData": {
                 "Type": "OnUpdateEntityList"
@@ -236,7 +236,7 @@
             ]
         },
         {
-            "Name": "Foolish Act",
+            "Identifier": "Foolish Act",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "5",

@@ -5,7 +5,7 @@ import EquipmentDataJsonFile from "../../../../public/data/EquipmentDataJsonFile
 export async function getStaticPaths() {
 	return EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
 		params: {
-			equipmentName: entry.Name.toLowerCase().split(" ").join("-"),
+			equipmentName: entry.Identifier.toLowerCase().split(" ").join("-"),
 		},
 		props: { equipment: entry },
 	}));
@@ -14,4 +14,4 @@ export async function getStaticPaths() {
 const { equipment } = Astro.props;
 ---
 
-<MainLayout topTitle={equipment.Name} />
+<MainLayout topTitle={equipment.Identifier} />

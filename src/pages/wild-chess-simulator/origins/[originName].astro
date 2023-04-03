@@ -3,20 +3,25 @@ import MainLayout from "../../../layouts/MainLayout.astro";
 import OriginDataJsonFile from "../../../../public/data/OriginDataJsonFile.json";
 import PageEntityGrid from "../../../components/PageContent/PageEntityGrid.astro";
 import PageEffectTable from "../../../components/PageContent/PageEffectTable.astro";
+import type { OriginData } from "../../../../public/data/OriginDataStructure";
 //
 export async function getStaticPaths() {
 	return OriginDataJsonFile.originDataJsonArray.map((entry) => ({
 		params: {
 			originName: entry.Identifier.toLowerCase().split(" ").join("-"),
 		},
-		props: { origin: entry },
+		props: { originObject: entry },
 	}));
 }
 //
-const { origin } = Astro.props;
+interface Props {
+	originObject: OriginData;
+}
+//
+const { originObject } = Astro.props;
 ---
 
-<MainLayout topTitle={origin.Identifier}>
-	<PageEffectTable effectObject={origin} />
-	<PageEntityGrid gridFilter={origin.Identifier.toLowerCase()} />
+<MainLayout topTitle={originObject.Identifier}>
+	<PageEffectTable effectObject={originObject} />
+	<PageEntityGrid gridFilter={originObject.Identifier.toLowerCase()} />
 </MainLayout>
