@@ -12,7 +12,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Direction_Ally_Alive_LowestHealth",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Health",
@@ -37,7 +37,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Self",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Defence",
@@ -62,7 +62,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Ally_Alive_LowestHealth",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Health",
@@ -94,7 +94,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Direction_Enemy_Alive_LowestHealth",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Health",
@@ -119,7 +119,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Ally_Alive_Random",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "ActionPoint",
@@ -144,7 +144,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Enemy_Alive_Nearest",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Health",
@@ -171,7 +171,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Enemy_Alive_LowestHealth",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Health",
@@ -196,7 +196,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Self",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Speed",
@@ -220,7 +220,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Ally_Alive_Adjacent",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Speed",
@@ -247,7 +247,7 @@
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Enemy_Alive_Nearest",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Health",
@@ -269,7 +269,7 @@
                 },
                 {
                     "TargetingInput": "Self",
-                    "Multiplier": "Once",
+                    "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
                             "TargetStat": "Power",
@@ -277,6 +277,77 @@
                             "PercentageStat": "Power",
                             "PercentageChange": 0,
                             "PercentageBasedOnCaster": false
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                }
+            ]
+        },
+        {
+            "Identifier": "Cool Test Skill",
+            "Type": "EntityCastEffect",
+            "CastData": {
+                "Point": "4",
+                "Type": "CastOnTargetInRange",
+                "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                "TargetingRange": 1
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                    "MultiplierData": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": -4,
+                            "PercentageStat": "Power",
+                            "PercentageChange": -100,
+                            "PercentageBasedOnCaster": true
+                        },
+                        {
+                            "TargetStat": "Power",
+                            "FlatChange": 1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": false
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                },
+                {
+                    "TargetingInput": "Self",
+                    "MultiplierData": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Power",
+                            "FlatChange": -1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": false
+                        },
+                        {
+                            "TargetStat": "Power",
+                            "FlatChange": 0,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 25,
+                            "PercentageBasedOnCaster": false
+                        }
+                    ],
+                    "StatusChange": [],
+                    "SpawnChange": []
+                },
+                {
+                    "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                    "MultiplierData": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Power",
+                            "FlatChange": 4,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 20,
+                            "PercentageBasedOnCaster": true
                         }
                     ],
                     "StatusChange": [],

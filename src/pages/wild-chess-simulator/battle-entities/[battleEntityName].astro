@@ -1,23 +1,30 @@
 ---
 import MainLayout from "../../../layouts/MainLayout.astro";
 import EntityDataJsonFile from "../../../../public/data/EntityDataJsonFile.json";
+import SkillDataJsonFile from "../../../../public/data/SkillDataJsonFile.json";
 import PageButtonClassOrigin from "../../../components/PageContent/PageButtonClassOrigin.astro";
 import type { EntityData } from "../../../../public/data/EntityDataStructure";
+import PageSkillPanel from "../../../components/PageContent/PageSkillPanel.astro";
+import type { SkillData } from "../../../../public/data/SkillDataStructure";
 //
 export async function getStaticPaths() {
 	return EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
 		params: {
 			battleEntityName: entry.Identifier.toLowerCase().split(" ").join("-"),
 		},
-		props: { battleEntityObject: entry },
+		props: {
+			battleEntityObject: entry,
+			skillObject: SkillDataJsonFile.skillDataJsonArray[10],
+		},
 	}));
 }
 //
 interface Props {
 	battleEntityObject: EntityData;
+	skillObject: SkillData;
 }
 //
-const { battleEntityObject } = Astro.props;
+const { battleEntityObject, skillObject } = Astro.props;
 ---
 
 <MainLayout topTitle={battleEntityObject.Identifier}>
@@ -25,4 +32,14 @@ const { battleEntityObject } = Astro.props;
 		originName={battleEntityObject.OriginID}
 		className={battleEntityObject.ClassID}
 	/>
+	<h2 style="text-align: center;">
+		<a
+			style="cursor: pointer; text-decoration: none;"
+			href={"../skills/" +
+				skillObject.Identifier.toLowerCase().split(" ").join("-")}
+		>
+			Skill : {skillObject.Identifier}
+		</a>
+	</h2>
+	<PageSkillPanel skillObject={skillObject} />
 </MainLayout>

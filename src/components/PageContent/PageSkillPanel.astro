@@ -1,5 +1,8 @@
 ---
-import type { SkillData } from "../../../public/data/SkillDataStructure";
+import type {
+	SkillData,
+	StatisticChange,
+} from "../../../public/data/SkillDataStructure";
 
 interface Props {
 	skillObject: SkillData;
@@ -9,76 +12,175 @@ const { skillObject } = Astro.props;
 
 function GetHeaderRight(skill: SkillData) {
 	if (skill.CastData) {
-		return skill.CastData.Type;
+		return "Cast : " + skill.CastData.Type;
 	}
 	//
 	if (skill.TriggerData) {
-		return skill.TriggerData.Type;
+		return "Trigger : " + skill.TriggerData.Type;
 	}
 	//
 	return "unset";
 }
 function GetHeaderLeft(skill: SkillData) {
 	if (skill.Type) {
-		return skill.Type;
+		return "Type : " + skill.Type;
 	}
 	//
 	return "unset";
 }
+function GetStatColor(statAmount: number) {
+	if (statAmount > 0) {
+		return "color:#7cbcbf; font-size:1.1em;";
+	} else {
+		return "color:#e07384; font-size:1.1em;";
+	}
+}
+function GetStatHighlightStatistic() {
+	return "color:#65a1e6; font-size:1.1em;";
+}
+function GetStatHighlightTargeting() {
+	return "color:#f2ce67; font-size:1.1em;";
+}
 ---
 
-<div class="skill-panel-header">
-	<a>{GetHeaderLeft(skillObject)}</a>
-	<a>{GetHeaderRight(skillObject)}</a>
+<div class="entity-origin-class-reference">
+	<div id="entity-class-link">
+		<a>{GetHeaderLeft(skillObject)}</a>
+	</div>
+	<div id="entity-origin-link">
+		<a>{GetHeaderRight(skillObject)}</a>
+	</div>
 </div>
 <div class="skill-panel">
-	<div class="skill-panel-occurence">
-		{
-			skillObject.OccurenceData.map((occurence) => {
-				return <p>{occurence.TargetingInput}</p>;
-			})
-		}
-	</div>
+	{
+		skillObject.OccurenceData.map((occurence) => {
+			return (
+				<div class="skill-panel-occurence">
+					<div class="skill-panel-occurence-title">
+						<p>{occurence.TargetingInput}</p>
+						<p>{occurence.MultiplierData}</p>
+					</div>
+					{occurence.StatisticChanges.map((statChange) => {
+						let statChangePercentageBasedText =
+							statChange.PercentageBasedOnCaster ? "Caster" : "Target";
+						//
+						return (
+							<div class="skill-panel-statistic-change">
+								<li>
+									Change
+									<b style={GetStatHighlightStatistic()}>
+										{statChange.TargetStat}
+									</b>
+									by
+									<b style={GetStatColor(statChange.FlatChange)}>
+										{statChange.FlatChange !== 0
+											? (statChange.FlatChange > 0 ? "+" : "") +
+											  statChange.FlatChange
+											: ""}
+									</b>
+									{statChange.FlatChange !== 0 &&
+									statChange.PercentageChange !== 0
+										? "and"
+										: ""}
+									<b style={GetStatColor(statChange.PercentageChange)}>
+										{statChange.PercentageChange !== 0
+											? (statChange.PercentageChange > 0 ? "+" : "") +
+											  statChange.PercentageChange +
+											  "% " +
+											  statChange.PercentageStat
+											: ""}
+									</b>
+									{statChange.PercentageChange !== 0 ? " of " : ""}
+									<b style={GetStatHighlightTargeting()}>
+										{statChange.PercentageChange !== 0
+											? statChangePercentageBasedText
+											: ""}
+									</b>
+								</li>
+							</div>
+						);
+					})}
+				</div>
+			);
+		})
+	}
 </div>
 
 <style>
 	.skill-panel {
 		background-color: var(--theme-code-bg);
+		border-color: var(--theme-code-tabs);
+		border-style: dashed;
 		border-radius: 25px;
 		width: 100%;
-		height: 500px;
-	}
-	.skill-panel-header {
-		width: 100%;
-		height: 5rem;
+		height: fit-content;
+		padding: 25px;
+		gap: 25px;
 		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: center;
+	}
+	.skill-panel-occurence {
+		width: 100%;
+		background-color: var(--theme-code-tabs);
+		border-radius: 30px;
+		border-color: var(--theme-code-bg);
+		border-style: dashed;
+		transition: ease-in-out 0.25s;
+		z-index: 1;
+	}
+	.skill-panel-occurence:hover {
+		border-color: var(--theme-accent);
+		border-style: dashed;
+		transition: none;
+	}
+	.skill-panel-occurence-title {
+		font-weight: bold;
+		font-size: 1.2em;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 10px;
 	}
-	.skill-panel-header a {
-		background-color: var(--theme-code-bg);
-		border-color: var(--theme-code-tabs);
+	.skill-panel-statistic-change {
+		background-color: var(--theme-bg);
+		padding: 10px 25px 10px 25px;
+		text-align: center;
+	}
+	.skill-panel-statistic-change:last-child {
+		border-radius: 0px 0px 25px 25px;
+	}
+
+	.entity-origin-class-reference {
 		width: 100%;
-		height: 100%;
 		display: flex;
-		justify-content: center;
+		height: 4rem;
+	}
+	.entity-origin-class-reference div {
+		width: inherit;
+		height: inherit;
+		background-color: var(--theme-navbar-bg);
+		border-color: var(--theme-selection-bg);
 		border-style: dashed;
-		text-decoration: none;
-		font-size: 1.2rem;
+		transition: ease-in-out 0.25s;
 		font-weight: bold;
-		transition: ease-in-out 0.25s;
+		font-size: 1rem;
+		margin: 10px;
 	}
-	.skill-panel-header a:first-child {
-		border-radius: 25px 5px 5px 25px;
+	.entity-origin-class-reference div:hover {
+		background-color: var(--theme-bg-hover);
+		border-color: var(--theme-text-accent);
+		border-radius: 15px;
+		cursor: pointer;
 	}
-	.skill-panel-header a:last-child {
-		border-radius: 5px 25px 25px 5px;
-	}
-	.skill-panel-header a:hover {
-		transition: ease-in-out 0.25s;
-		background-color: rgba(0, 0, 0, 0.25);
-		border-color: unset;
-		border-radius: 25px;
+	.entity-origin-class-reference div a {
+		vertical-align: middle;
+		height: 100%;
+		width: 100%;
+		justify-content: center;
+		display: flex;
+		text-decoration: none;
 	}
 </style>
