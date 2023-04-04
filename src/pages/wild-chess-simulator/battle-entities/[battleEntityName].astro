@@ -6,6 +6,7 @@ import PageButtonClassOrigin from "../../../components/PageContent/PageButtonCla
 import type { EntityData } from "../../../../public/data/EntityDataStructure";
 import PageSkillPanel from "../../../components/PageContent/PageSkillPanel.astro";
 import type { SkillData } from "../../../../public/data/SkillDataStructure";
+import PageEntityStat from "../../../components/PageContent/PageEntityStat.astro";
 //
 export async function getStaticPaths() {
 	return EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
@@ -14,7 +15,9 @@ export async function getStaticPaths() {
 		},
 		props: {
 			battleEntityObject: entry,
-			skillObject: SkillDataJsonFile.skillDataJsonArray[10],
+			skillObject: SkillDataJsonFile.skillDataJsonArray.find(
+				(skill) => skill.Identifier === entry.SkillID
+			),
 		},
 	}));
 }
@@ -32,14 +35,16 @@ const { battleEntityObject, skillObject } = Astro.props;
 		originName={battleEntityObject.OriginID}
 		className={battleEntityObject.ClassID}
 	/>
+	<PageEntityStat statObject={battleEntityObject.Statistics} />
 	<h2 style="text-align: center;">
 		<a
 			style="cursor: pointer; text-decoration: none;"
 			href={"../skills/" +
 				skillObject.Identifier.toLowerCase().split(" ").join("-")}
 		>
-			Skill : {skillObject.Identifier}
+			{skillObject.Identifier}
 		</a>
 	</h2>
+	<hr style="margin-inline:50px;" />
 	<PageSkillPanel skillObject={skillObject} />
 </MainLayout>

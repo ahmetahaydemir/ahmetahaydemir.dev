@@ -285,7 +285,7 @@
             ]
         },
         {
-            "Identifier": "Cool Test Skill",
+            "Identifier": "DefaultTestSkillID",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": "4",

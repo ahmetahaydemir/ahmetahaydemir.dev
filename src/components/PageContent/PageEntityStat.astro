@@ -1,0 +1,87 @@
+---
+import type { EntityStatistic } from "../../../public/data/EntityDataStructure";
+//
+export const StatIcons = [
+	"/icon/btn_icon_life.png",
+	"/icon/btn_icon_shield.png",
+	"/icon/btn_icon_sword.png",
+	"/icon/btn_icon_target.png",
+	"/icon/btn_icon_move.png",
+];
+export const StatColors = [
+	"color:#e07384;",
+	"color:#a5a4a3;",
+	"color:#7cbcbf;",
+	"color:#f2ce67;",
+	"color:#8b6bfb;",
+];
+//
+export let StatIterator = -1;
+//
+interface Props {
+	statObject: EntityStatistic[];
+}
+//
+const { statObject } = Astro.props;
+---
+
+<div class="entity-stat-panel">
+	{
+		statObject.map((statElement) => {
+			StatIterator++;
+			StatIterator %= statObject.length;
+			return (
+				<div class="entity-stat-element">
+					<div class="entity-stat-logo">
+						<img
+							src={StatIcons[StatIterator]}
+							alt={statElement.StatType.toString()}
+							loading="lazy"
+							decoding="async"
+							width="100"
+							height="100"
+						/>
+					</div>
+					<p style={StatColors[StatIterator]}>{statElement.StatType}</p>
+					<p>{statElement.StatAmount}</p>
+				</div>
+			);
+		})
+	}
+</div>
+
+<style>
+	.entity-stat-panel {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		padding: 10px 0px 0px 0px;
+		gap: 10px;
+	}
+	.entity-stat-element {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.entity-stat-logo {
+		/* border-radius: 50%;
+		background-color: var(--theme-code-bg);
+		box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse); */
+		display: flex;
+		outline: 1px solid transparent;
+		overflow: hidden;
+		width: 100px;
+		height: 100px;
+		align-items: center;
+	}
+	.entity-stat-logo img {
+		height: fit-content;
+		width: fit-content;
+	}
+	.entity-stat-element p {
+		font-weight: bold;
+		font-size: 1.25rem;
+	}
+</style>

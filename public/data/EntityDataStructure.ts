@@ -7,10 +7,23 @@ export interface EntityData {
     OriginID: string;
     ClassID: string;
     Rarity: number;
-    Health: number;
-    Power: number;
-    Defence: number;
-    Speed: number;
-    Range: number;
+    Statistics: EntityStatistic[];
     SkillID: string
+}
+
+export interface EntityStatistic {
+    StatType: EntityStatisticType;
+    StatAmount: number;
+}
+
+export enum EntityStatisticType {
+    Health,
+    MaxHealth,
+    Power,
+    Defence,
+    Range,
+    Speed,
+    Gold,
+    ActionPoint,
+    ExperiencePoint
 }

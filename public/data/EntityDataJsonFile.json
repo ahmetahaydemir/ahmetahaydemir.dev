@@ -1,2175 +1,5252 @@
 ﻿{
     "entityDataJsonArray": [
         {
-            "Zone": "Arctic",   
+            "Zone": "Arctic",
             "Identifier": "Arctic Fox",
-            "Rarity": "0",
             "OriginID": "Arctic",
-            "ClassID": "Hunter                                                                ",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
-            "SkillID": "DefaultTestSkillID"
+            "ClassID": "Hunter",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": "Prey On"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Ox",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
-            "SkillID": "DefaultTestSkillID"
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": "Foolish Act"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Penguin",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Polar Bear",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Reindeer",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Sea Lion",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Snow Owl",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Snow Weasel",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Walrus",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Snow Leopard",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Puffin",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Narwhal",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Moose",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Lynx",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Husky",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Hare",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Cougar",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Arctic",
             "Identifier": "Beluga",
-            "Rarity": "0",
             "OriginID": "Arctic",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Armadillo",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Bighorn",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Camel",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Coyote",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Fennec Fox",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Gemsbok",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Gila Monster",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Golden Eagle",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Horned Lizard",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Jackrabbit",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Javelina",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Jerboa",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Meerkat",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Porcupine",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Pronghorn",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Rattlesnake",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Vulture",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Desert",
             "Identifier": "Woodpecker",
-            "Rarity": "0",
             "OriginID": "Desert",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Turkey",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Mallard",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Llama",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Lamb",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Horse",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Goose",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Goat",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Bull",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Alpaca",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Buffalo",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Chick",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Cow",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Donkey",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Duck",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Hen",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Pig",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Rooster",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Farm",
             "Identifier": "Sheep",
-            "Rarity": "0",
             "OriginID": "Farm",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Badger",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Bear",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Cardinal",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Deer",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Lemur",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Marten",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Mole",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Skunk",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Toucan",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Crow",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Eagle",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Fox",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Hog",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Hornbill",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Owl",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Raccoon",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Snake",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Forest",
             "Identifier": "Wolf",
-            "Rarity": "0",
             "OriginID": "Forest",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Bandicoot",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Dingo",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Echidna",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Emu",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Flying Fox",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Frill-Necked Lizard",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Kakapo",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Kangaroo",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Kiwi",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Koala",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Kookaburra",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Numbat",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Platypus",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Possum",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Quail",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Quokka",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Tasmanian Devil",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Island",
             "Identifier": "Wombat",
-            "Rarity": "0",
             "OriginID": "Island",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Bat",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Chevrotain",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Chimp",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Cobra",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Gaur",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Gorilla",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Jaguar",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Leopard",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Macaw",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Monitor Lizard",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Orangutan",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Panda",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Peacock",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Red Panda",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Sloth",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Striped Snake",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Tapir",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Jungle",
             "Identifier": "Tiger",
-            "Rarity": "0",
             "OriginID": "Jungle",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Squirrel",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Python",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Monkey",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Iguana",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Hedgehog",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Hamster",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Ferret",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Chipmunk",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Chameleon",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Cat",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Dog",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Dove",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Goldfish",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Mouse",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Parrot",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Pigeon",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Rabbit",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Pet",
             "Identifier": "Tortoise",
-            "Rarity": "0",
             "OriginID": "Pet",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Alligator",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Arowana",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Bass",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Beaver",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Capybara",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Carp",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Catfish",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Crocodile",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Frog",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Heron",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Kingfisher",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Manatee",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Mudskipper",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Otter",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Piranha",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "River Dolphin",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Shoebill",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Snapping Turtle",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "River",
             "Identifier": "Swan",
-            "Rarity": "0",
             "OriginID": "River",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Wildebeest",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Serval",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Lioness",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Lion",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Jackal",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Giraffe",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Bison",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Baboon",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Antelope",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Cheetah",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Elephant",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Flamingo",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Gazelle",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Hippo",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Hyena",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Assassin",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Ostrich",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Rhino",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Safari",
             "Identifier": "Zebra",
-            "Rarity": "0",
             "OriginID": "Safari",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Clownfish",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Crab",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Dolphin",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Jellyfish",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Lobster",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Octopus",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Orca",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Brute",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Pelican",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Prawn",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Evoker",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Salmon",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Healer",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Sardine",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Supporter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Sea Horse",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Sea Otter",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Scout",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Seagull",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Hunter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Squid",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Caster",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Tuna",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Fighter",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Turtle",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         },
         {
             "Zone": "Sea",
             "Identifier": "Whale",
-            "Rarity": "0",
             "OriginID": "Sea",
             "ClassID": "Tank",
-            "Health": "10",
-            "Power": "1",
-            "Defence": "0",
-            "Speed": "2",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
             "SkillID": "DefaultTestSkillID"
         }
     ]
