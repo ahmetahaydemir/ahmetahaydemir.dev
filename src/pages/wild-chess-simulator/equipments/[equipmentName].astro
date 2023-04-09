@@ -1,9 +1,9 @@
 ---
 import MainLayout from "../../../layouts/MainLayout.astro";
-import EquipmentDataJsonFile from "../../../../public/data/EquipmentDataJsonFile.json";
+import EquipmentDataJsonFile from "../../../../public/data/CubicEntityDataJsonFile.json";
 //
 export async function getStaticPaths() {
-	return EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
+	return EquipmentDataJsonFile.equipmentCubicDataJsonArray.map((entry) => ({
 		params: {
 			equipmentName: entry.Identifier.toLowerCase().split(" ").join("-"),
 		},

@@ -38,7 +38,7 @@ devlogPosts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
 import EntityDataJsonFile from '../public/data/EntityDataJsonFile.json'
 import OriginDataJsonFile from '../public/data/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/data/ClassDataJsonFile.json'
-import EquipmentDataJsonFile from '../public/data/EquipmentDataJsonFile.json'
+import CubicEntityDataJsonFile from '../public/data/CubicEntityDataJsonFile.json'
 import SkillDataJsonFile from '../public/data/SkillDataJsonFile.json'
 export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
@@ -49,7 +49,7 @@ export const originSidebarList = OriginDataJsonFile.originDataJsonArray.map((ent
 export const classSidebarList = ClassDataJsonFile.classDataJsonArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
-export const equipmentSidebarList = EquipmentDataJsonFile.equipmentDataJsonArray.map((entry) => ({
+export const equipmentSidebarList = CubicEntityDataJsonFile.equipmentCubicDataJsonArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 export const skillSidebarList = SkillDataJsonFile.skillDataJsonArray.map((entry) => ({

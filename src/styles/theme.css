@@ -146,12 +146,10 @@
 	--theme-code-del-border: hsl(338, 46%, 53%);
 	--theme-code-del-text: hsl(338, 36%, 70%);
 
-	--theme-bg-gradient: linear-gradient(
-		180deg,
-		var(--theme-bg-gradient-top),
-		var(--theme-bg-gradient-top) calc(var(--theme-navbar-height) + var(--theme-mobile-toc-height)),
-		var(--theme-bg-gradient-bottom)
-	);
+	--theme-bg-gradient: linear-gradient(180deg,
+			var(--theme-bg-gradient-top),
+			var(--theme-bg-gradient-top) calc(var(--theme-navbar-height) + var(--theme-mobile-toc-height)),
+			var(--theme-bg-gradient-bottom));
 
 	--theme-glow-highlight: transparent;
 	--theme-glow-diffuse: hsla(var(--color-base-purple), 65%, 0.5);

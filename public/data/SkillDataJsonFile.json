@@ -4,7 +4,7 @@
             "Identifier": "Emergency Saliva",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "6",
+                "Point": 6,
                 "Type": "CastOnTargetInRange",
                 "TargetingInput": "Arena_Ally_Alive_LowestHealth",
                 "TargetingRange": 2
@@ -31,7 +31,7 @@
             "Identifier": "Ancient Shell",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "6",
+                "Point": 6,
                 "Type": "InstantCast"
             },
             "OccurenceData": [
@@ -56,7 +56,7 @@
             "Identifier": "Nibble On",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "4",
+                "Point": 4,
                 "Type": "InstantCast"
             },
             "OccurenceData": [
@@ -88,7 +88,7 @@
             "Identifier": "Tentacle Smash",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "4",
+                "Point": 4,
                 "Type": "InstantCast"
             },
             "OccurenceData": [
@@ -113,7 +113,7 @@
             "Identifier": "Constant Forage",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "2",
+                "Point": 2,
                 "Type": "InstantCast"
             },
             "OccurenceData": [
@@ -138,7 +138,7 @@
             "Identifier": "Concussive Touch",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "6",
+                "Point": 6,
                 "Type": "InstantCast"
             },
             "OccurenceData": [
@@ -163,7 +163,7 @@
             "Identifier": "Prey On",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "5",
+                "Point": 5,
                 "Type": "CastOnTargetInRange",
                 "TargetingInput": "Arena_Enemy_Alive_LowestHealth",
                 "TargetingRange": 1
@@ -190,7 +190,7 @@
             "Identifier": "Go Nuts",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "5",
+                "Point": 5,
                 "Type": "InstantCast"
             },
             "OccurenceData": [
@@ -239,7 +239,7 @@
             "Identifier": "Foolish Act",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "5",
+                "Point": 5,
                 "Type": "CastOnTargetInRange",
                 "TargetingInput": "Arena_Enemy_Alive_Nearest",
                 "TargetingRange": 1
@@ -288,7 +288,7 @@
             "Identifier": "DefaultTestSkillID",
             "Type": "EntityCastEffect",
             "CastData": {
-                "Point": "4",
+                "Point": 4,
                 "Type": "CastOnTargetInRange",
                 "TargetingInput": "Arena_Enemy_Alive_Nearest",
                 "TargetingRange": 1

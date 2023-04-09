@@ -1,7 +1,6 @@
 ﻿{
     "entityDataJsonArray": [
         {
-            "Zone": "Arctic",
             "Identifier": "Arctic Fox",
             "OriginID": "Arctic",
             "ClassID": "Hunter",
@@ -30,7 +29,6 @@
             "SkillID": "Prey On"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Ox",
             "OriginID": "Arctic",
             "ClassID": "Tank",
@@ -59,7 +57,6 @@
             "SkillID": "Foolish Act"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Penguin",
             "OriginID": "Arctic",
             "ClassID": "Assassin",
@@ -88,7 +85,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Polar Bear",
             "OriginID": "Arctic",
             "ClassID": "Fighter",
@@ -117,7 +113,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Reindeer",
             "OriginID": "Arctic",
             "ClassID": "Healer",
@@ -146,7 +141,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Sea Lion",
             "OriginID": "Arctic",
             "ClassID": "Fighter",
@@ -175,7 +169,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Snow Owl",
             "OriginID": "Arctic",
             "ClassID": "Evoker",
@@ -204,7 +197,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Snow Weasel",
             "OriginID": "Arctic",
             "ClassID": "Scout",
@@ -233,7 +225,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Walrus",
             "OriginID": "Arctic",
             "ClassID": "Brute",
@@ -262,7 +253,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Snow Leopard",
             "OriginID": "Arctic",
             "ClassID": "Hunter",
@@ -291,7 +281,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Puffin",
             "OriginID": "Arctic",
             "ClassID": "Healer",
@@ -320,7 +309,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Narwhal",
             "OriginID": "Arctic",
             "ClassID": "Brute",
@@ -349,7 +337,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Moose",
             "OriginID": "Arctic",
             "ClassID": "Tank",
@@ -378,7 +365,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Lynx",
             "OriginID": "Arctic",
             "ClassID": "Assassin",
@@ -407,7 +393,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Husky",
             "OriginID": "Arctic",
             "ClassID": "Supporter",
@@ -436,7 +421,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Hare",
             "OriginID": "Arctic",
             "ClassID": "Scout",
@@ -465,7 +449,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Cougar",
             "OriginID": "Arctic",
             "ClassID": "Hunter",
@@ -494,7 +477,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Arctic",
             "Identifier": "Beluga",
             "OriginID": "Arctic",
             "ClassID": "Tank",
@@ -523,7 +505,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Armadillo",
             "OriginID": "Desert",
             "ClassID": "Tank",
@@ -552,7 +533,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Bighorn",
             "OriginID": "Desert",
             "ClassID": "Brute",
@@ -581,7 +561,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Camel",
             "OriginID": "Desert",
             "ClassID": "Tank",
@@ -610,7 +589,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Coyote",
             "OriginID": "Desert",
             "ClassID": "Assassin",
@@ -639,7 +617,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Fennec Fox",
             "OriginID": "Desert",
             "ClassID": "Scout",
@@ -668,7 +645,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Gemsbok",
             "OriginID": "Desert",
             "ClassID": "Fighter",
@@ -697,7 +673,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Gila Monster",
             "OriginID": "Desert",
             "ClassID": "Evoker",
@@ -726,7 +701,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Golden Eagle",
             "OriginID": "Desert",
             "ClassID": "Hunter",
@@ -755,7 +729,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Horned Lizard",
             "OriginID": "Desert",
             "ClassID": "Evoker",
@@ -784,7 +757,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Jackrabbit",
             "OriginID": "Desert",
             "ClassID": "Scout",
@@ -813,7 +785,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Javelina",
             "OriginID": "Desert",
             "ClassID": "Healer",
@@ -842,7 +813,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Jerboa",
             "OriginID": "Desert",
             "ClassID": "Scout",
@@ -871,7 +841,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Meerkat",
             "OriginID": "Desert",
             "ClassID": "Scout",
@@ -900,7 +869,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Porcupine",
             "OriginID": "Desert",
             "ClassID": "Supporter",
@@ -929,7 +897,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Pronghorn",
             "OriginID": "Desert",
             "ClassID": "Fighter",
@@ -958,7 +925,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Rattlesnake",
             "OriginID": "Desert",
             "ClassID": "Assassin",
@@ -987,7 +953,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Vulture",
             "OriginID": "Desert",
             "ClassID": "Hunter",
@@ -1016,7 +981,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Desert",
             "Identifier": "Woodpecker",
             "OriginID": "Desert",
             "ClassID": "Assassin",
@@ -1045,7 +1009,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Turkey",
             "OriginID": "Farm",
             "ClassID": "Evoker",
@@ -1074,7 +1037,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Mallard",
             "OriginID": "Farm",
             "ClassID": "Evoker",
@@ -1103,7 +1065,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Llama",
             "OriginID": "Farm",
             "ClassID": "Healer",
@@ -1132,7 +1093,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Lamb",
             "OriginID": "Farm",
             "ClassID": "Supporter",
@@ -1161,7 +1121,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Horse",
             "OriginID": "Farm",
             "ClassID": "Fighter",
@@ -1190,7 +1149,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Goose",
             "OriginID": "Farm",
             "ClassID": "Assassin",
@@ -1219,7 +1177,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Goat",
             "OriginID": "Farm",
             "ClassID": "Caster",
@@ -1248,7 +1205,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Bull",
             "OriginID": "Farm",
             "ClassID": "Brute",
@@ -1277,7 +1233,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Alpaca",
             "OriginID": "Farm",
             "ClassID": "Healer",
@@ -1306,7 +1261,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Buffalo",
             "OriginID": "Farm",
             "ClassID": "Brute",
@@ -1335,7 +1289,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Chick",
             "OriginID": "Farm",
             "ClassID": "Supporter",
@@ -1364,7 +1317,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Cow",
             "OriginID": "Farm",
             "ClassID": "Tank",
@@ -1393,7 +1345,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Donkey",
             "OriginID": "Farm",
             "ClassID": "Fighter",
@@ -1422,7 +1373,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Duck",
             "OriginID": "Farm",
             "ClassID": "Caster",
@@ -1451,7 +1401,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Hen",
             "OriginID": "Farm",
             "ClassID": "Evoker",
@@ -1480,7 +1429,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Pig",
             "OriginID": "Farm",
             "ClassID": "Tank",
@@ -1509,7 +1457,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Rooster",
             "OriginID": "Farm",
             "ClassID": "Evoker",
@@ -1538,7 +1485,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Farm",
             "Identifier": "Sheep",
             "OriginID": "Farm",
             "ClassID": "Healer",
@@ -1567,7 +1513,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Badger",
             "OriginID": "Forest",
             "ClassID": "Healer",
@@ -1596,7 +1541,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Bear",
             "OriginID": "Forest",
             "ClassID": "Brute",
@@ -1625,7 +1569,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Cardinal",
             "OriginID": "Forest",
             "ClassID": "Supporter",
@@ -1654,7 +1597,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Deer",
             "OriginID": "Forest",
             "ClassID": "Healer",
@@ -1683,7 +1625,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Lemur",
             "OriginID": "Forest",
             "ClassID": "Scout",
@@ -1712,7 +1653,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Marten",
             "OriginID": "Forest",
             "ClassID": "Scout",
@@ -1741,7 +1681,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Mole",
             "OriginID": "Forest",
             "ClassID": "Caster",
@@ -1770,7 +1709,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Skunk",
             "OriginID": "Forest",
             "ClassID": "Caster",
@@ -1799,7 +1737,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Toucan",
             "OriginID": "Forest",
             "ClassID": "Evoker",
@@ -1828,7 +1765,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Crow",
             "OriginID": "Forest",
             "ClassID": "Evoker",
@@ -1857,7 +1793,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Eagle",
             "OriginID": "Forest",
             "ClassID": "Hunter",
@@ -1886,7 +1821,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Fox",
             "OriginID": "Forest",
             "ClassID": "Hunter",
@@ -1915,7 +1849,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Hog",
             "OriginID": "Forest",
             "ClassID": "Fighter",
@@ -1944,7 +1877,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Hornbill",
             "OriginID": "Forest",
             "ClassID": "Caster",
@@ -1973,7 +1905,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Owl",
             "OriginID": "Forest",
             "ClassID": "Evoker",
@@ -2002,7 +1933,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Raccoon",
             "OriginID": "Forest",
             "ClassID": "Caster",
@@ -2031,7 +1961,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Snake",
             "OriginID": "Forest",
             "ClassID": "Assassin",
@@ -2060,7 +1989,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Forest",
             "Identifier": "Wolf",
             "OriginID": "Forest",
             "ClassID": "Hunter",
@@ -2089,7 +2017,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Bandicoot",
             "OriginID": "Island",
             "ClassID": "Scout",
@@ -2118,7 +2045,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Dingo",
             "OriginID": "Island",
             "ClassID": "Hunter",
@@ -2147,7 +2073,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Echidna",
             "OriginID": "Island",
             "ClassID": "Tank",
@@ -2176,7 +2101,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Emu",
             "OriginID": "Island",
             "ClassID": "Fighter",
@@ -2205,7 +2129,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Flying Fox",
             "OriginID": "Island",
             "ClassID": "Scout",
@@ -2234,7 +2157,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Frill-Necked Lizard",
             "OriginID": "Island",
             "ClassID": "Caster",
@@ -2263,7 +2185,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Kakapo",
             "OriginID": "Island",
             "ClassID": "Supporter",
@@ -2292,7 +2213,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Kangaroo",
             "OriginID": "Island",
             "ClassID": "Fighter",
@@ -2321,7 +2241,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Kiwi",
             "OriginID": "Island",
             "ClassID": "Caster",
@@ -2350,7 +2269,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Koala",
             "OriginID": "Island",
             "ClassID": "Healer",
@@ -2379,7 +2297,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Kookaburra",
             "OriginID": "Island",
             "ClassID": "Evoker",
@@ -2408,7 +2325,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Numbat",
             "OriginID": "Island",
             "ClassID": "Scout",
@@ -2437,7 +2353,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Platypus",
             "OriginID": "Island",
             "ClassID": "Healer",
@@ -2466,7 +2381,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Possum",
             "OriginID": "Island",
             "ClassID": "Supporter",
@@ -2495,7 +2409,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Quail",
             "OriginID": "Island",
             "ClassID": "Evoker",
@@ -2524,7 +2437,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Quokka",
             "OriginID": "Island",
             "ClassID": "Scout",
@@ -2553,7 +2465,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Tasmanian Devil",
             "OriginID": "Island",
             "ClassID": "Assassin",
@@ -2582,7 +2493,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Island",
             "Identifier": "Wombat",
             "OriginID": "Island",
             "ClassID": "Tank",
@@ -2611,7 +2521,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Bat",
             "OriginID": "Jungle",
             "ClassID": "Caster",
@@ -2640,7 +2549,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Chevrotain",
             "OriginID": "Jungle",
             "ClassID": "Healer",
@@ -2669,7 +2577,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Chimp",
             "OriginID": "Jungle",
             "ClassID": "Fighter",
@@ -2698,7 +2605,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Cobra",
             "OriginID": "Jungle",
             "ClassID": "Assassin",
@@ -2727,7 +2633,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Gaur",
             "OriginID": "Jungle",
             "ClassID": "Brute",
@@ -2756,7 +2661,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Gorilla",
             "OriginID": "Jungle",
             "ClassID": "Brute",
@@ -2785,7 +2689,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Jaguar",
             "OriginID": "Jungle",
             "ClassID": "Hunter",
@@ -2814,7 +2717,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Leopard",
             "OriginID": "Jungle",
             "ClassID": "Hunter",
@@ -2843,7 +2745,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Macaw",
             "OriginID": "Jungle",
             "ClassID": "Evoker",
@@ -2872,7 +2773,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Monitor Lizard",
             "OriginID": "Jungle",
             "ClassID": "Fighter",
@@ -2901,7 +2801,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Orangutan",
             "OriginID": "Jungle",
             "ClassID": "Tank",
@@ -2930,7 +2829,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Panda",
             "OriginID": "Jungle",
             "ClassID": "Tank",
@@ -2959,7 +2857,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Peacock",
             "OriginID": "Jungle",
             "ClassID": "Caster",
@@ -2988,7 +2885,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Red Panda",
             "OriginID": "Jungle",
             "ClassID": "Scout",
@@ -3017,7 +2913,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Sloth",
             "OriginID": "Jungle",
             "ClassID": "Healer",
@@ -3046,7 +2941,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Striped Snake",
             "OriginID": "Jungle",
             "ClassID": "Assassin",
@@ -3075,7 +2969,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Tapir",
             "OriginID": "Jungle",
             "ClassID": "Caster",
@@ -3104,7 +2997,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Jungle",
             "Identifier": "Tiger",
             "OriginID": "Jungle",
             "ClassID": "Fighter",
@@ -3133,7 +3025,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Squirrel",
             "OriginID": "Pet",
             "ClassID": "Scout",
@@ -3162,7 +3053,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Python",
             "OriginID": "Pet",
             "ClassID": "Assassin",
@@ -3191,7 +3081,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Monkey",
             "OriginID": "Pet",
             "ClassID": "Fighter",
@@ -3220,7 +3109,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Iguana",
             "OriginID": "Pet",
             "ClassID": "Hunter",
@@ -3249,7 +3137,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Hedgehog",
             "OriginID": "Pet",
             "ClassID": "Caster",
@@ -3278,7 +3165,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Hamster",
             "OriginID": "Pet",
             "ClassID": "Supporter",
@@ -3307,7 +3193,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Ferret",
             "OriginID": "Pet",
             "ClassID": "Scout",
@@ -3336,7 +3221,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Chipmunk",
             "OriginID": "Pet",
             "ClassID": "Caster",
@@ -3365,7 +3249,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Chameleon",
             "OriginID": "Pet",
             "ClassID": "Supporter",
@@ -3394,7 +3277,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Cat",
             "OriginID": "Pet",
             "ClassID": "Evoker",
@@ -3423,7 +3305,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Dog",
             "OriginID": "Pet",
             "ClassID": "Supporter",
@@ -3452,7 +3333,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Dove",
             "OriginID": "Pet",
             "ClassID": "Healer",
@@ -3481,7 +3361,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Goldfish",
             "OriginID": "Pet",
             "ClassID": "Supporter",
@@ -3510,7 +3389,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Mouse",
             "OriginID": "Pet",
             "ClassID": "Assassin",
@@ -3539,7 +3417,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Parrot",
             "OriginID": "Pet",
             "ClassID": "Evoker",
@@ -3568,7 +3445,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Pigeon",
             "OriginID": "Pet",
             "ClassID": "Caster",
@@ -3597,7 +3473,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Rabbit",
             "OriginID": "Pet",
             "ClassID": "Supporter",
@@ -3626,7 +3501,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Pet",
             "Identifier": "Tortoise",
             "OriginID": "Pet",
             "ClassID": "Tank",
@@ -3655,7 +3529,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Alligator",
             "OriginID": "River",
             "ClassID": "Brute",
@@ -3684,7 +3557,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Arowana",
             "OriginID": "River",
             "ClassID": "Supporter",
@@ -3713,7 +3585,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Bass",
             "OriginID": "River",
             "ClassID": "Caster",
@@ -3742,7 +3613,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Beaver",
             "OriginID": "River",
             "ClassID": "Evoker",
@@ -3771,7 +3641,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Capybara",
             "OriginID": "River",
             "ClassID": "Supporter",
@@ -3800,7 +3669,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Carp",
             "OriginID": "River",
             "ClassID": "Supporter",
@@ -3829,7 +3697,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Catfish",
             "OriginID": "River",
             "ClassID": "Fighter",
@@ -3858,7 +3725,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Crocodile",
             "OriginID": "River",
             "ClassID": "Brute",
@@ -3887,7 +3753,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Frog",
             "OriginID": "River",
             "ClassID": "Assassin",
@@ -3916,7 +3781,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Heron",
             "OriginID": "River",
             "ClassID": "Hunter",
@@ -3945,7 +3809,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Kingfisher",
             "OriginID": "River",
             "ClassID": "Hunter",
@@ -3974,7 +3837,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Manatee",
             "OriginID": "River",
             "ClassID": "Tank",
@@ -4003,7 +3865,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Mudskipper",
             "OriginID": "River",
             "ClassID": "Evoker",
@@ -4032,7 +3893,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Otter",
             "OriginID": "River",
             "ClassID": "Scout",
@@ -4061,7 +3921,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Piranha",
             "OriginID": "River",
             "ClassID": "Assassin",
@@ -4090,7 +3949,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "River Dolphin",
             "OriginID": "River",
             "ClassID": "Fighter",
@@ -4119,7 +3977,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Shoebill",
             "OriginID": "River",
             "ClassID": "Healer",
@@ -4148,7 +4005,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Snapping Turtle",
             "OriginID": "River",
             "ClassID": "Tank",
@@ -4177,7 +4033,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "River",
             "Identifier": "Swan",
             "OriginID": "River",
             "ClassID": "Healer",
@@ -4206,7 +4061,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Wildebeest",
             "OriginID": "Safari",
             "ClassID": "Brute",
@@ -4235,7 +4089,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Serval",
             "OriginID": "Safari",
             "ClassID": "Hunter",
@@ -4264,7 +4117,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Lioness",
             "OriginID": "Safari",
             "ClassID": "Supporter",
@@ -4293,7 +4145,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Lion",
             "OriginID": "Safari",
             "ClassID": "Fighter",
@@ -4322,7 +4173,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Jackal",
             "OriginID": "Safari",
             "ClassID": "Hunter",
@@ -4351,7 +4201,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Giraffe",
             "OriginID": "Safari",
             "ClassID": "Tank",
@@ -4380,7 +4229,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Bison",
             "OriginID": "Safari",
             "ClassID": "Brute",
@@ -4409,7 +4257,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Baboon",
             "OriginID": "Safari",
             "ClassID": "Fighter",
@@ -4438,7 +4285,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Antelope",
             "OriginID": "Safari",
             "ClassID": "Fighter",
@@ -4467,7 +4313,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Cheetah",
             "OriginID": "Safari",
             "ClassID": "Hunter",
@@ -4496,7 +4341,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Elephant",
             "OriginID": "Safari",
             "ClassID": "Tank",
@@ -4525,7 +4369,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Flamingo",
             "OriginID": "Safari",
             "ClassID": "Evoker",
@@ -4554,7 +4397,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Gazelle",
             "OriginID": "Safari",
             "ClassID": "Scout",
@@ -4583,7 +4425,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Hippo",
             "OriginID": "Safari",
             "ClassID": "Brute",
@@ -4612,7 +4453,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Hyena",
             "OriginID": "Safari",
             "ClassID": "Assassin",
@@ -4641,7 +4481,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Ostrich",
             "OriginID": "Safari",
             "ClassID": "Fighter",
@@ -4670,7 +4509,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Rhino",
             "OriginID": "Safari",
             "ClassID": "Brute",
@@ -4699,7 +4537,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Safari",
             "Identifier": "Zebra",
             "OriginID": "Safari",
             "ClassID": "Fighter",
@@ -4728,7 +4565,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Clownfish",
             "OriginID": "Sea",
             "ClassID": "Supporter",
@@ -4757,7 +4593,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Crab",
             "OriginID": "Sea",
             "ClassID": "Fighter",
@@ -4786,7 +4621,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Dolphin",
             "OriginID": "Sea",
             "ClassID": "Fighter",
@@ -4815,7 +4649,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Jellyfish",
             "OriginID": "Sea",
             "ClassID": "Healer",
@@ -4844,7 +4677,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Lobster",
             "OriginID": "Sea",
             "ClassID": "Caster",
@@ -4873,7 +4705,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Octopus",
             "OriginID": "Sea",
             "ClassID": "Caster",
@@ -4902,7 +4733,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Orca",
             "OriginID": "Sea",
             "ClassID": "Brute",
@@ -4931,7 +4761,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Pelican",
             "OriginID": "Sea",
             "ClassID": "Hunter",
@@ -4960,7 +4789,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Prawn",
             "OriginID": "Sea",
             "ClassID": "Evoker",
@@ -4989,7 +4817,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Salmon",
             "OriginID": "Sea",
             "ClassID": "Healer",
@@ -5018,7 +4845,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Sardine",
             "OriginID": "Sea",
             "ClassID": "Supporter",
@@ -5047,7 +4873,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Sea Horse",
             "OriginID": "Sea",
             "ClassID": "Caster",
@@ -5076,7 +4901,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Sea Otter",
             "OriginID": "Sea",
             "ClassID": "Scout",
@@ -5105,7 +4929,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Seagull",
             "OriginID": "Sea",
             "ClassID": "Hunter",
@@ -5134,7 +4957,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Squid",
             "OriginID": "Sea",
             "ClassID": "Caster",
@@ -5163,7 +4985,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Tuna",
             "OriginID": "Sea",
             "ClassID": "Fighter",
@@ -5192,7 +5013,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Turtle",
             "OriginID": "Sea",
             "ClassID": "Tank",
@@ -5221,7 +5041,6 @@
             "SkillID": "DefaultTestSkillID"
         },
         {
-            "Zone": "Sea",
             "Identifier": "Whale",
             "OriginID": "Sea",
             "ClassID": "Tank",
