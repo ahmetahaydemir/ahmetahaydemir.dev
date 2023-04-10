@@ -1,0 +1,104 @@
+---
+import EntityDataJsonFile from "../../../public/data/EntityDataJsonFile.json";
+import type { EntityData } from "../../../public/data/EntityDataStructure";
+
+const wowowow = EntityDataJsonFile;
+
+let { queryTarget, queryJSON = EntityDataJsonFile.battleEntityDataJsonArray } =
+	Astro.props;
+---
+
+<div class="query-container">
+	<div class="query-input-container">
+		<p>SkillID :</p>
+		<input id="query-input-skill" />
+	</div>
+	<button id="query-apply-button">Apply</button>
+	<p id="query-apply-target" style="display: none;">{queryTarget}</p>
+	<p id="query-apply-data" style="display: none;">
+		{JSON.stringify(EntityDataJsonFile.battleEntityDataJsonArray)}
+	</p>
+</div>
+
+<script client:load>
+	window.queryApplyButton = document.getElementById("query-apply-button");
+	window.queryApplyButton.addEventListener("click", function () {
+		console.log(
+			"Query Target : " + window.queryTargetGridIdentifier.textContent
+		);
+		window.TemporaryButtonDisable();
+		//
+		window.queryTargetGrid = document.getElementById(
+			window.queryTargetGridIdentifier.textContent.toString()
+		);
+		//
+		if (!window.queryTargetData) {
+			window.queryTargetData =
+				window.queryTargetDataIdentifier.textContent.trim().toString();
+		}
+		//
+		window.GetActiveGridElements(
+			window.queryTargetGrid,
+			JSON.parse(window.queryTargetData)
+		);
+	});
+	//
+	window.TemporaryButtonDisable = function () {
+		window.queryApplyButton.disabled = true;
+		//
+		setTimeout(function () {
+			window.queryApplyButton.disabled = false;
+		}, 1000);
+	};
+	//
+	window.GetActiveGridElements = function (grid, data) {
+		for (let index = 0; index < grid.children.length; index++) {
+			const element = grid.children[index];
+			//
+			if (element.style.display === "") {
+				console.log(
+					element
+						.getElementsByClassName("cardText")[0]
+						.children[0].textContent.trim()
+				);
+				//
+				data[index].SkillID = document
+					.getElementById("query-input-skill")
+					.value.trim();
+			}
+		}
+		//
+		window.queryTargetData = JSON.stringify(data);
+	};
+	//
+	window.queryTargetGridIdentifier =
+		document.getElementById("query-apply-target");
+	window.queryTargetDataIdentifier =
+		document.getElementById("query-apply-data");
+</script>
+
+<style>
+	.query-container {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+	.query-container button {
+		width: 75%;
+		align-self: flex-end;
+	}
+	.query-input-container {
+		display: flex;
+		gap: 25px;
+		justify-content: space-between;
+	}
+	.query-input-container input {
+		width: 75%;
+		background-color: var(--theme-navbar-bg);
+		border-style: dashed;
+		text-align: center;
+	}
+	.query-input-container p {
+		font-weight: bolder;
+	}
+</style>

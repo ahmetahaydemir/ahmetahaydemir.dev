@@ -348,6 +348,13 @@
             "SkillID": ""
         },
         {
+            "Identifier": "Polar Surprise Spawn",
+            "Type": "Spawn",
+            "OriginID": "Arctic",
+            "Statistics": [],
+            "SkillID": ""
+        },
+        {
             "Identifier": "Familiar Scent Spawn",
             "Type": "Spawn",
             "OriginID": "Forest",

@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import { skillDataJsonArray } from '../../../../public/data/SkillDataJsonFile.json';
 import { classDataJsonArray } from '../../../../public/data/ClassDataJsonFile.json';
 import { originDataJsonArray } from '../../../../public/data/OriginDataJsonFile.json';
-import { entityDataJsonArray } from '../../../../public/data/EntityDataJsonFile.json';
+import { battleEntityDataJsonArray, restEntityDataJsonArray } from '../../../../public/data/EntityDataJsonFile.json';
 import { equipmentCubicDataJsonArray, nodeCubicDataJsonArray, spawnCubicDataJsonArray } from '../../../../public/data/CubicEntityDataJsonFile.json';
 import { configDataJson } from '../../../../public/data/GameConfigDataJsonFile.json';
 
@@ -12,7 +12,7 @@ export const get: APIRoute = ({ params, request }) => {
     //
     switch (API) {
         case "getEntityData":
-            jsonData = { entityDataJsonArray };
+            jsonData = { battleEntityDataJsonArray, restEntityDataJsonArray };
             break;
         case "getClassData":
             jsonData = { classDataJsonArray };

@@ -10,7 +10,7 @@ import PageEntityStat from "../../../components/PageContent/PageEntityStat.astro
 import PageSubHeader from "../../../components/PageContent/PageSubHeader.astro";
 //
 export async function getStaticPaths() {
-	return EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
+	return EntityDataJsonFile.battleEntityDataJsonArray.map((entry) => ({
 		params: {
 			battleEntityName: entry.Identifier.toLowerCase().split(" ").join("-"),
 		},

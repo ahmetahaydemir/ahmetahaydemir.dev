@@ -1,5 +1,5 @@
 ﻿{
-    "entityDataJsonArray": [
+    "battleEntityDataJsonArray": [
         {
             "Identifier": "Arctic Fox",
             "OriginID": "Arctic",
@@ -54,7 +54,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "Foolish Act"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Penguin",
@@ -82,7 +82,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Polar Bear",
@@ -110,7 +110,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Reindeer",
@@ -138,7 +138,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Sea Lion",
@@ -166,7 +166,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Snow Owl",
@@ -194,7 +194,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Snow Weasel",
@@ -222,7 +222,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Walrus",
@@ -250,7 +250,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Snow Leopard",
@@ -278,7 +278,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Puffin",
@@ -306,7 +306,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Narwhal",
@@ -334,7 +334,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Moose",
@@ -362,7 +362,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Lynx",
@@ -390,7 +390,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Husky",
@@ -418,7 +418,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Hare",
@@ -446,7 +446,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Cougar",
@@ -474,7 +474,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Beluga",
@@ -502,7 +502,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Armadillo",
@@ -530,7 +530,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Bighorn",
@@ -558,7 +558,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Camel",
@@ -586,7 +586,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Coyote",
@@ -614,7 +614,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Fennec Fox",
@@ -642,7 +642,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Gemsbok",
@@ -670,7 +670,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Gila Monster",
@@ -698,7 +698,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Golden Eagle",
@@ -726,7 +726,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Horned Lizard",
@@ -754,7 +754,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Jackrabbit",
@@ -782,7 +782,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Javelina",
@@ -810,7 +810,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Jerboa",
@@ -838,7 +838,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Meerkat",
@@ -866,7 +866,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Porcupine",
@@ -894,7 +894,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Pronghorn",
@@ -922,7 +922,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Rattlesnake",
@@ -950,7 +950,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Vulture",
@@ -978,7 +978,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Woodpecker",
@@ -1006,7 +1006,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Turkey",
@@ -1034,7 +1034,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Mallard",
@@ -1062,7 +1062,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Llama",
@@ -1090,7 +1090,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Lamb",
@@ -1118,7 +1118,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Horse",
@@ -1146,7 +1146,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Goose",
@@ -1174,7 +1174,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Goat",
@@ -1202,7 +1202,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Bull",
@@ -1230,7 +1230,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Alpaca",
@@ -1258,7 +1258,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Buffalo",
@@ -1286,7 +1286,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Chick",
@@ -1314,7 +1314,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Cow",
@@ -1342,7 +1342,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Donkey",
@@ -1370,7 +1370,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Duck",
@@ -1398,7 +1398,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Hen",
@@ -1426,7 +1426,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Pig",
@@ -1454,7 +1454,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Rooster",
@@ -1482,7 +1482,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Sheep",
@@ -1510,7 +1510,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Badger",
@@ -1538,7 +1538,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Bear",
@@ -1566,7 +1566,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Cardinal",
@@ -1594,7 +1594,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Deer",
@@ -1622,7 +1622,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Lemur",
@@ -1650,7 +1650,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Marten",
@@ -1678,7 +1678,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Mole",
@@ -1706,7 +1706,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Skunk",
@@ -1734,7 +1734,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Toucan",
@@ -1762,7 +1762,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Crow",
@@ -1790,7 +1790,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Eagle",
@@ -1818,7 +1818,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Fox",
@@ -1846,7 +1846,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Hog",
@@ -1874,7 +1874,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Hornbill",
@@ -1902,7 +1902,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Owl",
@@ -1930,7 +1930,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Raccoon",
@@ -1958,7 +1958,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Snake",
@@ -1986,7 +1986,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Wolf",
@@ -2014,7 +2014,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Bandicoot",
@@ -2042,7 +2042,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Dingo",
@@ -2070,7 +2070,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Echidna",
@@ -2098,7 +2098,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Emu",
@@ -2126,7 +2126,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Flying Fox",
@@ -2154,7 +2154,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Frill-Necked Lizard",
@@ -2182,7 +2182,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Kakapo",
@@ -2210,7 +2210,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Kangaroo",
@@ -2238,7 +2238,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Kiwi",
@@ -2266,7 +2266,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Koala",
@@ -2294,7 +2294,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Kookaburra",
@@ -2322,7 +2322,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Numbat",
@@ -2350,7 +2350,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Platypus",
@@ -2378,7 +2378,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Possum",
@@ -2406,7 +2406,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Quail",
@@ -2434,7 +2434,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Quokka",
@@ -2462,7 +2462,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Tasmanian Devil",
@@ -2490,7 +2490,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Wombat",
@@ -2518,7 +2518,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Bat",
@@ -2546,7 +2546,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Chevrotain",
@@ -2574,7 +2574,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Chimp",
@@ -2602,7 +2602,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Cobra",
@@ -2630,7 +2630,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Gaur",
@@ -2658,7 +2658,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Gorilla",
@@ -2686,7 +2686,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Jaguar",
@@ -2714,7 +2714,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Leopard",
@@ -2742,7 +2742,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Macaw",
@@ -2770,7 +2770,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Monitor Lizard",
@@ -2798,7 +2798,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Orangutan",
@@ -2826,7 +2826,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Panda",
@@ -2854,7 +2854,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Peacock",
@@ -2882,7 +2882,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Red Panda",
@@ -2910,7 +2910,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Sloth",
@@ -2938,7 +2938,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Striped Snake",
@@ -2966,7 +2966,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Tapir",
@@ -2994,7 +2994,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Tiger",
@@ -3022,7 +3022,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Squirrel",
@@ -3050,7 +3050,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Python",
@@ -3078,7 +3078,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Monkey",
@@ -3106,7 +3106,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Iguana",
@@ -3134,7 +3134,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Hedgehog",
@@ -3162,7 +3162,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Hamster",
@@ -3190,7 +3190,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Ferret",
@@ -3218,7 +3218,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Chipmunk",
@@ -3246,7 +3246,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Chameleon",
@@ -3274,7 +3274,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Cat",
@@ -3302,7 +3302,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Dog",
@@ -3330,7 +3330,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Dove",
@@ -3358,7 +3358,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Goldfish",
@@ -3386,7 +3386,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Mouse",
@@ -3414,7 +3414,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Parrot",
@@ -3442,7 +3442,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Pigeon",
@@ -3470,7 +3470,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Rabbit",
@@ -3498,7 +3498,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Tortoise",
@@ -3526,7 +3526,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Alligator",
@@ -3554,7 +3554,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Arowana",
@@ -3582,7 +3582,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Bass",
@@ -3610,7 +3610,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Beaver",
@@ -3638,7 +3638,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Capybara",
@@ -3666,7 +3666,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Carp",
@@ -3694,7 +3694,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Catfish",
@@ -3722,7 +3722,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Crocodile",
@@ -3750,7 +3750,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Frog",
@@ -3778,7 +3778,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Heron",
@@ -3806,7 +3806,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Kingfisher",
@@ -3834,7 +3834,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Manatee",
@@ -3862,7 +3862,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Mudskipper",
@@ -3890,7 +3890,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Otter",
@@ -3918,7 +3918,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Piranha",
@@ -3946,7 +3946,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "River Dolphin",
@@ -3974,7 +3974,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Shoebill",
@@ -4002,7 +4002,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Snapping Turtle",
@@ -4030,7 +4030,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Swan",
@@ -4058,7 +4058,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Wildebeest",
@@ -4086,7 +4086,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Serval",
@@ -4114,7 +4114,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Lioness",
@@ -4142,7 +4142,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Lion",
@@ -4170,7 +4170,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Jackal",
@@ -4198,7 +4198,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Giraffe",
@@ -4226,7 +4226,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Bison",
@@ -4254,7 +4254,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Baboon",
@@ -4282,7 +4282,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Antelope",
@@ -4310,7 +4310,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Cheetah",
@@ -4338,7 +4338,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Elephant",
@@ -4366,7 +4366,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Flamingo",
@@ -4394,7 +4394,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Gazelle",
@@ -4422,7 +4422,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Hippo",
@@ -4450,7 +4450,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Hyena",
@@ -4478,7 +4478,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Nibble On"
         },
         {
             "Identifier": "Ostrich",
@@ -4506,7 +4506,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Rhino",
@@ -4534,7 +4534,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Zebra",
@@ -4562,7 +4562,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Clownfish",
@@ -4590,7 +4590,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Crab",
@@ -4618,7 +4618,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Dolphin",
@@ -4646,7 +4646,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Jellyfish",
@@ -4674,7 +4674,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Lobster",
@@ -4702,7 +4702,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Octopus",
@@ -4730,7 +4730,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Orca",
@@ -4758,7 +4758,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Foolish Act"
         },
         {
             "Identifier": "Pelican",
@@ -4786,7 +4786,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Prawn",
@@ -4814,7 +4814,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Constant Forage"
         },
         {
             "Identifier": "Salmon",
@@ -4842,7 +4842,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Emergency Saliva"
         },
         {
             "Identifier": "Sardine",
@@ -4870,7 +4870,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Honey Bunny"
         },
         {
             "Identifier": "Sea Horse",
@@ -4898,7 +4898,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Sea Otter",
@@ -4926,7 +4926,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Go Nuts"
         },
         {
             "Identifier": "Seagull",
@@ -4954,7 +4954,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Prey On"
         },
         {
             "Identifier": "Squid",
@@ -4982,7 +4982,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Tentacle Smash"
         },
         {
             "Identifier": "Tuna",
@@ -5010,7 +5010,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Concussive Touch"
         },
         {
             "Identifier": "Turtle",
@@ -5038,7 +5038,7 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
         },
         {
             "Identifier": "Whale",
@@ -5066,7 +5066,289 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": "DefaultTestSkillID"
+            "SkillID": "Ancient Shell"
+        }
+    ],
+    "restEntityDataJsonArray": [
+        {
+            "Identifier": "Healer Bat",
+            "OriginID": "Arctic",
+            "ClassID": "Hunter",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Healer Elephant",
+            "OriginID": "Arctic",
+            "ClassID": "Tank",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Healer Javelina",
+            "OriginID": "Arctic",
+            "ClassID": "Tank",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Healer Jellyfish",
+            "OriginID": "Arctic",
+            "ClassID": "Tank",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Healer Owl",
+            "OriginID": "Arctic",
+            "ClassID": "Tank",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Healer Quokka",
+            "OriginID": "Arctic",
+            "ClassID": "Tank",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Healer Reindeer",
+            "OriginID": "Arctic",
+            "ClassID": "Tank",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Healer Rooster",
+            "OriginID": "Arctic",
+            "ClassID": "Tank",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Healer Swan",
+            "OriginID": "Arctic",
+            "ClassID": "Tank",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Healer Tortoise",
+            "OriginID": "Arctic",
+            "ClassID": "Tank",
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": null
         }
     ]
 }

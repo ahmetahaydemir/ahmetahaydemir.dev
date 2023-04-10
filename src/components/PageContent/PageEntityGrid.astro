@@ -6,7 +6,7 @@ import type { EntityData } from "../../../public/data/EntityDataStructure";
 let { gridFilter } = Astro.props;
 
 const entityBasePath = "../battle-entities/";
-const filteredGridArray = EntityDataJsonFile.entityDataJsonArray.reduce(
+const filteredGridArray = EntityDataJsonFile.battleEntityDataJsonArray.reduce(
 	filterGrid,
 	[]
 );
@@ -111,8 +111,8 @@ function filterGrid(totalArray: EntityData[], currentValue: EntityData) {
 		height: 4rem;
 		background-color: var(--theme-navbar-bg);
 		border-color: var(--theme-selection-bg);
-		text-align: center;
 		border-style: dashed;
+		text-align: center;
 		transition: ease-in-out 0.25s;
 		color: var(--theme-text-accent);
 		font-weight: bolder;

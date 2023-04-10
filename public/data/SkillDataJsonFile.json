@@ -9,6 +9,7 @@
                 "TargetingInput": "Arena_Ally_Alive_LowestHealth",
                 "TargetingRange": 2
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Direction_Ally_Alive_LowestHealth",
@@ -34,6 +35,7 @@
                 "Point": 6,
                 "Type": "InstantCast"
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Self",
@@ -59,6 +61,7 @@
                 "Point": 4,
                 "Type": "InstantCast"
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Ally_Alive_LowestHealth",
@@ -91,6 +94,7 @@
                 "Point": 4,
                 "Type": "InstantCast"
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Direction_Enemy_Alive_LowestHealth",
@@ -116,6 +120,7 @@
                 "Point": 2,
                 "Type": "InstantCast"
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Ally_Alive_Random",
@@ -141,6 +146,7 @@
                 "Point": 6,
                 "Type": "InstantCast"
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Enemy_Alive_Nearest",
@@ -168,6 +174,7 @@
                 "TargetingInput": "Arena_Enemy_Alive_LowestHealth",
                 "TargetingRange": 1
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Enemy_Alive_LowestHealth",
@@ -193,6 +200,7 @@
                 "Point": 5,
                 "Type": "InstantCast"
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Self",
@@ -214,6 +222,7 @@
         {
             "Identifier": "Honey Bunny",
             "Type": "EntityPassiveEffect",
+            "CastData": null,
             "TriggerData": {
                 "Type": "OnUpdateEntityList"
             },
@@ -244,6 +253,7 @@
                 "TargetingInput": "Arena_Enemy_Alive_Nearest",
                 "TargetingRange": 1
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Enemy_Alive_Nearest",
@@ -293,6 +303,7 @@
                 "TargetingInput": "Arena_Enemy_Alive_Nearest",
                 "TargetingRange": 1
             },
+            "TriggerData": null,
             "OccurenceData": [
                 {
                     "TargetingInput": "Arena_Enemy_Alive_Nearest",

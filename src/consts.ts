@@ -40,7 +40,7 @@ import OriginDataJsonFile from '../public/data/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/data/ClassDataJsonFile.json'
 import CubicEntityDataJsonFile from '../public/data/CubicEntityDataJsonFile.json'
 import SkillDataJsonFile from '../public/data/SkillDataJsonFile.json'
-export const entitySidebarList = EntityDataJsonFile.entityDataJsonArray.map((entry) => ({
+export const entitySidebarList = EntityDataJsonFile.battleEntityDataJsonArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 export const originSidebarList = OriginDataJsonFile.originDataJsonArray.map((entry) => ({

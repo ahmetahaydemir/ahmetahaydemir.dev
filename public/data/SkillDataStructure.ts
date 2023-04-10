@@ -12,6 +12,8 @@ export interface CastData {
     TargetingRange: number;
 }
 export interface TriggerData {
+    ClassFilter: string;
+    OriginFilter: string;
     Type: TriggerType;
 }
 export interface OccurenceData {
