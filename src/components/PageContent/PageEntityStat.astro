@@ -6,14 +6,14 @@ export const StatIcons = [
 	"/icon/btn_icon_shield.png",
 	"/icon/btn_icon_sword.png",
 	"/icon/btn_icon_target.png",
-	"/icon/btn_icon_move.png",
+	"/icon/btn_icon_move.png"
 ];
 export const StatColors = [
 	"color:#e07384;",
 	"color:#a5a4a3;",
 	"color:#7cbcbf;",
 	"color:#f2ce67;",
-	"color:#8b6bfb;",
+	"color:#8b6bfb;"
 ];
 //
 export let StatIterator = -1;
@@ -28,6 +28,12 @@ const { statObject } = Astro.props;
 <div class="entity-stat-panel">
 	{
 		statObject.map((statElement) => {
+			if (statElement.StatType.toString() === "Health") {
+				StatIterator = -1;
+			}
+			if (statElement.StatType.toString() === "MaxHealth") {
+				return;
+			}
 			StatIterator++;
 			StatIterator %= statObject.length;
 			return (
@@ -42,7 +48,9 @@ const { statObject } = Astro.props;
 							height="100"
 						/>
 					</div>
-					<p style={StatColors[StatIterator]}>{statElement.StatType}</p>
+					<p style={StatColors[StatIterator]}>
+						{statElement.StatType}
+					</p>
 					<p>{statElement.StatAmount}</p>
 				</div>
 			);

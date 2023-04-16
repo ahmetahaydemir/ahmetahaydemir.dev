@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 		},
 		props: {
 			battleEntityObject: entry,
-			skillObject: SkillDataJsonFile.skillDataJsonArray.find(
+			skillObject: SkillDataJsonFile.battleSkillDataJsonArray.find(
 				(skill) => skill.Identifier === entry.SkillID
 			),
 		},

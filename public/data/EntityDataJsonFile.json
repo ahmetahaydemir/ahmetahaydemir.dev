@@ -4,9 +4,18 @@
             "Identifier": "Arctic Fox",
             "OriginID": "Arctic",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -32,9 +41,18 @@
             "Identifier": "Ox",
             "OriginID": "Arctic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -60,9 +78,18 @@
             "Identifier": "Penguin",
             "OriginID": "Arctic",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -88,9 +115,18 @@
             "Identifier": "Polar Bear",
             "OriginID": "Arctic",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -116,9 +152,18 @@
             "Identifier": "Reindeer",
             "OriginID": "Arctic",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -144,9 +189,18 @@
             "Identifier": "Sea Lion",
             "OriginID": "Arctic",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -172,9 +226,18 @@
             "Identifier": "Snow Owl",
             "OriginID": "Arctic",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -200,9 +263,18 @@
             "Identifier": "Snow Weasel",
             "OriginID": "Arctic",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -228,9 +300,18 @@
             "Identifier": "Walrus",
             "OriginID": "Arctic",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -256,9 +337,18 @@
             "Identifier": "Snow Leopard",
             "OriginID": "Arctic",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -284,9 +374,18 @@
             "Identifier": "Puffin",
             "OriginID": "Arctic",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -312,9 +411,18 @@
             "Identifier": "Narwhal",
             "OriginID": "Arctic",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -340,9 +448,18 @@
             "Identifier": "Moose",
             "OriginID": "Arctic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -368,9 +485,18 @@
             "Identifier": "Lynx",
             "OriginID": "Arctic",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -396,9 +522,18 @@
             "Identifier": "Husky",
             "OriginID": "Arctic",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -424,9 +559,18 @@
             "Identifier": "Hare",
             "OriginID": "Arctic",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -452,9 +596,18 @@
             "Identifier": "Cougar",
             "OriginID": "Arctic",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -480,9 +633,18 @@
             "Identifier": "Beluga",
             "OriginID": "Arctic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -508,9 +670,18 @@
             "Identifier": "Armadillo",
             "OriginID": "Desert",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -536,9 +707,18 @@
             "Identifier": "Bighorn",
             "OriginID": "Desert",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -564,9 +744,18 @@
             "Identifier": "Camel",
             "OriginID": "Desert",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -592,9 +781,18 @@
             "Identifier": "Coyote",
             "OriginID": "Desert",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -620,9 +818,18 @@
             "Identifier": "Fennec Fox",
             "OriginID": "Desert",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -648,9 +855,18 @@
             "Identifier": "Gemsbok",
             "OriginID": "Desert",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -676,9 +892,18 @@
             "Identifier": "Gila Monster",
             "OriginID": "Desert",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -704,9 +929,18 @@
             "Identifier": "Golden Eagle",
             "OriginID": "Desert",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -732,9 +966,18 @@
             "Identifier": "Horned Lizard",
             "OriginID": "Desert",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -760,9 +1003,18 @@
             "Identifier": "Jackrabbit",
             "OriginID": "Desert",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -788,9 +1040,18 @@
             "Identifier": "Javelina",
             "OriginID": "Desert",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -816,9 +1077,18 @@
             "Identifier": "Jerboa",
             "OriginID": "Desert",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -844,9 +1114,18 @@
             "Identifier": "Meerkat",
             "OriginID": "Desert",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -872,9 +1151,18 @@
             "Identifier": "Porcupine",
             "OriginID": "Desert",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -900,9 +1188,18 @@
             "Identifier": "Pronghorn",
             "OriginID": "Desert",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -928,9 +1225,18 @@
             "Identifier": "Rattlesnake",
             "OriginID": "Desert",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -956,9 +1262,18 @@
             "Identifier": "Vulture",
             "OriginID": "Desert",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -984,9 +1299,18 @@
             "Identifier": "Woodpecker",
             "OriginID": "Desert",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1012,9 +1336,18 @@
             "Identifier": "Turkey",
             "OriginID": "Farm",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1040,9 +1373,18 @@
             "Identifier": "Mallard",
             "OriginID": "Farm",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1068,9 +1410,18 @@
             "Identifier": "Llama",
             "OriginID": "Farm",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1096,9 +1447,18 @@
             "Identifier": "Lamb",
             "OriginID": "Farm",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1124,9 +1484,18 @@
             "Identifier": "Horse",
             "OriginID": "Farm",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1152,9 +1521,18 @@
             "Identifier": "Goose",
             "OriginID": "Farm",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1180,9 +1558,18 @@
             "Identifier": "Goat",
             "OriginID": "Farm",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1208,9 +1595,18 @@
             "Identifier": "Bull",
             "OriginID": "Farm",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1236,9 +1632,18 @@
             "Identifier": "Alpaca",
             "OriginID": "Farm",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1264,9 +1669,18 @@
             "Identifier": "Buffalo",
             "OriginID": "Farm",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1292,9 +1706,18 @@
             "Identifier": "Chick",
             "OriginID": "Farm",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1320,9 +1743,18 @@
             "Identifier": "Cow",
             "OriginID": "Farm",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1348,9 +1780,18 @@
             "Identifier": "Donkey",
             "OriginID": "Farm",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1376,9 +1817,18 @@
             "Identifier": "Duck",
             "OriginID": "Farm",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1404,9 +1854,18 @@
             "Identifier": "Hen",
             "OriginID": "Farm",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1432,9 +1891,18 @@
             "Identifier": "Pig",
             "OriginID": "Farm",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1460,9 +1928,18 @@
             "Identifier": "Rooster",
             "OriginID": "Farm",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1488,9 +1965,18 @@
             "Identifier": "Sheep",
             "OriginID": "Farm",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1516,9 +2002,18 @@
             "Identifier": "Badger",
             "OriginID": "Forest",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1544,9 +2039,18 @@
             "Identifier": "Bear",
             "OriginID": "Forest",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1572,9 +2076,18 @@
             "Identifier": "Cardinal",
             "OriginID": "Forest",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1600,9 +2113,18 @@
             "Identifier": "Deer",
             "OriginID": "Forest",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1628,9 +2150,18 @@
             "Identifier": "Lemur",
             "OriginID": "Forest",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1656,9 +2187,18 @@
             "Identifier": "Marten",
             "OriginID": "Forest",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1684,9 +2224,18 @@
             "Identifier": "Mole",
             "OriginID": "Forest",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1712,9 +2261,18 @@
             "Identifier": "Skunk",
             "OriginID": "Forest",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1740,9 +2298,18 @@
             "Identifier": "Toucan",
             "OriginID": "Forest",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1768,9 +2335,18 @@
             "Identifier": "Crow",
             "OriginID": "Forest",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1796,9 +2372,18 @@
             "Identifier": "Eagle",
             "OriginID": "Forest",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1824,9 +2409,18 @@
             "Identifier": "Fox",
             "OriginID": "Forest",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1852,9 +2446,18 @@
             "Identifier": "Hog",
             "OriginID": "Forest",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1880,9 +2483,18 @@
             "Identifier": "Hornbill",
             "OriginID": "Forest",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1908,9 +2520,18 @@
             "Identifier": "Owl",
             "OriginID": "Forest",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1936,9 +2557,18 @@
             "Identifier": "Raccoon",
             "OriginID": "Forest",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1964,9 +2594,18 @@
             "Identifier": "Snake",
             "OriginID": "Forest",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -1992,9 +2631,18 @@
             "Identifier": "Wolf",
             "OriginID": "Forest",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2020,9 +2668,18 @@
             "Identifier": "Bandicoot",
             "OriginID": "Island",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2048,9 +2705,18 @@
             "Identifier": "Dingo",
             "OriginID": "Island",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2076,9 +2742,18 @@
             "Identifier": "Echidna",
             "OriginID": "Island",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2104,9 +2779,18 @@
             "Identifier": "Emu",
             "OriginID": "Island",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2132,9 +2816,18 @@
             "Identifier": "Flying Fox",
             "OriginID": "Island",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2160,9 +2853,18 @@
             "Identifier": "Frill-Necked Lizard",
             "OriginID": "Island",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2188,9 +2890,18 @@
             "Identifier": "Kakapo",
             "OriginID": "Island",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2216,9 +2927,18 @@
             "Identifier": "Kangaroo",
             "OriginID": "Island",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2244,9 +2964,18 @@
             "Identifier": "Kiwi",
             "OriginID": "Island",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2272,9 +3001,18 @@
             "Identifier": "Koala",
             "OriginID": "Island",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2300,9 +3038,18 @@
             "Identifier": "Kookaburra",
             "OriginID": "Island",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2328,9 +3075,18 @@
             "Identifier": "Numbat",
             "OriginID": "Island",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2356,9 +3112,18 @@
             "Identifier": "Platypus",
             "OriginID": "Island",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2384,9 +3149,18 @@
             "Identifier": "Possum",
             "OriginID": "Island",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2412,9 +3186,18 @@
             "Identifier": "Quail",
             "OriginID": "Island",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2440,9 +3223,18 @@
             "Identifier": "Quokka",
             "OriginID": "Island",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2468,9 +3260,18 @@
             "Identifier": "Tasmanian Devil",
             "OriginID": "Island",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2496,9 +3297,18 @@
             "Identifier": "Wombat",
             "OriginID": "Island",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2524,9 +3334,18 @@
             "Identifier": "Bat",
             "OriginID": "Jungle",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2552,9 +3371,18 @@
             "Identifier": "Chevrotain",
             "OriginID": "Jungle",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2580,9 +3408,18 @@
             "Identifier": "Chimp",
             "OriginID": "Jungle",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2608,9 +3445,18 @@
             "Identifier": "Cobra",
             "OriginID": "Jungle",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2636,9 +3482,18 @@
             "Identifier": "Gaur",
             "OriginID": "Jungle",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2664,9 +3519,18 @@
             "Identifier": "Gorilla",
             "OriginID": "Jungle",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2692,9 +3556,18 @@
             "Identifier": "Jaguar",
             "OriginID": "Jungle",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2720,9 +3593,18 @@
             "Identifier": "Leopard",
             "OriginID": "Jungle",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2748,9 +3630,18 @@
             "Identifier": "Macaw",
             "OriginID": "Jungle",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2776,9 +3667,18 @@
             "Identifier": "Monitor Lizard",
             "OriginID": "Jungle",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2804,9 +3704,18 @@
             "Identifier": "Orangutan",
             "OriginID": "Jungle",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2832,9 +3741,18 @@
             "Identifier": "Panda",
             "OriginID": "Jungle",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2860,9 +3778,18 @@
             "Identifier": "Peacock",
             "OriginID": "Jungle",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2888,9 +3815,18 @@
             "Identifier": "Red Panda",
             "OriginID": "Jungle",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2916,9 +3852,18 @@
             "Identifier": "Sloth",
             "OriginID": "Jungle",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2944,9 +3889,18 @@
             "Identifier": "Striped Snake",
             "OriginID": "Jungle",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -2972,9 +3926,18 @@
             "Identifier": "Tapir",
             "OriginID": "Jungle",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3000,9 +3963,18 @@
             "Identifier": "Tiger",
             "OriginID": "Jungle",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3028,9 +4000,18 @@
             "Identifier": "Squirrel",
             "OriginID": "Pet",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3056,9 +4037,18 @@
             "Identifier": "Python",
             "OriginID": "Pet",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3084,9 +4074,18 @@
             "Identifier": "Monkey",
             "OriginID": "Pet",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3112,9 +4111,18 @@
             "Identifier": "Iguana",
             "OriginID": "Pet",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3140,9 +4148,18 @@
             "Identifier": "Hedgehog",
             "OriginID": "Pet",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3168,9 +4185,18 @@
             "Identifier": "Hamster",
             "OriginID": "Pet",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3196,9 +4222,18 @@
             "Identifier": "Ferret",
             "OriginID": "Pet",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3224,9 +4259,18 @@
             "Identifier": "Chipmunk",
             "OriginID": "Pet",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3252,9 +4296,18 @@
             "Identifier": "Chameleon",
             "OriginID": "Pet",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3280,9 +4333,18 @@
             "Identifier": "Cat",
             "OriginID": "Pet",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3308,9 +4370,18 @@
             "Identifier": "Dog",
             "OriginID": "Pet",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3336,9 +4407,18 @@
             "Identifier": "Dove",
             "OriginID": "Pet",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3364,9 +4444,18 @@
             "Identifier": "Goldfish",
             "OriginID": "Pet",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3392,9 +4481,18 @@
             "Identifier": "Mouse",
             "OriginID": "Pet",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3420,9 +4518,18 @@
             "Identifier": "Parrot",
             "OriginID": "Pet",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3448,9 +4555,18 @@
             "Identifier": "Pigeon",
             "OriginID": "Pet",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3476,9 +4592,18 @@
             "Identifier": "Rabbit",
             "OriginID": "Pet",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3504,9 +4629,18 @@
             "Identifier": "Tortoise",
             "OriginID": "Pet",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3532,9 +4666,18 @@
             "Identifier": "Alligator",
             "OriginID": "River",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3560,9 +4703,18 @@
             "Identifier": "Arowana",
             "OriginID": "River",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3588,9 +4740,18 @@
             "Identifier": "Bass",
             "OriginID": "River",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3616,9 +4777,18 @@
             "Identifier": "Beaver",
             "OriginID": "River",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3644,9 +4814,18 @@
             "Identifier": "Capybara",
             "OriginID": "River",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3672,9 +4851,18 @@
             "Identifier": "Carp",
             "OriginID": "River",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3700,9 +4888,18 @@
             "Identifier": "Catfish",
             "OriginID": "River",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3728,9 +4925,18 @@
             "Identifier": "Crocodile",
             "OriginID": "River",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3756,9 +4962,18 @@
             "Identifier": "Frog",
             "OriginID": "River",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3784,9 +4999,18 @@
             "Identifier": "Heron",
             "OriginID": "River",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3812,9 +5036,18 @@
             "Identifier": "Kingfisher",
             "OriginID": "River",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3840,9 +5073,18 @@
             "Identifier": "Manatee",
             "OriginID": "River",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3868,9 +5110,18 @@
             "Identifier": "Mudskipper",
             "OriginID": "River",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3896,9 +5147,18 @@
             "Identifier": "Otter",
             "OriginID": "River",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3924,9 +5184,18 @@
             "Identifier": "Piranha",
             "OriginID": "River",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3952,9 +5221,18 @@
             "Identifier": "River Dolphin",
             "OriginID": "River",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -3980,9 +5258,18 @@
             "Identifier": "Shoebill",
             "OriginID": "River",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4008,9 +5295,18 @@
             "Identifier": "Snapping Turtle",
             "OriginID": "River",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4036,9 +5332,18 @@
             "Identifier": "Swan",
             "OriginID": "River",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4064,9 +5369,18 @@
             "Identifier": "Wildebeest",
             "OriginID": "Safari",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4092,9 +5406,18 @@
             "Identifier": "Serval",
             "OriginID": "Safari",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4120,9 +5443,18 @@
             "Identifier": "Lioness",
             "OriginID": "Safari",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4148,9 +5480,18 @@
             "Identifier": "Lion",
             "OriginID": "Safari",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4176,9 +5517,18 @@
             "Identifier": "Jackal",
             "OriginID": "Safari",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4204,9 +5554,18 @@
             "Identifier": "Giraffe",
             "OriginID": "Safari",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4232,9 +5591,18 @@
             "Identifier": "Bison",
             "OriginID": "Safari",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4260,9 +5628,18 @@
             "Identifier": "Baboon",
             "OriginID": "Safari",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4288,9 +5665,18 @@
             "Identifier": "Antelope",
             "OriginID": "Safari",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4316,9 +5702,18 @@
             "Identifier": "Cheetah",
             "OriginID": "Safari",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4344,9 +5739,18 @@
             "Identifier": "Elephant",
             "OriginID": "Safari",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4372,9 +5776,18 @@
             "Identifier": "Flamingo",
             "OriginID": "Safari",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4400,9 +5813,18 @@
             "Identifier": "Gazelle",
             "OriginID": "Safari",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4428,9 +5850,18 @@
             "Identifier": "Hippo",
             "OriginID": "Safari",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4456,9 +5887,18 @@
             "Identifier": "Hyena",
             "OriginID": "Safari",
             "ClassID": "Assassin",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4484,9 +5924,18 @@
             "Identifier": "Ostrich",
             "OriginID": "Safari",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4512,9 +5961,18 @@
             "Identifier": "Rhino",
             "OriginID": "Safari",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4540,9 +5998,18 @@
             "Identifier": "Zebra",
             "OriginID": "Safari",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4568,9 +6035,18 @@
             "Identifier": "Clownfish",
             "OriginID": "Sea",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4596,9 +6072,18 @@
             "Identifier": "Crab",
             "OriginID": "Sea",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4624,9 +6109,18 @@
             "Identifier": "Dolphin",
             "OriginID": "Sea",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4652,9 +6146,18 @@
             "Identifier": "Jellyfish",
             "OriginID": "Sea",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4680,9 +6183,18 @@
             "Identifier": "Lobster",
             "OriginID": "Sea",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4708,9 +6220,18 @@
             "Identifier": "Octopus",
             "OriginID": "Sea",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4736,9 +6257,18 @@
             "Identifier": "Orca",
             "OriginID": "Sea",
             "ClassID": "Brute",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4764,9 +6294,18 @@
             "Identifier": "Pelican",
             "OriginID": "Sea",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4792,9 +6331,18 @@
             "Identifier": "Prawn",
             "OriginID": "Sea",
             "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4820,9 +6368,18 @@
             "Identifier": "Salmon",
             "OriginID": "Sea",
             "ClassID": "Healer",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4848,9 +6405,18 @@
             "Identifier": "Sardine",
             "OriginID": "Sea",
             "ClassID": "Supporter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4876,9 +6442,18 @@
             "Identifier": "Sea Horse",
             "OriginID": "Sea",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4904,9 +6479,18 @@
             "Identifier": "Sea Otter",
             "OriginID": "Sea",
             "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4932,9 +6516,18 @@
             "Identifier": "Seagull",
             "OriginID": "Sea",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4960,9 +6553,18 @@
             "Identifier": "Squid",
             "OriginID": "Sea",
             "ClassID": "Caster",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -4988,9 +6590,18 @@
             "Identifier": "Tuna",
             "OriginID": "Sea",
             "ClassID": "Fighter",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5016,9 +6627,18 @@
             "Identifier": "Turtle",
             "OriginID": "Sea",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5044,9 +6664,18 @@
             "Identifier": "Whale",
             "OriginID": "Sea",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5072,11 +6701,20 @@
     "restEntityDataJsonArray": [
         {
             "Identifier": "Healer Bat",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Hunter",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5096,15 +6734,24 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
         },
         {
             "Identifier": "Healer Elephant",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5124,15 +6771,24 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
         },
         {
             "Identifier": "Healer Javelina",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5152,15 +6808,24 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
         },
         {
             "Identifier": "Healer Jellyfish",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5180,15 +6845,24 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
         },
         {
             "Identifier": "Healer Owl",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5208,15 +6882,24 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
         },
         {
             "Identifier": "Healer Quokka",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5236,15 +6919,24 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
         },
         {
             "Identifier": "Healer Reindeer",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5264,15 +6956,24 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
         },
         {
             "Identifier": "Healer Rooster",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5292,15 +6993,24 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
         },
         {
             "Identifier": "Healer Swan",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5320,15 +7030,24 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
         },
         {
             "Identifier": "Healer Tortoise",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
             "ClassID": "Tank",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
             "Statistics": [
                 {
                     "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
                     "StatAmount": 10
                 },
                 {
@@ -5348,7 +7067,85 @@
                     "StatAmount": 1
                 }
             ],
-            "SkillID": null
+            "SkillID": "Emergency Care"
+        }
+    ],
+    "eventEntityDataJsonArray": [
+        {
+            "Identifier": "Mysterious Penguin",
+            "OriginID": "Generic",
+            "ClassID": "Evoker",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": "Pain and Gain"
+        }
+    ],
+    "treasureEntityDataJsonArray": [
+        {
+            "Identifier": "Greedy Pig",
+            "OriginID": "Generic",
+            "ClassID": "Scout",
+            "Value": 2,
+            "Size": {
+                "x": 2,
+                "y": 1
+            },
+            "Statistics": [
+                {
+                    "StatType": "Health",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "MaxHealth",
+                    "StatAmount": 10
+                },
+                {
+                    "StatType": "Defence",
+                    "StatAmount": 1
+                },
+                {
+                    "StatType": "Power",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Speed",
+                    "StatAmount": 2
+                },
+                {
+                    "StatType": "Range",
+                    "StatAmount": 1
+                }
+            ],
+            "SkillID": "Treasure Hunt"
         }
     ]
 }

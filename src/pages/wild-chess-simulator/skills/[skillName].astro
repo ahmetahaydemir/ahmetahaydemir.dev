@@ -5,7 +5,7 @@ import PageSkillPanel from "../../../components/PageContent/PageSkillPanel.astro
 import type { SkillData } from "../../../../public/data/SkillDataStructure";
 //
 export async function getStaticPaths() {
-	return SkillDataJsonFile.skillDataJsonArray.map((entry) => ({
+	return SkillDataJsonFile.battleSkillDataJsonArray.map((entry) => ({
 		params: {
 			skillName: entry.Identifier.toLowerCase().split(" ").join("-"),
 		},

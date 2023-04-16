@@ -4,339 +4,627 @@
             "Identifier": "Artichoke",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Aubergine",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Avocado",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Banana",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Banana2",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Banana3",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Blueberry",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Broccoli",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Carrot",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Cauliflower",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Cherry1",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Cherry2",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Cherry3",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Chilli",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Coconut",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Corn",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Cucumber",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Garlicclove",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Grape",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Green Apple",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Green Pepper",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Guava",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Kiwicut",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Leek",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Lemoncut",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Limecut",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Mango",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Mangosteen",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Onion",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Orange",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Pear",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Peas",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Pineapple",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Plum",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Pomegranate",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Potato",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Pumpkin",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Red Apple",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Red Pepper",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Starfruit",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Strawberry",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Tomato",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Turnip",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Watermelon",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Yellow Apple",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Yellow Pepper",
             "Type": "Equipment",
             "OriginID": "Desert",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         }
     ],
     "nodeCubicDataJsonArray": [
         {
             "Identifier": "Heal-Rest",
             "Type": "Node",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Experience-Rest",
             "Type": "Node",
-            "OriginID": "Arctic",
+            "OriginID": "Generic",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
+        },
+        {
+            "Identifier": "Power-Event",
+            "Type": "Node",
+            "OriginID": "Generic",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
+            "Statistics": [],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Vigor-Event",
+            "Type": "Node",
+            "OriginID": "Generic",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
+            "Statistics": [],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Generic-Treasure",
+            "Type": "Node",
+            "OriginID": "Generic",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
+            "Statistics": [],
+            "SkillID": null
+        },
+        {
+            "Identifier": "Generic-TreasureNE",
+            "Type": "Node",
+            "OriginID": "Generic",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
+            "Statistics": [],
+            "SkillID": null
         }
     ],
     "spawnCubicDataJsonArray": [
@@ -344,22 +632,37 @@
             "Identifier": "Reforestation Spawn",
             "Type": "Spawn",
             "OriginID": "Jungle",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Polar Surprise Spawn",
             "Type": "Spawn",
             "OriginID": "Arctic",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         },
         {
             "Identifier": "Familiar Scent Spawn",
             "Type": "Spawn",
             "OriginID": "Forest",
+            "Value": 2,
+            "Size": {
+                "x": 1,
+                "y": 1
+            },
             "Statistics": [],
-            "SkillID": ""
+            "SkillID": null
         }
     ]
 }

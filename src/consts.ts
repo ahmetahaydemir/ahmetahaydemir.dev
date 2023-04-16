@@ -52,7 +52,7 @@ export const classSidebarList = ClassDataJsonFile.classDataJsonArray.map((entry)
 export const equipmentSidebarList = CubicEntityDataJsonFile.equipmentCubicDataJsonArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
-export const skillSidebarList = SkillDataJsonFile.skillDataJsonArray.map((entry) => ({
+export const skillSidebarList = SkillDataJsonFile.battleSkillDataJsonArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 //

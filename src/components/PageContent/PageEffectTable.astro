@@ -1,5 +1,5 @@
 ---
-import type { TeamEffectData } from '../../../public/data/TeamEffectDataStructure';
+import type { TeamEffectData } from "../../../public/data/TeamEffectDataStructure";
 
 const { effectObject } = Astro.props;
 
@@ -14,16 +14,14 @@ interface Props {
 		<th>Effect Description</th>
 	</tr>
 	{
-		effectObject.EffectArray.map(
-			(child) => {
-				return (
-					<tr>
-						<td>{child.Size}</td>
-						<td>{child.Description}</td>
-					</tr>
-				);
-			}
-		)
+		effectObject.EffectArray?.map((child) => {
+			return (
+				<tr>
+					<td>{child.Size}</td>
+					<td>{child.Description}</td>
+				</tr>
+			);
+		})
 	}
 </table>
 

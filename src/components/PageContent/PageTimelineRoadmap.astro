@@ -1,11 +1,12 @@
 ---
 import { getCollection } from "astro:content";
-export const devlogDocCollection = await getCollection("devlog");
-export const devlogSidebarList = devlogDocCollection.map((entry) => ({
+export let devlogDocCollection = await getCollection("devlog");
+export const devlogSidebarList = devlogDocCollection.sort((a, b) => new Date(b.data.date) - new Date(a.data.date)).map((entry) => ({
 	titleText: entry.data.title as string,
 	descText: entry.data.description as string,
 	dateText: entry.data.date.toLocaleDateString() as string,
 }));
+
 export let classCounter = 0;
 
 let { futureTimelineElements } = Astro.props;
@@ -143,6 +144,7 @@ let { futureTimelineElements } = Astro.props;
 		display: flex;
 		gap: 10px;
 		align-items: center;
+		text-align: center;
 		justify-content: space-between;
 		flex-direction: column;
 	}

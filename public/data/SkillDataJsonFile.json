@@ -1,18 +1,18 @@
 {
-    "skillDataJsonArray": [
+    "battleSkillDataJsonArray": [
         {
             "Identifier": "Emergency Saliva",
             "Type": "EntityCastEffect",
             "CastData": {
                 "Point": 6,
                 "Type": "CastOnTargetInRange",
-                "TargetingInput": "Arena_Ally_Alive_LowestHealth",
+                "TargetingInput": "Ally_Arena_Alive_LowestHealth",
                 "TargetingRange": 2
             },
             "TriggerData": null,
             "OccurenceData": [
                 {
-                    "TargetingInput": "Direction_Ally_Alive_LowestHealth",
+                    "TargetingInput": "Ally_Direction_Alive_LowestHealth",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -23,8 +23,8 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -49,8 +49,8 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -64,7 +64,7 @@
             "TriggerData": null,
             "OccurenceData": [
                 {
-                    "TargetingInput": "Arena_Ally_Alive_LowestHealth",
+                    "TargetingInput": "Ally_Arena_Alive_LowestHealth",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -82,8 +82,8 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -97,7 +97,7 @@
             "TriggerData": null,
             "OccurenceData": [
                 {
-                    "TargetingInput": "Direction_Enemy_Alive_LowestHealth",
+                    "TargetingInput": "Enemy_Direction_Alive_LowestHealth",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -108,8 +108,8 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -123,7 +123,7 @@
             "TriggerData": null,
             "OccurenceData": [
                 {
-                    "TargetingInput": "Arena_Ally_Alive_Random",
+                    "TargetingInput": "Ally_Arena_Alive_Random",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -134,8 +134,8 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -149,7 +149,7 @@
             "TriggerData": null,
             "OccurenceData": [
                 {
-                    "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                    "TargetingInput": "Enemy_Arena_Alive_Nearest",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -160,8 +160,8 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -171,13 +171,13 @@
             "CastData": {
                 "Point": 5,
                 "Type": "CastOnTargetInRange",
-                "TargetingInput": "Arena_Enemy_Alive_LowestHealth",
+                "TargetingInput": "Enemy_Arena_Alive_LowestHealth",
                 "TargetingRange": 1
             },
             "TriggerData": null,
             "OccurenceData": [
                 {
-                    "TargetingInput": "Arena_Enemy_Alive_LowestHealth",
+                    "TargetingInput": "Enemy_Arena_Alive_LowestHealth",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -188,8 +188,8 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -214,8 +214,8 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -228,7 +228,7 @@
             },
             "OccurenceData": [
                 {
-                    "TargetingInput": "Arena_Ally_Alive_Adjacent",
+                    "TargetingInput": "Ally_Arena_Alive_Adjacent",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -239,8 +239,8 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -250,13 +250,13 @@
             "CastData": {
                 "Point": 5,
                 "Type": "CastOnTargetInRange",
-                "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                "TargetingInput": "Enemy_Arena_Alive_Nearest",
                 "TargetingRange": 1
             },
             "TriggerData": null,
             "OccurenceData": [
                 {
-                    "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                    "TargetingInput": "Enemy_Arena_Alive_Nearest",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -274,8 +274,8 @@
                             "PercentageBasedOnCaster": false
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 },
                 {
                     "TargetingInput": "Self",
@@ -289,8 +289,8 @@
                             "PercentageBasedOnCaster": false
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         },
@@ -300,13 +300,13 @@
             "CastData": {
                 "Point": 4,
                 "Type": "CastOnTargetInRange",
-                "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                "TargetingInput": "Enemy_Arena_Alive_Nearest",
                 "TargetingRange": 1
             },
             "TriggerData": null,
             "OccurenceData": [
                 {
-                    "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                    "TargetingInput": "Enemy_Arena_Alive_Nearest",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -324,8 +324,8 @@
                             "PercentageBasedOnCaster": false
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 },
                 {
                     "TargetingInput": "Self",
@@ -346,11 +346,11 @@
                             "PercentageBasedOnCaster": false
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
                 },
                 {
-                    "TargetingInput": "Arena_Enemy_Alive_Nearest",
+                    "TargetingInput": "Enemy_Arena_Alive_Nearest",
                     "MultiplierData": "Once",
                     "StatisticChanges": [
                         {
@@ -361,8 +361,91 @@
                             "PercentageBasedOnCaster": true
                         }
                     ],
-                    "StatusChange": [],
-                    "SpawnChange": []
+                    "StatusChange": null,
+                    "SpawnChange": null
+                }
+            ]
+        }
+    ],
+    "restSkillDataJsonArray": [
+        {
+            "Identifier": "Emergency Care",
+            "Type": "EntityPassiveEffect",
+            "CastData": null,
+            "TriggerData": {
+                "Type": "OnNodeEnd",
+                "NodeCondition": "Rest"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Enemy_Arena_Alive_LowestHealth",
+                    "MultiplierData": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": 5,
+                            "PercentageStat": "MaxHealth",
+                            "PercentageChange": 50,
+                            "PercentageBasedOnCaster": false
+                        }
+                    ],
+                    "StatusChange": null,
+                    "SpawnChange": null
+                }
+            ]
+        }
+    ],
+    "eventSkillDataJsonArray": [
+        {
+            "Identifier": "Pain and Gain",
+            "Type": "EntityPassiveEffect",
+            "CastData": null,
+            "TriggerData": {
+                "Type": "OnNodeEnd",
+                "NodeCondition": "Event"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Enemy_Arena_Alive_LowestHealth",
+                    "MultiplierData": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": 0,
+                            "PercentageStat": "MaxHealth",
+                            "PercentageChange": -25,
+                            "PercentageBasedOnCaster": false
+                        },
+                        {
+                            "TargetStat": "Power",
+                            "FlatChange": 1,
+                            "PercentageStat": "Power",
+                            "PercentageChange": 0,
+                            "PercentageBasedOnCaster": true
+                        }
+                    ],
+                    "StatusChange": null,
+                    "SpawnChange": null
+                }
+            ]
+        }
+    ],
+    "treasureSkillDataJsonArray": [
+        {
+            "Identifier": "Treasure Hunt",
+            "Type": "EntityPassiveEffect",
+            "CastData": null,
+            "TriggerData": {
+                "Type": "OnNodeEnd",
+                "NodeCondition": "Treasure"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Enemy_Arena_Alive_RandomEmptyCellNearWeak",
+                    "MultiplierData": "Once",
+                    "StatisticChanges": null,
+                    "StatusChange": null,
+                    "SpawnChange": null
                 }
             ]
         }

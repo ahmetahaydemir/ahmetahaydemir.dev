@@ -1,0 +1,47 @@
+---
+title: "Descriptive Analytics"
+description: "Devlog Documentation"
+date: 2023-04-16
+---
+
+import PageDateBar from "../../components/PageContent/PageDateBar.astro";
+
+<PageDateBar dateString={frontmatter.date} />
+
+My main profession in real life is digital analytics. I have integrated countless martech tools and had a chance to see what works out in practice and what don't.
+
+Every sector has its own quirks when it comes to the form of data that is collected and how it is used within the platform. This is going to be my first "serious" game publish, so I am probably unaware of the things that I should be aware.
+
+At this stage of the development, I am not _receiving_/_storing_/_transferring_ any visitor data. So there are no complicated processes to plan out for now. I hope I can re-visit this topic in a future devlog.
+
+For now, I just have the static data that I generate myself.
+
+This week I will work on some visual representations that will help me be more aware of the content and its "balance".
+
+## Analysis Workspace
+
+One of my favourite analytical dashboard layout is the drag-and-drop interface from Adobe Analytics. If you have never used it, you are missing out.
+
+The layout is intuitive and focuses on quick iterations of analysis. It brings out the most in terms of insights out of an experienced business lead.
+
+I would like to build a very simple version of this interface, focusing on the [freeform table](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html?lang=en) aspect. It basically works as a fancier pivot table.
+
+## Content Balance
+
+There is no way that I am going to achieve _balance_ even if I reserve one month thinking about the statistics of my game. You can never fully predict the behaviour of your users without sufficient historical data to hypothesise about.
+
+I remember thinking really hard and deceiving myself that I am balancing a fighting game while developing [Violet Moon Glade](https://ahmetahaydemir.itch.io/violet-moon-glade). That project had a super basic event collection and it was more than enough to showcase how naive I was : )
+
+![Violet Moon Glade - Mesa](/image/violetMoonGladeMesa.png "Violet Moon Glade - Mesa")
+
+Right way to approach this balancing act would be with analyzing playtest session data and receiving manual feedback. But I am not at that point.
+
+So up until that point, I will just play around with numbers in here and think that I am balancing stuff : )
+
+## Visualization Libraries
+
+I have played around with [D3.js](https://github.com/d3/d3), [Charts.js](https://github.com/chartjs/Chart.js) and [Anime.js](https://github.com/juliangarnier/anime/) for now. Yes, they are all feature rich; but I am not going to lie, all of them were kind of painful to use.
+
+Maybe that's just me and my half-assed first try, but unless needed, I don't think I will be delving deep into any of those libraries at this point.
+
+They focus on creating cool visualizations, which is cool, but I don't see the benefit in doing so.
