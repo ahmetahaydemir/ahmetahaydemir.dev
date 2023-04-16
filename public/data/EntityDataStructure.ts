@@ -1,14 +1,20 @@
-// import type { SkillData } from "./SkillDataStructure";
-// import type { ClassData } from "./ClassDataStructure";
-// import type { OriginData } from "./OriginDataStructure";
+import type { Size } from "./ObjectDataStructure";
 
-export interface EntityData {
+export interface EntityDataJSONFile {
+    battleEntityDataJsonArray: EntityDataJSONArray[];
+    restEntityDataJsonArray: EntityDataJSONArray[];
+    eventEntityDataJsonArray: EntityDataJSONArray[];
+    treasureEntityDataJsonArray: EntityDataJSONArray[];
+}
+
+export interface EntityDataJSONArray {
     Identifier: string;
     OriginID: string;
     ClassID: string;
-    Rarity: number;
+    Value: number;
+    Size: Size;
     Statistics: EntityStatistic[];
-    SkillID: string
+    SkillID: string;
 }
 
 export interface EntityStatistic {

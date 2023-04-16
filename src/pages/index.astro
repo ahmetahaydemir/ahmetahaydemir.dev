@@ -3,39 +3,41 @@ import PageButtonCard from "../components/PageContent/PageButtonCard.astro";
 import VisualBackground from "../layouts/VisualBackground.astro";
 ---
 
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
 <VisualBackground backgroundClass="cover_bg_1">
-  <div class="profile_banner_container">
-    <img
-      class="profile_banner_background"
-      src="./image/aurora@3x.png"
-      draggable="false"
-      inputmode="none"
-    />
-    <img
-      class="profile_banner"
-      src="./image/LogoSmall.png"
-      draggable="false"
-      inputmode="none"
-    />
-    <img draggable="false" inputmode="none" />
-  </div>
-  <div class="home-page-container">
-    <div class="home-page-grid">
-      <PageButtonCard
-        cardTitle="Wild Chess Simulator"
-        cardLink="/wild-chess-simulator"
-        cardLogo="/icon/btn_icon_crown.png"
-      />
-      <PageButtonCard
-        cardTitle="Devlog"
-        cardLink="https://www.youtube.com/@ahmetahaydemir"
-        cardLogo="/icon/btn_icon_youtube.png"
-      />
-      <PageButtonCard
-        cardTitle="Itch.io"
-        cardLink="https://ahmetahaydemir.itch.io/"
-        cardLogo="/icon/btn_icon_gift.png"
-      />
-    </div>
-  </div>
+	<div class="profile_banner_container">
+		<img
+			class="profile_banner_background"
+			src="./image/aurora@3x.png"
+			draggable="false"
+			inputmode="none"
+		/>
+		<img
+			class="profile_banner"
+			src="./image/LogoSmall.png"
+			draggable="false"
+			inputmode="none"
+		/>
+		<img draggable="false" inputmode="none" />
+	</div>
+	<div class="home-page-container">
+		<div class="home-page-grid">
+			<PageButtonCard
+				cardTitle="Wild Chess Simulator"
+				cardLink="/wild-chess-simulator"
+				cardLogo="/icon/btn_icon_crown.png"
+			/>
+			<PageButtonCard
+				cardTitle="Youtube"
+				cardLink="https://www.youtube.com/@ahmetahaydemir"
+				cardLogo="/icon/btn_icon_youtube.png"
+			/>
+			<PageButtonCard
+				cardTitle="Itch.io"
+				cardLink="https://ahmetahaydemir.itch.io/"
+				cardLogo="/icon/btn_icon_gift.png"
+			/>
+		</div>
+	</div>
 </VisualBackground>

@@ -2,19 +2,24 @@
 import MainLayout from "../../../layouts/MainLayout.astro";
 import SkillDataJsonFile from "../../../../public/data/SkillDataJsonFile.json";
 import PageSkillPanel from "../../../components/PageContent/PageSkillPanel.astro";
-import type { SkillData } from "../../../../public/data/SkillDataStructure";
+import type { SkillDataJSONArray } from "../../../../public/data/SkillDataStructure";
 //
 export async function getStaticPaths() {
-	return SkillDataJsonFile.battleSkillDataJsonArray.map((entry) => ({
+	let fullSkillArray = SkillDataJsonFile.battleSkillDataJsonArray
+		.concat(SkillDataJsonFile.restSkillDataJsonArray)
+		.concat(SkillDataJsonFile.eventSkillDataJsonArray)
+		.concat(SkillDataJsonFile.treasureSkillDataJsonArray);
+	//
+	return fullSkillArray.map((entry) => ({
 		params: {
-			skillName: entry.Identifier.toLowerCase().split(" ").join("-"),
+			skillName: entry.Identifier.toLowerCase().split(" ").join("-")
 		},
-		props: { skillObject: entry },
+		props: { skillObject: entry }
 	}));
 }
 //
 interface Props {
-	skillObject: SkillData;
+	skillObject: SkillDataJSONArray;
 }
 //
 const { skillObject } = Astro.props;

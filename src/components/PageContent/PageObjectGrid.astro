@@ -1,23 +1,22 @@
 ---
 import PageEntityItem from "./PageEntityItem.astro";
-import EntityDataJsonFile from "../../../public/data/EntityDataJsonFile.json";
-import type { EntityDataJSONArray } from "../../../public/data/EntityDataStructure";
+import ObjectDataJsonFile from "../../../public/data/ObjectDataJsonFile.json";
+import type { ObjectDataJSONArray } from "../../../public/data/ObjectDataStructure";
 
 let { gridFilter } = Astro.props;
 
-const entityBasePath = "../entities/";
-const fullGridArray = EntityDataJsonFile.battleEntityDataJsonArray
-	.concat(EntityDataJsonFile.restEntityDataJsonArray)
-	.concat(EntityDataJsonFile.eventEntityDataJsonArray)
-	.concat(EntityDataJsonFile.treasureEntityDataJsonArray);
+const entityBasePath = "../objects/";
+const fullGridArray = ObjectDataJsonFile.equipmentObjectDataJsonArray
+	.concat(ObjectDataJsonFile.nodeObjectDataJsonArray)
+	.concat(ObjectDataJsonFile.spawnObjectDataJsonArray);
 const filteredGridArray = fullGridArray.reduce(filterGrid, []);
 
 function filterGrid(
-	totalArray: EntityDataJSONArray[],
-	currentValue: EntityDataJSONArray
-): EntityDataJSONArray[] {
+	totalArray: ObjectDataJSONArray[],
+	currentValue: ObjectDataJSONArray
+) {
 	if (gridFilter) {
-		if (currentValue.ClassID.toLowerCase().includes(gridFilter)) {
+		if (currentValue.Type.toString().toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
 		} else if (currentValue.OriginID.toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
@@ -67,22 +66,26 @@ function filterGrid(
 	<section class="cards-nav">
 		<ul class="fluid-grid fluid-grid--minimal" id="entity-grid-container">
 			{
-				filteredGridArray.map((entityData: EntityDataJSONArray) => (
-					<PageEntityItem
-						cardTitle={entityData.Identifier}
-						cardDesc={
-							entityData.OriginID + "|" + entityData.ClassID
-						}
-						cardLink={
-							entityBasePath +
-							entityData.Identifier.toString()
-								.toLowerCase()
-								.split(" ")
-								.join("-")
-						}
-						cardLogo="/preact.svg"
-					/>
-				))
+				filteredGridArray.map(
+					(cubicEntityData: ObjectDataJSONArray) => (
+						<PageEntityItem
+							cardTitle={cubicEntityData.Identifier}
+							cardDesc={
+								cubicEntityData.OriginID +
+								"|" +
+								cubicEntityData.Type
+							}
+							cardLink={
+								entityBasePath +
+								cubicEntityData.Identifier.toString()
+									.toLowerCase()
+									.split(" ")
+									.join("-")
+							}
+							cardLogo="/preact.svg"
+						/>
+					)
+				)
 			}
 		</ul>
 	</section>

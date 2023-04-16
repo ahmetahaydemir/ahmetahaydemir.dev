@@ -293,78 +293,6 @@
                     "SpawnChange": null
                 }
             ]
-        },
-        {
-            "Identifier": "DefaultTestSkillID",
-            "Type": "EntityCastEffect",
-            "CastData": {
-                "Point": 4,
-                "Type": "CastOnTargetInRange",
-                "TargetingInput": "Enemy_Arena_Alive_Nearest",
-                "TargetingRange": 1
-            },
-            "TriggerData": null,
-            "OccurenceData": [
-                {
-                    "TargetingInput": "Enemy_Arena_Alive_Nearest",
-                    "MultiplierData": "Once",
-                    "StatisticChanges": [
-                        {
-                            "TargetStat": "Health",
-                            "FlatChange": -4,
-                            "PercentageStat": "Power",
-                            "PercentageChange": -100,
-                            "PercentageBasedOnCaster": true
-                        },
-                        {
-                            "TargetStat": "Power",
-                            "FlatChange": 1,
-                            "PercentageStat": "Power",
-                            "PercentageChange": 0,
-                            "PercentageBasedOnCaster": false
-                        }
-                    ],
-                    "StatusChange": null,
-                    "SpawnChange": null
-                },
-                {
-                    "TargetingInput": "Self",
-                    "MultiplierData": "Once",
-                    "StatisticChanges": [
-                        {
-                            "TargetStat": "Power",
-                            "FlatChange": -1,
-                            "PercentageStat": "Power",
-                            "PercentageChange": 0,
-                            "PercentageBasedOnCaster": false
-                        },
-                        {
-                            "TargetStat": "Power",
-                            "FlatChange": 0,
-                            "PercentageStat": "Power",
-                            "PercentageChange": 25,
-                            "PercentageBasedOnCaster": false
-                        }
-                    ],
-                    "StatusChange": null,
-                    "SpawnChange": null
-                },
-                {
-                    "TargetingInput": "Enemy_Arena_Alive_Nearest",
-                    "MultiplierData": "Once",
-                    "StatisticChanges": [
-                        {
-                            "TargetStat": "Power",
-                            "FlatChange": 4,
-                            "PercentageStat": "Power",
-                            "PercentageChange": 20,
-                            "PercentageBasedOnCaster": true
-                        }
-                    ],
-                    "StatusChange": null,
-                    "SpawnChange": null
-                }
-            ]
         }
     ],
     "restSkillDataJsonArray": [
@@ -443,7 +371,7 @@
                 {
                     "TargetingInput": "Enemy_Arena_Alive_RandomEmptyCellNearWeak",
                     "MultiplierData": "Once",
-                    "StatisticChanges": null,
+                    "StatisticChanges": [],
                     "StatusChange": null,
                     "SpawnChange": null
                 }

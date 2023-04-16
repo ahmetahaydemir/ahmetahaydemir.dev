@@ -1,4 +1,11 @@
-export interface SkillData {
+export interface SkillDataJSONFile {
+    battleSkillDataJsonArray:   SkillDataJSONArray[];
+    restSkillDataJsonArray:     SkillDataJSONArray[];
+    eventSkillDataJsonArray:    SkillDataJSONArray[];
+    treasureSkillDataJsonArray: SkillDataJSONArray[];
+}
+
+export interface SkillDataJSONArray {
     Identifier: string;
     Type: SkillType;
     CastData: CastData;
@@ -34,7 +41,7 @@ export interface StatisticChange {
     PercentageBasedOnCaster: boolean;
 }
 export interface StatusChange {
-    Status: SkillData;
+    Status: string;
 }
 export interface SpawnChange {
     Spawn: string;
@@ -75,44 +82,3 @@ enum StatisticType {
     Defence,
     Speed,
 }
-//---------------------------------------
-let skillSampleData = {
-    Identifier: undefined,
-    Type: undefined,
-    CastData: {
-        Point: undefined,
-        Type: undefined,
-        TargetingInput: undefined,
-        TargetingRange: undefined,
-    },
-    TriggerData: {
-        Type: undefined,
-    },
-    OccurenceData: [
-        {
-            TargetingInput: undefined,
-            MultiplierData: {
-                Type: undefined,
-            },
-            StatisticChanges: [
-                {
-                    TargetStat: undefined,
-                    FlatChange: undefined,
-                    PercentageStat: undefined,
-                    PercentageChange: undefined,
-                    PercentageBasedOnCaster: undefined,
-                },
-            ],
-            StatusChange: [
-                {
-                    Status: undefined,
-                },
-            ],
-            SpawnChange: [
-                {
-                    Spawn: undefined,
-                },
-            ],
-        },
-    ],
-};

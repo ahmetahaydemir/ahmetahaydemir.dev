@@ -3,7 +3,7 @@ import { battleSkillDataJsonArray, restSkillDataJsonArray, eventSkillDataJsonArr
 import { classDataJsonArray } from '../../../../public/data/ClassDataJsonFile.json';
 import { originDataJsonArray } from '../../../../public/data/OriginDataJsonFile.json';
 import { battleEntityDataJsonArray, restEntityDataJsonArray, eventEntityDataJsonArray, treasureEntityDataJsonArray } from '../../../../public/data/EntityDataJsonFile.json';
-import { equipmentCubicDataJsonArray, nodeCubicDataJsonArray, spawnCubicDataJsonArray } from '../../../../public/data/CubicEntityDataJsonFile.json';
+import { equipmentObjectDataJsonArray, nodeObjectDataJsonArray, spawnObjectDataJsonArray } from '../../../../public/data/ObjectDataJsonFile.json';
 import { configDataJson } from '../../../../public/data/GameConfigDataJsonFile.json';
 
 export const get: APIRoute = ({ params, request }) => {
@@ -23,8 +23,8 @@ export const get: APIRoute = ({ params, request }) => {
         case "getSkillData":
             jsonData = { battleSkillDataJsonArray, restSkillDataJsonArray, eventSkillDataJsonArray, treasureSkillDataJsonArray };
             break;
-        case "getCubicEntityData":
-            jsonData = { equipmentCubicDataJsonArray, nodeCubicDataJsonArray, spawnCubicDataJsonArray };
+        case "getObjectData":
+            jsonData = { equipmentObjectDataJsonArray, nodeObjectDataJsonArray, spawnObjectDataJsonArray };
             break;
         case "getConfigData":
             jsonData = { configDataJson };
@@ -42,7 +42,7 @@ export function getStaticPaths() {
         { params: { API: "getClassData" } },
         { params: { API: "getOriginData" } },
         { params: { API: "getSkillData" } },
-        { params: { API: "getCubicEntityData" } },
+        { params: { API: "getObjectData" } },
         { params: { API: "getConfigData" } }
     ]
 }

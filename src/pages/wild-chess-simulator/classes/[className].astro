@@ -2,15 +2,17 @@
 import MainLayout from "../../../layouts/MainLayout.astro";
 import ClassDataJsonFile from "../../../../public/data/ClassDataJsonFile.json";
 import PageEntityGrid from "../../../components/PageContent/PageEntityGrid.astro";
+import PageObjectGrid from "../../../components/PageContent/PageObjectGrid.astro";
 import PageEffectTable from "../../../components/PageContent/PageEffectTable.astro";
+import PageSubHeader from "../../../components/PageContent/PageSubHeader.astro";
 import type { ClassData } from "../../../../public/data/ClassDataStructure";
 //
 export async function getStaticPaths() {
 	return ClassDataJsonFile.classDataJsonArray.map((entry) => ({
 		params: {
-			className: entry.Identifier.toLowerCase().split(" ").join("-"),
+			className: entry.Identifier.toLowerCase().split(" ").join("-")
 		},
-		props: { classObject: entry },
+		props: { classObject: entry }
 	}));
 }
 //
@@ -23,5 +25,14 @@ const { classObject } = Astro.props;
 
 <MainLayout topTitle={classObject.Identifier}>
 	<PageEffectTable effectObject={classObject} />
+	<PageSubHeader
+		headerLink={"../library/entity-list"}
+		headerTitle={"Entity List"}
+	/>
 	<PageEntityGrid gridFilter={classObject.Identifier.toLowerCase()} />
+	<PageSubHeader
+		headerLink={"../library/object-list"}
+		headerTitle={"Object List"}
+	/>
+	<PageObjectGrid gridFilter={classObject.Identifier.toLowerCase()} />
 </MainLayout>

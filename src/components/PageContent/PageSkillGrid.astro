@@ -1,25 +1,23 @@
 ---
 import PageEntityItem from "./PageEntityItem.astro";
-import EntityDataJsonFile from "../../../public/data/EntityDataJsonFile.json";
-import type { EntityDataJSONArray } from "../../../public/data/EntityDataStructure";
+import SkillDataJsonFile from "../../../public/data/SkillDataJsonFile.json";
+import type { SkillDataJSONArray } from "../../../public/data/SkillDataStructure";
 
 let { gridFilter } = Astro.props;
 
-const entityBasePath = "../entities/";
-const fullGridArray = EntityDataJsonFile.battleEntityDataJsonArray
-	.concat(EntityDataJsonFile.restEntityDataJsonArray)
-	.concat(EntityDataJsonFile.eventEntityDataJsonArray)
-	.concat(EntityDataJsonFile.treasureEntityDataJsonArray);
+const entityBasePath = "../skills/";
+const fullGridArray = SkillDataJsonFile.battleSkillDataJsonArray
+	.concat(SkillDataJsonFile.restSkillDataJsonArray)
+	.concat(SkillDataJsonFile.eventSkillDataJsonArray)
+	.concat(SkillDataJsonFile.treasureSkillDataJsonArray);
 const filteredGridArray = fullGridArray.reduce(filterGrid, []);
 
 function filterGrid(
-	totalArray: EntityDataJSONArray[],
-	currentValue: EntityDataJSONArray
-): EntityDataJSONArray[] {
+	totalArray: SkillDataJSONArray[],
+	currentValue: SkillDataJSONArray
+) {
 	if (gridFilter) {
-		if (currentValue.ClassID.toLowerCase().includes(gridFilter)) {
-			totalArray.push(currentValue);
-		} else if (currentValue.OriginID.toLowerCase().includes(gridFilter)) {
+		if (currentValue.Type.toString().toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
 		} else if (currentValue.Identifier.toLowerCase().includes(gridFilter)) {
 			totalArray.push(currentValue);
@@ -67,15 +65,16 @@ function filterGrid(
 	<section class="cards-nav">
 		<ul class="fluid-grid fluid-grid--minimal" id="entity-grid-container">
 			{
-				filteredGridArray.map((entityData: EntityDataJSONArray) => (
+				filteredGridArray.map((cubicEntityData: SkillDataJSONArray) => (
 					<PageEntityItem
-						cardTitle={entityData.Identifier}
+						cardTitle={cubicEntityData.Identifier}
 						cardDesc={
-							entityData.OriginID + "|" + entityData.ClassID
+							cubicEntityData.Type + "|"
+							// cubicEntityData.OriginID +
 						}
 						cardLink={
 							entityBasePath +
-							entityData.Identifier.toString()
+							cubicEntityData.Identifier.toString()
 								.toLowerCase()
 								.split(" ")
 								.join("-")

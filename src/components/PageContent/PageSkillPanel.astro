@@ -1,16 +1,16 @@
 ---
 import type {
-	SkillData,
+	SkillDataJSONArray,
 	StatisticChange,
 } from "../../../public/data/SkillDataStructure";
 
 interface Props {
-	skillObject: SkillData;
+	skillObject: SkillDataJSONArray;
 }
 
 const { skillObject } = Astro.props;
 
-function GetHeaderRight(skill: SkillData) {
+function GetHeaderRight(skill: SkillDataJSONArray) {
 	if (skill.CastData) {
 		return "Cast : " + skill.CastData.Type;
 	}
@@ -21,7 +21,7 @@ function GetHeaderRight(skill: SkillData) {
 	//
 	return "unset";
 }
-function GetHeaderLeft(skill: SkillData) {
+function GetHeaderLeft(skill: SkillDataJSONArray) {
 	if (skill.Type) {
 		return "Type : " + skill.Type;
 	}

@@ -38,9 +38,10 @@ devlogPosts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
 import EntityDataJsonFile from '../public/data/EntityDataJsonFile.json'
 import OriginDataJsonFile from '../public/data/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/data/ClassDataJsonFile.json'
-import CubicEntityDataJsonFile from '../public/data/CubicEntityDataJsonFile.json'
+import ObjectDataJsonFile from '../public/data/ObjectDataJsonFile.json'
 import SkillDataJsonFile from '../public/data/SkillDataJsonFile.json'
-export const entitySidebarList = EntityDataJsonFile.battleEntityDataJsonArray.map((entry) => ({
+let fullEntityArray = EntityDataJsonFile.battleEntityDataJsonArray.concat(EntityDataJsonFile.restEntityDataJsonArray).concat(EntityDataJsonFile.eventEntityDataJsonArray).concat(EntityDataJsonFile.treasureEntityDataJsonArray);
+export const entitySidebarList = fullEntityArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 export const originSidebarList = OriginDataJsonFile.originDataJsonArray.map((entry) => ({
@@ -49,10 +50,12 @@ export const originSidebarList = OriginDataJsonFile.originDataJsonArray.map((ent
 export const classSidebarList = ClassDataJsonFile.classDataJsonArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
-export const equipmentSidebarList = CubicEntityDataJsonFile.equipmentCubicDataJsonArray.map((entry) => ({
+let fullObjectArray = ObjectDataJsonFile.equipmentObjectDataJsonArray.concat(ObjectDataJsonFile.nodeObjectDataJsonArray).concat(ObjectDataJsonFile.spawnObjectDataJsonArray);
+export const objectSidebarList = fullObjectArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
-export const skillSidebarList = SkillDataJsonFile.battleSkillDataJsonArray.map((entry) => ({
+let fullSkillArray = SkillDataJsonFile.battleSkillDataJsonArray.concat(SkillDataJsonFile.restSkillDataJsonArray).concat(SkillDataJsonFile.eventSkillDataJsonArray).concat(SkillDataJsonFile.treasureSkillDataJsonArray);
+export const skillSidebarList = fullSkillArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
 //
@@ -68,12 +71,15 @@ export const SIDEBAR: Sidebar = {
 		],
 		'Devlog': devlogPosts.map(post => ({ text: post.data.title, link: post.data.title.toLowerCase().split(' ').join('-') })),
 		'Library': [
-			{ text: 'Battle Entity List', link: `battle-entity-list` }
+			{ text: 'Freeform Table', link: `freeform-table` },
+			{ text: 'Entity List', link: `entity-list` },
+			{ text: 'Object List', link: `object-list` },
+			{ text: 'Skill List', link: `skill-list` }
 		],
 		'Skills': skillSidebarList,
 		'Classes': classSidebarList,
 		'Origins': originSidebarList,
-		'Battle Entities': entitySidebarList,
-		'Equipments': equipmentSidebarList,
+		'Entities': entitySidebarList,
+		'Objects': objectSidebarList,
 	},
 };

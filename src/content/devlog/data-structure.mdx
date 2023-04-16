@@ -16,20 +16,31 @@ But I still think it would be beneficial to take some time to ponder about the o
 
 ## Data Format
 
-I need the data format to be easily readable and modifiable by hand since I will be dealing with it constantly.
+I need the data format to be easily readable and modifiable by hand since I will be dealing with it constantly while building it.
 
-My plans involve web related network interactions as well, no need to reinvent the wheel and I don't think the file size will be an issue, so I will format everything as [JSON](https://www.json.org/json-en.html).
+My plans in the building phase does not involve any complicated interactions. No need to reinvent the wheel and I don't think the file size will be an issue as well, so I will format everything as [JSON](https://www.json.org/json-en.html).
+
+Then at some point, I would like to migrate my static data to a `relational database`, preferably to the same database where dynamic visitor data will be stored.
 
 ## Data Seperation
 
 In terms of usage, I will be having a set of static data that I will only read and never write. These will be :
 
 -   Entity Base Data
+    -   Battle Entity Data
+    -   Rest Entity Data
+    -   Event Entity Data
+    -   Treasure Entity Data
+-   Object Base Data
+    -   Equipment Object Data
+    -   Node Object Data
+    -   Spawn Object Data
 -   Class Base Data
 -   Origin Base Data
 -   Skill Base Data
--   Cubic Entity Base Data
 -   Configuration Data
+
+![File Relations](/image/fileRelations.png "File Relations")
 
 I will also need a set of dynamic data that I will read and write constantly. These will be :
 
@@ -51,7 +62,7 @@ Then I can use these endpoints to stay in sync and try out different data sets w
 -   https://ahmetahaydemir.dev/wild-chess-simulator/api/getClassData.json
 -   https://ahmetahaydemir.dev/wild-chess-simulator/api/getOriginData.json
 -   https://ahmetahaydemir.dev/wild-chess-simulator/api/getSkillData.json
--   https://ahmetahaydemir.dev/wild-chess-simulator/api/getCubicEntityData.json
+-   https://ahmetahaydemir.dev/wild-chess-simulator/api/getObjectData.json
 -   https://ahmetahaydemir.dev/wild-chess-simulator/api/getConfigData.json
 
 This will allow me to update the data once in that static endpoint and see the results in the website and the game simultaneously.

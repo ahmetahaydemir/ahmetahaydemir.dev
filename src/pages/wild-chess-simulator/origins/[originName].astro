@@ -2,15 +2,17 @@
 import MainLayout from "../../../layouts/MainLayout.astro";
 import OriginDataJsonFile from "../../../../public/data/OriginDataJsonFile.json";
 import PageEntityGrid from "../../../components/PageContent/PageEntityGrid.astro";
+import PageObjectGrid from "../../../components/PageContent/PageObjectGrid.astro";
+import PageSubHeader from "../../../components/PageContent/PageSubHeader.astro";
 import PageEffectTable from "../../../components/PageContent/PageEffectTable.astro";
 import type { OriginData } from "../../../../public/data/OriginDataStructure";
 //
 export async function getStaticPaths() {
 	return OriginDataJsonFile.originDataJsonArray.map((entry) => ({
 		params: {
-			originName: entry.Identifier.toLowerCase().split(" ").join("-"),
+			originName: entry.Identifier.toLowerCase().split(" ").join("-")
 		},
-		props: { originObject: entry },
+		props: { originObject: entry }
 	}));
 }
 //
@@ -23,5 +25,14 @@ const { originObject } = Astro.props;
 
 <MainLayout topTitle={originObject.Identifier}>
 	<PageEffectTable effectObject={originObject} />
+	<PageSubHeader
+		headerLink={"../library/entity-list"}
+		headerTitle={"Entity List"}
+	/>
 	<PageEntityGrid gridFilter={originObject.Identifier.toLowerCase()} />
+	<PageSubHeader
+		headerLink={"../library/object-list"}
+		headerTitle={"Object List"}
+	/>
+	<PageObjectGrid gridFilter={originObject.Identifier.toLowerCase()} />
 </MainLayout>

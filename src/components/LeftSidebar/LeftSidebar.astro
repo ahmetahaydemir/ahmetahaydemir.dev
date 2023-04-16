@@ -16,7 +16,7 @@ const sidebar = SIDEBAR["en"];
 		{
 			Object.entries(sidebar).map(([header, children]) => (
 				<li class="nav-group learn active">
-					<details open>
+					<details>
 						<summary class="nav-group-title">
 							<h2>
 								{header}
@@ -35,9 +35,6 @@ const sidebar = SIDEBAR["en"];
 						</summary>
 						<ul>
 							{children.map((child) => {
-								const activeSelectionHighlight = Astro.url
-									.toString()
-									.includes(child.link);
 								const url =
 									"/" +
 									baseFolderURL +
@@ -49,10 +46,8 @@ const sidebar = SIDEBAR["en"];
 									<li class="nav-link">
 										<a
 											href={url}
-											data-current-parent={
-												activeSelectionHighlight ? "true" : "false"
-											}
-											aria-current={activeSelectionHighlight ? "page" : "false"}
+											data-current-parent="false"
+											aria-current="false"
 										>
 											{child.text}
 										</a>
@@ -69,9 +64,51 @@ const sidebar = SIDEBAR["en"];
 
 <script is:inline>
 	window.addEventListener("DOMContentLoaded", () => {
+		window.sideDetail = document.querySelectorAll("details");
+		for (let index = 0; index < sideDetail.length; index++) {
+			const element = window.sideDetail[index];
+			if (
+				index === 0 ||
+				index === 1 ||
+				index === 2 ||
+				location.pathname.includes(
+					element.innerText.trim().toLowerCase().split(" ").join("-")
+				)
+			) {
+				element.setAttribute("open", "");
+				window.sideDetailBreakdown =
+					element.querySelectorAll("ul li a");
+				//
+				for (
+					let breakdownIndex = 0;
+					breakdownIndex < window.sideDetailBreakdown.length;
+					breakdownIndex++
+				) {
+					const breakdownElement =
+						window.sideDetailBreakdown[breakdownIndex];
+					if (
+						location.pathname.includes(
+							breakdownElement.innerText
+								.trim()
+								.toLowerCase()
+								.split(" ")
+								.join("-")
+						)
+					) {
+						breakdownElement.setAttribute(
+							"data-current-parent",
+							"true"
+						);
+						breakdownElement.setAttribute("aria-current", "page");
+					}
+				}
+			}
+		}
+		//
 		var target = document.querySelector('[aria-current="page"]');
-		if (target && target.offsetTop > window.innerHeight - 100) {
-			document.querySelector(".nav-groups").scrollTop = target.offsetTop;
+		if (target && target.offsetTop > window.innerHeight - 300) {
+			document.querySelector(".nav-groups").scrollTop =
+				target.offsetTop - window.innerHeight * 0.4;
 		}
 	});
 </script>
@@ -191,7 +228,8 @@ const sidebar = SIDEBAR["en"];
 			top: calc(var(--theme-navbar-height) + 3rem);
 			bottom: 0;
 			width: calc(
-				var(--theme-left-sidebar-width) - var(--min-spacing-inline) * 1.6
+				var(--theme-left-sidebar-width) - var(--min-spacing-inline) *
+					1.6
 			);
 		}
 		.nav-group-title {
