@@ -197,6 +197,10 @@
 
 	--theme-glow-highlight: hsla(var(--color-base-purple), 50%, 1);
 	--theme-glow-diffuse: hsla(var(--color-base-purple), 35%, 0.4);
+
+	--theme-analytics-orange: rgb(230, 134, 25);
+	--theme-analytics-green: rgb(68, 181, 86);
+	--theme-analytics-blue: rgb(38, 128, 235);
 }
 
 ::selection {

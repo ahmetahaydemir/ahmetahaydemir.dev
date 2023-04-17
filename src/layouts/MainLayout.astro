@@ -7,6 +7,7 @@ import PageContent from "../components/PageContent/PageContent.astro";
 import LeftSidebar from "../components/LeftSidebar/LeftSidebar.astro";
 import RightSidebar from "../components/RightSidebar/RightSidebar.astro";
 import { SITE } from "../consts";
+import AnalyticsSidebar from "../components/LeftSidebar/AnalyticsSidebar.astro";
 
 const { headings, topTitle, ...data } = Astro.props;
 const currentPage = Astro.url.pathname;
@@ -151,7 +152,11 @@ const canonicalURL = new URL(currentPage, baseDomain);
 				<RightSidebar headings={headings} />
 			</aside>
 			<div id="main-content" class="main-column">
-				<PageContent title={topTitle} headings={headings} githubEditUrl="">
+				<PageContent
+					title={topTitle}
+					headings={headings}
+					githubEditUrl=""
+				>
 					<slot />
 				</PageContent>
 			</div>

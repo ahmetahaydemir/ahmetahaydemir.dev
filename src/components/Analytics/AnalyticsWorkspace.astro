@@ -1,0 +1,32 @@
+<div id="analytics-workspace" class="analytics-workspace">
+	<table id="analytics-table" class="analytics-table">
+		<thead> </thead>
+		<tbody> </tbody>
+	</table>
+</div>
+
+<style>
+	.analytics-workspace {
+		background-color: var(--theme-navbar-bg);
+		border: 2px dashed var(--theme-divider);
+		grid-column-start: 2;
+		height: max-content;
+		min-height: 75px;
+		margin-bottom: 10px;
+	}
+	thead td:first-child {
+		color: var(--theme-analytics-orange);
+		font-size: 2em;
+		font-weight: bolder;
+		height: 75px;
+	}
+	thead td:not(:first-child) {
+		color: var(--theme-analytics-green);
+		font-size: 1.5em;
+		font-weight: bolder;
+	}
+	.analytics-table tbody {
+		font-weight: 600;
+		height: 100px;
+	}
+</style>

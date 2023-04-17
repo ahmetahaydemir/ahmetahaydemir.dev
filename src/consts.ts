@@ -71,7 +71,7 @@ export const SIDEBAR: Sidebar = {
 		],
 		'Devlog': devlogPosts.map(post => ({ text: post.data.title, link: post.data.title.toLowerCase().split(' ').join('-') })),
 		'Library': [
-			{ text: 'Freeform Table', link: `freeform-table` },
+			{ text: 'Freeform Workspace', link: `freeform-workspace` },
 			{ text: 'Entity List', link: `entity-list` },
 			{ text: 'Object List', link: `object-list` },
 			{ text: 'Skill List', link: `skill-list` }
