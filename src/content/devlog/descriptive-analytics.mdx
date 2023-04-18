@@ -1,7 +1,7 @@
 ---
 title: "Descriptive Analytics"
 description: "Devlog Documentation"
-date: 2023-04-16
+date: 2023-04-18
 ---
 
 import PageDateBar from "../../components/PageContent/PageDateBar.astro";
@@ -25,6 +25,18 @@ One of my favourite analytical dashboard layout is the drag-and-drop interface f
 The layout is intuitive and focuses on quick iterations of analysis. It brings out the most in terms of insights out of an experienced business lead.
 
 I would like to build a very simple version of this interface, focusing on the [freeform table](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html?lang=en) aspect. It basically works as a fancier pivot table.
+
+## Freeform & Table View
+
+After wasting 1 whole day on this matter, I realized that I am actually kind of stupid :)
+
+Wish I just gave now and migrate early to an SQL framework all together since that is what I will be doing in the end. Or at least start using some kind a schema generator framework like `Prisma`, `Drizzle` or even `GraphQL`.
+
+[Prisma Studio](https://www.prisma.io/studio) already provides everything that I have done in here out of the box. Hopefully, it will have the extra features that I described above once the `freeform table` view is more developed.
+
+For now it is just a basic table view interface, here is how [my copycat](https://ahmetahaydemir.dev/wild-chess-simulator/library/freeform-workspace) looks.
+
+![Freeform Table - First Try](/image/FreeformTableFirstTry.gif "Freeform Table - First Try")
 
 ## Content Balance
 
