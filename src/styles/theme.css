@@ -156,8 +156,8 @@
 	--theme-glow-blur: 10px;
 }
 
-:root.theme-dark,
-.theme-dark ::backdrop {
+:root,
+::backdrop {
 	color-scheme: dark;
 	/* We lighten-up the orange in dark mode, to help with link contrast. */
 	--color-orange: var(--color-base-orange), 60%;

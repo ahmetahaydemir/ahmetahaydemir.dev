@@ -12,7 +12,7 @@ const baseDomain = "https://ahmetahaydemir.dev";
 const canonicalURL = new URL(currentPage, baseDomain);
 ---
 
-<html dir={data.dir} lang={data.lang} class="initial theme-dark">
+<html dir={data.dir} lang={data.lang} class="initial">
 	<head>
 		<HeadCommon />
 		<HeadSEO {...data} canonicalUrl={canonicalURL} />
@@ -157,7 +157,7 @@ const canonicalURL = new URL(currentPage, baseDomain);
 			}
 			//
 			function PopulateTableView() {
-				console.log("Data Bank - Table Init");				
+				console.log("Data Bank - Table Init");
 				let cellCount = Object.keys(entityBank[0]).length;
 				// Header Generate
 				let headerRow = analyticsTableHead.insertRow(0);

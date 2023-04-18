@@ -365,9 +365,6 @@ pre {
 	box-shadow: 0 3px var(--theme-shade-subtle);
 	background-color: var(--theme-bg-offset);
 	white-space: nowrap;
-}
-
-.theme-dark .content kbd {
 	border-color: var(--theme-divider);
 	background-color: var(--theme-divider);
 }
