@@ -1,6 +1,6 @@
 <div id="analytics-workspace" class="analytics-workspace">
-  <div id="analytics-component-zone" class="analytics-component-zone"></div>
   <table id="analytics-table" class="analytics-table">
+    <!-- <div id="analytics-component-zone" class="analytics-component-zone"></div> -->
     <thead> </thead>
     <tbody> </tbody>
   </table>
@@ -9,22 +9,32 @@
 <style>
   .analytics-workspace {
     background-color: var(--theme-navbar-bg);
-    border: 2px dashed var(--theme-divider);
     grid-column-start: 2;
     height: max-content;
     min-height: 75px;
     margin-bottom: 10px;
   }
+  .analytics-summary-zone {
+    border: 5px dashed var(--theme-divider);
+  }
+  tbody {
+    outline: 2px dashed var(--theme-divider);
+  }
+  thead td {
+    height: 75px;
+    font-weight: bolder;
+    outline: 2px dashed var(--theme-divider);
+    border-color: initial;
+    border-left-style: solid;
+    border-left-width: 4px;
+  }
   thead td:first-child {
     color: var(--theme-analytics-orange);
-    font-size: 2em;
-    font-weight: bolder;
-    height: 75px;
+    font-size: 1.75em;
   }
   thead td:not(:first-child) {
     color: var(--theme-analytics-green);
     font-size: 1.5em;
-    font-weight: bolder;
   }
   .analytics-table tbody {
     font-weight: 600;
@@ -32,7 +42,7 @@
   }
   .analytics-component-zone {
     width: 100%;
-    height: 100%;
-    background-color: aqua;
+    height: 50px;
+    display: table-header-group;
   }
 </style>

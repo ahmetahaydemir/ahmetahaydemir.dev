@@ -67,7 +67,6 @@ const canonicalURL = new URL(currentPage, baseDomain);
       window.analyticsDimensionArray = analyticsComponents[0].children;
       window.analyticsMetricArray = analyticsComponents[1].children;
       window.analyticsSegmentArray = analyticsComponents[2].children;
-      ComponentDragAssignment();
       //
       analyticsCommands.children[0].children[0].addEventListener("click", SwitchAnalyticsView);
       analyticsCommands.children[1].addEventListener("click", ExecuteViewCommand);
@@ -78,8 +77,12 @@ const canonicalURL = new URL(currentPage, baseDomain);
         //
         if (window.currentViewToggleState.innerText === "Table") {
           window.currentViewToggleState.innerText = "Freeform";
+          window.analyticsComponents[0].style = "";
+          window.analyticsComponents[1].style = "";
         } else if (window.currentViewToggleState.innerText === "Freeform") {
           window.currentViewToggleState.innerText = "Table";
+          window.analyticsComponents[0].style = "display: none";
+          window.analyticsComponents[1].style = "display: none";
         }
         //
         ClearViewCommand();
@@ -97,7 +100,7 @@ const canonicalURL = new URL(currentPage, baseDomain);
       function PopulateFreeformView() {
         console.log("Data Bank - Freeform Init");
         let cellCount = 4;
-        //
+        // Header Row
         let headerRow = analyticsTableHead.insertRow(0);
         headerRow.className = analyticsTableHead.className;
         for (let headerIndex = 0; headerIndex < cellCount; headerIndex++) {
@@ -105,13 +108,27 @@ const canonicalURL = new URL(currentPage, baseDomain);
           headerCell.className = analyticsTableHead.className;
           if (headerIndex === 0) {
             // Dimension Header
-            headerCell.innerHTML = "<td>" + "Identifier" + "</td>";
+            headerCell.className = "analytics-void-zone";
           } else {
             // Metric Header
             headerCell.innerHTML = "<th>" + analyticsMetricArray[headerIndex - 1].innerText + "</th>";
           }
         }
-        //
+        // Summary Row
+        headerRow = analyticsTableHead.insertRow(1);
+        headerRow.className = analyticsTableHead.className;
+        for (let headerIndex = 0; headerIndex < cellCount; headerIndex++) {
+          let headerCell = headerRow.insertCell(headerIndex);
+          headerCell.className = analyticsTableHead.className;
+          if (headerIndex === 0) {
+            // Dimension Header
+            headerCell.innerHTML = window.ConstructComponentCell();
+          } else {
+            // Metric Header
+            headerCell.innerHTML = "<th></th>";
+          }
+        }
+        // Detail Row
         for (let jsonIndex = 0; jsonIndex < entityBank.length; jsonIndex++) {
           let row = analyticsTableBody.insertRow(jsonIndex);
           for (let i = 0; i < cellCount; i++) {
@@ -130,8 +147,8 @@ const canonicalURL = new URL(currentPage, baseDomain);
       function PopulateTableView() {
         console.log("Data Bank - Table Init");
         //
-        GenerateTableHeader(entityBank);
-        GenerateTableRow(entityBank);
+        GenerateTableHeader(window.dataBankSelection);
+        GenerateTableRow(window.dataBankSelection);
       }
       //
       function GenerateTableHeader(currentDataBank) {
@@ -164,17 +181,19 @@ const canonicalURL = new URL(currentPage, baseDomain);
             let currentValue = currentDataBank[dataIndex][Object.keys(currentDataBank[dataIndex])[i]];
             if (i === 0) {
               // Dimension Value
-              cell.innerHTML = "<td>" + currentValue + "<td/>";
+              cell.innerHTML = "<td>" + currentValue + "</td>";
             } else {
               // Metric Value
-              if (typeof currentValue === "object") {
+              if (currentValue === null || currentValue === "") {
+                cell.innerHTML = "<td>?</td>";
+              } else if (typeof currentValue === "object") {
                 if (currentValue.length > 0) {
-                  cell.innerHTML = "<td>" + Object.keys(currentDataBank[dataIndex])[i] + " - [" + currentValue.length + "]<td/>";
+                  cell.innerHTML = "<td>" + Object.keys(currentDataBank[dataIndex])[i] + " - [" + currentValue.length + "]</td>";
                 } else {
-                  cell.innerHTML = "<td>" + Object.keys(currentDataBank[dataIndex])[i] + " - [1]<td/>";
+                  cell.innerHTML = "<td>" + Object.keys(currentDataBank[dataIndex])[i] + " - [1]</td>";
                 }
               } else {
-                cell.innerHTML = "<td>" + currentValue + "<td/>";
+                cell.innerHTML = "<td>" + currentValue + "</td>";
               }
             }
           }
@@ -195,6 +214,19 @@ const canonicalURL = new URL(currentPage, baseDomain);
         }
       }
       //
+      function TableSegmentListener() {
+        window.dataBankSelection = entityBank;
+        //
+        for (let index = 0; index < window.analyticsComponents[2].children.length; index++) {
+          const element = window.analyticsComponents[2].children[index];
+          window.analyticsSegmentArray[index].innerText = window.dataBank[index].title;
+          element.addEventListener("click", () => {
+            console.log("Segment clicked " + window.dataBank[index].title);
+            window.dataBankSelection = window.dataBank[index].bank;
+          });
+        }
+      }
+      //
       function ComponentDragAssignment() {
         for (let index = 0; index < analyticsDimensionArray.length; index++) {
           const element = analyticsDimensionArray[index];
@@ -209,6 +241,11 @@ const canonicalURL = new URL(currentPage, baseDomain);
         //
         window.analyticsDimensionZone = document.getElementById("analytics-component-zone");
       }
+      //
+      addEventListener("DOMContentLoaded", (event) => {
+        TableSegmentListener();
+        ComponentDragAssignment();
+      });
     </script>
 
     <script>

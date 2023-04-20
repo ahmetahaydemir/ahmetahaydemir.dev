@@ -6,15 +6,42 @@ import SkillDataJsonFile from "./data/SkillDataJsonFile.json" assert { type: "js
 //
 console.log("Data Bank - Loaded");
 window.entityBank = EntityDataJsonFile.battleEntityDataJsonArray
-	.concat(EntityDataJsonFile.restEntityDataJsonArray)
-	.concat(EntityDataJsonFile.eventEntityDataJsonArray)
-	.concat(EntityDataJsonFile.treasureEntityDataJsonArray);
+  .concat(EntityDataJsonFile.restEntityDataJsonArray)
+  .concat(EntityDataJsonFile.eventEntityDataJsonArray)
+  .concat(EntityDataJsonFile.treasureEntityDataJsonArray);
 window.objectBank = ObjectDataJsonFile.equipmentObjectDataJsonArray
-	.concat(ObjectDataJsonFile.nodeObjectDataJsonArray)
-	.concat(ObjectDataJsonFile.spawnObjectDataJsonArray);
-window.classBank = ClassDataJsonFile;
-window.originBank = OriginDataJsonFile;
+  .concat(ObjectDataJsonFile.nodeObjectDataJsonArray)
+  .concat(ObjectDataJsonFile.spawnObjectDataJsonArray);
+window.classBank = ClassDataJsonFile.classDataJsonArray;
+window.originBank = OriginDataJsonFile.originDataJsonArray;
 window.skillBank = SkillDataJsonFile.battleSkillDataJsonArray
-	.concat(SkillDataJsonFile.restSkillDataJsonArray)
-	.concat(SkillDataJsonFile.eventSkillDataJsonArray)
-	.concat(SkillDataJsonFile.treasureSkillDataJsonArray);
+  .concat(SkillDataJsonFile.restSkillDataJsonArray)
+  .concat(SkillDataJsonFile.eventSkillDataJsonArray)
+  .concat(SkillDataJsonFile.treasureSkillDataJsonArray);
+window.dataBank = [
+  {
+    title: "Entity",
+    bank: entityBank,
+  },
+  {
+    title: "Object",
+    bank: objectBank,
+  },
+  {
+    title: "Class",
+    bank: classBank,
+  },
+  {
+    title: "Origin",
+    bank: originBank,
+  },
+  {
+    title: "Skill",
+    bank: skillBank,
+  },
+];
+//
+window.ConstructComponentCell = function () {
+  //
+  return "<td class=component-cell>" + "..." + "</td>";
+};
