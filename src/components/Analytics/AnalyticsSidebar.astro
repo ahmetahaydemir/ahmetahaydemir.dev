@@ -1,159 +1,151 @@
-<aside
-	id="analytics-sidebar"
-	class="analytics-sidebar"
-	title="Analytics Navigation"
->
-	<!-- START -->
-	<div class="analytics-dimensions">
-		<a>Dimensions</a>
-		<div class="component-container">
-			<button>Identifier</button>
-			<button>Type</button>
-			<button>Value</button>
-			<button>StatType</button>
-			<button>StatAmount</button>
-		</div>
-	</div>
-	<hr class="w-48 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700" />
-	<div class="analytics-metrics">
-		<a>Metrics</a>
-		<div class="component-container">
-			<button>Unique</button>
-			<button>Instance</button>
-			<button>Quantity</button>
-		</div>
-	</div>
-	<hr class="w-48 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700" />
-	<div class="analytics-segments">
-		<a>Segments</a>
-		<div class="component-container">
-			<button>Entity</button>
-			<button>Origin</button>
-			<button>Class</button>
-			<button>Skill</button>
-			<button>Object</button>
-		</div>
-	</div>
-	<!-- END -->
-	<hr class="w-48 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700" />
-	<div id="analytics-commands" class="analytics-commands">
-		<label class="relative inline-flex items-center cursor-pointer">
-			<input type="checkbox" value="" class="sr-only peer" />
-			<div
-				class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
-			>
-			</div>
-			<span
-				id="analytics-view-toggle"
-				class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"
-				>Table</span
-			>
-		</label>
-		<button>Execute</button>
-		<button>Clear</button>
-	</div>
+<aside id="analytics-sidebar" class="analytics-sidebar" title="Analytics Navigation">
+  <!-- START -->
+  <div class="analytics-dimensions">
+    <a>Dimensions</a>
+    <div class="component-container">
+      <button draggable="true">Identifier</button>
+      <button draggable="true">Type</button>
+      <button draggable="true">Value</button>
+      <button draggable="true">StatType</button>
+      <button draggable="true">StatAmount</button>
+    </div>
+  </div>
+  <hr class="w-48 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700" />
+  <div class="analytics-metrics">
+    <a>Metrics</a>
+    <div class="component-container">
+      <button>Unique</button>
+      <button>Instance</button>
+      <button>Quantity</button>
+    </div>
+  </div>
+  <hr class="w-48 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700" />
+  <div class="analytics-segments">
+    <a>Segments</a>
+    <div class="component-container">
+      <button>Entity</button>
+      <button>Origin</button>
+      <button>Class</button>
+      <button>Skill</button>
+      <button>Object</button>
+    </div>
+  </div>
+  <!-- END -->
+  <hr class="w-48 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700" />
+  <div id="analytics-commands" class="analytics-commands">
+    <label class="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" value="" class="sr-only peer" />
+      <div
+        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+      >
+      </div>
+      <span id="analytics-view-toggle" class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Table</span>
+    </label>
+    <button>Execute</button>
+    <button>Clear</button>
+  </div>
 </aside>
 
 <style>
-	.analytics-sidebar {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		gap: 0.75em;
-		background-color: var(--theme-navbar-bg);
-		border: 2px dashed var(--theme-divider);
-		grid-column-start: 1;
-		align-items: center;
-		text-align: center;
-		font-size: 2em;
-		font-weight: bolder;
-		padding-top: 0.5em;
-		padding-bottom: 1em;
-		padding-left: 0.4em;
-		padding-right: 0.4em;
-		height: min-content;
-	}
-	button {
-		background-color: var(--theme-bg-accent);
-		border-radius: 10px;
-		border-style: dashed;
-	}
-	a:hover {
-		text-decoration: none;
-	}
-	.analytics-dimensions a {
-		color: var(--theme-analytics-orange);
-	}
-	.analytics-dimensions button:hover {
-		outline: 4px dashed var(--theme-analytics-orange);
-		cursor: pointer;
-	}
-	.analytics-metrics a {
-		color: var(--theme-analytics-green);
-	}
-	.analytics-metrics button:hover {
-		outline: 4px dashed var(--theme-analytics-green);
-		cursor: pointer;
-	}
-	.analytics-segments a {
-		color: var(--theme-analytics-blue);
-	}
-	.analytics-segments button:hover {
-		outline: 4px dashed var(--theme-analytics-blue);
-		cursor: pointer;
-	}
-	.analytics-segments button:focus {
-		outline: 4px dashed var(--theme-analytics-blue);
-		cursor: pointer;
-	}
-	.analytics-sidebar input {
-		width: 100%;
-		height: 4rem;
-		background-color: var(--theme-navbar-bg);
-		border-color: var(--theme-selection-bg);
-		border-style: dashed;
-		text-align: center;
-		transition: ease-in-out 0.25s;
-		color: var(--theme-text-accent);
-		font-weight: bolder;
-		font-size: 1rem;
-	}
-	.analytics-sidebar input::placeholder {
-		color: var(--theme-text-light);
-	}
-	.analytics-sidebar input:hover {
-		border-radius: 1rem;
-		border-color: var(--theme-text-accent);
-		transition: ease-in-out 0.25s;
-	}
-	.analytics-sidebar input:focus {
-		border-radius: 2rem;
-		border-style: dashed;
-		background-color: var(--theme-bg-accent);
-		border-color: var(--theme-text-accent);
-		transition: ease-in-out 0.25s;
-		outline: none;
-	}
-	.analytics-commands {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.5em;
-		padding-left: 1em;
-		padding-right: 1em;
-	}
-	.analytics-commands button {
-		height: 3em;
-		width: 100%;
-		background-color: var(--theme-divider);
-	}
-	.analytics-commands button:hover {
-		outline: 4px dashed var(--theme-text-accent);
-		cursor: pointer;
-	}
-	.analytics-commands switch {
-		height: 1em;
-		background-color: var(--theme-divider);
-	}
+  .analytics-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.75em;
+    background-color: var(--theme-navbar-bg);
+    border: 2px dashed var(--theme-divider);
+    grid-column-start: 1;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    height: min-content;
+  }
+  button {
+    background-color: var(--theme-bg-accent);
+    border-radius: 10px;
+    border-style: dashed;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .analytics-dimensions a {
+    color: var(--theme-analytics-orange);
+  }
+  .analytics-dimensions button:hover {
+    outline: 4px dashed var(--theme-analytics-orange);
+    cursor: pointer;
+  }
+  .analytics-metrics a {
+    color: var(--theme-analytics-green);
+  }
+  .analytics-metrics button:hover {
+    outline: 4px dashed var(--theme-analytics-green);
+    cursor: pointer;
+  }
+  .analytics-segments a {
+    color: var(--theme-analytics-blue);
+  }
+  .analytics-segments button:hover {
+    outline: 4px dashed var(--theme-analytics-blue);
+    cursor: pointer;
+  }
+  .analytics-segments button:focus {
+    outline: 4px dashed var(--theme-analytics-blue);
+    cursor: pointer;
+  }
+  .analytics-sidebar input {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--theme-navbar-bg);
+    border-color: var(--theme-selection-bg);
+    border-style: dashed;
+    text-align: center;
+    transition: ease-in-out 0.25s;
+    color: var(--theme-text-accent);
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  .analytics-sidebar input::placeholder {
+    color: var(--theme-text-light);
+  }
+  .analytics-sidebar input:hover {
+    border-radius: 1rem;
+    border-color: var(--theme-text-accent);
+    transition: ease-in-out 0.25s;
+  }
+  .analytics-sidebar input:focus {
+    border-radius: 2rem;
+    border-style: dashed;
+    background-color: var(--theme-bg-accent);
+    border-color: var(--theme-text-accent);
+    transition: ease-in-out 0.25s;
+    outline: none;
+  }
+  .analytics-commands {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .analytics-commands button {
+    height: 3em;
+    width: 100%;
+    background-color: var(--theme-divider);
+  }
+  .analytics-commands button:hover {
+    outline: 4px dashed var(--theme-text-accent);
+    cursor: pointer;
+  }
+  .analytics-commands switch {
+    height: 1em;
+    background-color: var(--theme-divider);
+  }
 </style>

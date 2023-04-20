@@ -13,245 +13,206 @@ const canonicalURL = new URL(currentPage, baseDomain);
 ---
 
 <html dir={data.dir} lang={data.lang} class="initial">
-	<head>
-		<HeadCommon />
-		<HeadSEO {...data} canonicalUrl={canonicalURL} />
-		<title>
-			{`${topTitle} 🚀 ${SITE.title}`}
-		</title>
+  <head>
+    <HeadCommon />
+    <HeadSEO {...data} canonicalUrl={canonicalURL} />
+    <title>
+      {`${topTitle} 🚀 ${SITE.title}`}
+    </title>
 
-		<style>
-			header {
-				position: fixed;
-				left: 0;
-				top: 0;
-				right: 0;
-				height: var(--theme-navbar-height);
-				z-index: 11;
-				padding: 2rem 0;
-				background-color: var(--theme-navbar-bg);
-				display: flex;
-				align-items: center;
-				justify-content: left;
-				overflow: hidden;
-			}
+    <style>
+      header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: var(--theme-navbar-height);
+        z-index: 11;
+        padding: 2rem 0;
+        background-color: var(--theme-navbar-bg);
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        overflow: hidden;
+      }
 
-			.analytics-container {
-				display: grid;
-				gap: 15px;
-				padding-top: calc(var(--theme-navbar-height) * 1.1);
-				padding-left: 15px;
-				padding-right: 10px;
-				height: 100%;
-				width: 100%;
-				grid-auto-columns: 250px auto;
-			}
-		</style>
-	</head>
+      .analytics-container {
+        display: grid;
+        gap: 15px;
+        padding-top: calc(var(--theme-navbar-height) * 1.1);
+        padding-left: 15px;
+        padding-right: 10px;
+        height: 100%;
+        width: 100%;
+        grid-auto-columns: 250px auto;
+      }
+    </style>
+  </head>
 
-	<body>
-		<Header currentPage={currentPage} />
-		<main class="analytics-container">
-			<AnalyticsSidebar currentPage={currentPage} />
-			<AnalyticsWorkspace />
-		</main>
-		<script type="module" src="../../analytics-workspace-behaviour.js"
-		></script>
-		<script client:load>
-			window.analyticsTable = document.getElementById("analytics-table");
-			window.analyticsCommands =
-				document.getElementById("analytics-commands");
-			window.analyticsTableHead = analyticsTable.children[0];
-			window.analyticsTableBody = analyticsTable.children[1];
-			window.currentViewToggleState = document.getElementById(
-				"analytics-view-toggle"
-			);
-			window.analyticsComponents = document.getElementsByClassName(
-				"component-container"
-			);
-			//
-			analyticsCommands.children[0].children[0].addEventListener(
-				"click",
-				SwitchAnalyticsView
-			);
-			analyticsCommands.children[1].addEventListener(
-				"click",
-				ExecuteViewCommand
-			);
-			analyticsCommands.children[2].addEventListener(
-				"click",
-				ClearViewCommand
-			);
-			//
-			function SwitchAnalyticsView() {
-				window.currentViewToggleState = document.getElementById(
-					"analytics-view-toggle"
-				);
-				//
-				if (window.currentViewToggleState.innerText === "Table") {
-					window.currentViewToggleState.innerText = "Freeform";
-				} else if (
-					window.currentViewToggleState.innerText === "Freeform"
-				) {
-					window.currentViewToggleState.innerText = "Table";
-				}
-			}
-			//
-			function ExecuteViewCommand() {
-				ClearViewCommand();
-				if (window.currentViewToggleState.innerText === "Table") {
-					PopulateTableView();
-				} else if (
-					window.currentViewToggleState.innerText === "Freeform"
-				) {
-					PopulateFreeformView();
-				}
-			}
-			//
-			function PopulateFreeformView() {
-				console.log("Data Bank - Freeform Init");
-				let cellCount = 4;
-				//
-				let headerRow = analyticsTableHead.insertRow(0);
-				headerRow.className = analyticsTableHead.className;
-				for (
-					let headerIndex = 0;
-					headerIndex < cellCount;
-					headerIndex++
-				) {
-					let headerCell = headerRow.insertCell(headerIndex);
-					headerCell.className = analyticsTableHead.className;
-					if (headerIndex === 0) {
-						// Dimension Header
-						headerCell.innerHTML = "<td>" + "Identifier" + "</td>";
-					} else {
-						// Metric Header
-						headerCell.innerHTML =
-							"<th>" +
-							analyticsComponents[1].children[headerIndex - 1]
-								.innerText +
-							"</th>";
-					}
-				}
-				//
-				for (
-					let jsonIndex = 0;
-					jsonIndex < entityBank.length;
-					jsonIndex++
-				) {
-					let row = analyticsTableBody.insertRow(jsonIndex);
-					for (let i = 0; i < cellCount; i++) {
-						let cell = row.insertCell(i);
-						if (i === 0) {
-							// Dimension Value
-							cell.innerHTML =
-								"<td>" +
-								entityBank[jsonIndex].Identifier +
-								"</td>";
-						} else {
-							// Metric Value
-							cell.innerHTML = "<td>1</td>";
-						}
-					}
-				}
-			}
-			//
-			function PopulateTableView() {
-				console.log("Data Bank - Table Init");
-				let cellCount = Object.keys(entityBank[0]).length;
-				// Header Generate
-				let headerRow = analyticsTableHead.insertRow(0);
-				headerRow.className = analyticsTableHead.className;
-				for (
-					let headerIndex = 0;
-					headerIndex < cellCount;
-					headerIndex++
-				) {
-					let headerCell = headerRow.insertCell(headerIndex);
-					headerCell.className = analyticsTableHead.className;
-					if (headerIndex === 0) {
-						// Dimension Header
-						headerCell.innerHTML =
-							"<td>" +
-							Object.keys(entityBank[0])[headerIndex].toString() +
-							"</td>";
-					} else {
-						// Metric Header
-						headerCell.innerHTML =
-							"<th>" +
-							Object.keys(entityBank[0])[headerIndex].toString() +
-							"</th>";
-					}
-				}
-				// Row Generate
-				for (
-					let jsonIndex = 0;
-					jsonIndex < entityBank.length;
-					jsonIndex++
-				) {
-					let row = analyticsTableBody.insertRow(jsonIndex);
-					for (let i = 0; i < cellCount; i++) {
-						let cell = row.insertCell(i);
-						let currentValue =
-							entityBank[jsonIndex][
-								Object.keys(entityBank[jsonIndex])[i]
-							];
-						if (i === 0) {
-							// Dimension Value
-							cell.innerHTML = "<td>" + currentValue + "<td/>";
-						} else {
-							// Metric Value
+  <body>
+    <Header currentPage={currentPage} />
+    <main class="analytics-container">
+      <AnalyticsSidebar currentPage={currentPage} />
+      <AnalyticsWorkspace />
+    </main>
+    <script type="module" src="../../analytics-workspace-behaviour.js"></script>
+    <script client:load>
+      window.analyticsTable = document.getElementById("analytics-table");
+      window.analyticsCommands = document.getElementById("analytics-commands");
+      window.analyticsTableHead = analyticsTable.children[0];
+      window.analyticsTableBody = analyticsTable.children[1];
+      window.currentViewToggleState = document.getElementById("analytics-view-toggle");
+      //
+      window.analyticsComponents = document.getElementsByClassName("component-container");
+      window.analyticsDimensionArray = analyticsComponents[0].children;
+      window.analyticsMetricArray = analyticsComponents[1].children;
+      window.analyticsSegmentArray = analyticsComponents[2].children;
+      ComponentDragAssignment();
+      //
+      analyticsCommands.children[0].children[0].addEventListener("click", SwitchAnalyticsView);
+      analyticsCommands.children[1].addEventListener("click", ExecuteViewCommand);
+      analyticsCommands.children[2].addEventListener("click", ClearViewCommand);
+      //
+      function SwitchAnalyticsView() {
+        window.currentViewToggleState = document.getElementById("analytics-view-toggle");
+        //
+        if (window.currentViewToggleState.innerText === "Table") {
+          window.currentViewToggleState.innerText = "Freeform";
+        } else if (window.currentViewToggleState.innerText === "Freeform") {
+          window.currentViewToggleState.innerText = "Table";
+        }
+        //
+        ClearViewCommand();
+      }
+      //
+      function ExecuteViewCommand() {
+        ClearViewCommand();
+        if (window.currentViewToggleState.innerText === "Table") {
+          PopulateTableView();
+        } else if (window.currentViewToggleState.innerText === "Freeform") {
+          PopulateFreeformView();
+        }
+      }
+      //
+      function PopulateFreeformView() {
+        console.log("Data Bank - Freeform Init");
+        let cellCount = 4;
+        //
+        let headerRow = analyticsTableHead.insertRow(0);
+        headerRow.className = analyticsTableHead.className;
+        for (let headerIndex = 0; headerIndex < cellCount; headerIndex++) {
+          let headerCell = headerRow.insertCell(headerIndex);
+          headerCell.className = analyticsTableHead.className;
+          if (headerIndex === 0) {
+            // Dimension Header
+            headerCell.innerHTML = "<td>" + "Identifier" + "</td>";
+          } else {
+            // Metric Header
+            headerCell.innerHTML = "<th>" + analyticsMetricArray[headerIndex - 1].innerText + "</th>";
+          }
+        }
+        //
+        for (let jsonIndex = 0; jsonIndex < entityBank.length; jsonIndex++) {
+          let row = analyticsTableBody.insertRow(jsonIndex);
+          for (let i = 0; i < cellCount; i++) {
+            let cell = row.insertCell(i);
+            if (i === 0) {
+              // Dimension Value
+              cell.innerHTML = "<td>" + entityBank[jsonIndex].Identifier + "</td>";
+            } else {
+              // Metric Value
+              cell.innerHTML = "<td>1</td>";
+            }
+          }
+        }
+      }
+      //
+      function PopulateTableView() {
+        console.log("Data Bank - Table Init");
+        //
+        GenerateTableHeader(entityBank);
+        GenerateTableRow(entityBank);
+      }
+      //
+      function GenerateTableHeader(currentDataBank) {
+        // Header Row
+        let headerRow = analyticsTableHead.insertRow(0);
+        headerRow.className = analyticsTableHead.className;
+        // Header Cells
+        let cellCount = Object.keys(currentDataBank[0]).length;
+        for (let headerIndex = 0; headerIndex < cellCount; headerIndex++) {
+          let headerCell = headerRow.insertCell(headerIndex);
+          headerCell.className = analyticsTableHead.className;
+          if (headerIndex === 0) {
+            // Dimension Header
+            headerCell.innerHTML = "<td>" + Object.keys(currentDataBank[0])[headerIndex].toString() + "</td>";
+          } else {
+            // Metric Header
+            headerCell.innerHTML = "<th>" + Object.keys(currentDataBank[0])[headerIndex].toString() + "</th>";
+          }
+        }
+      }
+      //
+      function GenerateTableRow(currentDataBank) {
+        let cellCount = Object.keys(currentDataBank[0]).length;
+        // Table Row
+        for (let dataIndex = 0; dataIndex < currentDataBank.length; dataIndex++) {
+          let row = analyticsTableBody.insertRow(dataIndex);
+          // Table Cells
+          for (let i = 0; i < cellCount; i++) {
+            let cell = row.insertCell(i);
+            let currentValue = currentDataBank[dataIndex][Object.keys(currentDataBank[dataIndex])[i]];
+            if (i === 0) {
+              // Dimension Value
+              cell.innerHTML = "<td>" + currentValue + "<td/>";
+            } else {
+              // Metric Value
+              if (typeof currentValue === "object") {
+                if (currentValue.length > 0) {
+                  cell.innerHTML = "<td>" + Object.keys(currentDataBank[dataIndex])[i] + " - [" + currentValue.length + "]<td/>";
+                } else {
+                  cell.innerHTML = "<td>" + Object.keys(currentDataBank[dataIndex])[i] + " - [1]<td/>";
+                }
+              } else {
+                cell.innerHTML = "<td>" + currentValue + "<td/>";
+              }
+            }
+          }
+        }
+      }
+      //
+      function ClearViewCommand() {
+        for (let rowIndex = 0; rowIndex < analyticsTableBody.rows.length; rowIndex++) {
+          analyticsTableBody.deleteRow(rowIndex);
+          rowIndex--;
+        }
+        if (analyticsTableHead.rows.length > 0) {
+          for (let headIndex = 0; headIndex < analyticsTableHead.rows.length; headIndex++) {
+            const element = analyticsTableHead.rows[headIndex];
+            analyticsTableHead.deleteRow(0);
+            headIndex--;
+          }
+        }
+      }
+      //
+      function ComponentDragAssignment() {
+        for (let index = 0; index < analyticsDimensionArray.length; index++) {
+          const element = analyticsDimensionArray[index];
+          //
+          element.addEventListener("dragstart", () => {
+            console.log("Drag-Start : " + element.innerText);
+          });
+          element.addEventListener("dragend", () => {
+            console.log("Drag-End : " + element.innerText);
+          });
+        }
+        //
+        window.analyticsDimensionZone = document.getElementById("analytics-component-zone");
+      }
+    </script>
 
-							if (typeof currentValue === "object") {
-								if (currentValue.length > 0) {
-									cell.innerHTML =
-										"<td>" +
-										Object.keys(entityBank[jsonIndex])[i] +
-										" - [" +
-										currentValue.length +
-										"]<td/>";
-								} else {
-									cell.innerHTML =
-										"<td>" +
-										Object.keys(entityBank[jsonIndex])[i] +
-										" - [" +
-										1 +
-										"]<td/>";
-								}
-							} else {
-								cell.innerHTML =
-									"<td>" + currentValue + "<td/>";
-							}
-						}
-					}
-				}
-			}
-			//
-			function ClearViewCommand() {
-				for (
-					let rowIndex = 0;
-					rowIndex < analyticsTableBody.rows.length;
-					rowIndex++
-				) {
-					analyticsTableBody.deleteRow(rowIndex);
-					rowIndex--;
-				}
-				if (analyticsTableHead.rows.length > 0) {
-					for (
-						let headIndex = 0;
-						headIndex < analyticsTableHead.rows.length;
-						headIndex++
-					) {
-						const element = analyticsTableHead.rows[headIndex];
-						analyticsTableHead.deleteRow(0);
-						headIndex--;
-					}
-				}
-			}
-		</script>
-
-		<script>
-			/*
+    <script>
+      /*
 			{
 			"columns": {
 				"dimension": {
@@ -335,6 +296,6 @@ const canonicalURL = new URL(currentPage, baseDomain);
 			}
 		}
 			*/
-		</script>
-	</body>
+    </script>
+  </body>
 </html>
