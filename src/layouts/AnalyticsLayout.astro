@@ -223,6 +223,10 @@ const canonicalURL = new URL(currentPage, baseDomain);
           element.addEventListener("click", () => {
             console.log("Segment clicked " + window.dataBank[index].title);
             window.dataBankSelection = window.dataBank[index].bank;
+            //
+            if (window.currentViewToggleState.innerText === "Table") {
+              ExecuteViewCommand();
+            }
           });
         }
       }
@@ -243,6 +247,7 @@ const canonicalURL = new URL(currentPage, baseDomain);
       }
       //
       addEventListener("DOMContentLoaded", (event) => {
+        SwitchAnalyticsView();
         TableSegmentListener();
         ComponentDragAssignment();
       });

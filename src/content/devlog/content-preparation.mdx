@@ -1,0 +1,74 @@
+---
+title: "Content Preparation"
+description: "Devlog Documentation"
+date: 2023-04-21
+---
+
+import PageDateBar from "../../components/PageContent/PageDateBar.astro";
+
+<PageDateBar dateString={frontmatter.date} />
+
+Now that I have the basic data structure and some analytics tools them in my hands, it is time to actually place the content in the project.
+
+This week I have focused on `data` and `asset` preparation of the project. There are some areas that I fell short and some areas that I got lucky.
+
+## Graphical Interface Assets
+
+One of the benefits of doing this game development thing for a loooong time is that you start having assets/templates that you use in every project.
+
+I have very handy **GUI** folder that has all kind of sprites that I _collected/created_ throughout these years. So I don't think I will need to any research on this department.
+
+I can achieve the desired look with what I have in my hand up until the publishing stage.
+
+## Entity & Object Assets
+
+What started this project in my mind was `Super Auto Pets` & `Slay the Spire`. So I knew that I needed lots of animal model variety in the project to do what I want.
+
+Even though the dream of having everything custom made is very lovely, the amount of unfinished projects taught me to stick to my strong suits and throw money at things that I suck at : )
+
+After checking out the store for a couple days, I decided to basically buy everything [Omabuarts Studio](https://assetstore.unity.com/publishers/19311) published in the Asset Store. Mainly the lovely [Quirky Series - Animal Ultimate Package](https://assetstore.unity.com/packages/3d/characters/animals/quirky-series-animals-ultimate-pack-209771).
+
+It includes basic animations and lovely models with enough variety to build a roguelike. It is a perfect match for the project that I am going for and I am in love with how the models look ❤️
+
+## Audio Assets
+
+I have some ideas on what to do with music tracks. I know a lot of cool indie artists from working together in game jams before. But the `SFX` part is kind of tricky.
+
+The entity asset package that I decided to go with doesn't have sound effects for the respective animals. And from what I gathered on the web, it would take a lot of time for me to find a specific sound effects for all of the animals and their respective actions that I will have in the game.
+
+Even if I did find those sound effects, there will be **difference in quality and style which will disrupt the consistency in the game.**
+
+So what I decided to go with for now is to have a couple of sound effects that will be slightly modified with some entitiy parameters to fake variety.
+
+I am not happy with this option; but I have to deal with it.
+
+## Visual Effect Assets
+
+Visual effects have the same problem with sound effects. Too much variety that I would need to assign myself, so I will not repeat what I wrote.
+
+Again, even if I am not happy with it, I will have generic visual effects for all entities and their actions like movement, attacking, skills and so on.
+
+## Data Content
+
+Finding what assets I will require and use in the project made the data placement process much more straight-forward.
+
+I basically looked up what models I have in my hand and created identifiers for all of them. Then I used my analytics tools to distribute their extra data as balanced as they can be at this early point.
+
+You can look up the endpoints for the full content of my dataset :
+
+- https://ahmetahaydemir.dev/wild-chess-simulator/api/getEntityData.json
+- https://ahmetahaydemir.dev/wild-chess-simulator/api/getClassData.json
+- https://ahmetahaydemir.dev/wild-chess-simulator/api/getOriginData.json
+- https://ahmetahaydemir.dev/wild-chess-simulator/api/getSkillData.json
+- https://ahmetahaydemir.dev/wild-chess-simulator/api/getObjectData.json
+- https://ahmetahaydemir.dev/wild-chess-simulator/api/getConfigData.json
+
+## Data Pipeline
+
+Calling this basic procedure a pipeline is kinda stupid; but I don't have another title.
+
+As I planned in the [previous devlogs](https://ahmetahaydemir.dev/wild-chess-simulator/devlog/data-structure#data-fetching), I built a small script in `Unity` that looks at the specific endpoints that I placed on this site.
+
+Then the manual parsing procedure starts in Unity according to the data structure I declared in here and serialized data is stored in [scriptable objects](https://docs.unity3d.com/2023.2/Documentation/Manual/class-ScriptableObject.html) under a specific folder.
+
+And that's basically all. Now, everytime I publish a change in this site's endpoint, the data used in game will be updated as well.
