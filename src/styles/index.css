@@ -409,11 +409,6 @@ blockquote {
 	outline: 1px solid transparent;
 }
 
-img,
-video {
-	max-width: 100%;
-}
-
 .content video {
 	box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse);
 }

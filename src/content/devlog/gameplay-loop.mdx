@@ -1,0 +1,77 @@
+---
+title: "Gameplay Loop"
+description: "Devlog Documentation"
+date: 2023-04-25
+---
+
+import PageDateBar from "../../components/PageContent/PageDateBar.astro";
+
+<PageDateBar dateTitle="Log Date" dateString={frontmatter.date} />
+
+This week I have focused on creating the core gameplay loop and decided on what **scenes/views** I should be focusing on.
+
+Since I had two clear games that inspired this project, it made the overall decision making a lot easier. Main tags to keep in mind are `single-player`, `rogue-like`, `turn-based` and `auto-battler`.
+
+Here is a visualization of the scene seperation with their core interactions below.
+
+![Scene Flow Breakdown](/image/SceneFlowBreakdown.png "Scene Flow Breakdown")
+
+## Landing Menu
+
+`Press To Play` will initiate a fresh game or load the current run depending on your save state. Rogue-likes usually don't have very long sessions. You start a run with random seed and once that's done, its time for a new one.
+
+I don't think the usual **Play/Save/Load** menu structure does not fit the genre. So I will have to build an interface with that nature in mind.
+
+`Achievements` sections in rogue-like games have two functionalities for me. I either use them to understand how much I discovered what the game offers as content or it is a trophy board that I look and be proud of.
+
+One of them is actually about discovery progress tracking rather than a rewarding mechanism. Like if you see **"Entities Seen : 124/181"**, you will know there is more to it than what you have done so far. So I will try to showcase this section with those two in mind.
+
+As for the `Library`, I am not sure if it would be an **asshole** move to just redirect people to this documentation. Since both platforms share the same dataset, the information in here would be always correct, assuming everyone uses the same version : )
+
+I don't want to build a seperate in-game library to **avoid doing the same task twice**; but **forcing people to change platforms** for a quick research is not user friendly. So which one will win? Laziness or principles? I think we know the answer.
+
+## Node Map
+
+`Procedural Map` is generated from a super simple node graph script that defaults to **10 rows** and **picks 2 to 5 columns**. It just makes sure that there are **no dead ends** and forms the connections between them.
+
+There are six node types in total which are **battle, event, rest, elite, treasure, boss.** They are distributed with a hard-coded rule to avoid edge cases where the start and end of the graph does not make sense.
+
+The path you take is one of the decision making steps of this genre. I don't to take away that fun part; but complete randomness would disrupt a big portion of the runs.
+
+![NodeMapShot](/image/NodeMapShot.png "NodeMapShot")
+
+`Shop` is another core decision making section. You have a **limited amount of gold and slots.** You decide on what to **spend your resources.** Those decisions effect the **outcome of the path you decided** to take on. There are also **re-roll** and **enhance** options as well.
+
+**Re-roll** is basically playing gamble with your resources. If you re-roll; but don't buy something that you deem valuable, it is wasted. In order to balance the opposite end of that decision making, there should be value in holding onto your resource as well which is basically interest.
+
+**Enhance** is something you pay to increase the options provided by the shop and play with the probabilities of the random pull. It has a seperate cost management than re-roll which will make the resource spending a little more intriguing.
+
+Your re-rolls will have more value as you enhance more since a re-roll will showcase more entities per gold and happen automatically once every node advancement; but the enhance itself is future investment that you can't reap the benefits immediately. Managing that balance will be part of the fun.
+
+![EntityShopShot](/image/EntityShopShot.png "EntityShopShot")
+
+## Simulation Phase
+
+This is where you watch the outcome of your decisions. Not much to decide on this section other than your team composition and placement. Depending on the node you are in simulation will vary; but the flow of execution will be same for all.
+
+**Battle-Elite-Boss** nodes are the core focus of the game. This is the main mission, everything else is side missions that effect this section. I went with **grid-based movement** rather than **floating point movement** for a couple reasons. I don't think it will be a problem; but I need to make the order of actions really clear or the runtime simulation will look weird.
+
+One of the features I wanted to add was a **playback** capability to see what went wrong at what point. Since I went with grid-based movement, I think I will be able to manage that.
+
+Since you can analyze your session with playback, it would also make sense to give a certain amount of **retry chances** so that player can change the formation and strategize as much as it is possible.
+
+![SimulationBattleShot](/image/SimulationBattleShot.png "SimulationBattleShot")
+
+**Rest** nodes emphasize relaxation after taking a path and getting ready for the next one. It basically provides health restoration and team wide effects depending on the zone and enhancements.
+
+**Event** nodes in rogue-likes have different implementations. Some take the multistep quest approach, some just makes you chose out of 2 or 3 positive/negative outcomes. I am still not fully sure how to go with my implementation. If I ever get a _cool_ and _wacky_ idea, it will probably get included in this node type as a wildcard.
+
+**Treasure** nodes are not a must for the genre. It will be the main place where you get objects and their core functionality can be included in other sections. But there is something special about receiving loot that is engrained in our minds after playing countless RPG's. It is a special moment. So it should have its own section.
+
+![SimulationRestShot](/image/SimulationRestShot.png "SimulationRestShot")
+
+## Run Summary
+
+Now that we declared what sections are there and what are their core functionalities, I can summarize how a fresh run would go in a flow graph.
+
+![GameplayLoopGraph](/image/GameplayLoopGraph.png "GameplayLoopGraph")

@@ -4,7 +4,7 @@ export let devlogDocCollection = await getCollection("devlog");
 export const devlogSidebarList = devlogDocCollection.sort((a, b) => new Date(b.data.date) - new Date(a.data.date)).map((entry) => ({
 	titleText: entry.data.title as string,
 	descText: entry.data.description as string,
-	dateText: entry.data.date.toLocaleDateString() as string,
+	dateText: ("0" + new Date(entry.data.date).getDate()).slice(-2) +" / "+ ("0" + (new Date(entry.data.date).getMonth() + 1)).slice(-2) +" / "+ new Date(entry.data.date).getFullYear() as string,
 }));
 
 export let classCounter = 0;

@@ -4,16 +4,25 @@ import { Content as RoadmapPost } from "../../../content/introduction/roadmap.md
 import PageTimelineRoadmap from "../../../components/PageContent/PageTimelineRoadmap.astro";
 
 export let futureRoadmapElements = [
-	{
-		titleText: "Code Refactor",
-		descText:
-			"How the static game data is stored and retrieved by the game",
-		dateText: "10.05.2023"
-	}
+  {
+    titleText: "Publish, Maybe?",
+    descText: "",
+    dateText: "28 / 06 / 2023",
+  },
+  {
+    titleText: "Working Prototype",
+    descText: "",
+    dateText: "10 / 06 / 2023",
+  },
+  {
+    titleText: "Auto Battler Polish",
+    descText: "",
+    dateText: "10 / 05 / 2023",
+  },
 ];
 ---
 
 <MainLayout topTitle={"Roadmap"}>
-	<RoadmapPost />
-	<PageTimelineRoadmap futureTimelineElements={futureRoadmapElements} />
+  <RoadmapPost />
+  <PageTimelineRoadmap futureTimelineElements={futureRoadmapElements} />
 </MainLayout>

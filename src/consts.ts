@@ -74,7 +74,9 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Freeform Workspace', link: `freeform-workspace` },
 			{ text: 'Entity List', link: `entity-list` },
 			{ text: 'Object List', link: `object-list` },
-			{ text: 'Skill List', link: `skill-list` }
+			{ text: 'Skill List', link: `skill-list` },
+			{ text: 'Origin List', link: `origin-list` },
+			{ text: 'Class List', link: `class-list` }
 		],
 		'Skills': skillSidebarList,
 		'Classes': classSidebarList,
