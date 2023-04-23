@@ -10,46 +10,37 @@ import PageEntityStat from "../../../components/PageContent/PageEntityStat.astro
 import PageSubHeader from "../../../components/PageContent/PageSubHeader.astro";
 //
 export async function getStaticPaths() {
-	let fullEntityArray = EntityDataJsonFile.battleEntityDataJsonArray
-		.concat(EntityDataJsonFile.restEntityDataJsonArray)
-		.concat(EntityDataJsonFile.eventEntityDataJsonArray)
-		.concat(EntityDataJsonFile.treasureEntityDataJsonArray);
-	let fullSkillArray = SkillDataJsonFile.battleSkillDataJsonArray
-		.concat(SkillDataJsonFile.restSkillDataJsonArray)
-		.concat(SkillDataJsonFile.eventSkillDataJsonArray)
-		.concat(SkillDataJsonFile.treasureSkillDataJsonArray);
-	//
-	return fullEntityArray.map((entry) => ({
-		params: {
-			entityName: entry.Identifier.toLowerCase().split(" ").join("-")
-		},
-		props: {
-			entityObject: entry,
-			skillObject: fullSkillArray.find(
-				(skill) => skill.Identifier === entry.SkillID
-			)
-		}
-	}));
+  let fullEntityArray = EntityDataJsonFile.battleEntityDataJsonArray
+    .concat(EntityDataJsonFile.restEntityDataJsonArray)
+    .concat(EntityDataJsonFile.eventEntityDataJsonArray)
+    .concat(EntityDataJsonFile.treasureEntityDataJsonArray);
+  let fullSkillArray = SkillDataJsonFile.battleSkillDataJsonArray
+    .concat(SkillDataJsonFile.restSkillDataJsonArray)
+    .concat(SkillDataJsonFile.eventSkillDataJsonArray)
+    .concat(SkillDataJsonFile.treasureSkillDataJsonArray);
+  //
+  return fullEntityArray.map((entry) => ({
+    params: {
+      entityName: entry.Identifier.toLowerCase().split(" ").join("-"),
+    },
+    props: {
+      entityObject: entry,
+      skillObject: fullSkillArray.find((skill) => skill.Identifier === entry.SkillID),
+    },
+  }));
 }
 //
 interface Props {
-	entityObject: EntityDataJSONArray;
-	skillObject: SkillDataJSONArray;
+  entityObject: EntityDataJSONArray;
+  skillObject: SkillDataJSONArray;
 }
 //
 const { entityObject, skillObject } = Astro.props;
 ---
 
-<MainLayout topTitle={entityObject.Identifier}>
-	<PageButtonClassOrigin
-		originName={entityObject.OriginID}
-		className={entityObject.ClassID}
-	/>
-	<PageEntityStat statObject={entityObject.Statistics} />
-	<PageSubHeader
-		headerLink={"../skills/" +
-			skillObject.Identifier.toLowerCase().split(" ").join("-")}
-		headerTitle={skillObject.Identifier}
-	/>
-	<PageSkillPanel skillObject={skillObject} />
+<MainLayout topTitle={entityObject.Identifier} topLogo={"../../library/entities/" + "entity.png"}>
+  <PageButtonClassOrigin originName={entityObject.OriginID} className={entityObject.ClassID} />
+  <PageEntityStat statObject={entityObject.Statistics} />
+  <PageSubHeader headerLink={"../skills/" + skillObject.Identifier.toLowerCase().split(" ").join("-")} headerTitle={skillObject.Identifier} />
+  <PageSkillPanel skillObject={skillObject} />
 </MainLayout>

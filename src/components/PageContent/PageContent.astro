@@ -5,16 +5,22 @@ import MoreMenu from "../RightSidebar/MoreMenu.astro";
 
 type Props = {
   title: string;
+  logoPath: string;
   headings: MarkdownHeading[];
   githubEditUrl: string;
 };
 
-const { title, headings, githubEditUrl } = Astro.props;
+const { title, logoPath, headings, githubEditUrl } = Astro.props;
 ---
 
 <article id="article" class="content">
   <section class="main-section">
-    <h1 class="content-title" id="overview">{title}</h1>
+    <!-- <h1 class="content-title" id="overview">{title}</h1> -->
+
+    <div class="flex flex-row justify-between">
+      <h1 class="content-title my-0" id="overview">{title}</h1>
+      {logoPath ? <img src={logoPath} alt={"logo"} loading="lazy" decoding="async" width="64" height="64" /> : ""}
+    </div>
     <hr />
     <nav class="block sm:hidden">
       <!-- <TableOfContents client:media="(max-width: 50em)" headings={headings} /> -->

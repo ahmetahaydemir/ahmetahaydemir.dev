@@ -8,31 +8,25 @@ import PageSubHeader from "../../../components/PageContent/PageSubHeader.astro";
 import type { ClassData } from "../../../../public/data/ClassDataStructure";
 //
 export async function getStaticPaths() {
-	return ClassDataJsonFile.classDataJsonArray.map((entry) => ({
-		params: {
-			className: entry.Identifier.toLowerCase().split(" ").join("-")
-		},
-		props: { classObject: entry }
-	}));
+  return ClassDataJsonFile.classDataJsonArray.map((entry) => ({
+    params: {
+      className: entry.Identifier.toLowerCase().split(" ").join("-"),
+    },
+    props: { classObject: entry },
+  }));
 }
 //
 interface Props {
-	classObject: ClassData;
+  classObject: ClassData;
 }
 //
 const { classObject } = Astro.props;
 ---
 
-<MainLayout topTitle={classObject.Identifier}>
-	<PageEffectTable effectObject={classObject} />
-	<PageSubHeader
-		headerLink={"../library/entity-list"}
-		headerTitle={"Entity List"}
-	/>
-	<PageEntityGrid gridFilter={classObject.Identifier.toLowerCase()} />
-	<PageSubHeader
-		headerLink={"../library/object-list"}
-		headerTitle={"Object List"}
-	/>
-	<PageObjectGrid gridFilter={classObject.Identifier.toLowerCase()} />
+<MainLayout topTitle={classObject.Identifier} topLogo={"../../library/classes/" + classObject.Identifier.toLowerCase() + ".png"}>
+  <PageEffectTable effectObject={classObject} />
+  <PageSubHeader headerLink={"../library/entity-list"} headerTitle={"Entity List"} />
+  <PageEntityGrid gridFilter={classObject.Identifier.toLowerCase()} />
+  <PageSubHeader headerLink={"../library/object-list"} headerTitle={"Object List"} />
+  <PageObjectGrid gridFilter={classObject.Identifier.toLowerCase()} />
 </MainLayout>

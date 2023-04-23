@@ -3,22 +3,22 @@ import MainLayout from "../../../layouts/MainLayout.astro";
 import { CollectionEntry, getCollection } from "astro:content";
 //
 export async function getStaticPaths() {
-	const devlogPosts = await getCollection("devlog");
-	//
-	return devlogPosts.map((post) => ({
-		params: {
-			devlogName: post.data.title.toLowerCase().split(" ").join("-"),
-		},
-		props: {
-			devlogContent: post,
-			devlogTitle: post.data.title,
-		},
-	}));
+  const devlogPosts = await getCollection("devlog");
+  //
+  return devlogPosts.map((post) => ({
+    params: {
+      devlogName: post.data.title.toLowerCase().split(" ").join("-"),
+    },
+    props: {
+      devlogContent: post,
+      devlogTitle: post.data.title,
+    },
+  }));
 }
 
 interface Props {
-	devlogContent: CollectionEntry<"devlog">;
-	devlogTitle: string;
+  devlogContent: CollectionEntry<"devlog">;
+  devlogTitle: string;
 }
 
 const { devlogContent, devlogTitle } = Astro.props;
@@ -26,5 +26,5 @@ const { Content } = await devlogContent.render();
 ---
 
 <MainLayout topTitle={devlogTitle}>
-	<Content />
+  <Content />
 </MainLayout>

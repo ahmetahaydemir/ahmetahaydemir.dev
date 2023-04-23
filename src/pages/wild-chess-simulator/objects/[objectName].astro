@@ -3,19 +3,19 @@ import MainLayout from "../../../layouts/MainLayout.astro";
 import ObjectDataJsonFile from "../../../../public/data/ObjectDataJsonFile.json";
 //
 export async function getStaticPaths() {
-	let fullGridArray = ObjectDataJsonFile.equipmentObjectDataJsonArray
-		.concat(ObjectDataJsonFile.nodeObjectDataJsonArray)
-		.concat(ObjectDataJsonFile.spawnObjectDataJsonArray);
-	//
-	return fullGridArray.map((entry) => ({
-		params: {
-			objectName: entry.Identifier.toLowerCase().split(" ").join("-")
-		},
-		props: { object: entry }
-	}));
+  let fullGridArray = ObjectDataJsonFile.equipmentObjectDataJsonArray
+    .concat(ObjectDataJsonFile.nodeObjectDataJsonArray)
+    .concat(ObjectDataJsonFile.spawnObjectDataJsonArray);
+  //
+  return fullGridArray.map((entry) => ({
+    params: {
+      objectName: entry.Identifier.toLowerCase().split(" ").join("-"),
+    },
+    props: { object: entry },
+  }));
 }
 //
 const { object } = Astro.props;
 ---
 
-<MainLayout topTitle={object.Identifier} />
+<MainLayout topTitle={object.Identifier} topLogo={"../../library/objects/" + "object.png"} />

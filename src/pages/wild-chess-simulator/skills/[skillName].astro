@@ -5,26 +5,26 @@ import PageSkillPanel from "../../../components/PageContent/PageSkillPanel.astro
 import type { SkillDataJSONArray } from "../../../../public/data/SkillDataStructure";
 //
 export async function getStaticPaths() {
-	let fullSkillArray = SkillDataJsonFile.battleSkillDataJsonArray
-		.concat(SkillDataJsonFile.restSkillDataJsonArray)
-		.concat(SkillDataJsonFile.eventSkillDataJsonArray)
-		.concat(SkillDataJsonFile.treasureSkillDataJsonArray);
-	//
-	return fullSkillArray.map((entry) => ({
-		params: {
-			skillName: entry.Identifier.toLowerCase().split(" ").join("-")
-		},
-		props: { skillObject: entry }
-	}));
+  let fullSkillArray = SkillDataJsonFile.battleSkillDataJsonArray
+    .concat(SkillDataJsonFile.restSkillDataJsonArray)
+    .concat(SkillDataJsonFile.eventSkillDataJsonArray)
+    .concat(SkillDataJsonFile.treasureSkillDataJsonArray);
+  //
+  return fullSkillArray.map((entry) => ({
+    params: {
+      skillName: entry.Identifier.toLowerCase().split(" ").join("-"),
+    },
+    props: { skillObject: entry },
+  }));
 }
 //
 interface Props {
-	skillObject: SkillDataJSONArray;
+  skillObject: SkillDataJSONArray;
 }
 //
 const { skillObject } = Astro.props;
 ---
 
-<MainLayout topTitle={skillObject.Identifier}>
-	<PageSkillPanel skillObject={skillObject} />
+<MainLayout topTitle={skillObject.Identifier} topLogo={"../../library/skills/" + "skill.png"}>
+  <PageSkillPanel skillObject={skillObject} />
 </MainLayout>

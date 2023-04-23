@@ -8,31 +8,25 @@ import PageEffectTable from "../../../components/PageContent/PageEffectTable.ast
 import type { OriginData } from "../../../../public/data/OriginDataStructure";
 //
 export async function getStaticPaths() {
-	return OriginDataJsonFile.originDataJsonArray.map((entry) => ({
-		params: {
-			originName: entry.Identifier.toLowerCase().split(" ").join("-")
-		},
-		props: { originObject: entry }
-	}));
+  return OriginDataJsonFile.originDataJsonArray.map((entry) => ({
+    params: {
+      originName: entry.Identifier.toLowerCase().split(" ").join("-"),
+    },
+    props: { originObject: entry },
+  }));
 }
 //
 interface Props {
-	originObject: OriginData;
+  originObject: OriginData;
 }
 //
 const { originObject } = Astro.props;
 ---
 
-<MainLayout topTitle={originObject.Identifier}>
-	<PageEffectTable effectObject={originObject} />
-	<PageSubHeader
-		headerLink={"../library/entity-list"}
-		headerTitle={"Entity List"}
-	/>
-	<PageEntityGrid gridFilter={originObject.Identifier.toLowerCase()} />
-	<PageSubHeader
-		headerLink={"../library/object-list"}
-		headerTitle={"Object List"}
-	/>
-	<PageObjectGrid gridFilter={originObject.Identifier.toLowerCase()} />
+<MainLayout topTitle={originObject.Identifier} topLogo={"../../library/origins/" + originObject.Identifier.toLowerCase() + ".png"}>
+  <PageEffectTable effectObject={originObject} />
+  <PageSubHeader headerLink={"../library/entity-list"} headerTitle={"Entity List"} />
+  <PageEntityGrid gridFilter={originObject.Identifier.toLowerCase()} />
+  <PageSubHeader headerLink={"../library/object-list"} headerTitle={"Object List"} />
+  <PageObjectGrid gridFilter={originObject.Identifier.toLowerCase()} />
 </MainLayout>
