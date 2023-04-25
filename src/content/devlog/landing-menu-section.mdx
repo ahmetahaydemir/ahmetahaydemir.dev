@@ -1,0 +1,46 @@
+---
+title: "Landing Menu Section"
+description: "Devlog Documentation"
+date: 2023-04-26
+---
+
+Now that the gameplay loop is documented, I will be focusing the sections defined in there one by one in isolation to get them to their **MVP** stage. This section is not the most critical one; but it is the first scene the visitors will see.
+
+So, I will start from here as well. Here is the visualization of the overall interface framework I am going to implement :
+
+![Landing Menu Interface](/image/LandingMenuInterface.png "Landing Menu Interface")
+
+## Home View
+
+In terms of components, there is not much in this view. We only have :
+
+- **Button :** P2P, Settings, Library
+- **Text :** Server Notification
+- **Passive Object :** Current World Origin
+- **Active Object :** Current Team Save State
+
+Here is how this home view looks like for now. It should be enough for what I have visualized in the interface diagram.
+
+Some world origins look nice, some look weird. So I will need to re-visit the color scheme and accessories assigned to each origin later down on the road.
+
+![Home View Layout](/image/HomeViewLayout.jpg "Home View Layout")
+
+## Library Progression View
+
+This section resembles the library I have on my site. I was planning to skip this part in game; because of my explanation in this [previous devlog](https://ahmetahaydemir.dev/wild-chess-simulator/devlog/gameplay-loop#landing-menu). But tracking the progression of your library discovery is something I really want and I am already going to create most of the required components while coding that anyways.
+
+Since adding the library functionality does not add extra effort to my work plan, I will add it in game as well.
+
+I guess **laziness** did not win after all : )
+
+Here is how the scene looks like for now. I will definitely re-visit this view to add scenery accessories. Right now, it just has the core layout and functionality I drew in the framework.
+
+![Library View Layout](/image/LibraryViewLayout.jpg "Library View Layout")
+
+## Settings Panel
+
+I am going to include an audio section, preferences section and current run section in there. Usually there would be also a controls section where you map the inputs. Right now, my only concern is desktop keyboard and mouse. So that part will not be necessary in MVP stage.
+
+Also this is not a view, it is a panel. So it will be opened in other sections as well. Toggle will be bind to top left button or ESC keyboard input.
+
+![Settings Panel Layout](/image/SettingsPanelLayout.jpg "Settings Panel Layout")

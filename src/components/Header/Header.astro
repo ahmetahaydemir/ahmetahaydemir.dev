@@ -5,151 +5,140 @@ import AstroLogo from "./AstroLogo.astro";
 // import Search from './Search';
 
 type Props = {
-	currentPage: string;
+  currentPage: string;
 };
 
 const { currentPage } = Astro.props;
 ---
 
 <header>
-	<nav class="nav-wrapper" title="Top Navigation" aria-label="Top">
-		<!-- <div class="menu-toggle">
-      <SidebarToggle client:idle />
-    </div> -->
-		<div class="logo flex">
-			<a href="/wild-chess-simulator">
-				<AstroLogo size={64} />
-				<h1>{SITE.title ?? "Documentation"}</h1>
-			</a>
-		</div>
-		<!-- <div style="flex-grow: 1;"></div> -->
-		<!-- {KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />} -->
-		<!-- <div class="search-item">
-      <Search client:idle />
-    </div> -->
-	</nav>
+  <nav class="nav-wrapper" title="Top Navigation" aria-label="Top">
+    <div class="logo flex">
+      <a href="/wild-chess-simulator">
+        <AstroLogo size={64} />
+        <h1>{SITE.title ?? "Documentation"}</h1>
+      </a>
+    </div>
+  </nav>
 </header>
 
 <style>
-	header {
-		position: fixed;
-		left: 0;
-		top: 0;
-		right: 0;
-		height: var(--theme-navbar-height);
-		z-index: 11;
-		padding: 2rem 0;
-		background-color: var(--theme-navbar-bg);
-		display: flex;
-		align-items: center;
-		justify-content: left;
-		overflow: hidden;
-	}
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: var(--theme-navbar-height);
+    z-index: 11;
+    padding: 2rem 0;
+    background-color: var(--theme-navbar-bg);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    /* outline: 2px dashed var(--theme-text-accent); */
+    /* outline: 2px dashed var(--theme-shade-subtle); */
+  }
 
-	.logo {
-		flex: 1;
-		display: flex;
-		overflow: hidden;
-		width: 30px;
-		font-size: 2rem;
-		flex-shrink: 0;
-		font-weight: 600;
-		line-height: 1;
-		color: hsla(var(--color-base-white), 100%, 1);
-		gap: 0.25em;
-		z-index: -1;
-	}
+  .logo {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    width: 30px;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    font-weight: 600;
+    line-height: 1;
+    color: hsla(var(--color-base-white), 100%, 1);
+    gap: 0.25em;
+    z-index: 4;
+  }
 
-	.logo a {
-		display: flex;
-		padding: 0.5em 0.25em;
-		margin: -0.5em -0.25em;
-		text-decoration: none;
-		font-weight: bold;
-	}
+  .logo a {
+    display: flex;
+    padding: 0.5em 0.25em;
+    margin: -0.5em -0.25em;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-	.logo a {
-		transition: color 100ms ease-out;
-		color: var(--theme-text);
-	}
+  .logo a {
+    transition: color 100ms ease-out;
+    color: var(--theme-text);
+  }
 
-	.logo a:hover,
-	.logo a:focus {
-		color: var(--theme-text-accent);
-	}
+  .logo a:hover,
+  .logo a:focus {
+    color: var(--theme-text-accent);
+  }
 
-	.logo h1 {
-		display: none;
-		font: inherit;
-		color: inherit;
-		margin: 0;
-	}
+  .logo h1 {
+    /* display: none; */
+    font: inherit;
+    color: inherit;
+    margin: 0;
+  }
 
-	.nav-wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 0.75rem;
-		width: 100%;
-		padding-inline: var(--min-spacing-inline);
-	}
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding-inline: var(--min-spacing-inline);
+  }
 
-	@media (hover: hover) {
-		.nav-wrapper {
-			max-width: calc(100vw - 1.1rem);
-		}
-	}
-	@media (min-width: 23.5em) {
-		.nav-wrapper {
-			gap: 1rem;
-		}
-	}
+  @media (hover: hover) {
+    .nav-wrapper {
+      max-width: calc(100vw - 1.1rem);
+    }
+  }
+  @media (min-width: 23.5em) {
+    .nav-wrapper {
+      gap: 1rem;
+    }
+  }
 
-	@media (min-width: 40em) {
-		header {
-			padding: 2.5rem 0 1.5rem;
-		}
+  @media (min-width: 40em) {
+    header {
+      padding: 2.5rem 0 1.5rem;
+    }
 
-		.logo {
-			width: auto;
-			margin: 0;
-			z-index: 0;
-		}
+    .logo {
+      width: auto;
+      margin: 0;
+      z-index: 0;
+      font-size: 2rem;
+    }
 
-		.logo h1 {
-			display: initial;
-		}
+    .logo h1 {
+      display: initial;
+    }
 
-		.menu-toggle {
-			display: none;
-		}
-	}
+    .menu-toggle {
+      display: none;
+    }
+  }
 
-	/** Style Algolia */
-	:root {
-		--docsearch-primary-color: var(--theme-accent);
-		--docsearch-logo-color: var(--theme-text);
-	}
+  .search-item {
+    display: none;
+    position: relative;
+    z-index: 10;
+    flex-grow: 1;
+    padding-right: 0.7rem;
+    display: flex;
+    max-width: 200px;
+  }
 
-	.search-item {
-		display: none;
-		position: relative;
-		z-index: 10;
-		flex-grow: 1;
-		padding-right: 0.7rem;
-		display: flex;
-		max-width: 200px;
-	}
-
-	@media (min-width: 50em) {
-		.search-item {
-			max-width: 400px;
-		}
-	}
+  @media (min-width: 50em) {
+    .search-item {
+      max-width: 400px;
+    }
+  }
 </style>
 
 <style is:global>
-	.search-item > * {
-		flex-grow: 1;
-	}
+  .search-item > * {
+    flex-grow: 1;
+  }
 </style>

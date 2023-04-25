@@ -17,7 +17,7 @@ const canonicalURL = new URL(currentPage, baseDomain);
 <html dir={data.dir} lang={data.lang} class="initial">
   <head>
     <HeadCommon />
-    <HeadSEO {...data} canonicalUrl={canonicalURL} />
+    <HeadSEO {...data} title={topTitle} canonicalUrl={canonicalURL} />
     <title>
       {`${topTitle} 🚀 ${SITE.title}`}
     </title>
