@@ -1,0 +1,26 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+import ZoneDataJsonFile from "../../../../public/data/ZoneDataJsonFile.json";
+import type { ZoneData } from "../../../../public/data/ZoneDataStructure";
+import PageColorRange from "../../../components/PageContent/PageColorRange.astro";
+
+//
+export async function getStaticPaths() {
+  return ZoneDataJsonFile.zoneDataJsonArray.map((entry) => ({
+    params: {
+      zoneName: entry.Identifier.toLowerCase().split(" ").join("-"),
+    },
+    props: { zoneObject: entry },
+  }));
+}
+//
+interface Props {
+  zoneObject: ZoneData;
+}
+//
+const { zoneObject } = Astro.props;
+---
+
+<MainLayout topTitle={zoneObject.Identifier} topLogo={"../../library/zones/" + "zone" + ".png"}>
+  <PageColorRange baseColorHSV={zoneObject.Color} />
+</MainLayout>

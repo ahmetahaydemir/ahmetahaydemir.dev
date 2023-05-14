@@ -253,6 +253,10 @@
         {
             "Identifier": "Generic",
             "EffectArray": null
+        },
+        {
+            "Identifier": "Mythic",
+            "EffectArray": null
         }
     ]
 }

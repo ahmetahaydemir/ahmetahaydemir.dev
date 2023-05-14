@@ -1,0 +1,16 @@
+{
+    "achievementDataJsonArray": [
+        {
+            "Identifier": "All Around The World",
+            "Description": "Complete each world origin successfully"
+        },
+        {
+            "Identifier": "Generational Wealth",
+            "Description": "Hold on to more than 100 coins at a time"
+        },
+        {
+            "Identifier": "Full Roster",
+            "Description": "Leave no empty space on your bench"
+        }
+    ]
+}

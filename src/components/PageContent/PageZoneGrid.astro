@@ -1,0 +1,110 @@
+---
+import PageEntityItem from "./PageEntityItem.astro";
+import ZoneDataJsonFile from "../../../public/data/ZoneDataJsonFile.json";
+import type { ZoneDataJSONArray } from "../../../public/data/ZoneDataStructure";
+
+let { gridFilter } = Astro.props;
+
+const entityBasePath = "../zones/";
+const fullGridArray = ZoneDataJsonFile.zoneDataJsonArray;
+const filteredGridArray = fullGridArray.reduce(filterGrid, []);
+
+function filterGrid(totalArray: ZoneDataJSONArray[], currentValue: ZoneDataJSONArray) {
+  if (gridFilter) {
+    if (currentValue.Identifier.toString().toLowerCase().includes(gridFilter)) {
+      totalArray.push(currentValue);
+    }
+  } else {
+    totalArray.push(currentValue);
+  }
+  //
+  return totalArray;
+}
+---
+
+<script client:load>
+  function searchFilterText() {
+    window.inputBar = document.getElementById("entity-grid-search");
+    window.gridContainer = document.getElementById("entity-grid-container").children;
+    //
+    for (let index = 0; index < gridContainer.length; index++) {
+      if (gridContainer[index].lastElementChild.textContent.toLowerCase().indexOf(inputBar.value.toLowerCase()) > -1) {
+        gridContainer[index].style.display = "";
+      } else {
+        gridContainer[index].style.display = "none";
+      }
+    }
+  }
+  //
+  setTimeout(searchFilterText, 100);
+</script>
+
+<input type="search" id="entity-grid-search" class="entity-grid-search" oninput="searchFilterText()" placeholder="Search for zones..." size="40" />
+<section class="cms-nav">
+  <section class="cards-nav">
+    <ul class="fluid-grid fluid-grid--minimal" id="entity-grid-container">
+      {
+        filteredGridArray.map((zoneData: ZoneDataJSONArray) => (
+          <PageEntityItem
+            cardTitle={zoneData.Identifier}
+            cardDesc={zoneData.Identifier}
+            cardLink={entityBasePath + zoneData.Identifier.toString().toLowerCase().split(" ").join("-")}
+            cardLogo={"/library/zones/" + "zone" + ".png"}
+            cardColor={"background-color:hsl(" + zoneData.Color[0] * 360 + "," + zoneData.Color[1] * 100 + "%," + zoneData.Color[2] * 100 + "%);"}
+          />
+        ))
+      }
+    </ul>
+  </section>
+</section>
+
+<style>
+  .fluid-grid {
+    --column-min-width: 13rem;
+    text-align: start;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--column-min-width), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--column-min-width), 100%), 1fr));
+    gap: 2rem;
+    list-style: none;
+    align-items: start;
+  }
+
+  .fluid-grid--minimal {
+    --column-min-width: 6rem;
+    gap: 1.5rem 0.75rem;
+  }
+
+  .entity-grid-search {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--theme-navbar-bg);
+    border-color: var(--theme-selection-bg);
+    border-style: dashed;
+    text-align: center;
+    transition: ease-in-out 0.25s;
+    color: var(--theme-text-accent);
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  .entity-grid-search::placeholder {
+    color: var(--theme-text-light);
+  }
+  .entity-grid-search:hover {
+    border-radius: 1rem;
+    border-color: var(--theme-text-accent);
+    transition: ease-in-out 0.25s;
+  }
+  .entity-grid-search:focus {
+    border-radius: 2rem;
+    border-style: dashed;
+    background-color: var(--theme-bg-accent);
+    border-color: var(--theme-text-accent);
+    transition: ease-in-out 0.25s;
+    outline: none;
+  }
+  .entity-grid-search::-webkit-search-cancel-button {
+    display: none;
+  }
+</style>

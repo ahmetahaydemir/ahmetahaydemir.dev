@@ -29,6 +29,8 @@ import OriginDataJsonFile from '../public/data/OriginDataJsonFile.json'
 import ClassDataJsonFile from '../public/data/ClassDataJsonFile.json'
 import ObjectDataJsonFile from '../public/data/ObjectDataJsonFile.json'
 import SkillDataJsonFile from '../public/data/SkillDataJsonFile.json'
+import AchievementDataJsonFile from '../public/data/AchievementDataJsonFile.json'
+import ZoneDataJsonFile from '../public/data/ZoneDataJsonFile.json'
 let fullEntityArray = EntityDataJsonFile.battleEntityDataJsonArray.concat(EntityDataJsonFile.restEntityDataJsonArray).concat(EntityDataJsonFile.eventEntityDataJsonArray).concat(EntityDataJsonFile.treasureEntityDataJsonArray);
 export const entitySidebarList = fullEntityArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
@@ -47,6 +49,14 @@ let fullSkillArray = SkillDataJsonFile.battleSkillDataJsonArray.concat(SkillData
 export const skillSidebarList = fullSkillArray.map((entry) => ({
 	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
 }));
+let fullAchievementArray = AchievementDataJsonFile.achievementDataJsonArray;
+export const achievementSidebarList = fullAchievementArray.map((entry) => ({
+	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
+}));
+let fullZoneArray = ZoneDataJsonFile.zoneDataJsonArray;
+export const zoneSidebarList = fullZoneArray.map((entry) => ({
+	text: entry.Identifier, link: entry.Identifier.toLowerCase().split(' ').join('-')
+}));
 //
 export type Sidebar = Record<
 	(typeof KNOWN_LANGUAGE_CODES)[number],
@@ -63,14 +73,18 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Freeform Workspace', link: `freeform-workspace` },
 			{ text: 'Entity List', link: `entity-list` },
 			{ text: 'Object List', link: `object-list` },
-			{ text: 'Skill List', link: `skill-list` },
 			{ text: 'Origin List', link: `origin-list` },
-			{ text: 'Class List', link: `class-list` }
+			{ text: 'Class List', link: `class-list` },
+			{ text: 'Skill List', link: `skill-list` },
+			{ text: 'Zone List', link: `zone-list` },
+			{ text: 'Achievement List', link: `achievement-list` }
 		],
+		'Zones': zoneSidebarList,
 		'Skills': skillSidebarList,
 		'Classes': classSidebarList,
 		'Origins': originSidebarList,
 		'Entities': entitySidebarList,
 		'Objects': objectSidebarList,
+		'Achievements': achievementSidebarList,
 	},
 };

@@ -4,7 +4,9 @@ import { classDataJsonArray } from '../../../../public/data/ClassDataJsonFile.js
 import { originDataJsonArray } from '../../../../public/data/OriginDataJsonFile.json';
 import { battleEntityDataJsonArray, restEntityDataJsonArray, eventEntityDataJsonArray, treasureEntityDataJsonArray } from '../../../../public/data/EntityDataJsonFile.json';
 import { equipmentObjectDataJsonArray, nodeObjectDataJsonArray, spawnObjectDataJsonArray } from '../../../../public/data/ObjectDataJsonFile.json';
+import { achievementDataJsonArray } from '../../../../public/data/AchievementDataJsonFile.json';
 import { configDataJson } from '../../../../public/data/GameConfigDataJsonFile.json';
+import { zoneDataJsonArray } from '../../../../public/data/ZoneDataJsonFile.json';
 
 export const get: APIRoute = ({ params, request }) => {
     const API = params.API;
@@ -26,8 +28,14 @@ export const get: APIRoute = ({ params, request }) => {
         case "getObjectData":
             jsonData = { equipmentObjectDataJsonArray, nodeObjectDataJsonArray, spawnObjectDataJsonArray };
             break;
+        case "getAchievementData":
+            jsonData = { achievementDataJsonArray };
+            break;
         case "getConfigData":
             jsonData = { configDataJson };
+            break;
+        case "getZoneData":
+            jsonData = { zoneDataJsonArray };
             break;
     }
     //
@@ -43,6 +51,8 @@ export function getStaticPaths() {
         { params: { API: "getOriginData" } },
         { params: { API: "getSkillData" } },
         { params: { API: "getObjectData" } },
-        { params: { API: "getConfigData" } }
+        { params: { API: "getAchievementData" } },
+        { params: { API: "getConfigData" } },
+        { params: { API: "getZoneData" } }
     ]
 }

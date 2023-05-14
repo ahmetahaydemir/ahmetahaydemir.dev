@@ -3,31 +3,35 @@ const { headerTitle, headerLink } = Astro.props;
 ---
 
 <h2 class="sub-header-container">
-	<a href={headerLink}>
-		{headerTitle}
-	</a>
-	<hr />
+  <a href={headerLink}>
+    {headerTitle}
+  </a>
+  <hr />
 </h2>
 
 <style>
-	.sub-header-container {
-		text-align: center;
-	}
-	.sub-header-container a {
-		cursor: pointer;
-		text-decoration: none;
-		transition: ease-in-out 0.05s;
-	}
-	.sub-header-container hr {
-		margin-inline: 50px;
-		margin-top: 10px;
-		transition: ease-in-out 0.2s;
-	}
-	.sub-header-container:hover hr {
-		border-color: var(--theme-accent);
-		border-style: dashed;
-	}
-	.sub-header-container:hover a {
-		font-size: 2rem;
-	}
+  .sub-header-container {
+    text-align: center;
+    width: 100%;
+    max-width: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-header-container a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: ease-in-out 0.05s;
+  }
+  .sub-header-container hr {
+    margin-inline: 50px;
+    margin-top: 10px;
+    transition: ease-in-out 0.2s;
+  }
+  .sub-header-container:hover hr {
+    border-color: var(--theme-accent);
+    border-style: dashed;
+  }
+  .sub-header-container:hover a {
+    font-size: 2rem;
+  }
 </style>

@@ -1,0 +1,22 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+import AchievementDataJsonFile from "../../../../public/data/AchievementDataJsonFile.json";
+import type { AchievementData } from "../../../../public/data/AchievementDataStructure";
+//
+export async function getStaticPaths() {
+  return AchievementDataJsonFile.achievementDataJsonArray.map((entry) => ({
+    params: {
+      achievementName: entry.Identifier.toLowerCase().split(" ").join("-"),
+    },
+    props: { achievementObject: entry },
+  }));
+}
+//
+interface Props {
+  achievementObject: AchievementData;
+}
+//
+const { achievementObject } = Astro.props;
+---
+
+<MainLayout topTitle={achievementObject.Identifier} topLogo={"../../library/achievements/" + "achievement" + ".png"} />

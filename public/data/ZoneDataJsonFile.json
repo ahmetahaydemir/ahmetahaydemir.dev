@@ -1,0 +1,110 @@
+﻿{
+    "zoneDataJsonArray": [
+        {
+            "Identifier": "Alpine Rise",
+            "Color": [
+                0.49,
+                0.15,
+                0.35
+            ],
+            "OriginIDS": [
+                "Arctic",
+                "Forest",
+                "Sea",
+                "River"
+            ]
+        },
+        {
+            "Identifier": "Bare Wasteland",
+            "Color": [
+                0.125,
+                0.225,
+                0.3
+            ],
+            "OriginIDS": [
+                "Desert",
+                "Safari",
+                "Island",
+                "Pet"
+            ]
+        },
+        {
+            "Identifier": "Harvest Season",
+            "Color": [
+                0.825,
+                0.25,
+                0.275
+            ],
+            "OriginIDS": [
+                "Farm",
+                "Pet",
+                "River",
+                "Forest"
+            ]
+        },
+        {
+            "Identifier": "Stranded Woods",
+            "Color": [
+                0.35,
+                0.25,
+                0.275
+            ],
+            "OriginIDS": [
+                "Jungle",
+                "Island",
+                "Forest",
+                "Pet"
+            ]
+        },
+        {
+            "Identifier": "Scorched Terrain",
+            "Color": [
+                0,
+                0.25,
+                0.275
+            ],
+            "OriginIDS": [
+                "Safari",
+                "Desert",
+                "Jungle",
+                "Farm"
+            ]
+        },
+        {
+            "Identifier": "Aquatic Plane",
+            "Color": [
+                0.625,
+                0.25,
+                0.275
+            ],
+            "OriginIDS": [
+                "Sea",
+                "River",
+                "Arctic",
+                "Island"
+            ]
+        },
+        {
+            "Identifier": "Nocturnal Court",
+            "Color": [
+                0.7,
+                0.2,
+                0.2
+            ],
+            "OriginIDS": [
+                "Mythic"
+            ]
+        },
+        {
+            "Identifier": "Heavenly Dawn",
+            "Color": [
+                0.1,
+                0.375,
+                0.575
+            ],
+            "OriginIDS": [
+                "Mythic"
+            ]
+        }
+    ]
+}

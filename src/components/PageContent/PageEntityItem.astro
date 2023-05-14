@@ -1,91 +1,91 @@
 ---
-const { cardTitle, cardDesc, cardLink, cardLogo } = Astro.props;
+const { cardTitle, cardDesc, cardLink, cardLogo, cardColor } = Astro.props;
 ---
 
 <script>
-	// Find all buttons with the `alert` class on the page.
-	const cards = document.querySelectorAll("div.card--minimal");
-	const links = document.querySelectorAll("div.cardText a");
-	// Handle clicks on each button.
-	for (let index = 0; index < cards.length; index++) {
-		const element = cards[index];
-		element.addEventListener("click", () => {
-			window.location.href = links[index].toString();
-		});
-	}
+  // Find all buttons with the `alert` class on the page.
+  const cards = document.querySelectorAll("div.card--minimal");
+  const links = document.querySelectorAll("div.cardText a");
+  // Handle clicks on each button.
+  for (let index = 0; index < cards.length; index++) {
+    const element = cards[index];
+    element.addEventListener("click", () => {
+      window.location.href = links[index].toString();
+    });
+  }
 </script>
 
 <div class="card card--minimal">
-	<div class="logo circle">
-		<img
-			src={cardLogo}
-			alt={cardTitle}
-			loading="lazy"
-			decoding="async"
-			width="100"
-			height="100"
-		/>
-	</div>
-	<div class="cardText">
-		<a href={cardLink}>
-			{cardTitle}
-		</a>
-		<p style="display: none;">
-			{cardDesc}
-		</p>
-	</div>
-</div>
+  <div class="logo circle">
+    <img src={cardLogo} alt={cardTitle} loading="lazy" decoding="async" width="100" height="100" />
+  </div>
+  <div class="cardText">
+    {cardColor !== undefined ? <p style={cardColor + "width:50px; height:5px; border-radius:10px;"} /> : ""}
+    <a href={cardLink}>
+      {cardTitle}
+    </a>
+    <p style="display: none;">
+      {cardDesc}
+    </p>
+  </div>
 
-<style>
-	.card {
-		position: relative;
-		margin: -0.5rem;
-		padding: 0.5rem;
-		display: grid;
-		grid-template-columns: auto 1fr;
-		gap: 0.75rem;
-		align-items: center;
-		border-radius: 1rem;
-		transition: ease-in-out 0.1s;
-	}
-	.card--minimal {
-		grid-template-columns: 1fr;
-		justify-items: center;
-		text-align: center;
-		gap: 0.5rem;
-	}
-	.cardText a {
-		font-weight: 500;
-		text-decoration: none;
-	}
-	.circle {
-		border-radius: 50%;
-	}
-	.logo {
-		--logo-size: 4rem;
-		--logo-padding: 0.2em;
-		display: flex;
-		place-content: center;
-		font-size: var(--logo-size);
-		width: 1.25em;
-		height: 1.25em;
-		background-color: var(--theme-code-bg);
-		box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse);
-		outline: 1px solid transparent;
-		overflow: hidden;
-	}
-	.card:hover {
-		background-color: rgba(0, 0, 0, 0.25);
-		transition: none;
-		cursor: pointer;
-	}
-	.logo img {
-		padding: var(--logo-padding);
-		width: 100%;
-		height: 100%;
-	}
-	img,
-	video {
-		max-width: 100%;
-	}
-</style>
+  <style>
+    .card {
+      position: relative;
+      margin: -0.5rem;
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.75rem;
+      align-items: center;
+      border-radius: 1rem;
+      transition: ease-in-out 0.1s;
+    }
+    .card--minimal {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      gap: 0.5rem;
+    }
+    .cardText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    .cardText a {
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .circle {
+      border-radius: 50%;
+    }
+    .logo {
+      --logo-size: 4rem;
+      --logo-padding: 0.2em;
+      display: flex;
+      place-content: center;
+      font-size: var(--logo-size);
+      width: 1.25em;
+      height: 1.25em;
+      background-color: var(--theme-code-bg);
+      box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse);
+      outline: 1px solid transparent;
+      overflow: hidden;
+    }
+    .card:hover {
+      background-color: rgba(0, 0, 0, 0.25);
+      transition: none;
+      cursor: pointer;
+    }
+    .logo img {
+      padding: var(--logo-padding);
+      width: 100%;
+      height: 100%;
+    }
+    img,
+    video {
+      max-width: 100%;
+    }
+  </style>
+</div>

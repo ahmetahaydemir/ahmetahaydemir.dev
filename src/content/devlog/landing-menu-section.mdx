@@ -1,10 +1,14 @@
 ---
 title: "Landing Menu Section"
 description: "Devlog Documentation"
-date: 2023-04-26
+date: 2023-04-29
 ---
 
-Now that the gameplay loop is documented, I will be focusing the sections defined in there one by one in isolation to get them to their **MVP** stage. This section is not the most critical one; but it is the first scene the visitors will see.
+import PageDateBar from "../../components/PageContent/PageDateBar.astro";
+
+<PageDateBar dateTitle="Log Date" dateString={frontmatter.date} />
+
+Now that the gameplay loop is documented, I will be focusing on the sections that I defined in there, one by one in isolation to get them to their **MVP** stage. This section is not the most critical one; but it is the first scene the visitors will see.
 
 So, I will start from here as well. Here is the visualization of the overall interface framework I am going to implement :
 
