@@ -1,16 +1,107 @@
 ---
 title: "Node Map Section"
 description: "Devlog Documentation"
-date: 2023-05-02
+date: 2023-05-18
 ---
 
 import PageDateBar from "../../components/PageContent/PageDateBar.astro";
 
 <PageDateBar dateTitle="Log Date" dateString={frontmatter.date} />
 
-Next up is shop and graph section.
+After a long break, I am back on the development cycle. Its funny how my own code looks foreign to me after just two weeks of not coding. Memory is a fickle thing, especially mine : ) 
+ 
+Right now I am focusing on the shop and node graph section. Here is what I have done for now.
 
 ## Shop View
 
-## Procedural Graph
+[Re-roll and enhance functionalities I have planned](https://ahmetahaydemir.dev/wild-chess-simulator/devlog/gameplay-loop#node-map) to have for the shop has not changed. `Re-roll` cost is dependent on the shop pool size. `Enhance` is used to increase the shop pool size.
+
+One additional feature I am planning to add is the `reset/reduction of pool size` to counter balance spam enhancing early. If it never resets, common sense will be enhancing whenever you can mindlessly. 
+
+In order to avoid that, I will add some kind of way to *reduce the pool size*. Like when a specific event occurs, **level completion** or **entity purchase**. This looks like something I can *A/B test* and decide accordingly when I have the chance.
+
+![Node Shop Shot](/image/NodeShopShot.jpg "Node Shop Shot")
+
+At some point, I also want to add additional effects for **enhancing beyond a certain pool size**. But for now, increasing the pool size alone will be enough.
+
+In its current state, shop just checks the current zone data and simulation configuration to showcase entities for you to buy/sell.
+
+-   **-Starting Coin** : 6
+-   **-Enhance Cost** : 2
+-   **-Re-roll Cost** : Pool Size
+-   **-Interest Gain** : 10 to 1
+-   **-Shop Slots** : [ 0 -> 18 ]
+-   **-Party Slots** : [ 4 -> 8 ]
+-   **-Bench Slots** : 8
+
+## Node Graph
+
+I still use the [same procedural generation script I have used for basic gameplay prototype](https://ahmetahaydemir.dev/wild-chess-simulator/devlog/gameplay-loop#node-map). I decided that I don't need any fancy algorithms for this. I am controlling the distribution of node types by hard-coded rules.
+
+I tried some other implementations for procedural generation; but during my testing phase the simulations I have run had more consistency with the hard-coded version. 
+
+And if I tune the algorithm enough to where it creates consistent results, it performed similar to the hard-coded implementation. 
+
+It basically made sense to go cave men style 👁️👄👁️
+
+![Node Graph Shot](/image/NodeGraphShot.jpg "Node Graph Shot")
+
+Ideal Scenario is player encountering `4 Battle, 2 Event, 1 Rest, 1 Treasure, 1 Elite, 1 Boss` nodes per zone. Rules described below achieves the distribution I want per path.
+
+-   **-Row Count** : 10
+-   **-Column Count** : [ 2 -> 4 ]
+-   **-Node Type Chance - Event** : [ 30% Starting Chance && 15% Roll Increment && After 1st Row ]
+-   **-Node Type Chance - Rest** : [ -25% Starting Chance && 10% Roll Increment && After 3rd Row with 9th Row Boost ]
+-   **-Node Type Chance - Treasure** : [ -25% Starting Chance && 10% Roll Increment && After 4th Row with 9th Row Boost ]
+-   **-Node Type Chance - Elite** : [ -25% Starting Chance && 10% Roll Increment && After 3rd Row ]
+-   **-Node Type Chance - Battle** : [ If Last Row ]
+-   **-Node Type Chance - Boss** : [ Default Case ]
+
+Each node is a component that can be serialized, so that I can save the state of the procedural map and load accordingly during transitions.
+
+For a node in row 0, the serialized data looks something like below.
+
+```json
+        {
+            "nodePosition": {
+                "x": -2.0660080909729006,
+                "y": 0.5,
+                "z": 2.3622310161590578
+            },
+            "nodeIndex": {
+                "x": 0,
+                "y": 0
+            },
+            "mapListIndex": 0,
+            "nodeTypeDataName": "BattleNodeData",
+            "nodeTypeEncounterVariationSeed": 1698682,
+            "nodeInputLine": [],
+            "nodeOutputLine": [
+                {
+                    "startIndex": 0,
+                    "endIndex": 4
+                },
+                {
+                    "startIndex": 0,
+                    "endIndex": 5
+                },
+                {
+                    "startIndex": 0,
+                    "endIndex": 6
+                }
+            ]
+        }
+```
+
+## Remaining Tasks
+
+There were some things I wanted to spend time on while building this scene; but none of them were MVP scoped so I restrained myself from working on them : )
+
+-   -- Zone specific mesh changes and accessories, right now only the color scheme is updated
+-   -- Starting camera animation to showcase map on level start, so that the player gets a quick glance of the paths
+-   -- Finishing camera animation to showcase map after completing the level
+-   -- Shop animation and HUD differentiation per interaction, right now I don't feel the **oomph** while using the shop. That's best way I can explain the problem with my 5 IQ points.
+-   -- Node type tooltip or legend, right now each node type is represented by a chess piece. Some people might not recognize them, especially since these are [amateur models made by me in a past game jam](https://ahmetahaydemir.itch.io/very-interesting-chess).
+
+![Chess Pieces](/image/ChessPieces.jpg "Chess Pieces")
 

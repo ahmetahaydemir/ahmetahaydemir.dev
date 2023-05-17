@@ -327,6 +327,25 @@ code {
 	margin: calc(var(--padding-block) * -1) 0;
 	border-radius: var(--border-radius);
 	word-break: break-word;
+
+}
+
+.astro-code code {
+	all: unset;
+	display: inline-block;
+	min-width: 100%;
+	--padding-inline: 1.25rem;
+}
+
+.astro-code {
+	margin: 0;
+	padding: var(--padding-block) 0;
+	background-color: var(--theme-code-bg) !important;
+	border: 1px solid var(--theme-glow-highlight);
+	border-radius: 0.5rem;
+	line-height: 1.65;
+	box-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse);
+
 }
 
 /*RTL Fix Code dir for inline code*/
