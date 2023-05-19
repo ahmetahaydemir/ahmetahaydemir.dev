@@ -1,7 +1,7 @@
 export interface SkillDataJSONFile {
-    battleSkillDataJsonArray:   SkillDataJSONArray[];
-    restSkillDataJsonArray:     SkillDataJSONArray[];
-    eventSkillDataJsonArray:    SkillDataJSONArray[];
+    battleSkillDataJsonArray: SkillDataJSONArray[];
+    restSkillDataJsonArray: SkillDataJSONArray[];
+    eventSkillDataJsonArray: SkillDataJSONArray[];
     treasureSkillDataJsonArray: SkillDataJSONArray[];
 }
 
@@ -9,6 +9,7 @@ export interface SkillDataJSONArray {
     Identifier: string;
     Type: SkillType;
     CastData: CastData;
+    StatusData: StatusData;
     TriggerData: TriggerData;
     OccurenceData: OccurenceData[];
 }
@@ -17,6 +18,12 @@ export interface CastData {
     Type: CastType;
     TargetingInput: TargetingInput;
     TargetingRange: number;
+}
+export interface StatusData {
+    TurnExpiration: boolean;
+    TurnExpirationCount: number;
+    TriggerExpiration: boolean;
+    TriggerExpirationCount: number;
 }
 export interface TriggerData {
     ClassFilter: string;

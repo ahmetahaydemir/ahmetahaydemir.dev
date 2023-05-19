@@ -1,0 +1,80 @@
+---
+title: "Simulation Section Rules"
+description: "Devlog Documentation"
+date: 2023-05-20
+---
+
+import PageDateBar from "../../components/PageContent/PageDateBar.astro";
+
+<PageDateBar dateTitle="Log Date" dateString={frontmatter.date} />
+
+There are so many things I have to decide in terms of how the code will execute the simulation.
+
+One of the main functionalities I want is the [playback feature](https://ahmetahaydemir.dev/wild-chess-simulator/devlog/gameplay-loop#simulation-phase). It is the main reason why I went with grid-based execution.
+
+Simulation should have the *deterministic* features of a **turn+grid based simulation**; but also flow like a **real-time simulation**.
+
+I will try to explain my thought process for each node type simulation.
+
+Then hopefully, I can start implementing them one by one.
+
+## Turn Cycle
+
+First thing to decide was what kind of turn cycle I will be having. Simulations are categorized by what node type we are currently in. `Battle`, `Elite` and `Boss` simulations will take some turn to finalize; but `Event`, `Rest` and `Treasure` simulations can be done in an instant.
+
+I think the turn cycle visualized below covers the interactions I want. Middle section can be skipped for non-battle simulations that take 0 turns. Each turn's action list will be executed while the turn cycle is moving to the next step in a fixed time slot.
+
+![Turn Cycle](/image/TurnCycleOne.jpg "Turn Cycle")
+
+So `Node Start(0)` actions would be seen in the `Next(+1)` step. We would check whether the simulation has concluded at each incerement. If it did, execute it as the `Node End(X+1)` step. If it did not end, repeat the cycle.
+
+I was planning to use `Event` simulations as a wildcard; but for now it looks like I generalized it with other 0 turn types.
+
+![TurnCycleTwo](/image/TurnCycleTwo.jpg "TurnCycleTwo")
+
+## Turn Execution
+
+At each turn cycle step participants will have a set of actions that they will take. Participants are `entities` and `objects`. 
+
+They can have certain types of actions per turn and those `actions` can trigger `sub-actions` via `skills` and `effects`.
+
+My initial implementation was trying to seperate **decision** and actual **execution** steps to two parts. I would start deciding what to do per entitiy in each team index. Then execute them all at once. Kinda like what I visualized below.
+
+This made it really hard to understand what entity took what action in that turn. Especially when the team sizes were large. 
+
+Also since the execution happens all at once, I was quite limited by what I can animate; because an entity might be dead at the end of that turn. Or an entity might decide to attack another entity in its range; but during that turn, target entity might have moved away from its attack range.
+
+This order of execution acted equal to both teams and *worked* fine; but in terms of **watching the simulation**, it was a mess.
+
+![Turn Execution Two](/image/TurnExecutionTwo.jpg "Turn Execution Two")
+
+Next execution order I tried was the back-and-forth between team indices. Basically the first member of player team, first member of enemy team, then move on to the next index.
+
+Main difference for this implementation was that now we don't move on to the next step before completing **decision + execution** for that entitiy. So an execution from a specific entity might cancel out another entitiy down the cycle (Kill it, stun it etc.).
+
+It works fine... But this process will start bothering me once I implement a PVP content like dueling; since one of the players will have the execution priority. I did not want one of the parties to have an upper hand. But then again, it is the same in chess♟️. 
+
+So maybe it fits the theme : ) 
+
+![Turn Execution One](/image/TurnExecutionOne.jpg "Turn Execution One")
+
+## Action Execution
+
+In order to have a **real-time** look; but actually function on a **turn-based** simulation, the timings that each action might take should be specific. Each turn will move on to the next step in a fixed time slot and the same goes for actions.
+
+If the actions of one of the entities has not finished before one of the other entities targets it, it might create a similar chaos with the first turn execution method I have used.
+
+And if I create enough room for a time difference variation, it will expose the turn-based simulation to the eye while the other entities are waiting. Right now, there are 5 main actions an entity can take that turn.
+
+![Turn Action One](/image/TurnActionOne.jpg "Turn Action One")
+
+Main thing I pay attention to avoid the issue I described above is completing targeted actions like `Attack` & `Skill` before any movement simulation initiates. 
+
+And also resuming the order of execution without waiting for the recovery animations. So the earliest I can continue is 20% and the latest is 50%. Now I can fake a real-time look if I keep the time slots small enough.
+
+## Visual Aspect
+
+I can't say that I am completely done with the implementation I described above; but here is how it looks with the order of execution I have described above. Note that some entities are just slow themselves, so they take the idle action to gather action points most of the time. ( https://youtu.be/gyH4wP-8KiU )
+
+[![Current Simulation Look Video](https://img.youtube.com/vi/gyH4wP-8KiU/maxresdefault.jpg "Current Simulation Look Video")](https://youtu.be/gyH4wP-8KiU)
+

@@ -2,13 +2,14 @@
     "battleSkillDataJsonArray": [
         {
             "Identifier": "Emergency Saliva",
-            "Type": "EntityCastEffect",
+            "Type": "CastEffect",
             "CastData": {
                 "Point": 6,
                 "Type": "CastOnTargetInRange",
                 "TargetingInput": "Ally_Arena_Alive_LowestHealth",
                 "TargetingRange": 2
             },
+            "StatusData": null,
             "TriggerData": null,
             "OccurenceData": [
                 {
@@ -30,11 +31,12 @@
         },
         {
             "Identifier": "Ancient Shell",
-            "Type": "EntityCastEffect",
+            "Type": "CastEffect",
             "CastData": {
                 "Point": 6,
                 "Type": "InstantCast"
             },
+            "StatusData": null,
             "TriggerData": null,
             "OccurenceData": [
                 {
@@ -56,11 +58,12 @@
         },
         {
             "Identifier": "Nibble On",
-            "Type": "EntityCastEffect",
+            "Type": "CastEffect",
             "CastData": {
                 "Point": 4,
                 "Type": "InstantCast"
             },
+            "StatusData": null,
             "TriggerData": null,
             "OccurenceData": [
                 {
@@ -89,11 +92,12 @@
         },
         {
             "Identifier": "Tentacle Smash",
-            "Type": "EntityCastEffect",
+            "Type": "CastEffect",
             "CastData": {
                 "Point": 4,
                 "Type": "InstantCast"
             },
+            "StatusData": null,
             "TriggerData": null,
             "OccurenceData": [
                 {
@@ -115,11 +119,12 @@
         },
         {
             "Identifier": "Constant Forage",
-            "Type": "EntityCastEffect",
+            "Type": "CastEffect",
             "CastData": {
                 "Point": 2,
                 "Type": "InstantCast"
             },
+            "StatusData": null,
             "TriggerData": null,
             "OccurenceData": [
                 {
@@ -141,11 +146,12 @@
         },
         {
             "Identifier": "Concussive Touch",
-            "Type": "EntityCastEffect",
+            "Type": "CastEffect",
             "CastData": {
                 "Point": 6,
                 "Type": "InstantCast"
             },
+            "StatusData": null,
             "TriggerData": null,
             "OccurenceData": [
                 {
@@ -167,13 +173,14 @@
         },
         {
             "Identifier": "Prey On",
-            "Type": "EntityCastEffect",
+            "Type": "CastEffect",
             "CastData": {
                 "Point": 5,
                 "Type": "CastOnTargetInRange",
                 "TargetingInput": "Enemy_Arena_Alive_LowestHealth",
                 "TargetingRange": 1
             },
+            "StatusData": null,
             "TriggerData": null,
             "OccurenceData": [
                 {
@@ -195,11 +202,12 @@
         },
         {
             "Identifier": "Go Nuts",
-            "Type": "EntityCastEffect",
+            "Type": "CastEffect",
             "CastData": {
                 "Point": 5,
                 "Type": "InstantCast"
             },
+            "StatusData": null,
             "TriggerData": null,
             "OccurenceData": [
                 {
@@ -221,8 +229,9 @@
         },
         {
             "Identifier": "Honey Bunny",
-            "Type": "EntityPassiveEffect",
+            "Type": "PassiveEffect",
             "CastData": null,
+            "StatusData": null,
             "TriggerData": {
                 "Type": "OnUpdateEntityList"
             },
@@ -246,13 +255,14 @@
         },
         {
             "Identifier": "Foolish Act",
-            "Type": "EntityCastEffect",
+            "Type": "CastEffect",
             "CastData": {
                 "Point": 5,
                 "Type": "CastOnTargetInRange",
                 "TargetingInput": "Enemy_Arena_Alive_Nearest",
                 "TargetingRange": 1
             },
+            "StatusData": null,
             "TriggerData": null,
             "OccurenceData": [
                 {
@@ -298,8 +308,36 @@
     "restSkillDataJsonArray": [
         {
             "Identifier": "Emergency Care",
-            "Type": "EntityPassiveEffect",
+            "Type": "PassiveEffect",
             "CastData": null,
+            "StatusData": null,
+            "TriggerData": {
+                "Type": "OnNodeStart",
+                "NodeCondition": "Rest"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Enemy_Arena_Alive_LowestHealth",
+                    "MultiplierData": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": 4,
+                            "PercentageStat": "MaxHealth",
+                            "PercentageChange": 40,
+                            "PercentageBasedOnCaster": false
+                        }
+                    ],
+                    "StatusChange": null,
+                    "SpawnChange": null
+                }
+            ]
+        },
+        {
+            "Identifier": "Natural Mending",
+            "Type": "PassiveEffect",
+            "CastData": null,
+            "StatusData": null,
             "TriggerData": {
                 "Type": "OnNodeEnd",
                 "NodeCondition": "Rest"
@@ -326,10 +364,11 @@
     "eventSkillDataJsonArray": [
         {
             "Identifier": "Pain and Gain",
-            "Type": "EntityPassiveEffect",
+            "Type": "PassiveEffect",
             "CastData": null,
+            "StatusData": null,
             "TriggerData": {
-                "Type": "OnNodeEnd",
+                "Type": "OnNodeStart",
                 "NodeCondition": "Event"
             },
             "OccurenceData": [
@@ -356,13 +395,41 @@
                     "SpawnChange": null
                 }
             ]
+        },
+        {
+            "Identifier": "Major Loss",
+            "Type": "PassiveEffect",
+            "CastData": null,
+            "StatusData": null,
+            "TriggerData": {
+                "Type": "OnNodeEnd",
+                "NodeCondition": "Event"
+            },
+            "OccurenceData": [
+                {
+                    "TargetingInput": "Enemy_Arena_Alive_LowestHealth",
+                    "MultiplierData": "Once",
+                    "StatisticChanges": [
+                        {
+                            "TargetStat": "Health",
+                            "FlatChange": -4,
+                            "PercentageStat": "MaxHealth",
+                            "PercentageChange": -40,
+                            "PercentageBasedOnCaster": false
+                        }
+                    ],
+                    "StatusChange": null,
+                    "SpawnChange": null
+                }
+            ]
         }
     ],
     "treasureSkillDataJsonArray": [
         {
             "Identifier": "Treasure Hunt",
-            "Type": "EntityPassiveEffect",
+            "Type": "PassiveEffect",
             "CastData": null,
+            "StatusData": null,
             "TriggerData": {
                 "Type": "OnNodeEnd",
                 "NodeCondition": "Treasure"
