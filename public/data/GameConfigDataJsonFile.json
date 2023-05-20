@@ -4,13 +4,18 @@
             "musicVolume": 0.3,
             "sfxVolume": 0.4,
             "resolution": "1920x1080",
-            "framerate": "120",
+            "quality": "high",
             "display": "windowed",
             "vsync": false,
-            "faster": false,
-            "number": true,
             "analytics": true,
-            "notifications": true
+            "faster": false,
+            "notifications": true,
+            "number": true,
+            "leftRedirectionButton": "Credits",
+            "leftRedirectionLink": "https://ahmetahaydemir.dev/wild-chess-simulator/introduction/welcome",
+            "language": "English",
+            "rightRedirectionButton": "Roadmap",
+            "rightRedirectionLink": "https://ahmetahaydemir.dev/wild-chess-simulator/introduction/roadmap"
         },
         "landingMenuConfiguration": {
             "welcomeNotification": "If the game feels hard, just know that it is actually not hard. You just suck ass <3"
