@@ -8,22 +8,50 @@
             integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
             crossorigin="anonymous"></script>
         <script defer type="module" src="/martech-game.js"></script>
+        <script>
+            function ValidateName() {
+                return false;
+            }
+        </script>
     </head>
 
     <body class="font-mono text-lg font-bold text-lightgray bg-darkgray">
-        <div class="flex items-center w-screen h-screen">
-            <div class="bg-dark w-1/5 h-screen outline-dashed outline-2 mx-5">
-                <div id="socket-list" class="flex flex-col items-center gap-5 py-5">
-                    <div>1</div>
-                    <div>1</div>
-                    <div>1</div>
+        <div class="flex items-center justify-center w-screen h-screen">
+            <div class="bg-dark w-1/5 h-5/6 border-dashed border-2 border-accentgray rounded-xl ml-5 min-w-min">
+                <div class="flex flex-col items-center pt-5 text-red">
+                    <b>Player Container</b>
+                </div>
+                <div id="player-container" class="flex flex-col items-center gap-5 py-5"></div>
+            </div>
+            <div class="bg-darkgray w-3/5 h-screen min-w-fit">
+                <div class="flex flex-col h-screen justify-center items-center">
+                    <div id="notification-container" class="bg-dark rounded-b-xl w-3/4 h-32 flex flex-col h-screen gap-5 justify-center items-center">
+                        <input
+                            id="player-input"
+                            placeholder="3 -> Name <- 20"
+                            class="rounded-md w-2/4 text-center bg-accentgray"
+                            minlength="3"
+                            autocomplete="off"
+                            maxlength="20"
+                            required
+                        />
+                        <button id="play-button" class="w-1/6 rounded-md text-red">Play</button>
+                    </div>
+                    <div id="word-container" class="w-3/5 h-4/6 flex flex-col justify-center items-center gap-5"></div>
+                    <hr
+                        style="border: 0;
+                    height: 2px;
+                    width:50%;
+                    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.75), rgba(0, 0, 0, 0));"
+                    />
+                    <div id="key-container" class="w-3/4 h-2/6 flex flex-wrap items-center justify-center gap-3 p-5 max-w-xl"></div>
                 </div>
             </div>
-            <div class="bg-darkgray w-4/5 h-screen">
-                <div class="flex flex-col h-screen justify-center items-center">
-                    <div id="word-container" class="w-2/5 h-4/6 bg-dark grid grid-cols-6 gap-5 p-10"></div>
-                    <div id="key-container" class="w-2/3 h-2/6 bg-dark flex flex-wrap justify-center items-center gap-5 p-5"></div>
+            <div class="bg-dark w-1/5 h-5/6 border-dashed border-2 border-accentgray rounded-xl mr-5 min-w-min">
+                <div class="flex flex-col items-center pt-5 text-red">
+                    <p>Server Container</p>
                 </div>
+                <div id="server-container" class="h-full w-full flex flex-col items-center gap-5 p-5 text-center"></div>
             </div>
         </div>
     </body>

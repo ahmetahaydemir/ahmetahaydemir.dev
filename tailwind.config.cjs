@@ -5,9 +5,12 @@ module.exports = {
 		colors: {
 			'dark': '#121212',
 			'darkgray': '#1f1f1f',
+			'accentgray': '#3b3838',
 			'fadedgray': '#3c3c3e',
-			'gray': '#58595a',
+			'gray': '#7b7676',
 			'lightgray': '#d8dadc',
+			'lightred': '#fca5a5',
+			'red': '#e60000'
 		}
 	},
 	plugins: [],
