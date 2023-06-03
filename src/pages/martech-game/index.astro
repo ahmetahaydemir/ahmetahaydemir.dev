@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MarTech | ATA</title>
+        <script
+            src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+            integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+            crossorigin="anonymous"></script>
+        <script defer type="module" src="/martech-game.js"></script>
+    </head>
+
+    <body class="font-mono text-lg font-bold text-lightgray bg-darkgray">
+        <div class="flex items-center w-screen h-screen">
+            <div class="bg-dark w-1/5 h-screen outline-dashed outline-2 mx-5">
+                <div id="socket-list" class="flex flex-col items-center gap-5 py-5">
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                </div>
+            </div>
+            <div class="bg-darkgray w-4/5 h-screen">
+                <div class="flex flex-col h-screen justify-center items-center">
+                    <div id="word-container" class="w-2/5 h-4/6 bg-dark grid grid-cols-6 gap-5 p-10"></div>
+                    <div id="key-container" class="w-2/3 h-2/6 bg-dark flex flex-wrap justify-center items-center gap-5 p-5"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
