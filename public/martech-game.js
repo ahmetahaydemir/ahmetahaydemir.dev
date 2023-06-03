@@ -1,28 +1,37 @@
 console.log("Client Setup...");
 
 document.getElementById("play-button").addEventListener('click', () => {
+    // Name Input Validation
     let playerNameInput = document.getElementById("player-input");
-    if (!playerNameInput.checkValidity()) return;
-
+    let formattedInput = playerNameInput.value.trim().replace(/[^a-z0-9]/gi, '');
+    if (formattedInput.length < 3 || formattedInput.length > 20) {
+        playerNameInput.value = "";
+        window.alert("Invalid player name");
+        return;
+    }
     // Socket Server Connection
-    const socket = io("http://localhost:8080");
+    const socket = io("http://localhost:8080", {
+        query: { playerName: formattedInput }
+    });
     // Player Connection 
     socket.on('connect', () => {
+        socket.playerName = formattedInput;
+        //
         socket.on('player-container-update', (socketArray) => {
             SetupPlayerContainer(socketArray);
         });
         //
-        window.SendCustomPlayerAction = function (socketId, key) {
-            console.log("Client : Emit :", key);
-            socket.emit("player-action", socketId, key);
-        };
         RegisterKeyAction(socket);
+        //
+        SetupWordContainer();
+        SetupKeyboardContainer();
+        SetupPlayerContainer();
+        SetupNotificationContainer("Waiting For Action");
     });
-    // Stateless Connection
-    SetupWordContainer();
-    SetupKeyboardContainer();
-    SetupPlayerContainer();
-    SetupNotificationContainer("Waiting For Action");
+    socket.on('connect_error', error => {
+        window.alert(error);
+        document.getElementById("play-button").remove();
+    });
 });
 
 //#region  CONTAINER
@@ -109,6 +118,11 @@ function ReceiveServerNotification(serverNotification) {
 
 //#region LISTENERS
 
+function SendPlayerAction(socket, key) {
+    console.log("Client : Emit :", key);
+    socket.emit("player-action", socket.playerName, key);
+};
+//
 function RegisterKeyAction(socket) {
     document.addEventListener('keydown', e => {
         if (e.target.matches('input')) return;
@@ -118,14 +132,14 @@ function RegisterKeyAction(socket) {
         for (let keyIndex = 0; keyIndex < document.getElementById("key-container").children.length; keyIndex++) {
             const keyButton = document.getElementById("key-container").children[keyIndex];
             //
-            if (pressedKey === keyButton.innerText) SendCustomPlayerAction(socket.id, pressedKey);
+            if (pressedKey === keyButton.innerText) SendPlayerAction(socket, pressedKey);
         }
 
         // Enter Key Press
-        if (pressedKey === "enter") SendCustomPlayerAction(socket.id, pressedKey);
+        if (pressedKey === "enter") SendPlayerAction(socket, pressedKey);
 
         // Delete Key Press
-        if (pressedKey === "backspace" || pressedKey === "delete") SendCustomPlayerAction(socket.id, pressedKey);
+        if (pressedKey === "backspace" || pressedKey === "delete") SendPlayerAction(socket, pressedKey);
 
     });
 }
