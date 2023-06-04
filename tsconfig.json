@@ -4,5 +4,7 @@
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
-  "prettier.documentSelectors": ["**/*.astro"]
+  "prettier.documentSelectors": [
+    "**/*.astro",
+  ]
 }
