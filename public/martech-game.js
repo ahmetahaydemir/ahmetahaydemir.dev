@@ -1,5 +1,4 @@
-console.log("Client Setup...");
-
+// CLIENT SETUP
 function isMobile() {
     const toMatch = [
         /Android/i,
@@ -38,9 +37,10 @@ document.getElementById("play-button").addEventListener('click', () => {
     socket.on('connect', () => {
         socket.playerName = formattedInput;
         wordAuthToken = socket.wordAuthToken;
-        console.log("Client : Init : " + socket.id + " : " + socket.playerName);
         //
-        document.getElementById("panel-seperator").style.visibility = "visible";
+        if (!isMobile()) {
+            document.getElementById("panel-seperator").style.visibility = "visible";
+        }
         //
         socket.on('player-container-update', (socketArray, currentScoreResult, currentSocketId, currentSocketName) => {
             wordAuthToken = (currentSocketId === socket.id);
@@ -79,14 +79,6 @@ document.getElementById("play-button").addEventListener('click', () => {
     });
 });
 
-if (!isMobile()) {
-    document.getElementById("player-input").style = "font-size: 2rem;";
-    document.getElementById("play-button").style = "font-size: 2rem;";
-} else {
-    document.getElementById("play-button").style = "font-size: 3rem; padding-top:2rem;";
-}
-
-
 //#region CONTAINER
 
 // STATELESS WORD CONTAINER
@@ -105,7 +97,7 @@ function SetupWordContainer() {
         for (let secIndex = 0; secIndex < wordTargetLength; secIndex++) {
             const wordCell = document.createElement("div");
             if (isMobile()) {
-                wordCell.style = "width:7.5rem; height: 7.5rem; font-size: 5rem;";
+                wordCell.style = "width:2.5rem; height: 2.5rem; font-size: 1.75rem;";
             } else {
                 wordCell.style = "width:4rem; height: 4rem; font-size: 3rem;";
             }
@@ -155,9 +147,16 @@ function UpdateWordContainer(currentWordState, currentGuessResult) {
 }
 // STATELESS KEYBOARD CONTAINER
 function SetupKeyboardContainer(socket) {
-    document.getElementById("key-container").innerHTML = '';
+    document.getElementById("key-container-1").innerHTML = '';
+    document.getElementById("key-container-2").innerHTML = '';
+    document.getElementById("key-container-3").innerHTML = '';
+    //
     if (isMobile()) {
         document.getElementById("key-container").classList.remove("max-w-xl");
+        document.getElementById("key-container").classList.remove("p-5");
+        document.getElementById("key-container").classList.remove("items-center");
+        document.getElementById("key-container").classList.remove("justify-center");
+        document.getElementById("key-container").style = "align-content: flex-start;";
     }
     //
     const chars = ['e', 'r', 't', 'y', 'u', 'ı', 'o', 'p', 'ğ', 'ü',
@@ -165,12 +164,22 @@ function SetupKeyboardContainer(socket) {
         'z', 'c', 'v', 'b', 'n', 'm', 'ö', 'ç'];
     //
     for (let index = 0; index < chars.length; index++) {
+        let targetContainer;
+        //
+        if (index < 10) {
+            targetContainer = document.getElementById("key-container-1");
+        } else if (index < 21) {
+            targetContainer = document.getElementById("key-container-2");
+        } else {
+            targetContainer = document.getElementById("key-container-3");
+        }
+        //
         const keyCell = document.createElement("button");
         keyCell.className = "bg-dark outline outline-2 outline-accentgray rounded-lg antialiased";
         if (isMobile()) {
-            keyCell.style = "width:6rem; height: 6rem; font-size: 4rem;";
+            keyCell.style = "user-select:none; touch-action: manipulation; width:1.75rem; height: 3rem; font-size: 1.5rem;";
         } else {
-            keyCell.style = "width:3.5rem; height: 3.5rem; font-size: 2rem;";
+            keyCell.style = "user-select:none; touch-action: manipulation; width:2.75rem; height: 3.5rem; font-size: 2rem;";
         }
         keyCell.textContent = chars[index];
         keyCell.addEventListener('click', (e) => {
@@ -183,15 +192,14 @@ function SetupKeyboardContainer(socket) {
             TryCharacterInput(socket, pressedKey, targetIndex);
             e.target.blur();
         });
-        document.getElementById("key-container").appendChild(keyCell);
         //
-        if (chars[index] === 'v') {
+        if (chars[index] === 'z') {
             const keyCellEnter = document.createElement("button");
             keyCellEnter.className = "bg-dark outline outline-2 outline-accentgray rounded-lg antialiased";
             if (isMobile()) {
-                keyCellEnter.style = "width:9rem; height: 6rem; font-size: 1.75rem;";
+                keyCellEnter.style = "user-select:none; touch-action: manipulation; width:3rem; height: 3rem; font-size: 0.75rem;";
             } else {
-                keyCellEnter.style = "width:5rem; height: 3.5rem; font-size: 1.25rem;";
+                keyCellEnter.style = "user-select:none; touch-action: manipulation; width:4.5rem; height: 3.5rem; font-size: 1rem;";
             }
             keyCellEnter.textContent = "enter";
             keyCellEnter.addEventListener('click', (e) => {
@@ -204,15 +212,18 @@ function SetupKeyboardContainer(socket) {
                 TryCharacterInput(socket, pressedKey, targetIndex);
                 e.target.blur();
             });
-            document.getElementById("key-container").appendChild(keyCellEnter);
+            targetContainer.appendChild(keyCellEnter);
         }
+        //
+        targetContainer.appendChild(keyCell);
+        //
         if (chars[index] === 'ç') {
             const keyCellDelete = document.createElement("button");
             keyCellDelete.className = "bg-dark outline outline-2 outline-accentgray rounded-lg antialiased";
             if (isMobile()) {
-                keyCellDelete.style = "width:9rem; height: 6rem; font-size: 1.75rem;";
+                keyCellDelete.style = "user-select:none; touch-action: manipulation; width:3rem; height: 3rem; font-size: 0.75rem;";
             } else {
-                keyCellDelete.style = "width:5rem; height: 3.5rem; font-size: 1.25rem;";
+                keyCellDelete.style = " user-select:none; touch-action: manipulation; width:4.5rem; height: 3.5rem; font-size: 1rem;";
             }
             keyCellDelete.textContent = "delete";
             keyCellDelete.addEventListener('click', (e) => {
@@ -225,7 +236,7 @@ function SetupKeyboardContainer(socket) {
                 TryCharacterInput(socket, pressedKey, targetIndex);
                 e.target.blur();
             });
-            document.getElementById("key-container").appendChild(keyCellDelete);
+            targetContainer.appendChild(keyCellDelete);
         }
     }
 }
@@ -270,11 +281,11 @@ function SetupNotificationContainer(notificationText, notificationOwner) {
     const notifCell = document.createElement("div");
     notifCell.className = "text-center antialiased";
     if (isMobile()) {
-        notifCell.style = "font-size: 3rem; text-center antialiased";
-        notifCell.innerHTML = notificationText + "<br/><br/><br/><p style='font-size: 3.5rem;' class='text-red'>" + notificationOwner + "<br/><br/><br/><p style='font-size: 3rem;' class='text-green'>" + 123;
+        notifCell.style = "font-size: 1.25rem; text-center antialiased";
+        notifCell.innerHTML = notificationText + "<br/><p style='font-size: 1.5rem;' class='text-red'>" + notificationOwner + "<br/><b style='font-size: 1.25rem;' class='text-green'>...";
     } else {
         notifCell.style = "font-size: 1.75rem; text-center antialiased";
-        notifCell.innerHTML = notificationText + "<br/><br/><b style='font-size: 2rem;' class='text-red'>" + notificationOwner + " </b><b class='text-yellow'> -> </b><b style='font-size: 1.5rem;' class='text-green'>" + 123;
+        notifCell.innerHTML = notificationText + "<br/><br/><b style='font-size: 2rem;' class='text-red'>" + notificationOwner + " </b><b class='text-yellow'> -> </b><b style='font-size: 1.5rem;' class='text-green'>...";
     }
     document.getElementById("notification-container").appendChild(notifCell);
 }
@@ -294,7 +305,6 @@ function ReceiveServerNotification(notificationText, notificationOwner) {
         totalNotificationChars += notifLength;
     }
     if (totalNotificationChars > 125) serverNotificationArray.shift();
-    console.log(totalNotificationChars)
     //
     for (let index = 0; index < serverNotificationArray.length; index++) {
         document.getElementById("server-container").appendChild(serverNotificationArray[index]);
@@ -366,8 +376,28 @@ function TryCharacterInput(socket, pressedKey, targetIndex) {
     // Alphabet Key Press
     if (targetIndex >= wordStartingIndex + wordTargetLength) return;
     if (targetIndex > wordCharacterArray.length) return;
-    for (let keyIndex = 0; keyIndex < document.getElementById("key-container").children.length; keyIndex++) {
-        const keyButton = document.getElementById("key-container").children[keyIndex];
+    for (let keyIndex = 0; keyIndex < document.getElementById("key-container-1").children.length; keyIndex++) {
+        const keyButton = document.getElementById("key-container-1").children[keyIndex];
+        //
+        if (pressedKey === keyButton.innerText) {
+            wordCharacterArray[targetIndex].classList.add("rounded-xl");
+            wordCharacterArray[targetIndex].innerText = pressedKey;
+            SendWordContainerUpdate(socket, pressedKey);
+            return;
+        }
+    }
+    for (let keyIndex = 0; keyIndex < document.getElementById("key-container-2").children.length; keyIndex++) {
+        const keyButton = document.getElementById("key-container-2").children[keyIndex];
+        //
+        if (pressedKey === keyButton.innerText) {
+            wordCharacterArray[targetIndex].classList.add("rounded-xl");
+            wordCharacterArray[targetIndex].innerText = pressedKey;
+            SendWordContainerUpdate(socket, pressedKey);
+            return;
+        }
+    }
+    for (let keyIndex = 0; keyIndex < document.getElementById("key-container-3").children.length; keyIndex++) {
+        const keyButton = document.getElementById("key-container-3").children[keyIndex];
         //
         if (pressedKey === keyButton.innerText) {
             wordCharacterArray[targetIndex].classList.add("rounded-xl");
