@@ -274,16 +274,21 @@ function UpdateKeyboardContainer(keyText, keyColorResult) {
                 case 2:
                     if (!keyboardArray[index].classList.contains("bg-green")) {
                         keyboardArray[index].classList.add("bg-green");
-                        keyboardArray[index].classList.remove("bg-yellow");
                     }
+                    keyboardArray[index].classList.remove("bg-yellow");
+                    keyboardArray[index].classList.remove("bg-red");
                     break;
                 case 1:
-                    if (!keyboardArray[index].classList.contains("bg-yellow")) {
+                    if (!keyboardArray[index].classList.contains("bg-green")
+                        && !keyboardArray[index].classList.contains("bg-yellow")) {
                         keyboardArray[index].classList.add("bg-yellow");
                     }
+                    keyboardArray[index].classList.remove("bg-red");
                     break;
                 case 0:
-                    if (!keyboardArray[index].classList.contains("bg-red")) {
+                    if (!keyboardArray[index].classList.contains("bg-green")
+                        && !keyboardArray[index].classList.contains("bg-yellow")
+                        && !keyboardArray[index].classList.contains("bg-red")) {
                         keyboardArray[index].classList.add("bg-red");
                     }
                     break;
