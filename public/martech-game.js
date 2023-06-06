@@ -15,6 +15,10 @@ function isMobile() {
     });
 }
 
+var clickAudio = new Audio('sfx/click.wav');
+var changeAudio = new Audio('sfx/change.wav');
+var reloadAudio = new Audio('sfx/reload.wav');
+
 let currentSocket;
 document.getElementById("play-button").addEventListener('click', () => {
     // Name Input Validation
@@ -53,8 +57,12 @@ document.getElementById("play-button").addEventListener('click', () => {
         socket.on('word-container-state', (currentWordState, currentGuessResult, currentSocketId, currentSocketName, currentCharacterIndex) => {
             if (currentCharacterIndex > wordStartingIndex) {
                 wordGuessToken = true;
+                changeAudio.currentTime = 0;
+                changeAudio.play();
             } else {
                 wordGuessToken = false;
+                clickAudio.currentTime = 0;
+                clickAudio.play();
             }
             UpdateWordContainer(currentWordState, currentGuessResult);
             wordAuthToken = (currentSocketId === socket.id);
@@ -77,6 +85,7 @@ document.getElementById("play-button").addEventListener('click', () => {
             //
             ResetKeyboardContainer();
             SetupWordContainer();
+            reloadAudio.play();
         });
         //
         SetupWordContainer();
@@ -440,12 +449,15 @@ function TryCharacterInput(socket, pressedKey, targetIndex) {
     // Alphabet Key Press
     if (targetIndex >= wordStartingIndex + wordTargetLength) return;
     if (targetIndex > wordCharacterArray.length) return;
+
     for (let keyIndex = 0; keyIndex < document.getElementById("key-container-1").children.length; keyIndex++) {
         const keyButton = document.getElementById("key-container-1").children[keyIndex];
         //
         if (pressedKey === keyButton.innerText) {
-            wordCharacterArray[targetIndex].classList.add("rounded-xl");
-            wordCharacterArray[targetIndex].innerText = pressedKey;
+            if (wordCharacterArray[targetIndex]) {
+                wordCharacterArray[targetIndex].classList.add("rounded-xl");
+                wordCharacterArray[targetIndex].innerText = pressedKey;
+            }
             SendWordContainerUpdate(socket, pressedKey);
             return;
         }
@@ -454,8 +466,10 @@ function TryCharacterInput(socket, pressedKey, targetIndex) {
         const keyButton = document.getElementById("key-container-2").children[keyIndex];
         //
         if (pressedKey === keyButton.innerText) {
-            wordCharacterArray[targetIndex].classList.add("rounded-xl");
-            wordCharacterArray[targetIndex].innerText = pressedKey;
+            if (wordCharacterArray[targetIndex]) {
+                wordCharacterArray[targetIndex].classList.add("rounded-xl");
+                wordCharacterArray[targetIndex].innerText = pressedKey;
+            }
             SendWordContainerUpdate(socket, pressedKey);
             return;
         }
@@ -464,8 +478,10 @@ function TryCharacterInput(socket, pressedKey, targetIndex) {
         const keyButton = document.getElementById("key-container-3").children[keyIndex];
         //
         if (pressedKey === keyButton.innerText) {
-            wordCharacterArray[targetIndex].classList.add("rounded-xl");
-            wordCharacterArray[targetIndex].innerText = pressedKey;
+            if (wordCharacterArray[targetIndex]) {
+                wordCharacterArray[targetIndex].classList.add("rounded-xl");
+                wordCharacterArray[targetIndex].innerText = pressedKey;
+            }
             SendWordContainerUpdate(socket, pressedKey);
             return;
         }
