@@ -274,6 +274,7 @@ function UpdateKeyboardContainer(keyText, keyColorResult) {
                 case 2:
                     if (!keyboardArray[index].classList.contains("bg-green")) {
                         keyboardArray[index].classList.add("bg-green");
+                        keyboardArray[index].classList.remove("bg-yellow");
                     }
                     break;
                 case 1:
