@@ -15,6 +15,7 @@ function isMobile() {
     });
 }
 
+let currentSocket;
 document.getElementById("play-button").addEventListener('click', () => {
     // Name Input Validation
     let playerNameInput = document.getElementById("player-input");
@@ -36,7 +37,9 @@ document.getElementById("play-button").addEventListener('click', () => {
     // Player Connection 
     socket.on('connect', () => {
         socket.playerName = formattedInput;
+        currentSocket = socket;
         wordAuthToken = socket.wordAuthToken;
+        wordGuessToken = true;
         //
         if (!isMobile()) {
             document.getElementById("panel-seperator").style.visibility = "visible";
@@ -48,9 +51,15 @@ document.getElementById("play-button").addEventListener('click', () => {
         });
         //
         socket.on('word-container-state', (currentWordState, currentGuessResult, currentSocketId, currentSocketName, currentCharacterIndex) => {
+            if (currentCharacterIndex > wordStartingIndex) {
+                wordGuessToken = true;
+            } else {
+                wordGuessToken = false;
+            }
             UpdateWordContainer(currentWordState, currentGuessResult);
             wordAuthToken = (currentSocketId === socket.id);
             wordStartingIndex = currentCharacterIndex;
+            wordGuessToken = false;
         });
         //
         socket.on('notification-container-update', (notificationText, notificationOwner, notificationFocus) => {
@@ -66,6 +75,7 @@ document.getElementById("play-button").addEventListener('click', () => {
             wordAuthToken = false;
             wordCharacterArray = [];
             //
+            ResetKeyboardContainer();
             SetupWordContainer();
         });
         //
@@ -86,6 +96,7 @@ const wordTargetLength = 6;
 let wordCharacterArray = [];
 let wordStartingIndex = 0;
 let wordAuthToken = false;
+let wordGuessToken = false;
 function SetupWordContainer() {
     document.getElementById("word-container").innerHTML = '';
     wordCharacterArray.clear
@@ -118,19 +129,24 @@ function UpdateWordContainer(currentWordState, currentGuessResult) {
             if (currentWordState.length > iteratorIndex) {
                 wordCharacterArray[iteratorIndex].textContent = currentWordState[iteratorIndex];
                 //
-                if (currentGuessResult.length > iteratorIndex) {
-                    wordCharacterArray[iteratorIndex].classList.remove("bg-dark");
-                    //
-                    switch (currentGuessResult[iteratorIndex]) {
-                        case 2:
-                            wordCharacterArray[iteratorIndex].classList.add("bg-green");
-                            break;
-                        case 1:
-                            wordCharacterArray[iteratorIndex].classList.add("bg-yellow");
-                            break;
-                        case 0:
-                            wordCharacterArray[iteratorIndex].classList.add("bg-accentgray");
-                            break;
+                if (wordGuessToken) {
+                    if (currentGuessResult.length > iteratorIndex) {
+                        wordCharacterArray[iteratorIndex].classList.remove("bg-dark");
+                        //
+                        switch (currentGuessResult[iteratorIndex]) {
+                            case 2:
+                                wordCharacterArray[iteratorIndex].classList.add("bg-green");
+                                UpdateKeyboardContainer(currentWordState[iteratorIndex], 2);
+                                break;
+                            case 1:
+                                wordCharacterArray[iteratorIndex].classList.add("bg-yellow");
+                                UpdateKeyboardContainer(currentWordState[iteratorIndex], 1);
+                                break;
+                            case 0:
+                                wordCharacterArray[iteratorIndex].classList.add("bg-accentgray");
+                                UpdateKeyboardContainer(currentWordState[iteratorIndex], 0);
+                                break;
+                        }
                     }
                 }
             } else {
@@ -146,6 +162,7 @@ function UpdateWordContainer(currentWordState, currentGuessResult) {
     }
 }
 // STATELESS KEYBOARD CONTAINER
+let keyboardArray = [];
 function SetupKeyboardContainer(socket) {
     document.getElementById("key-container-1").innerHTML = '';
     document.getElementById("key-container-2").innerHTML = '';
@@ -216,6 +233,7 @@ function SetupKeyboardContainer(socket) {
         }
         //
         targetContainer.appendChild(keyCell);
+        keyboardArray.push(keyCell);
         //
         if (chars[index] === 'ç') {
             const keyCellDelete = document.createElement("button");
@@ -240,7 +258,44 @@ function SetupKeyboardContainer(socket) {
         }
     }
 }
+function UpdateKeyboardContainer(keyText, keyColorResult) {
+    for (let index = 0; index < keyboardArray.length; index++) {
+        if (keyText === keyboardArray[index].textContent) {
+            switch (keyColorResult) {
+                case 2:
+                    if (!keyboardArray[index].classList.contains("bg-green")) {
+                        keyboardArray[index].classList.add("bg-green");
+                    }
+                    break;
+                case 1:
+                    if (!keyboardArray[index].classList.contains("bg-yellow")) {
+                        keyboardArray[index].classList.add("bg-yellow");
+                    }
+                    break;
+                case 0:
+                    if (!keyboardArray[index].classList.contains("bg-red")) {
+                        keyboardArray[index].classList.add("bg-red");
+                    }
+                    break;
+            }
+        }
+    }
+}
+function ResetKeyboardContainer() {
+    for (let index = 0; index < keyboardArray.length; index++) {
+        if (keyboardArray[index].classList.contains("bg-green")) {
+            keyboardArray[index].classList.remove("bg-green");
+        }
+        if (keyboardArray[index].classList.contains("bg-yellow")) {
+            keyboardArray[index].classList.remove("bg-yellow");
+        }
+        if (keyboardArray[index].classList.contains("bg-red")) {
+            keyboardArray[index].classList.remove("bg-red");
+        }
+    }
+}
 // STATELESS PLAYER CONTAINER
+let currentScoreDictionary = {};
 function SetupPlayerContainer(socketArray, currentSocketName, currentScoreResult) {
     document.getElementById("player-container").innerHTML = '';
     //
@@ -253,6 +308,7 @@ function SetupPlayerContainer(socketArray, currentSocketName, currentScoreResult
     //
     if (socketArray) {
         for (let index = 0; index < socketArray.length; index++) {
+            currentScoreDictionary[socketArray[index]] = currentScoreResult[index];
             const keyCell = document.createElement("li");
             //
             if (socketArray[index] === currentSocketName) {
@@ -278,14 +334,16 @@ function SetupPlayerContainer(socketArray, currentSocketName, currentScoreResult
 function SetupNotificationContainer(notificationText, notificationOwner) {
     document.getElementById("notification-container").innerHTML = '';
     //
+    let notificationOwnerScore = "...";
+    if (currentScoreDictionary[notificationOwner]) notificationOwnerScore = currentScoreDictionary[notificationOwner];
     const notifCell = document.createElement("div");
     notifCell.className = "text-center antialiased";
     if (isMobile()) {
         notifCell.style = "font-size: 1.25rem; text-center antialiased";
-        notifCell.innerHTML = notificationText + "<br/><p style='font-size: 1.5rem;' class='text-red'>" + notificationOwner + "<br/><b style='font-size: 1.25rem;' class='text-green'>...";
+        notifCell.innerHTML = notificationText + "<br/><p style='font-size: 1.5rem;' class='text-red'>" + notificationOwner + "<br/><b style='font-size: 1.25rem;' class='text-green'>" + notificationOwnerScore;
     } else {
         notifCell.style = "font-size: 1.75rem; text-center antialiased";
-        notifCell.innerHTML = notificationText + "<br/><br/><b style='font-size: 2rem;' class='text-red'>" + notificationOwner + " </b><b class='text-yellow'> -> </b><b style='font-size: 1.5rem;' class='text-green'>...";
+        notifCell.innerHTML = notificationText + "<br/><br/><b style='font-size: 2rem;' class='text-red'>" + notificationOwner + " </b><b class='text-yellow'> -> </b><b style='font-size: 1.5rem;' class='text-green'>" + notificationOwnerScore;
     }
     document.getElementById("notification-container").appendChild(notifCell);
 }
@@ -317,6 +375,12 @@ function ReceiveServerNotification(notificationText, notificationOwner) {
 
 function SendWordContainerUpdate(socket, key) {
     socket.emit("word-container-update", socket.id, key);
+};
+//
+window.KickUser = function (userIndex, adminToken) {
+    if (currentSocket) {
+        currentSocket.emit("kick-user", userIndex, adminToken);
+    }
 };
 //
 function FindCharacterInputTarget() {
