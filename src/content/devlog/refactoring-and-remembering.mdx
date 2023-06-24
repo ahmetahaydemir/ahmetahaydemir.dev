@@ -1,0 +1,57 @@
+---
+title: "Refactoring & Remembering"
+description: "Devlog Documentation"
+date: 2023-06-24
+---
+
+import PageDateBar from "../../components/PageContent/PageDateBar.astro";
+
+<PageDateBar dateTitle="Log Date" dateString={frontmatter.date} />
+
+The title is quite dramatic; but after my [accidental time skip](https://ahmetahaydemir.dev/wild-chess-simulator/devlog/accidental-time-skip), I struggled a bit to get familiar with the project once again and organize my backlog.
+
+Here is a line trend graph that showcases my determination for the project over time. 📉
+
+![Morale Trend Graph](/image/MoraleTrendGraph.jpg "Morale Trend Graph")
+
+It moves slowly; but I am getting back on track. Next week, I going to take my parents on a tour to celebrate my father's retirement. I took pre-cautions in order to not fall to this situation again, so hopefully I will be fine.
+
+Here is a summary of what I have realized and done in these two weeks.
+
+## What Did I Do?
+
+There were soooo many edge cases with skills and simulations that I overlooked while developing. So I started to develop a seperate scene that can simulate matches in parallel and test the results on whether there are any errors or not.
+
+For now tests are done manually. Due to the outcome of these tests I've changed these :
+
+-   Realtime-ish simulation advancement creates confusion for player and limits the freedom for skill variety. 
+    -   Switched back to `awaiting entity's action` before moving to the next one.
+    -   Actions can have `varying await times` whether its skill, attack or movement
+    -   Only idle actions skip await process
+
+-   Reduced the amount of levels you need to complete before fighting the last boss from `5+1 Zones` to `4+1 Zones`. 
+    -   Might even cut it more and adjust it to the regular `3+1 Zones` formula if the progression feels sluggish.,
+
+-   Reduced the amount of zones from `10` to `6+2`.
+    -   Before this every origin had its own zone which acted as levels which caused some issues with content distribution.
+    -   Now there are `6 normal zones` and `2 final zones` which contains a larger set of content.
+
+-   Re-designed the color scheme generator depending on the zone.
+    -   Looks like the `Hue-Saturation-Value` combination gives more reliable results visually compared to RGB modifications
+
+-   Post simulation analysis timeline now works properly. You can see how it looks in the video below.
+    -   First functionality is `JumpToStep` which moves board to the exact state before that turn executed its action.
+    -   Second functionality is `AdvanceStep` which executes the step with its await processes if there are any.
+
+[![Current Simulation Look Video](https://img.youtube.com/vi/EXKCINuHEZs/maxresdefault.jpg "Current Simulation Look Video")](https://www.youtube.com/watch?v=EXKCINuHEZs)
+
+## What's Next?
+
+-   Handle entities that have more than `1x1` cell size,
+    -   Refactor skill and attack targeting to handle entities with more than `1x1` cell size
+    -   Refactor pathfinding to handle entities that have more than `1x1` cell size
+-   Finish the parallel testing scene implementation
+-   Re-evaluate the ideal maximum team size and gold progression
+-   Implement the first `boss node` prototype
+-   Start the content generation cycle for entity skills and statistics ( Right now the variation is limited to class )
+-   Visual mesh accessory variation per zone ( Right now only the color scheme changes )

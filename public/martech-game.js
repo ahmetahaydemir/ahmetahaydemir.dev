@@ -45,10 +45,6 @@ document.getElementById("play-button").addEventListener('click', () => {
         wordAuthToken = socket.wordAuthToken;
         wordGuessToken = true;
         //
-        if (!isMobile()) {
-            document.getElementById("panel-seperator").style.visibility = "visible";
-        }
-        //
         socket.on('player-container-update', (socketArray, currentScoreResult, currentSocketId, currentSocketName) => {
             wordAuthToken = (currentSocketId === socket.id);
             SetupPlayerContainer(socketArray, currentSocketName, currentScoreResult);
@@ -182,6 +178,7 @@ function SetupKeyboardContainer(socket) {
         document.getElementById("key-container").classList.remove("p-5");
         document.getElementById("key-container").classList.remove("items-center");
         document.getElementById("key-container").classList.remove("justify-center");
+        document.getElementById("key-container").classList.add("gap-2");
         document.getElementById("key-container").style = "align-content: flex-start;";
     }
     //
@@ -190,23 +187,33 @@ function SetupKeyboardContainer(socket) {
         'z', 'c', 'v', 'b', 'n', 'm', 'ö', 'ç'];
     //
     for (let index = 0; index < chars.length; index++) {
-        let targetContainer;
-        //
-        if (index < 10) {
-            targetContainer = document.getElementById("key-container-1");
-        } else if (index < 21) {
-            targetContainer = document.getElementById("key-container-2");
-        } else {
-            targetContainer = document.getElementById("key-container-3");
-        }
-        //
         const keyCell = document.createElement("button");
         keyCell.className = "bg-dark outline outline-2 outline-accentgray rounded-lg antialiased";
-        if (isMobile()) {
-            keyCell.style = "user-select:none; touch-action: manipulation; width:1.75rem; height: 3rem; font-size: 1.5rem;";
+        //
+        let targetContainer;
+        if (index < 10) {
+            targetContainer = document.getElementById("key-container-1");
+            if (isMobile()) {
+                keyCell.style = "user-select:none; touch-action: manipulation; width:1.75rem; height: 3rem; font-size: 1.5rem;";
+            } else {
+                keyCell.style = "user-select:none; touch-action: manipulation; width:2.75rem; height: 3.5rem; font-size: 2rem;";
+            }
+        } else if (index < 21) {
+            targetContainer = document.getElementById("key-container-2");
+            if (isMobile()) {
+                keyCell.style = "user-select:none; touch-action: manipulation; width:1.5rem; height: 3rem; font-size: 1.5rem;";
+            } else {
+                keyCell.style = "user-select:none; touch-action: manipulation; width:2.5rem; height: 3.5rem; font-size: 2rem;";
+            }
         } else {
-            keyCell.style = "user-select:none; touch-action: manipulation; width:2.75rem; height: 3.5rem; font-size: 2rem;";
+            targetContainer = document.getElementById("key-container-3");
+            if (isMobile()) {
+                keyCell.style = "user-select:none; touch-action: manipulation; width:1.75rem; height: 3rem; font-size: 1.5rem;";
+            } else {
+                keyCell.style = "user-select:none; touch-action: manipulation; width:2.75rem; height: 3.5rem; font-size: 2rem;";
+            }
         }
+        //
         keyCell.textContent = chars[index];
         keyCell.addEventListener('click', (e) => {
             if (!wordAuthToken) return
@@ -360,7 +367,18 @@ function SetupNotificationContainer(notificationText, notificationOwner) {
         notifCell.style = "font-size: 1.75rem; text-center antialiased";
         notifCell.innerHTML = notificationText + "<br/><br/><b style='font-size: 2rem;' class='text-red'>" + notificationOwner + " </b><b class='text-yellow'> -> </b><b style='font-size: 1.5rem;' class='text-green'>" + notificationOwnerScore;
     }
+    //
     document.getElementById("notification-container").appendChild(notifCell);
+    //
+    if (document.getElementById("player-time-bar") === null) {
+        const timeBarElement = document.createElement("progress");
+        timeBarElement.style = 'height:5px; width:100%; position: absolute; top:0px; background-color: red;';
+        timeBarElement.setAttribute("id", "player-time-bar");
+        timeBarElement.setAttribute("max", 3000);
+        timeBarElement.setAttribute("value", 1500);
+        document.getElementById("notification-container").appendChild(timeBarElement);
+    }
+    StartRemainingPlayerTime();
 }
 // STATELESS SERVER CONTAINER
 const serverNotificationArray = [];
@@ -388,6 +406,25 @@ function ReceiveServerNotification(notificationText, notificationOwner) {
 
 //#region LISTENERS
 
+function StartRemainingPlayerTime() {
+    const timeBar = document.getElementById("player-time-bar");
+    timeBar.value = 3000;
+    //
+    if (window.currentTimeId) {
+        clearInterval(window.currentTimeId);
+    }
+    window.currentTimeId = setInterval(timeCountdown, 10);
+    function timeCountdown() {
+        if (timeBar.value <= 0) {
+            clearInterval(window.currentTimeId);
+            timeBar.value = 0;
+            // Trigger Turn Skip
+        } else {
+            timeBar.value = timeBar.value - 1;
+        }
+    }
+}
+
 function SendWordContainerUpdate(socket, key) {
     socket.emit("word-container-update", socket.id, key);
 };
@@ -408,8 +445,15 @@ function FindCharacterInputTarget() {
     return wordCharacterArray.length;
 }
 //
+let keyDownLimit;
 function RegisterKeyAction(socket) {
     document.addEventListener('keydown', e => {
+        if (keyDownLimit < 3) {
+            keyDownLimit++;
+        } else {
+            return;
+        }
+
         if (e.target.matches('input')) return;
         if (!wordAuthToken) return
         if (wordCharacterArray.length <= 0) return
@@ -418,6 +462,9 @@ function RegisterKeyAction(socket) {
         let pressedKey = e.key.toLocaleLowerCase();
 
         TryCharacterInput(socket, pressedKey, targetIndex);
+    });
+    window.addEventListener('keyup', function (e) {
+        keyDownLimit = 0;
     });
 }
 //
@@ -455,7 +502,7 @@ function TryCharacterInput(socket, pressedKey, targetIndex) {
     // Alphabet Key Press
     if (targetIndex >= wordStartingIndex + wordTargetLength) return;
     if (targetIndex > wordCharacterArray.length) return;
-
+    console.log(targetIndex, wordStartingIndex, wordTargetLength);
     for (let keyIndex = 0; keyIndex < document.getElementById("key-container-1").children.length; keyIndex++) {
         const keyButton = document.getElementById("key-container-1").children[keyIndex];
         //
